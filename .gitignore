@@ -1,2 +1,17 @@
-# Compiled Mod files
-/src/mod/
+# Java (Eclipe).
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# Gradle.
+build
+.gradle
+
+# VSCode.
+.vscode
+
+# Other files or folders.
+run

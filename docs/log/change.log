@@ -1,2 +1,6 @@
+[0.0.2]
+- Added Gradle and Forge MDK files.
+- Removed deprecated and old mod files from repository.
+
 [0.0.1]
 - Improved frontpage and documentation.
