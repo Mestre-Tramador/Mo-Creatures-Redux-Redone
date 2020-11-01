@@ -1,3 +1,16 @@
+[0.0.3]
+- First Java implementation.
+- Created Mod Entry Point.
+- Created Mod META-INF.
+- Created package "init" for all setup routines.
+- Created package "item" for Items construction.
+- Created package "util" to holds general tools to all code.
+- Created package "provider" for providing data to Blocks and Items.
+- Created package "block" for Blocks construction.
+- Added language file for English US.
+- Added placeholder pack.mcmeta.
+- Added update.json file.
+
 [0.0.2]
 - Added Gradle and Forge MDK files.
 - Removed deprecated and old mod files from repository.
