@@ -24,6 +24,7 @@ public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvide
     /**
      * Return the block properties of {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone Wyvern Lair Stone}.
      */
+    @Override
     public AbstractBlock.Properties provideBlockProperties()
     {
         BLOCK_PROPERTIES().hardnessAndResistance(3, 10);
@@ -36,6 +37,7 @@ public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvide
     /**
      * Return the blockitem properties of {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone Wyvern Lair Stone}.
      */
+    @Override
     public Item.Properties provideItemProperties()
     {
         ITEM_PROPERTIES().group(ItemGroup.BUILDING_BLOCKS);

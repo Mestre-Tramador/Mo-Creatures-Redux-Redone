@@ -13,6 +13,16 @@ public final class Constants
     public static final String MOD_ID = "rrmocreatures";
 
     /**
+     * Path to Items resources.
+     */
+    public static final String ITEM_PATH = "item/";
+
+    /**
+     * Path to Blocks resources.
+     */
+    public static final String BLOCK_PATH = "block/";
+
+    /**
      * Items IDs.
      */
     public static class Items
@@ -36,7 +46,7 @@ public final class Constants
              */
             private static final String PREFIX = "wyvern_lair_";
 
-            /** {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone Wyvern Lair Stone} block ID.*/
+            /** {@link mestretramador.rrmocreatures.block.RRMoCBlockWyvernLairStone Wyvern Lair Stone} block ID.*/
             public static final String STONE = PREFIX+"stone";
         }
     }

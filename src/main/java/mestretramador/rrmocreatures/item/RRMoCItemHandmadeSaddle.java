@@ -23,6 +23,7 @@ public class RRMoCItemHandmadeSaddle extends RRMoCItem
     /**
      * Return a Handmade Saddle as a {@link Item}
      */
+    @Override
     public Item returnAsItem()
     {
         return new Item(((RRMoCItemProviderHandmadeSaddle) provider).provideProperties());

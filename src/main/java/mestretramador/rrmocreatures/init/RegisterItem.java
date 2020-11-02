@@ -10,7 +10,7 @@ import mestretramador.rrmocreatures.item.RRMoCItemHandmadeSaddle;
 public class RegisterItem
 {
     /** Handmade Saddle item. */
-    private static final RRMoCItemHandmadeSaddle HANDMADE_SADDLE = new RRMoCItemHandmadeSaddle();
+    public static final RRMoCItemHandmadeSaddle HANDMADE_SADDLE = new RRMoCItemHandmadeSaddle();
 
     /**
      * Callback to register all items.

@@ -1,3 +1,9 @@
+[0.0.6-dev]
+- Added Java Annotations to Blocks, BlockItems and Items classes.
+- First implementation with Data Generators and Textures.
+- Data Generation not working for Blocks.
+- Added first textures for Items.
+
 [0.0.5]
 - First Blocks and BlockItems implementation.
 - Created batch and shell script files for creating Block and BlockItem, also Providers.

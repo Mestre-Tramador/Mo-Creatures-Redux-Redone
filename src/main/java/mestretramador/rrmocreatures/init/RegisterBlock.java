@@ -10,7 +10,7 @@ import mestretramador.rrmocreatures.block.RRMoCBlockWyvernLairStone;
 public class RegisterBlock {
 
     /** Wyvern Lair Stone Block and BlockItem. */
-    private static final RRMoCBlockWyvernLairStone WYVERN_LAIR_STONE = new RRMoCBlockWyvernLairStone();
+    public static final RRMoCBlockWyvernLairStone WYVERN_LAIR_STONE = new RRMoCBlockWyvernLairStone();
 
     /**
      * Callback to register all blocks and blockitems.
