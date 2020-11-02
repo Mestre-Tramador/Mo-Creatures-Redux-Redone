@@ -5,7 +5,7 @@ import net.minecraft.item.BlockItem;
 /**
  * <p> Mo'Creatures Redux&Redone BlockItem base. </p>
  * <p> Generally implemented with a Mo'Creatures Redux&Redone Block inherited class. </p>
- * @version 0.0.5
+ * @version 0.0.6
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public interface RRMoCBlockItem

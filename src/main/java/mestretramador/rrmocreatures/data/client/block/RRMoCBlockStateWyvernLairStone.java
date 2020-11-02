@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block state.
- * @version 0.0.6-dev
+ * @version 0.0.6
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockStateWyvernLairStone extends RRMoCBlockStateProvider

@@ -1,3 +1,6 @@
+[0.0.6]
+- Fixed Data Generation not working for Blocks.
+
 [0.0.6-dev]
 - Added Java Annotations to Blocks, BlockItems and Items classes.
 - First implementation with Data Generators and Textures.

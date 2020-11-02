@@ -5,7 +5,7 @@ import net.minecraft.item.Item.Properties;
 
 /**
  * Mo'Creatures Redux&Redone Handmade Saddle item provider.
- * @version 0.0.5
+ * @version 0.0.6
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderHandmadeSaddle extends RRMoCItemProvider

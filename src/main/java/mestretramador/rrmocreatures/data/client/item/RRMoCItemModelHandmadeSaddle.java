@@ -11,7 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 /**
  * Mo'Creatures Redux&Redone Handmade Saddle item model.
- * @version 0.0.6-dev
+ * @version 0.0.6
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemModelHandmadeSaddle extends RRMoCItemModelProvider
