@@ -1,6 +1,10 @@
+[0.0.5]
+- First Blocks and BlockItems implementation.
+- Created batch and shell script files for creating Block and BlockItem, also Providers.
+
 [0.0.4]
 - Created Tools directory to hold useful batch and shell scripts.
-- Created batch and shell script file for creating an Item and Item Provider.
+- Created batch and shell script files for creating an Item and Item Provider.
 
 [0.0.3]
 - First Java implementation.

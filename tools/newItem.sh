@@ -7,7 +7,7 @@
 #####################################################################
 
 # Gloval variables.
-version="0.0.4"
+version="0.0.5"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -19,7 +19,7 @@ providerdir="../src/main/java/mestretramador/rrmocreatures/provider/item"
 # Collect the item new name.
 set +v
 echo "What will be the Item class name?"
-echo "The Item name must be in Pascal Case eg. \"NewItemClass\"."
+echo "The Item class name must be in Pascal Case eg. \"NewItemClass\"."
 read -p "Item: " class
 if [ -z "$class" ]
 then
@@ -52,7 +52,7 @@ cd "$providerdir"
 
 # Create the Provider.
 touch "RRMoCItemProvider$class.java"
-chmod 755 "RRMoCItemProvider$class.java"
+chmod 744 "RRMoCItemProvider$class.java"
 
 echo "package mestretramador.rrmocreatures.provider.item;                                        " >> "RRMoCItemProvider$class.java"
 echo "                                                                                           " >> "RRMoCItemProvider$class.java"

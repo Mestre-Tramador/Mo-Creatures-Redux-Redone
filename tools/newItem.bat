@@ -7,7 +7,7 @@
 @REM ###########################################################
 
 @REM Gloval variables.
-@SET version=0.0.4
+@SET version=0.0.5
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -19,7 +19,7 @@
 @REM Collect the item new name.
 @ECHO OFF
 ECHO What will be the Item class name?
-ECHO The Item name must be in Pascal Case eg. "NewItemClass".
+ECHO The Item class name must be in Pascal Case eg. "NewItemClass".
 SET /p class=Item: 
 IF [%class%] == [] EXIT 1
 

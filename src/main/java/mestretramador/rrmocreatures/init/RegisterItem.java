@@ -4,7 +4,7 @@ import mestretramador.rrmocreatures.item.RRMoCItemHandmadeSaddle;
 
 /**
  * Items to registrate.
- * @version 0.0.4
+ * @version 0.0.5
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RegisterItem
