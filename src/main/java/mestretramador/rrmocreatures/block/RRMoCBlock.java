@@ -4,7 +4,7 @@ import net.minecraft.block.Block;
 
 /**
  * Mo'Creatures Redux&Redone Block base.
- * @version 0.0.5
+ * @version 0.0.6
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlock

@@ -4,6 +4,7 @@ import mestretramador.rrmocreatures.util.Constants;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,7 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 /**
  * Initialization class for Registration.
- * @version 0.0.5
+ * @version 0.0.6
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class Register

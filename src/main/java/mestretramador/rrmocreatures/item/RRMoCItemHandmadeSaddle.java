@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 /**
  * Mo'Creatures Redux&Redone Handmade Saddle item.
- * @version 0.0.5
+ * @version 0.0.6
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemHandmadeSaddle extends RRMoCItem
@@ -23,6 +23,7 @@ public class RRMoCItemHandmadeSaddle extends RRMoCItem
     /**
      * Return a Handmade Saddle as a {@link Item}
      */
+    @Override
     public Item returnAsItem()
     {
         return new Item(((RRMoCItemProviderHandmadeSaddle) provider).provideProperties());

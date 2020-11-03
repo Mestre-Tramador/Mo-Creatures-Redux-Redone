@@ -12,7 +12,7 @@ This is my first mod at all for Minecraft, but nonetheless an honor to try to co
 
 | Current Version |
 | --------------- |
-|      0.0.5      |
+|      0.0.6      |
 
 # Introduction
 
