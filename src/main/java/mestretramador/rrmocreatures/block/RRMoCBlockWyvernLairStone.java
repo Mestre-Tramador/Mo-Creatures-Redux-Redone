@@ -8,25 +8,23 @@ import net.minecraft.item.BlockItem;
 
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block and block item.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockWyvernLairStone extends RRMoCBlock implements RRMoCBlockItem
 {
     /**
      * Using the parent base constructor, create a Wyvern Lair Stone block.
-     * Also {@link #createBlock() generates} the block directly.
      */
     public RRMoCBlockWyvernLairStone()
     {
         super(Constants.Blocks.WyvernLair.STONE, new RRMoCBlockItemProviderWyvernLairStone());
-
-        createBlock();
     }
 
     /**
-     * With the {@link mestretramador.rrmocreatures.block.RRMoCBlock#setBlock(Block) set helper function},
-     * the Wyvern Lair Stone block is created.
+     * With the {@link mestretramador.rrmocreatures.block.RRMoCBlock#setBlock(Block)
+     * set helper function}, the Wyvern Lair Stone block is created.
      */
     @Override
     protected void createBlock()
@@ -44,9 +42,12 @@ public class RRMoCBlockWyvernLairStone extends RRMoCBlock implements RRMoCBlockI
     }
 
     /**
-     * With the {@link mestretramador.rrmocreatures.block.RRMoCBlockItem interface}, also
-     * can be generated the Wyvern Lair Stone block item.
-     * @return The Wyvern Lair Stone block item with the Item Properties provided by the provider.
+     * With the {@link mestretramador.rrmocreatures.block.RRMoCBlockItem interface},
+     * also can be generated the Wyvern Lair Stone block item.
+     * 
+     * @return The Wyvern Lair Stone block item with the
+     *         {@link net.minecraft.item.Item.Properties Item Properties} provided
+     *         by the provider.
      */
     @Override
     public BlockItem returnAsBlockItem()

@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.6
+@SET version=0.0.7
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -49,35 +49,42 @@ IF ["%name%"] == [] EXIT 1
 CD %providerdir%
 
 @REM Create the Provider.
-ECHO package mestretramador.rrmocreatures.provider.block;                                                                                       >> RRMoCBlockProvider%class%.java
-ECHO.                                                                                                                                           >> RRMoCBlockProvider%class%.java
-ECHO import net.minecraft.block.AbstractBlock;                                                                                                  >> RRMoCBlockProvider%class%.java
-ECHO import net.minecraft.block.material.Material;                                                                                              >> RRMoCBlockProvider%class%.java
-ECHO.                                                                                                                                           >> RRMoCBlockProvider%class%.java
-ECHO /**                                                                                                                                        >> RRMoCBlockProvider%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% block provider.                                                                                      >> RRMoCBlockProvider%class%.java
-ECHO  * @version %version%                                                                                                                      >> RRMoCBlockProvider%class%.java
-ECHO  * @author %author%                                                                                                                        >> RRMoCBlockProvider%class%.java
-ECHO  */                                                                                                                                        >> RRMoCBlockProvider%class%.java
-ECHO public class RRMoCBlockProvider%class% extends RRMoCBlockProvider                                                                          >> RRMoCBlockProvider%class%.java
-ECHO {                                                                                                                                          >> RRMoCBlockProvider%class%.java
-ECHO     /**                                                                                                                                    >> RRMoCBlockProvider%class%.java
-ECHO      * Using the parent constructor, start the %name% with a {@link net.minecraft.block.material.Material#%material% %material% material}. >> RRMoCBlockProvider%class%.java
-ECHO      */                                                                                                                                    >> RRMoCBlockProvider%class%.java
-ECHO     public RRMoCBlockProvider%class%()                                                                                                     >> RRMoCBlockProvider%class%.java
-ECHO     {                                                                                                                                      >> RRMoCBlockProvider%class%.java
-ECHO         super(Material.%material%);                                                                                                        >> RRMoCBlockProvider%class%.java
-ECHO     }                                                                                                                                      >> RRMoCBlockProvider%class%.java
-ECHO.                                                                                                                                           >> RRMoCBlockProvider%class%.java
-ECHO     /**                                                                                                                                    >> RRMoCBlockProvider%class%.java
-ECHO      * Return the block properties of {@link mestretramador.rrmocreatures.block.RRMoCBlock%class% %name%}.                                 >> RRMoCBlockProvider%class%.java
-ECHO      */                                                                                                                                    >> RRMoCBlockProvider%class%.java
-ECHO     public AbstractBlock.Properties provideBlockProperties()                                                                               >> RRMoCBlockProvider%class%.java
-ECHO     {                                                                                                                                      >> RRMoCBlockProvider%class%.java
-ECHO         return BLOCK_PROPERTIES();                                                                                                         >> RRMoCBlockProvider%class%.java
-ECHO     }                                                                                                                                      >> RRMoCBlockProvider%class%.java
-ECHO.                                                                                                                                           >> RRMoCBlockProvider%class%.java
-ECHO }                                                                                                                                          >> RRMoCBlockProvider%class%.java
+ECHO package mestretramador.rrmocreatures.provider.block;                                 >> RRMoCBlockProvider%class%.java
+ECHO.                                                                                     >> RRMoCBlockProvider%class%.java
+ECHO import net.minecraft.block.AbstractBlock;                                            >> RRMoCBlockProvider%class%.java
+ECHO import net.minecraft.block.material.Material;                                        >> RRMoCBlockProvider%class%.java
+ECHO.                                                                                     >> RRMoCBlockProvider%class%.java
+ECHO /**                                                                                  >> RRMoCBlockProvider%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% block provider.                                >> RRMoCBlockProvider%class%.java
+ECHO  *                                                                                   >> RRMoCBlockProvider%class%.java
+ECHO  * @version %version%                                                                >> RRMoCBlockProvider%class%.java
+ECHO  * @author %author%                                                                  >> RRMoCBlockProvider%class%.java
+ECHO  */                                                                                  >> RRMoCBlockProvider%class%.java
+ECHO public class RRMoCBlockProvider%class% extends RRMoCBlockProvider                    >> RRMoCBlockProvider%class%.java
+ECHO {                                                                                    >> RRMoCBlockProvider%class%.java
+ECHO     /**                                                                              >> RRMoCBlockProvider%class%.java
+ECHO      * Using the parent constructor, start the %name% with a                         >> RRMoCBlockProvider%class%.java
+ECHO      * {@link net.minecraft.block.material.Material#%material% %material% material}. >> RRMoCBlockProvider%class%.java
+ECHO      */                                                                              >> RRMoCBlockProvider%class%.java
+ECHO     public RRMoCBlockProvider%class%()                                               >> RRMoCBlockProvider%class%.java
+ECHO     {                                                                                >> RRMoCBlockProvider%class%.java
+ECHO         super(Material.%material%);                                                  >> RRMoCBlockProvider%class%.java
+ECHO     }                                                                                >> RRMoCBlockProvider%class%.java
+ECHO.                                                                                     >> RRMoCBlockProvider%class%.java
+ECHO     /**                                                                              >> RRMoCBlockProvider%class%.java
+ECHO      * Return the block properties of                                                >> RRMoCBlockProvider%class%.java
+ECHO      * {@link mestretramador.rrmocreatures.block.RRMoCBlock%class%                   >> RRMoCBlockProvider%class%.java
+ECHO      * %name%}.                                                                      >> RRMoCBlockProvider%class%.java
+ECHO      */                                                                              >> RRMoCBlockProvider%class%.java
+ECHO     @Override                                                                        >> RRMoCBlockProvider%class%.java
+ECHO     public AbstractBlock.Properties provideBlockProperties()                         >> RRMoCBlockProvider%class%.java
+ECHO     {                                                                                >> RRMoCBlockProvider%class%.java
+ECHO         // Add here the properties of %name%.                                        >> RRMoCBlockProvider%class%.java
+ECHO.                                                                                     >> RRMoCBlockProvider%class%.java
+ECHO         return BLOCK_PROPERTIES();                                                   >> RRMoCBlockProvider%class%.java
+ECHO     }                                                                                >> RRMoCBlockProvider%class%.java
+ECHO.                                                                                     >> RRMoCBlockProvider%class%.java
+ECHO }                                                                                    >> RRMoCBlockProvider%class%.java
 
 @REM Add the Provider in Git.
 git add RRMoCBlockProvider%class%.java
@@ -87,48 +94,48 @@ git add RRMoCBlockProvider%class%.java
 CD %blockdir%
 
 @REM Create the Block.
-ECHO package mestretramador.rrmocreatures.block;                                                                   >> RRMoCBlock%class%.java
-ECHO.                                                                                                              >> RRMoCBlock%class%.java
-ECHO import mestretramador.rrmocreatures.provider.block.RRMoCBlockProvider%class%;                                 >> RRMoCBlock%class%.java
-ECHO import mestretramador.rrmocreatures.util.Constants;                                                           >> RRMoCBlock%class%.java
-ECHO.                                                                                                              >> RRMoCBlock%class%.java
-ECHO import net.minecraft.block.Block;                                                                             >> RRMoCBlock%class%.java
-ECHO.                                                                                                              >> RRMoCBlock%class%.java
-ECHO /**                                                                                                           >> RRMoCBlock%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% block.                                                                  >> RRMoCBlock%class%.java
-ECHO  * @version %version%                                                                                         >> RRMoCBlock%class%.java
-ECHO  * @author %author%                                                                                           >> RRMoCBlock%class%.java
-ECHO  */                                                                                                           >> RRMoCBlock%class%.java
-ECHO public class RRMoCBlock%class% extends RRMoCBlock                                                             >> RRMoCBlock%class%.java
-ECHO {                                                                                                             >> RRMoCBlock%class%.java
-ECHO     /**                                                                                                       >> RRMoCBlock%class%.java
-ECHO      * Using the parent constructor, create a %name%                                                          >> RRMoCBlock%class%.java
-ECHO      * Also {@link #createBlock() generates} the block directly.                                              >> RRMoCBlock%class%.java
-ECHO      */                                                                                                       >> RRMoCBlock%class%.java
-ECHO     public RRMoCBlock%class%()                                                                                >> RRMoCBlock%class%.java
-ECHO     {                                                                                                         >> RRMoCBlock%class%.java
-ECHO         super(Constants.Blocks.%id%, new RRMoCBlockProvider%class%());                                        >> RRMoCBlock%class%.java                                                        
-ECHO.                                                                                                              >> RRMoCBlock%class%.java
-ECHO         createBlock();                                                                                        >> RRMoCBlock%class%.java
-ECHO     }                                                                                                         >> RRMoCBlock%class%.java
-ECHO.                                                                                                              >> RRMoCBlock%class%.java
-ECHO     /**                                                                                                       >> RRMoCBlock%class%.java
-ECHO      * With the {@link mestretramador.rrmocreatures.block.RRMoCBlock#setBlock(Block) ^set helper function},   >> RRMoCBlock%class%.java
-ECHO      * the %name% block is created.                                                                           >> RRMoCBlock%class%.java
-ECHO      */                                                                                                       >> RRMoCBlock%class%.java
-ECHO     protected void createBlock()                                                                              >> RRMoCBlock%class%.java
-ECHO     {                                                                                                         >> RRMoCBlock%class%.java
-ECHO         setBlock(new Block(((RRMoCBlockProvider%class%) provider).provideBlockProperties()));                 >> RRMoCBlock%class%.java
-ECHO     }                                                                                                         >> RRMoCBlock%class%.java
-ECHO.                                                                                                              >> RRMoCBlock%class%.java
-ECHO     /**                                                                                                       >> RRMoCBlock%class%.java
-ECHO      * Return the %name% block in its current state.                                                          >> RRMoCBlock%class%.java
-ECHO      */                                                                                                       >> RRMoCBlock%class%.java
-ECHO     public Block returnAsBlock()                                                                              >> RRMoCBlock%class%.java
-ECHO     {                                                                                                         >> RRMoCBlock%class%.java
-ECHO         return getBlock();                                                                                    >> RRMoCBlock%class%.java
-ECHO     }                                                                                                         >> RRMoCBlock%class%.java
-ECHO }                                                                                                             >> RRMoCBlock%class%.java
+ECHO package mestretramador.rrmocreatures.block;                                                   >> RRMoCBlock%class%.java
+ECHO.                                                                                              >> RRMoCBlock%class%.java
+ECHO import mestretramador.rrmocreatures.provider.block.RRMoCBlockProvider%class%;                 >> RRMoCBlock%class%.java
+ECHO import mestretramador.rrmocreatures.util.Constants;                                           >> RRMoCBlock%class%.java
+ECHO.                                                                                              >> RRMoCBlock%class%.java
+ECHO import net.minecraft.block.Block;                                                             >> RRMoCBlock%class%.java
+ECHO.                                                                                              >> RRMoCBlock%class%.java
+ECHO /**                                                                                           >> RRMoCBlock%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% block.                                                  >> RRMoCBlock%class%.java
+ECHO  *                                                                                            >> RRMoCBlock%class%.java
+ECHO  * @version %version%                                                                         >> RRMoCBlock%class%.java
+ECHO  * @author %author%                                                                           >> RRMoCBlock%class%.java
+ECHO  */                                                                                           >> RRMoCBlock%class%.java
+ECHO public class RRMoCBlock%class% extends RRMoCBlock                                             >> RRMoCBlock%class%.java
+ECHO {                                                                                             >> RRMoCBlock%class%.java
+ECHO     /**                                                                                       >> RRMoCBlock%class%.java
+ECHO      * Using the parent constructor, create a %name% block.                                   >> RRMoCBlock%class%.java
+ECHO      */                                                                                       >> RRMoCBlock%class%.java
+ECHO     public RRMoCBlock%class%()                                                                >> RRMoCBlock%class%.java
+ECHO     {                                                                                         >> RRMoCBlock%class%.java
+ECHO         super(Constants.Blocks.%id%, new RRMoCBlockProvider%class%());                        >> RRMoCBlock%class%.java
+ECHO     }                                                                                         >> RRMoCBlock%class%.java
+ECHO.                                                                                              >> RRMoCBlock%class%.java
+ECHO     /**                                                                                       >> RRMoCBlock%class%.java
+ECHO      * With the {@link mestretramador.rrmocreatures.block.RRMoCBlock#setBlock(Block)          >> RRMoCBlock%class%.java
+ECHO      * ^set helper function}, the %name% block is created.                                    >> RRMoCBlock%class%.java
+ECHO      */                                                                                       >> RRMoCBlock%class%.java
+ECHO     @Override                                                                                 >> RRMoCBlock%class%.java
+ECHO     protected void createBlock()                                                              >> RRMoCBlock%class%.java
+ECHO     {                                                                                         >> RRMoCBlock%class%.java
+ECHO         setBlock(new Block(((RRMoCBlockProvider%class%) provider).provideBlockProperties())); >> RRMoCBlock%class%.java
+ECHO     }                                                                                         >> RRMoCBlock%class%.java
+ECHO.                                                                                              >> RRMoCBlock%class%.java
+ECHO     /**                                                                                       >> RRMoCBlock%class%.java
+ECHO      * Return the %name% block in its current state.                                          >> RRMoCBlock%class%.java
+ECHO      */                                                                                       >> RRMoCBlock%class%.java
+ECHO     @Override                                                                                 >> RRMoCBlock%class%.java
+ECHO     public Block returnAsBlock()                                                              >> RRMoCBlock%class%.java
+ECHO     {                                                                                         >> RRMoCBlock%class%.java
+ECHO         return getBlock();                                                                    >> RRMoCBlock%class%.java
+ECHO     }                                                                                         >> RRMoCBlock%class%.java
+ECHO }                                                                                             >> RRMoCBlock%class%.java
 
 @REM Add the Block in Git.
 git add RRMoCBlock%class%.java

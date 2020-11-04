@@ -1,3 +1,12 @@
+[0.0.7]
+- Added Data Generation for Item Tags.
+- Added Data Generation for Block Tags.
+- Added Data Generation for BlockItem Copy Tags.
+- Added Java Annotations to BlockItems Interfaces.
+- Improved JavaDoc for various classes.
+- Improved classes creation on batch and shell script tools.
+- Generated data for current implemented classes.
+
 [0.0.6]
 - Fixed Data Generation not working for Blocks.
 

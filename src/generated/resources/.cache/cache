@@ -2,3 +2,6 @@
 0ca7fc8a5099f29e0509517001eae0033f175e2c assets/rrmocreatures/models/block/wyvern_lair_stone.json
 7f4902e1f8b14c5e6517344fdaea133f62da704e assets/rrmocreatures/models/item/handmade_saddle.json
 3c0ede2b37beea0fb06cd2371e9354d57ea9a3b5 assets/rrmocreatures/models/item/wyvern_lair_stone.json
+9189b417e91741b934737ad5d13dadd87e566b22 data/forge/tags/blocks/wyvern_lair/blocks.json
+2de8fa8030862bb8bf97a6fa9b0ada561252a3a7 data/forge/tags/items/wearable/mount.json
+9189b417e91741b934737ad5d13dadd87e566b22 data/forge/tags/items/wyvern_lair/blocks.json

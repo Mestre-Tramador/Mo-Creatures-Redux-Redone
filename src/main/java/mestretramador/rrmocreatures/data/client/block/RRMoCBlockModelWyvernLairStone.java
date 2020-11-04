@@ -9,15 +9,20 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block model.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockModelWyvernLairStone extends RRMoCBlockModelProvider
 {
     /**
      * Using the parent constructor, create a Wyvern Lair Stone.
-     * @param generator Minecraft {@link net.minecraft.data.DataGenerator Data Generator}.
-     * @param existingFileHelper Forge {@link net.minecraftforge.common.data.ExistingFileHelper Existing File Helper}.
+     * 
+     * @param generator          Minecraft {@link net.minecraft.data.DataGenerator
+     *                           Data Generator}.
+     * @param existingFileHelper Forge
+     *                           {@link net.minecraftforge.common.data.ExistingFileHelper
+     *                           Existing File Helper}.
      */
     public RRMoCBlockModelWyvernLairStone(DataGenerator generator, ExistingFileHelper existingFileHelper)
     {

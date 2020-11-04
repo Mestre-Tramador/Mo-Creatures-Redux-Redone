@@ -12,7 +12,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 /**
  * Initialization class for Registration.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class Register
@@ -38,6 +39,7 @@ public class Register
 
     /**
      * A getter method to the Items' Deferred Register.
+     * 
      * @return Items register.
      */
     public static DeferredRegister<Item> getItemsDeferredRegister()
@@ -47,6 +49,7 @@ public class Register
 
     /**
      * A getter method to the Blocks' Deferred Register.
+     * 
      * @return Blocks register.
      */
     public static DeferredRegister<Block> getBlocksDeferredRegister()

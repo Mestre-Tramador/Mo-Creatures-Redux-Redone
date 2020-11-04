@@ -8,13 +8,15 @@ import net.minecraft.item.ItemGroup;
 
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block item provider.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvider
 {
     /**
-     * Using the parent constructor, start the Wyvern Lair Stone with a {@link net.minecraft.block.material.Material#ROCK ROCK material}.
+     * Using the parent constructor, start the Wyvern Lair Stone with a
+     * {@link net.minecraft.block.material.Material#ROCK ROCK material}.
      */
     public RRMoCBlockItemProviderWyvernLairStone()
     {
@@ -22,7 +24,9 @@ public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvide
     }
 
     /**
-     * Return the block properties of {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone Wyvern Lair Stone}.
+     * Return the block properties of
+     * {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone
+     * Wyvern Lair Stone}.
      */
     @Override
     public AbstractBlock.Properties provideBlockProperties()
@@ -35,7 +39,9 @@ public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvide
     }
 
     /**
-     * Return the blockitem properties of {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone Wyvern Lair Stone}.
+     * Return the blockitem properties of
+     * {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone
+     * Wyvern Lair Stone}.
      */
     @Override
     public Item.Properties provideItemProperties()

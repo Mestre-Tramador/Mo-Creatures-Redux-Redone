@@ -7,7 +7,7 @@
 @REM ###########################################################
 
 @REM Gloval variables.
-@SET version=0.0.6
+@SET version=0.0.7
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -42,25 +42,31 @@ IF ["%name%"] == [] EXIT 1
 CD %providerdir%
 
 @REM Create the Provider.
-ECHO package mestretramador.rrmocreatures.provider.item;                                        >> RRMoCItemProvider%class%.java
-ECHO.                                                                                           >> RRMoCItemProvider%class%.java
-ECHO import net.minecraft.item.Item.Properties;                                                 >> RRMoCItemProvider%class%.java
-ECHO.                                                                                           >> RRMoCItemProvider%class%.java
-ECHO /**                                                                                        >> RRMoCItemProvider%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% item provider.                                       >> RRMoCItemProvider%class%.java
-ECHO  * @version %version%                                                                      >> RRMoCItemProvider%class%.java
-ECHO  * @author %author%                                                                        >> RRMoCItemProvider%class%.java
-ECHO  */                                                                                        >> RRMoCItemProvider%class%.java
-ECHO public class RRMoCItemProvider%class% extends RRMoCItemProvider                            >> RRMoCItemProvider%class%.java
-ECHO {                                                                                          >> RRMoCItemProvider%class%.java
-ECHO    /**                                                                                     >> RRMoCItemProvider%class%.java
-ECHO     * Return the properties of {@link mestretramador.rrmocreatures.item.RRMoCItem%class%}. >> RRMoCItemProvider%class%.java
-ECHO     */                                                                                     >> RRMoCItemProvider%class%.java
-ECHO    public Properties provideProperties()                                                   >> RRMoCItemProvider%class%.java
-ECHO    {                                                                                       >> RRMoCItemProvider%class%.java
-ECHO        return PROPERTIES;                                                                  >> RRMoCItemProvider%class%.java
-ECHO    }                                                                                       >> RRMoCItemProvider%class%.java
-ECHO }                                                                                          >> RRMoCItemProvider%class%.java
+ECHO package mestretramador.rrmocreatures.provider.item;             >> RRMoCItemProvider%class%.java
+ECHO.                                                                >> RRMoCItemProvider%class%.java
+ECHO import net.minecraft.item.Item.Properties;                      >> RRMoCItemProvider%class%.java
+ECHO.                                                                >> RRMoCItemProvider%class%.java
+ECHO /**                                                             >> RRMoCItemProvider%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% item provider.            >> RRMoCItemProvider%class%.java
+ECHO  *                                                              >> RRMoCItemProvider%class%.java
+ECHO  * @version %version%                                           >> RRMoCItemProvider%class%.java
+ECHO  * @author %author%                                             >> RRMoCItemProvider%class%.java
+ECHO  */                                                             >> RRMoCItemProvider%class%.java
+ECHO public class RRMoCItemProvider%class% extends RRMoCItemProvider >> RRMoCItemProvider%class%.java
+ECHO {                                                               >> RRMoCItemProvider%class%.java
+ECHO    /**                                                          >> RRMoCItemProvider%class%.java
+ECHO     * Return the properties of                                  >> RRMoCItemProvider%class%.java
+ECHO     * {@link mestretramador.rrmocreatures.item.RRMoCItem%class% >> RRMoCItemProvider%class%.java
+ECHO     * %name%}.                                                  >> RRMoCItemProvider%class%.java
+ECHO     */                                                          >> RRMoCItemProvider%class%.java
+ECHO    @Override                                                    >> RRMoCItemProvider%class%.java
+ECHO    public Properties provideProperties()                        >> RRMoCItemProvider%class%.java
+ECHO    {                                                            >> RRMoCItemProvider%class%.java
+ECHO        // Add here the properties of %name%.                    >> RRMoCItemProvider%class%.java
+ECHO.                                                                >> RRMoCItemProvider%class%.java
+ECHO        return PROPERTIES;                                       >> RRMoCItemProvider%class%.java
+ECHO    }                                                            >> RRMoCItemProvider%class%.java
+ECHO }                                                               >> RRMoCItemProvider%class%.java
 
 @REM Add the Provider in Git.
 git add RRMoCItemProvider%class%.java
@@ -70,36 +76,48 @@ git add RRMoCItemProvider%class%.java
 CD %itemdir%
 
 @REM Create the Item.
-ECHO package mestretramador.rrmocreatures.item;                                         >> RRMoCItem%class%.java
-ECHO.                                                                                   >> RRMoCItem%class%.java
-ECHO import mestretramador.rrmocreatures.provider.item.RRMoCItemProvider%class%;        >> RRMoCItem%class%.java
-ECHO import mestretramador.rrmocreatures.util.Constants;                                >> RRMoCItem%class%.java
-ECHO.                                                                                   >> RRMoCItem%class%.java
-ECHO import net.minecraft.item.Item;                                                    >> RRMoCItem%class%.java
-ECHO.                                                                                   >> RRMoCItem%class%.java
-ECHO /**                                                                                >> RRMoCItem%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% item.                                        >> RRMoCItem%class%.java
-ECHO  * @version %version%                                                              >> RRMoCItem%class%.java
-ECHO  * @author %author%                                                                >> RRMoCItem%class%.java
-ECHO  */                                                                                >> RRMoCItem%class%.java
-ECHO public class RRMoCItem%class% extends RRMoCItem                                    >> RRMoCItem%class%.java
-ECHO {                                                                                  >> RRMoCItem%class%.java
-ECHO    /**                                                                             >> RRMoCItem%class%.java
-ECHO     * Using the parent base constructor, create a %name%.                          >> RRMoCItem%class%.java
-ECHO     */                                                                             >> RRMoCItem%class%.java
-ECHO    public RRMoCItem%class%()                                                       >> RRMoCItem%class%.java
-ECHO    {                                                                               >> RRMoCItem%class%.java
-ECHO        super(Constants.Items.%id%, new RRMoCItemProvider%class%());                >> RRMoCItem%class%.java
-ECHO    }                                                                               >> RRMoCItem%class%.java
-ECHO.                                                                                   >> RRMoCItem%class%.java
-ECHO    /**                                                                             >> RRMoCItem%class%.java
-ECHO     * Return a %name% as a {@link Item}                                            >> RRMoCItem%class%.java
-ECHO     */                                                                             >> RRMoCItem%class%.java
-ECHO    public Item returnAsItem()                                                      >> RRMoCItem%class%.java
-ECHO    {                                                                               >> RRMoCItem%class%.java
-ECHO        return new Item(((RRMoCItemProvider%class%) provider).provideProperties()); >> RRMoCItem%class%.java
-ECHO    }                                                                               >> RRMoCItem%class%.java
-ECHO }                                                                                  >> RRMoCItem%class%.java
+ECHO package mestretramador.rrmocreatures.item;                                           >> RRMoCItem%class%.java
+ECHO.                                                                                     >> RRMoCItem%class%.java
+ECHO import mestretramador.rrmocreatures.provider.item.RRMoCItemProvider%class%;          >> RRMoCItem%class%.java
+ECHO import mestretramador.rrmocreatures.util.Constants;                                  >> RRMoCItem%class%.java
+ECHO.                                                                                     >> RRMoCItem%class%.java
+ECHO import net.minecraft.item.Item;                                                      >> RRMoCItem%class%.java
+ECHO.                                                                                     >> RRMoCItem%class%.java
+ECHO /**                                                                                  >> RRMoCItem%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% item.                                          >> RRMoCItem%class%.java
+ECHO  *                                                                                   >> RRMoCItem%class%.java
+ECHO  * @version %version%                                                                >> RRMoCItem%class%.java
+ECHO  * @author %author%                                                                  >> RRMoCItem%class%.java
+ECHO  */                                                                                  >> RRMoCItem%class%.java
+ECHO public class RRMoCItem%class% extends RRMoCItem                                      >> RRMoCItem%class%.java
+ECHO {                                                                                    >> RRMoCItem%class%.java
+ECHO    /**                                                                               >> RRMoCItem%class%.java
+ECHO     * Using the parent base constructor, create a %name%.                            >> RRMoCItem%class%.java
+ECHO     */                                                                               >> RRMoCItem%class%.java
+ECHO    public RRMoCItem%class%()                                                         >> RRMoCItem%class%.java
+ECHO    {                                                                                 >> RRMoCItem%class%.java
+ECHO        super(Constants.Items.%id%, new RRMoCItemProvider%class%());                  >> RRMoCItem%class%.java
+ECHO    }                                                                                 >> RRMoCItem%class%.java
+ECHO.                                                                                     >> RRMoCItem%class%.java
+ECHO    /**                                                                               >> RRMoCItem%class%.java
+ECHO     * Return a %name% item in its current state.                                     >> RRMoCItem%class%.java
+ECHO     */                                                                               >> RRMoCItem%class%.java
+ECHO    @Override                                                                         >> RRMoCItem%class%.java
+ECHO    public Item returnAsItem()                                                        >> RRMoCItem%class%.java
+ECHO    {                                                                                 >> RRMoCItem%class%.java
+ECHO        return getItem();                                                             >> RRMoCItem%class%.java
+ECHO    }                                                                                 >> RRMoCItem%class%.java
+ECHO.                                                                                     >> RRMoCItem%class%.java
+ECHO    /**                                                                               >> RRMoCItem%class%.java
+ECHO     * With the {@link mestretramador.rrmocreatures.item.RRMoCItem#setItem(Item) ^set >> RRMoCItem%class%.java
+ECHO     * helper function}, the %name% is created.                                       >> RRMoCItem%class%.java
+ECHO     */                                                                               >> RRMoCItem%class%.java
+ECHO    @Override                                                                         >> RRMoCItem%class%.java
+ECHO    protected void createItem()                                                       >> RRMoCItem%class%.java
+ECHO    {                                                                                 >> RRMoCItem%class%.java
+ECHO        setItem(new Item(((RRMoCItemProvider%class%) provider).provideProperties())); >> RRMoCItem%class%.java
+ECHO    }                                                                                 >> RRMoCItem%class%.java
+ECHO }                                                                                    >> RRMoCItem%class%.java
 
 @REM Add the Item in Git.
 git add RRMoCItem%class%.java

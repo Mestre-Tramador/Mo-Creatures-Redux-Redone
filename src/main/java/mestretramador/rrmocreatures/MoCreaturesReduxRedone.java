@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 
 /**
  * <b>Mo'Creatures Redux&Redone entry point</b>.
- * @version 0.0.6
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 @Mod(Constants.MOD_ID)

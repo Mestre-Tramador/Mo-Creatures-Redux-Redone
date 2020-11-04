@@ -11,7 +11,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 /**
  * Mo'Creatures Redux&Redone Handmade Saddle item model.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemModelHandmadeSaddle extends RRMoCItemModelProvider
@@ -19,8 +20,12 @@ public class RRMoCItemModelHandmadeSaddle extends RRMoCItemModelProvider
 
     /**
      * Using the parent constructor, create an Handmade Saddle.
-     * @param generator
-     * @param existingFileHelper
+     * 
+     * @param generator          Minecraft {@link net.minecraft.data.DataGenerator
+     *                           Data Generator}.
+     * @param existingFileHelper Forge
+     *                           {@link net.minecraftforge.common.data.ExistingFileHelper
+     *                           Existing File Helper}.
      */
     public RRMoCItemModelHandmadeSaddle(DataGenerator generator, ExistingFileHelper existingFileHelper)
     {
@@ -36,10 +41,11 @@ public class RRMoCItemModelHandmadeSaddle extends RRMoCItemModelProvider
         final ModelFile itemModelFileGenerated = getExistingFile(LOCATION);
 
         buildModelRegistered(itemModelFileGenerated);
-    }   
+    }
 
     /**
      * Helper function to build based on a generated file.
+     * 
      * @param itemModelFile The Item Model File.
      * @return The builder with the texture provided by the constants.
      */

@@ -4,11 +4,12 @@ import mestretramador.rrmocreatures.block.RRMoCBlockWyvernLairStone;
 
 /**
  * Blocks to registrate.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
-public class RegisterBlock {
-
+public class RegisterBlock
+{
     /** Wyvern Lair Stone Block and BlockItem. */
     public static final RRMoCBlockWyvernLairStone WYVERN_LAIR_STONE = new RRMoCBlockWyvernLairStone();
 

@@ -7,7 +7,8 @@ import net.minecraft.item.Item;
 
 /**
  * Mo'Creatures Redux&Redone Handmade Saddle item.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemHandmadeSaddle extends RRMoCItem
@@ -21,11 +22,21 @@ public class RRMoCItemHandmadeSaddle extends RRMoCItem
     }
 
     /**
-     * Return a Handmade Saddle as a {@link Item}
+     * Return a Handmade Saddle item in its current state.
      */
     @Override
     public Item returnAsItem()
     {
-        return new Item(((RRMoCItemProviderHandmadeSaddle) provider).provideProperties());
+        return getItem();
+    }
+
+    /**
+     * With the {@link mestretramador.rrmocreatures.item.RRMoCItem#setItem(Item) set
+     * helper function}, the Handmade Saddle is created.
+     */
+    @Override
+    protected void createItem()
+    {
+        setItem(new Item(((RRMoCItemProviderHandmadeSaddle) provider).provideProperties()));
     }
 }

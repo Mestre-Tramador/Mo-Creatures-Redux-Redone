@@ -4,32 +4,66 @@ import net.minecraft.item.Item;
 
 /**
  * Mo'Creatures Redux&Redone Item base.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCItem
 {
-    /** The item ID. */
+    /** The Item ID. */
     public String ID;
 
-    /** The provider for Properties and general data. */
+    /** The Item provider. */
     protected Object provider;
-   
+
+    /** The {@link net.minecraft.item.Item Item} as is. */
+    private Item rrmocitem;
+
     /**
-     * To create a Mo'Creatures Redux&Redone Item,
-     * there is needed to pass and ID and a data provider.
-     * @param ID Item ID for registration on Constants.
+     * To create a Mo'Creatures Redux&Redone Item, there is needed to pass and ID
+     * and a data provider. The Item is automatically created.
+     * 
+     * @param ID       Item ID for registration on Constants.
      * @param provider An object of a inherited Provider class.
      */
     protected RRMoCItem(String ID, Object provider)
     {
         this.ID = ID;
         this.provider = provider;
+
+        createItem();
     }
 
     /**
-     * Return the object as a Minecraft {@link Item} for registry.
-     * @return An Minecraft item with all dependencies setted.
+     * Get helper for the current Item.
+     * 
+     * @return The {@link net.minecraft.item.Item} itself.
+     */
+    protected Item getItem()
+    {
+        return this.rrmocitem;
+    }
+
+    /**
+     * Set helper for the current Item.
+     * 
+     * @param item The {@link net.minecraft.item.Item} itself.
+     */
+    protected void setItem(Item item)
+    {
+        this.rrmocitem = item;
+    }
+
+    /**
+     * With the created Item and the helper functions, do final adjusts to finally
+     * return the Item.
+     * 
+     * @return The actual Block.
      */
     protected abstract Item returnAsItem();
+
+    /**
+     * Create an Item with the helper functions.
+     */
+    protected abstract void createItem();
 }

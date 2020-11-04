@@ -5,7 +5,8 @@ import net.minecraft.block.material.Material;
 
 /**
  * Mo'Creatures Redux&Redone Block Provider base.
- * @version 0.0.6
+ * 
+ * @version 0.0.7
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockProvider
@@ -14,8 +15,8 @@ public abstract class RRMoCBlockProvider
     private static AbstractBlock.Properties BLOCK_PROPERTIES;
 
     /**
-     * To create and Block Provider, there is need to pass
-     * a Material to the block.
+     * To create and Block Provider, there is need to pass a Material to the block.
+     * 
      * @param material Material base to the Block.
      */
     protected RRMoCBlockProvider(Material material)
@@ -25,6 +26,7 @@ public abstract class RRMoCBlockProvider
 
     /**
      * Getter to the Block Properties.
+     * 
      * @return The Block Properties in their current state.
      */
     protected AbstractBlock.Properties BLOCK_PROPERTIES()
@@ -34,6 +36,7 @@ public abstract class RRMoCBlockProvider
 
     /**
      * Provide the Block Properties for its creation.
+     * 
      * @return The Block Properties already setted.
      */
     protected abstract AbstractBlock.Properties provideBlockProperties();
