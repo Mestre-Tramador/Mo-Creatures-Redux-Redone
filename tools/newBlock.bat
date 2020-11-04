@@ -1,13 +1,13 @@
 @REM ################################################################
 @REM This batch file creates both Block and Provider classes.
 @REM It does not create a Constant for the Block ID.
-@REM Nor a lang file entry.
+@REM Neither a lang file entry.
 @REM
 @REM Please be gentle with this code.
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.7
+@SET version=0.0.8
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -26,7 +26,7 @@ IF [%class%] == [] EXIT 1
 @REM Collect the block ID constant.
 ECHO.
 ECHO What is the Block ID constant?
-ECHO The Block ID constant must be in Upper case and Underscores eg. "NEW_BLOCK.
+ECHO The Block ID constant must be in Upper case and Underscores eg. "NEW_BLOCK".
 SET /p id=ID: 
 IF [%id%] == [] EXIT 1
 
@@ -83,7 +83,6 @@ ECHO         // Add here the properties of %name%.                              
 ECHO.                                                                                     >> RRMoCBlockProvider%class%.java
 ECHO         return BLOCK_PROPERTIES();                                                   >> RRMoCBlockProvider%class%.java
 ECHO     }                                                                                >> RRMoCBlockProvider%class%.java
-ECHO.                                                                                     >> RRMoCBlockProvider%class%.java
 ECHO }                                                                                    >> RRMoCBlockProvider%class%.java
 
 @REM Add the Provider in Git.

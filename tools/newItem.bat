@@ -1,13 +1,13 @@
 @REM ###########################################################
 @REM This batch file creates both Item and Provider classes.
 @REM It does not create a Constant for the Item ID.
-@REM Nor a lang file entry.
+@REM Neither a lang file entry.
 @REM
 @REM Please be gentle with this code.
 @REM ###########################################################
 
 @REM Gloval variables.
-@SET version=0.0.7
+@SET version=0.0.8
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 

@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.data.client.tags.item;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockItemTagWyvernLairBlock;
+import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockItemTagWyvernLairBlocks;
 import mestretramador.rrmocreatures.util.Constants;
 
 import net.minecraft.block.Block;
@@ -18,7 +18,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Item and BlockItem Tags Generator.
  * 
- * @version 0.0.7
+ * @version 0.0.8
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemTagsGeneration extends ItemTagsProvider
@@ -48,9 +48,9 @@ public class RRMoCItemTagsGeneration extends ItemTagsProvider
     {
         super(generator, blockTagProvider, Constants.MOD_ID, existingFileHelper);
 
-        TAGS.add(new RRMoCItemTagWereableMount().getItemsToTag());
+        TAGS.add(new RRMoCItemTagWereablesToMount().getItemsToTag());
 
-        COPY.add(new RRMoCBlockItemTagWyvernLairBlock().getBlocksToCopy());
+        COPY.add(new RRMoCBlockItemTagWyvernLairBlocks().getBlocksToCopy());
     }
 
     /**

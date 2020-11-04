@@ -1,3 +1,14 @@
+[0.0.8] 
+- Created batch and shell script tools for Block Models Data Generators.
+- Created batch and shell script tools for Block States Data Generators.
+- Created batch and shell script tools for Block Tags Generators.
+- Created batch and shell script tools for BlockItem Tags Generators.
+- Created batch and shell script tools for Item Models Data Generators.
+- Created batch and shell script tools for Item Tags Generators.
+- Renamed some classes to match with new batch and shell script tools.
+- Adjust on Item shell script tool's permissions.
+- Adjust on batch and shell script misspellings.
+
 [0.0.7]
 - Added Data Generation for Item Tags.
 - Added Data Generation for Block Tags.

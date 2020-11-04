@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block model.
  * 
- * @version 0.0.7
+ * @version 0.0.8
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockModelWyvernLairStone extends RRMoCBlockModelProvider

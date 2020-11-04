@@ -1,13 +1,13 @@
 #####################################################################
 # This shell script file creates both Item and Provider classes.
 # It does not create a Constant for the Item ID.
-# Nor a lang file entry.
+# Neither a lang file entry.
 #
 # Please be gentle with this code.
 #####################################################################
 
 # Gloval variables.
-version="0.0.7"
+version="0.0.8"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -89,7 +89,7 @@ cd "$itemdir"
 
 # Create the Item.
 touch "RRMoCItem$class.java"
-chmod 755 "RRMoCItem$class.java"
+chmod 744 "RRMoCItem$class.java"
 
 echo "package mestretramador.rrmocreatures.item;                                          " >> "RRMoCItem$class.java"
 echo "                                                                                    " >> "RRMoCItem$class.java"

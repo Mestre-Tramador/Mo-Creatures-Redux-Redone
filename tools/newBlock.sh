@@ -1,13 +1,13 @@
-#############################################################
-# This batch file creates both Block and Provider classes.
+####################################################################
+# This shell script file creates both Block and Provider classes.
 # It does not create a Constant for the Block ID.
-# Nor a lang file entry.
+# Neither a lang file entry.
 #
 # Please be gentle with this code.
-# ###########################################################
+####################################################################
 
 # Gloval variables.
-version="0.0.7"
+version="0.0.8"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 

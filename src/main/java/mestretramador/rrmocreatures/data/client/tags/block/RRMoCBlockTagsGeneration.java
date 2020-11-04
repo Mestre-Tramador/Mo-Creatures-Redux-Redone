@@ -15,7 +15,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Block Tags Generator.
  * 
- * @version 0.0.7
+ * @version 0.0.8
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockTagsGeneration extends BlockTagsProvider
@@ -35,7 +35,7 @@ public class RRMoCBlockTagsGeneration extends BlockTagsProvider
     {
         super(generator, Constants.MOD_ID, existingFileHelper);
 
-        TAGS.add(new RRMoCBlockTagWyvernLairBlock().provideBlocksToTag());
+        TAGS.add(new RRMoCBlockTagWyvernLairBlocks().provideBlocksToTag());
     }
 
     /**
