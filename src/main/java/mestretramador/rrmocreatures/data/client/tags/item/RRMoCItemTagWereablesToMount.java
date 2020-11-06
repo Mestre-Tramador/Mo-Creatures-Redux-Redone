@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 /**
  * Mo'Creatures Redux&Redone Wereables Mount Tag's Items.
  * 
- * @version 0.0.8
+ * @version 0.0.9
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemTagWereablesToMount extends RRMoCItemTagProvider

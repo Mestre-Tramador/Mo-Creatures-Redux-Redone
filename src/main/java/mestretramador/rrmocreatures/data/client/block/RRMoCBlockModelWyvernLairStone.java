@@ -2,7 +2,7 @@ package mestretramador.rrmocreatures.data.client.block;
 
 import mestretramador.rrmocreatures.data.client.provider.block.RRMoCBlockModelProvider;
 import mestretramador.rrmocreatures.util.Constants;
-
+import mestretramador.rrmocreatures.util.Constants.Blocks;
 import net.minecraft.data.DataGenerator;
 
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block model.
  * 
- * @version 0.0.8
+ * @version 0.0.9
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockModelWyvernLairStone extends RRMoCBlockModelProvider
@@ -26,7 +26,7 @@ public class RRMoCBlockModelWyvernLairStone extends RRMoCBlockModelProvider
      */
     public RRMoCBlockModelWyvernLairStone(DataGenerator generator, ExistingFileHelper existingFileHelper)
     {
-        super(generator, existingFileHelper, Constants.Blocks.WyvernLair.STONE, Constants.BLOCK_PATH);
+        super(generator, existingFileHelper, Blocks.WYVERN_LAIR_STONE, Constants.BLOCK_PATH);
     }
 
     /**

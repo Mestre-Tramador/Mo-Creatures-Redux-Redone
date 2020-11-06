@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "rrmocreatures:item/handmade_mount_armor_gold"
+  }
+}

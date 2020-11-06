@@ -1,3 +1,44 @@
+[0.0.9]
+- Reimported most Mo'Creatures' items images.
+- Created Item ID Constants for the Mo'Creatures Redux&Redone items.
+- First implementation of Bone Amulet (also Filled) item.
+- First implementation of Fairy Amulet (also Filled) item.
+- First implementation of Ghost Amulet (also Filled) item.
+- First implementation of Guardian Amulet (also Filled) item.
+- First implementation of Sky Amulet (also Filled) item.
+- First implementation of BigCat Claw item.
+- First implementation of Dark Chitin (also full armor set) item.
+- First implementation of Dirt Chitin (also full armor set) item.
+- First implementation of Frost Chitin (also full armor set) item.
+- First implementation of Nether Chitin (also full armor set) item.
+- First implementation of Crab Meat (raw and cooked) item.
+- First implementation of Hatchable Egg item.
+- First implementation of Omelet item.
+- First implementation of Elephant Harness and Saddlebag item.
+- First implementation of Indian Elephant Garment and Howdah item.
+- First implementation of Songhua River Mammoth Platform item.
+- First implementation of Diamond, Iron and Wood Elephant Tusk Sword item.
+- First implementation of Essence of Darkness, Fire, Light, and the Undead item.
+- First implementation of Fish Net (also Filled) item.
+- First implementation of Fur (also full armor set) item.
+- First implementation of Handmade Lead item.
+- First implementation of Crystal, Diamond, Gold and Iron Handmade Mount Armor item.
+- First implementation of Leather Handmade Mount Armor item (textureless).
+- First implementation of Handmade Saddlebag item (textureless).
+- First implementation of Heart of Darkness, Fire, and the Undead item.
+- First implementation of Hide (also full armor set) item.
+- First implementation of Key item.
+- First implementation of Kitty Bed (also all dyed options) item.
+- First implementation of Kitty Food item.
+- First implementation of Kitty Litter item.
+- First implementation of Kitty Wool Ball item.
+- First implementation of Medallion item.
+- First implementation of Reptile Hide (also full armor set) item.
+- First implementation of Shark Teeth item.
+- Generated Data for all implemented items.
+- Provided English translation form all implemented items.
+- Updated Forge MDK to 1.16.3-34.1.42 Version.
+
 [0.0.8] 
 - Created batch and shell script tools for Block Models Data Generators.
 - Created batch and shell script tools for Block States Data Generators.

@@ -11,7 +11,7 @@ import net.minecraft.block.Block;
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Blocks Tag's Blocks.
  * 
- * @version 0.0.8
+ * @version 0.0.9
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockTagWyvernLairBlocks extends RRMoCBlockTagProvider

@@ -1,15 +1,14 @@
 package mestretramador.rrmocreatures.block;
 
 import mestretramador.rrmocreatures.provider.block.RRMoCBlockItemProviderWyvernLairStone;
-import mestretramador.rrmocreatures.util.Constants;
-
+import mestretramador.rrmocreatures.util.Constants.Blocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block and block item.
  * 
- * @version 0.0.8
+ * @version 0.0.9
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockWyvernLairStone extends RRMoCBlock implements RRMoCBlockItem
@@ -19,7 +18,7 @@ public class RRMoCBlockWyvernLairStone extends RRMoCBlock implements RRMoCBlockI
      */
     public RRMoCBlockWyvernLairStone()
     {
-        super(Constants.Blocks.WyvernLair.STONE, new RRMoCBlockItemProviderWyvernLairStone());
+        super(Blocks.WYVERN_LAIR_STONE, new RRMoCBlockItemProviderWyvernLairStone());
     }
 
     /**

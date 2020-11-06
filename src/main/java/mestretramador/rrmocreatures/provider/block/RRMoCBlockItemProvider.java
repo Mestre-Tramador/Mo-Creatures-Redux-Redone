@@ -6,7 +6,7 @@ import net.minecraft.item.Item;
 /**
  * Mo'Creatures Redux&Redone BlockItem Provider base.
  * 
- * @version 0.0.8
+ * @version 0.0.9
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockItemProvider extends RRMoCBlockProvider
