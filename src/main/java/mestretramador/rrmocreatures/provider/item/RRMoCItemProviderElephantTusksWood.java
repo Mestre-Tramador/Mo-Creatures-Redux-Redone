@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Wood Elephant Tusk Sword item provider.            
  *                                                              
- * @version 0.0.10                                           
+ * @version 0.0.11                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderElephantTusksWood extends RRMoCItemProvider 
@@ -19,8 +19,8 @@ public class RRMoCItemProviderElephantTusksWood extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES.group(ItemGroup.COMBAT);                     
+       PROPERTIES().group(ItemGroup.COMBAT);                     
                                                                 
-       return PROPERTIES;                                       
+       return PROPERTIES();                                       
    }                                                            
 }                                                               

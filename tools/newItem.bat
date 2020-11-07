@@ -7,7 +7,7 @@
 @REM ###########################################################
 
 @REM Gloval variables.
-@SET version=0.0.10
+@SET version=0.0.11
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -64,7 +64,7 @@ ECHO    public Properties provideProperties()                        >> RRMoCIte
 ECHO    {                                                            >> RRMoCItemProvider%class%.java
 ECHO        // Add here the properties of %name%.                    >> RRMoCItemProvider%class%.java
 ECHO.                                                                >> RRMoCItemProvider%class%.java
-ECHO        return PROPERTIES;                                       >> RRMoCItemProvider%class%.java
+ECHO        return PROPERTIES();                                       >> RRMoCItemProvider%class%.java
 ECHO    }                                                            >> RRMoCItemProvider%class%.java
 ECHO }                                                               >> RRMoCItemProvider%class%.java
 

@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Kitty Food item provider.            
  *                                                              
- * @version 0.0.10                                           
+ * @version 0.0.11                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderKittyFood extends RRMoCItemProvider 
@@ -19,8 +19,8 @@ public class RRMoCItemProviderKittyFood extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES.group(ItemGroup.FOOD);              
+       PROPERTIES().group(ItemGroup.FOOD);              
                                                                 
-       return PROPERTIES;                                       
+       return PROPERTIES();                                       
    }                                                            
 }                                                               

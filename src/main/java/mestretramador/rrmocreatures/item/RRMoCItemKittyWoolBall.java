@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Kitty Wool Ball item.                                          
  *                                                                                   
- * @version 0.0.10                                                                
+ * @version 0.0.11                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemKittyWoolBall extends RRMoCItem                                      

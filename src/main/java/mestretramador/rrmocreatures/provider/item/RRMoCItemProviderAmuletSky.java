@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Sky Amulet item provider.            
  *                                                              
- * @version 0.0.10                                           
+ * @version 0.0.11                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderAmuletSky extends RRMoCItemProvider 
@@ -19,8 +19,8 @@ public class RRMoCItemProviderAmuletSky extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES.group(ItemGroup.TOOLS);                    
+       PROPERTIES().group(ItemGroup.TOOLS);                    
                                                                 
-       return PROPERTIES;                                       
+       return PROPERTIES();                                       
    }                                                            
 }                                                               

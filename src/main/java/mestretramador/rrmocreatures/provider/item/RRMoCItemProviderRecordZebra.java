@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Music Disc - Zebra item provider.            
  *                                                              
- * @version 0.0.10                                           
+ * @version 0.0.11                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderRecordZebra extends RRMoCItemProvider 
@@ -20,9 +20,9 @@ public class RRMoCItemProviderRecordZebra extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES.group(ItemGroup.MISC);
-       PROPERTIES.rarity(Rarity.RARE);
+       PROPERTIES().group(ItemGroup.MISC);
+       PROPERTIES().rarity(Rarity.RARE);
                                                                 
-       return PROPERTIES;                                       
+       return PROPERTIES();                                       
    }                                                            
 }                                                               

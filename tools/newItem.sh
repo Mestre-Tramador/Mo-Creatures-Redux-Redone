@@ -7,7 +7,7 @@
 #####################################################################
 
 # Gloval variables.
-version="0.0.10"
+version="0.0.11"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -76,7 +76,7 @@ echo "   public Properties provideProperties()                       " >> "RRMoC
 echo "   {                                                           " >> "RRMoCItemProvider$class.java"
 echo "       // Add here the properties of $name.                    " >> "RRMoCItemProvider$class.java"
 echo "                                                               " >> "RRMoCItemProvider$class.java"
-echo "       return PROPERTIES;                                      " >> "RRMoCItemProvider$class.java"
+echo "       return PROPERTIES();                                      " >> "RRMoCItemProvider$class.java"
 echo "   }                                                           " >> "RRMoCItemProvider$class.java"
 echo "}                                                              " >> "RRMoCItemProvider$class.java"
 

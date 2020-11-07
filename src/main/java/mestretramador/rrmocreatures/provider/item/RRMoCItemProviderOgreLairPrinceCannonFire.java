@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Fire Cannon item provider.            
  *                                                              
- * @version 0.0.10                                           
+ * @version 0.0.11                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderOgreLairPrinceCannonFire extends RRMoCItemProvider 
@@ -20,9 +20,9 @@ public class RRMoCItemProviderOgreLairPrinceCannonFire extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES.group(ItemGroup.MISC);
-       PROPERTIES.rarity(Rarity.EPIC);
+       PROPERTIES().group(ItemGroup.MISC);
+       PROPERTIES().rarity(Rarity.EPIC);
                                                                 
-       return PROPERTIES;                                       
+       return PROPERTIES();                                       
    }                                                            
 }                                                               

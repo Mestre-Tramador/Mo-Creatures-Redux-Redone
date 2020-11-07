@@ -49,6 +49,7 @@ public final class Tags
          * @param path The path to the Tag.
          * @return The Item Tag.
          */
+        @SuppressWarnings("unused")
         private static ITag.INamedTag<Item> rrmocreatures(String path)
         {
             return ItemTags.makeWrapperTag(new ResourceLocation(Constants.MOD_ID, path).toString());
@@ -81,6 +82,7 @@ public final class Tags
          * @param path The path to the Tag.
          * @return The Block Tag.
          */
+        @SuppressWarnings("unused")
         private static ITag.INamedTag<Block> rrmocreatures(String path)
         {
             return BlockTags.makeWrapperTag(new ResourceLocation(Constants.MOD_ID, path).toString());

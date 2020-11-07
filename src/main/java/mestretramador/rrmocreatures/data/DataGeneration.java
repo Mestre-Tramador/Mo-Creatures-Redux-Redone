@@ -1,7 +1,31 @@
 package mestretramador.rrmocreatures.data;
 
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelOgreLairDirt;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelOgreLairGrass;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelOgreLairLeaves;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelOgreLairLog;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelOgreLairPlanks;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelOgreLairStone;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelWyvernLairDirt;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelWyvernLairGrass;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelWyvernLairLeaves;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelWyvernLairLog;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelWyvernLairPlanks;
 import mestretramador.rrmocreatures.data.client.block.RRMoCBlockModelWyvernLairStone;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateOgreLairDirt;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateOgreLairGrass;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateOgreLairLeaves;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateOgreLairLog;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateOgreLairPlanks;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateOgreLairStone;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateOgreLairTallGrass;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateWyvernLairDirt;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateWyvernLairGrass;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateWyvernLairLeaves;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateWyvernLairLog;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateWyvernLairPlanks;
 import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateWyvernLairStone;
+import mestretramador.rrmocreatures.data.client.block.RRMoCBlockStateWyvernLairTallGrass;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelAmuletBone;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelAmuletBoneFilled;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelAmuletFairy;
@@ -98,6 +122,7 @@ import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelMedallion;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOgreLairPrinceCannonFire;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOgreLairPrinceHammerBuilder;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOgreLairPrinceStaffTeleport;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOgreLairTallGrass;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOstrichCooked;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOstrichRaw;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelRatBurger;
@@ -140,6 +165,7 @@ import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurtleCookedS
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurtleRaw;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelUnicornHorn;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWhip;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWyvernLairTallGrass;
 import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockTagsGeneration;
 import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagsGeneration;
 import mestretramador.rrmocreatures.util.Constants;
@@ -155,7 +181,7 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 /**
  * Mo'Creatures Redux&Redone Data Generators.
  * 
- * @version 0.0.10
+ * @version 0.0.11
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 @Mod.EventBusSubscriber(modid = Constants.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -195,9 +221,20 @@ public final class DataGeneration
      */
     private static void gatherBlockDataGeneration(DataGenerator generator, ExistingFileHelper existingFileHelper)
     {
+        generator.addProvider(new RRMoCBlockModelOgreLairDirt(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelOgreLairGrass(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelOgreLairLeaves(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelOgreLairLog(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelOgreLairPlanks(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelOgreLairStone(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelOgreLairTallGrass(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelWyvernLairDirt(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelWyvernLairGrass(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelWyvernLairLeaves(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelWyvernLairLog(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockModelWyvernLairPlanks(generator, existingFileHelper));
         generator.addProvider(new RRMoCBlockModelWyvernLairStone(generator, existingFileHelper));
-
-        // TODO: Add more Blocks Models.
+        generator.addProvider(new RRMoCItemModelWyvernLairTallGrass(generator, existingFileHelper));
     }
 
     /**
@@ -208,9 +245,20 @@ public final class DataGeneration
      */
     private static void gatherBlockStateDataGeneration(DataGenerator generator, ExistingFileHelper existingFileHelper)
     {
+        generator.addProvider(new RRMoCBlockStateOgreLairDirt(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateOgreLairGrass(generator, existingFileHelper));        
+        generator.addProvider(new RRMoCBlockStateOgreLairLeaves(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateOgreLairLog(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateOgreLairPlanks(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateOgreLairStone(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateOgreLairTallGrass(generator, existingFileHelper));        
+        generator.addProvider(new RRMoCBlockStateWyvernLairDirt(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateWyvernLairGrass(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateWyvernLairLeaves(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateWyvernLairLog(generator, existingFileHelper));
+        generator.addProvider(new RRMoCBlockStateWyvernLairPlanks(generator, existingFileHelper));
         generator.addProvider(new RRMoCBlockStateWyvernLairStone(generator, existingFileHelper));
-
-        // TODO: Add more Blocks States.
+        generator.addProvider(new RRMoCBlockStateWyvernLairTallGrass(generator, existingFileHelper));        
     }
 
     /**
@@ -360,8 +408,6 @@ public final class DataGeneration
         generator.addProvider(new RRMoCItemModelTurtleRaw(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelUnicornHorn(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelWhip(generator, existingFileHelper));
-
-        // TODO: Add more Items.
     }
 
     /**

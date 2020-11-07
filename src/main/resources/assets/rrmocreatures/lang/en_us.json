@@ -137,5 +137,18 @@
     "item.rrmocreatures.turtle_raw": "Raw Turtle",
     "item.rrmocreatures.unicorn_horn": "Unicorn Horn",
     "item.rrmocreatures.whip": "Whip",
-    "block.rrmocreatures.wyvern_lair_stone": "Wyvern Lair Stone"
+    "block.rrmocreatures.ogre_lair_dirt": "Ogre Lair Dirt",
+    "block.rrmocreatures.ogre_lair_grass": "Ogre Lair Grass",
+    "block.rrmocreatures.ogre_lair_leaves": "Ogre Lair Leaves",
+    "block.rrmocreatures.ogre_lair_log": "Ogre Lair Log",
+    "block.rrmocreatures.ogre_lair_planks": "Ogre Lair Planks",
+    "block.rrmocreatures.ogre_lair_stone": "Ogre Lair Stone",
+    "block.rrmocreatures.ogre_lair_tall_grass": "Ogre Lair Tall Grass",
+    "block.rrmocreatures.wyvern_lair_dirt": "Wyvern Lair Dirt",
+    "block.rrmocreatures.wyvern_lair_grass": "Wyvern Lair Grass",
+    "block.rrmocreatures.wyvern_lair_leaves": "Wyvern Lair Leaves",
+    "block.rrmocreatures.wyvern_lair_log": "Wyvern Lair Log",
+    "block.rrmocreatures.wyvern_lair_planks": "Wyvern Lair Planks",
+    "block.rrmocreatures.wyvern_lair_stone": "Wyvern Lair Stone",
+    "block.rrmocreatures.wyvern_lair_tall_grass": "Wyvern Lair Tall Grass"
 }

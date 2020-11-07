@@ -6,7 +6,7 @@ import mestretramador.rrmocreatures.util.Tags;
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Blocks Tag's BlockItems.
  * 
- * @version 0.0.10
+ * @version 0.0.11
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockItemTagWyvernLairBlocks extends RRMoCBlockItemTagProvider

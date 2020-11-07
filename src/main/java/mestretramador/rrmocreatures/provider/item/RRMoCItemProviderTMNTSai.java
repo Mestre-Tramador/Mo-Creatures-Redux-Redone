@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Sai item provider.            
  *                                                              
- * @version 0.0.10                                           
+ * @version 0.0.11                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderTMNTSai extends RRMoCItemProvider 
@@ -20,9 +20,9 @@ public class RRMoCItemProviderTMNTSai extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES.group(ItemGroup.COMBAT);
-       PROPERTIES.rarity(Rarity.UNCOMMON);
+       PROPERTIES().group(ItemGroup.COMBAT);
+       PROPERTIES().rarity(Rarity.UNCOMMON);
                                                                 
-       return PROPERTIES;                                       
+       return PROPERTIES();                                       
    }                                                            
 }                                                               

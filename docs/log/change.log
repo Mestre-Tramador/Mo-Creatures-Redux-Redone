@@ -1,3 +1,14 @@
+[0.0.11]
+- Reimported most Mo'Creatures' blocks images.
+- Created Block ID Constants for the Mo'Creatures Redux&Redone items.
+- First implementation of Ogre Lair Dirt, Grass, Leaves (no transparency), Log, Planks, Stone, and Tall Grass (no transparency) blocks.
+- First implementation of Wyvern Lair Dirt, Grass, Leaves (no transparency), Log, Planks, Stone, and Tall Grass (no transparency) blocks.
+- Generated Data for all implemented blocks.
+- Provided English translation for all implemented blocks.
+- Improved JavaDoc on Constants class.
+- Added Java Annotations to Tags creation methods.
+- Improved Item Providers Properties access.
+
 [0.0.10]
 - First implementation of Ogre Princes' Loot (Fire Cannon, Builder Hammer, Staff of Teleportation) item.
 - First implementation of Ostrich Meat (raw and cooked) item.
@@ -18,7 +29,7 @@
 - First implementation of Unicorn Horn item.
 - First implementation of Whip item.
 - Generated Data for all implemented items, expect Cooked Turtle amd Blank Scroll.
-- Provided English translation form all implemented items.
+- Provided English translation for all implemented items.
 
 [0.0.9]
 - Reimported most Mo'Creatures' items images.
@@ -58,7 +69,7 @@
 - First implementation of Reptile Hide (also full armor set) item.
 - First implementation of Shark Teeth item.
 - Generated Data for all implemented items, expect Leather Handmade Mount Armor and Handmade Saddlebag.
-- Provided English translation form all implemented items.
+- Provided English translation for all implemented items.
 - Updated Forge MDK to 1.16.3-34.1.42 Version.
 
 [0.0.8] 

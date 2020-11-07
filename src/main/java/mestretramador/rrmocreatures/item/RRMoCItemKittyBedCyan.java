@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Cyan Kitty Bed item.                                          
  *                                                                                   
- * @version 0.0.10                                                                
+ * @version 0.0.11                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemKittyBedCyan extends RRMoCItem                                      

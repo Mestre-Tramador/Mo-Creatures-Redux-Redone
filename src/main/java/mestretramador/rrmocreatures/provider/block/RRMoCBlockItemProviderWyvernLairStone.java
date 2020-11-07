@@ -9,7 +9,7 @@ import net.minecraft.item.ItemGroup;
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block item provider.
  * 
- * @version 0.0.10
+ * @version 0.0.11
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvider
@@ -31,8 +31,6 @@ public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvide
     @Override
     public AbstractBlock.Properties provideBlockProperties()
     {
-        BLOCK_PROPERTIES().hardnessAndResistance(3, 10);
-        BLOCK_PROPERTIES().harvestLevel(2);
         BLOCK_PROPERTIES().sound(SoundType.STONE);
 
         return BLOCK_PROPERTIES();

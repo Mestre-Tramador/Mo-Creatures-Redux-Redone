@@ -5,13 +5,13 @@ import net.minecraft.item.Item.Properties;
 /**
  * Mo'Creatures Redux&Redone Item Provider base.
  * 
- * @version 0.0.10
+ * @version 0.0.11
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCItemProvider
 {
     /** Properties to assemble and provide. */
-    protected static Properties PROPERTIES;
+    private static Properties PROPERTIES;
 
     /**
      * When creating an Item Provider, the Properties are reset.
@@ -19,6 +19,11 @@ public abstract class RRMoCItemProvider
     protected RRMoCItemProvider()
     {
         PROPERTIES = new Properties();
+    }
+
+    protected static Properties PROPERTIES()
+    {
+        return PROPERTIES;
     }
 
     /**

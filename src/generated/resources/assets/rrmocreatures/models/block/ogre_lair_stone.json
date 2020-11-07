@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "rrmocreatures:block/ogre_lair_stone"
+  }
+}

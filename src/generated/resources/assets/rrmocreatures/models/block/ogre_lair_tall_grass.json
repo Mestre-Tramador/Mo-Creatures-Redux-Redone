@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "rrmocreatures:block/ogre_lair_tall_grass"
+  }
+}

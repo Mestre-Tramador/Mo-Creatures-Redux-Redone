@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Orange Kitty Bed item model.                                                        
  *                                                                                                       
- * @version 0.0.10                                                                                    
+ * @version 0.0.11                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelKittyBedOrange extends RRMoCItemModelProvider                                        
