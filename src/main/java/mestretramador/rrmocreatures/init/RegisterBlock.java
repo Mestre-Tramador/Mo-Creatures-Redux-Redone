@@ -5,7 +5,7 @@ import mestretramador.rrmocreatures.block.RRMoCBlockWyvernLairStone;
 /**
  * Blocks to registrate.
  * 
- * @version 0.0.9
+ * @version 0.0.10
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RegisterBlock

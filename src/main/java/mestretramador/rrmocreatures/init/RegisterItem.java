@@ -93,17 +93,56 @@ import mestretramador.rrmocreatures.item.RRMoCItemKittyFood;
 import mestretramador.rrmocreatures.item.RRMoCItemKittyLitter;
 import mestretramador.rrmocreatures.item.RRMoCItemKittyWoolBall;
 import mestretramador.rrmocreatures.item.RRMoCItemMedallion;
+import mestretramador.rrmocreatures.item.RRMoCItemOgreLairPrinceCannonFire;
+import mestretramador.rrmocreatures.item.RRMoCItemOgreLairPrinceHammerBuilder;
+import mestretramador.rrmocreatures.item.RRMoCItemOgreLairPrinceStaffTeleport;
+import mestretramador.rrmocreatures.item.RRMoCItemOstrichCooked;
+import mestretramador.rrmocreatures.item.RRMoCItemOstrichRaw;
+import mestretramador.rrmocreatures.item.RRMoCItemRatBurger;
+import mestretramador.rrmocreatures.item.RRMoCItemRatCooked;
+import mestretramador.rrmocreatures.item.RRMoCItemRatRaw;
+import mestretramador.rrmocreatures.item.RRMoCItemRecordZebra;
 import mestretramador.rrmocreatures.item.RRMoCItemReptileHide;
 import mestretramador.rrmocreatures.item.RRMoCItemReptileHideBoots;
 import mestretramador.rrmocreatures.item.RRMoCItemReptileHideChest;
 import mestretramador.rrmocreatures.item.RRMoCItemReptileHideHelmet;
 import mestretramador.rrmocreatures.item.RRMoCItemReptileHideLegs;
+import mestretramador.rrmocreatures.item.RRMoCItemScrollBlank;
+import mestretramador.rrmocreatures.item.RRMoCItemScrollFreedom;
+import mestretramador.rrmocreatures.item.RRMoCItemScrollOwner;
+import mestretramador.rrmocreatures.item.RRMoCItemScrollSale;
 import mestretramador.rrmocreatures.item.RRMoCItemSharkTeeth;
+import mestretramador.rrmocreatures.item.RRMoCItemSharkTeethSword;
+import mestretramador.rrmocreatures.item.RRMoCItemSilverSkeletonSword;
+import mestretramador.rrmocreatures.item.RRMoCItemStaffBase;
+import mestretramador.rrmocreatures.item.RRMoCItemStaffDiamond;
+import mestretramador.rrmocreatures.item.RRMoCItemStaffEnder;
+import mestretramador.rrmocreatures.item.RRMoCItemStaffLight;
+import mestretramador.rrmocreatures.item.RRMoCItemStingDark;
+import mestretramador.rrmocreatures.item.RRMoCItemStingDarkSword;
+import mestretramador.rrmocreatures.item.RRMoCItemStingDirt;
+import mestretramador.rrmocreatures.item.RRMoCItemStingDirtSword;
+import mestretramador.rrmocreatures.item.RRMoCItemStingFrost;
+import mestretramador.rrmocreatures.item.RRMoCItemStingFrostSword;
+import mestretramador.rrmocreatures.item.RRMoCItemStingNether;
+import mestretramador.rrmocreatures.item.RRMoCItemStingNetherSword;
+import mestretramador.rrmocreatures.item.RRMoCItemSugarLump;
+import mestretramador.rrmocreatures.item.RRMoCItemTMNTBo;
+import mestretramador.rrmocreatures.item.RRMoCItemTMNTKatana;
+import mestretramador.rrmocreatures.item.RRMoCItemTMNTNunchaku;
+import mestretramador.rrmocreatures.item.RRMoCItemTMNTSai;
+import mestretramador.rrmocreatures.item.RRMoCItemTurkeyCooked;
+import mestretramador.rrmocreatures.item.RRMoCItemTurkeyRaw;
+import mestretramador.rrmocreatures.item.RRMoCItemTurtleCooked;
+import mestretramador.rrmocreatures.item.RRMoCItemTurtleCookedSoup;
+import mestretramador.rrmocreatures.item.RRMoCItemTurtleRaw;
+import mestretramador.rrmocreatures.item.RRMoCItemUnicornHorn;
+import mestretramador.rrmocreatures.item.RRMoCItemWhip;
 
 /**
  * Items to registrate.
  * 
- * @version 0.0.9
+ * @version 0.0.10
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RegisterItem
@@ -387,6 +426,33 @@ public class RegisterItem
     /** Medallion item. */
     public static final RRMoCItemMedallion MEDALLION = new RRMoCItemMedallion();
 
+    /** Fire Cannon item. */
+    public static final RRMoCItemOgreLairPrinceCannonFire OGRE_LAIR_PRINCE_CANNON_FIRE = new RRMoCItemOgreLairPrinceCannonFire();
+
+    /** Builder Hammer item. */
+    public static final RRMoCItemOgreLairPrinceHammerBuilder OGRE_LAIR_PRINCE_HAMMER_BUILDER = new RRMoCItemOgreLairPrinceHammerBuilder();
+
+    /** Staff of Teleport item. */
+    public static final RRMoCItemOgreLairPrinceStaffTeleport OGRE_LAIR_PRINCE_STAFF_TELEPORT = new RRMoCItemOgreLairPrinceStaffTeleport();
+
+    /** Cooked Ostrich item. */
+    public static final RRMoCItemOstrichCooked OSTRICH_COOKED = new RRMoCItemOstrichCooked();
+
+    /** Raw Ostrich item. */
+    public static final RRMoCItemOstrichRaw OSTRICH_RAW = new RRMoCItemOstrichRaw();
+
+    /** Rat Burger item. */
+    public static final RRMoCItemRatBurger RAT_BURGER = new RRMoCItemRatBurger();
+
+    /** Cooked Rat item. */
+    public static final RRMoCItemRatCooked RAT_COOKED = new RRMoCItemRatCooked();
+
+    /** Raw Rat item. */
+    public static final RRMoCItemRatRaw RAT_RAW = new RRMoCItemRatRaw();
+
+    /** Music Disc - Zebra item. */
+    public static final RRMoCItemRecordZebra RECORD_ZEBRA = new RRMoCItemRecordZebra();
+
     /** Reptile Hide item. */
     public static final RRMoCItemReptileHide REPTILE_HIDE = new RRMoCItemReptileHide();
 
@@ -402,8 +468,98 @@ public class RegisterItem
     /** Reptile Hide Legs item. */
     public static final RRMoCItemReptileHideLegs REPTILE_HIDE_LEGS = new RRMoCItemReptileHideLegs();
 
+    /** Blank Scroll item. */
+    public static final RRMoCItemScrollBlank SCROLL_BLANK = new RRMoCItemScrollBlank();
+
+    /** Scroll - Freedom item. */
+    public static final RRMoCItemScrollFreedom SCROLL_FREEDOM = new RRMoCItemScrollFreedom();
+    
+    /** Scroll - Owner item. */
+    public static final RRMoCItemScrollOwner SCROLL_OWNER = new RRMoCItemScrollOwner();
+    
+    /** Scroll - Sale item. */
+    public static final RRMoCItemScrollSale SCROLL_SALE = new RRMoCItemScrollSale();
+
     /** Shark Teeth item. */
     public static final RRMoCItemSharkTeeth SHARK_TEETH = new RRMoCItemSharkTeeth();
+
+    /** Shark Teeth Sword item. */
+    public static final RRMoCItemSharkTeethSword SHARK_TEETH_SWORD = new RRMoCItemSharkTeethSword();
+
+    /** Silver Skeleton Sword item. */
+    public static final RRMoCItemSilverSkeletonSword SILVER_SKELETON_SWORD = new RRMoCItemSilverSkeletonSword();
+
+    /** Staff Base item. */
+    public static final RRMoCItemStaffBase STAFF_BASE = new RRMoCItemStaffBase();
+
+    /** Staff - Diamond item. */
+    public static final RRMoCItemStaffDiamond STAFF_DIAMOND = new RRMoCItemStaffDiamond();
+
+    /** Staff - Ender item. */
+    public static final RRMoCItemStaffEnder STAFF_ENDER = new RRMoCItemStaffEnder();
+
+    /** Staff - Light item. */
+    public static final RRMoCItemStaffLight STAFF_LIGHT = new RRMoCItemStaffLight();
+
+    /** Dark Sting item. */
+    public static final RRMoCItemStingDark STING_DARK = new RRMoCItemStingDark();
+
+    /** Dark Sting Sword item. */
+    public static final RRMoCItemStingDarkSword STING_DARK_SWORD = new RRMoCItemStingDarkSword();
+    
+    /** Dirt Sting item. */
+    public static final RRMoCItemStingDirt STING_DIRT = new RRMoCItemStingDirt();
+
+    /** Dirt Sting Sword item. */
+    public static final RRMoCItemStingDirtSword STING_DIRT_SWORD = new RRMoCItemStingDirtSword();
+    
+    /** Frost Sting item. */
+    public static final RRMoCItemStingFrost STING_FROST = new RRMoCItemStingFrost();
+
+    /** Frost Sting item. */
+    public static final RRMoCItemStingFrostSword STING_FROST_SWORD = new RRMoCItemStingFrostSword();
+    
+    /** Nether Sting item. */
+    public static final RRMoCItemStingNether STING_NETHER = new RRMoCItemStingNether();
+
+    /** Nether Sting item. */
+    public static final RRMoCItemStingNetherSword STING_NETHER_SWORD = new RRMoCItemStingNetherSword();
+
+    /** Sugar Lumps item. */
+    public static final RRMoCItemSugarLump SUGAR_LUMP = new RRMoCItemSugarLump();
+
+    /** Bo item. */
+    public static final RRMoCItemTMNTBo TMNT_BO = new RRMoCItemTMNTBo();
+
+    /** Katana item. */
+    public static final RRMoCItemTMNTKatana TMNT_KATANA = new RRMoCItemTMNTKatana();
+
+    /** Nunchaku item. */
+    public static final RRMoCItemTMNTNunchaku TMNT_NUNCHAKU = new RRMoCItemTMNTNunchaku();
+
+    /** Sai item. */
+    public static final RRMoCItemTMNTSai TMNT_SAI = new RRMoCItemTMNTSai();
+
+    /** Cooked Turkey item. */
+    public static final RRMoCItemTurkeyCooked TURKEY_COOKED = new RRMoCItemTurkeyCooked();
+
+    /** Raw Turkey item. */
+    public static final RRMoCItemTurkeyRaw TURKEY_RAW = new RRMoCItemTurkeyRaw();
+
+    /** Cooked Turtle item. */
+    public static final RRMoCItemTurtleCooked TURTLE_COOKED = new RRMoCItemTurtleCooked();
+
+    /** Turtle Soup item. */
+    public static final RRMoCItemTurtleCookedSoup TURTLE_COOKED_SOUP = new RRMoCItemTurtleCookedSoup();
+
+    /** Raw Turtle item. */
+    public static final RRMoCItemTurtleRaw TURTLE_RAW = new RRMoCItemTurtleRaw();
+
+    /** Unicorn Horn item. */
+    public static final RRMoCItemUnicornHorn UNICORN_HORN = new RRMoCItemUnicornHorn();
+
+    /** Whip item. */
+    public static final RRMoCItemWhip WHIP = new RRMoCItemWhip();
 
     /**
      * Callback to register all items.
@@ -503,11 +659,50 @@ public class RegisterItem
         Register.getItemsDeferredRegister().register(KITTY_LITTER.ID, () -> KITTY_LITTER.returnAsItem());
         Register.getItemsDeferredRegister().register(KITTY_WOOL_BALL.ID, () -> KITTY_WOOL_BALL.returnAsItem());
         Register.getItemsDeferredRegister().register(MEDALLION.ID, () -> MEDALLION.returnAsItem());
+        Register.getItemsDeferredRegister().register(OGRE_LAIR_PRINCE_CANNON_FIRE.ID, () -> OGRE_LAIR_PRINCE_CANNON_FIRE.returnAsItem());
+        Register.getItemsDeferredRegister().register(OGRE_LAIR_PRINCE_HAMMER_BUILDER.ID, () -> OGRE_LAIR_PRINCE_HAMMER_BUILDER.returnAsItem());
+        Register.getItemsDeferredRegister().register(OGRE_LAIR_PRINCE_STAFF_TELEPORT.ID, () -> OGRE_LAIR_PRINCE_STAFF_TELEPORT.returnAsItem());
+        Register.getItemsDeferredRegister().register(OSTRICH_COOKED.ID, () -> OSTRICH_COOKED.returnAsItem());
+        Register.getItemsDeferredRegister().register(OSTRICH_RAW.ID, () -> OSTRICH_RAW.returnAsItem());
+        Register.getItemsDeferredRegister().register(RAT_BURGER.ID, () -> RAT_BURGER.returnAsItem());
+        Register.getItemsDeferredRegister().register(RAT_COOKED.ID, () -> RAT_COOKED.returnAsItem());
+        Register.getItemsDeferredRegister().register(RAT_RAW.ID, () -> RAT_RAW.returnAsItem());
+        Register.getItemsDeferredRegister().register(RECORD_ZEBRA.ID, () -> RECORD_ZEBRA.returnAsItem());
         Register.getItemsDeferredRegister().register(REPTILE_HIDE.ID, () -> REPTILE_HIDE.returnAsItem());
         Register.getItemsDeferredRegister().register(REPTILE_HIDE_BOOTS.ID, () -> REPTILE_HIDE_BOOTS.returnAsItem());
         Register.getItemsDeferredRegister().register(REPTILE_HIDE_CHEST.ID, () -> REPTILE_HIDE_CHEST.returnAsItem());
         Register.getItemsDeferredRegister().register(REPTILE_HIDE_HELMET.ID, () -> REPTILE_HIDE_HELMET.returnAsItem());
         Register.getItemsDeferredRegister().register(REPTILE_HIDE_LEGS.ID, () -> REPTILE_HIDE_LEGS.returnAsItem());
+        Register.getItemsDeferredRegister().register(SCROLL_BLANK.ID, () -> SCROLL_BLANK.returnAsItem());
+        Register.getItemsDeferredRegister().register(SCROLL_FREEDOM.ID, () -> SCROLL_FREEDOM.returnAsItem());
+        Register.getItemsDeferredRegister().register(SCROLL_OWNER.ID, () -> SCROLL_OWNER.returnAsItem());
+        Register.getItemsDeferredRegister().register(SCROLL_SALE.ID, () -> SCROLL_SALE.returnAsItem());
         Register.getItemsDeferredRegister().register(SHARK_TEETH.ID, () -> SHARK_TEETH.returnAsItem());
+        Register.getItemsDeferredRegister().register(SHARK_TEETH_SWORD.ID, () -> SHARK_TEETH_SWORD.returnAsItem());
+        Register.getItemsDeferredRegister().register(SILVER_SKELETON_SWORD.ID, () -> SILVER_SKELETON_SWORD.returnAsItem());
+        Register.getItemsDeferredRegister().register(STAFF_BASE.ID, () -> STAFF_BASE.returnAsItem());
+        Register.getItemsDeferredRegister().register(STAFF_DIAMOND.ID, () -> STAFF_DIAMOND.returnAsItem());
+        Register.getItemsDeferredRegister().register(STAFF_ENDER.ID, () -> STAFF_ENDER.returnAsItem());
+        Register.getItemsDeferredRegister().register(STAFF_LIGHT.ID, () -> STAFF_LIGHT.returnAsItem());
+        Register.getItemsDeferredRegister().register(STING_DARK.ID, () -> STING_DARK.returnAsItem());
+        Register.getItemsDeferredRegister().register(STING_DARK_SWORD.ID, () -> STING_DARK_SWORD.returnAsItem());
+        Register.getItemsDeferredRegister().register(STING_DIRT.ID, () -> STING_DIRT.returnAsItem());
+        Register.getItemsDeferredRegister().register(STING_DIRT_SWORD.ID, () -> STING_DIRT_SWORD.returnAsItem());
+        Register.getItemsDeferredRegister().register(STING_FROST.ID, () -> STING_FROST.returnAsItem());
+        Register.getItemsDeferredRegister().register(STING_FROST_SWORD.ID, () -> STING_FROST_SWORD.returnAsItem());
+        Register.getItemsDeferredRegister().register(STING_NETHER.ID, () -> STING_NETHER.returnAsItem());
+        Register.getItemsDeferredRegister().register(STING_NETHER_SWORD.ID, () -> STING_NETHER_SWORD.returnAsItem());
+        Register.getItemsDeferredRegister().register(SUGAR_LUMP.ID, () -> SUGAR_LUMP.returnAsItem());
+        Register.getItemsDeferredRegister().register(TMNT_BO.ID, () -> TMNT_BO.returnAsItem());
+        Register.getItemsDeferredRegister().register(TMNT_KATANA.ID, () -> TMNT_KATANA.returnAsItem());
+        Register.getItemsDeferredRegister().register(TMNT_NUNCHAKU.ID, () -> TMNT_NUNCHAKU.returnAsItem());
+        Register.getItemsDeferredRegister().register(TMNT_SAI.ID, () -> TMNT_SAI.returnAsItem());
+        Register.getItemsDeferredRegister().register(TURKEY_COOKED.ID, () -> TURKEY_COOKED.returnAsItem());
+        Register.getItemsDeferredRegister().register(TURKEY_RAW.ID, () -> TURKEY_RAW.returnAsItem());
+        Register.getItemsDeferredRegister().register(TURTLE_COOKED.ID, () -> TURTLE_COOKED.returnAsItem());
+        Register.getItemsDeferredRegister().register(TURTLE_COOKED_SOUP.ID, () -> TURTLE_COOKED_SOUP.returnAsItem());
+        Register.getItemsDeferredRegister().register(TURTLE_RAW.ID, () -> TURTLE_RAW.returnAsItem());
+        Register.getItemsDeferredRegister().register(UNICORN_HORN.ID, () -> UNICORN_HORN.returnAsItem());
+        Register.getItemsDeferredRegister().register(WHIP.ID, () -> WHIP.returnAsItem());
     }
 }

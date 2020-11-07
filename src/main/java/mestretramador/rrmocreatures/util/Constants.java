@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Constants class to use generally.
  * 
- * @version 0.0.9
+ * @version 0.0.10
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Constants
@@ -343,6 +343,9 @@ public final class Constants
 
         /** */
         public static final String REPTILE_HIDE_LEGS = REPTILE_HIDE + Sufix.LEGS;
+
+        /** */
+        public static final String SCROLL_BLANK = Prefix.SCROLL + "blank";
 
         /** */
         public static final String SCROLL_FREEDOM = Prefix.SCROLL + "freedom";

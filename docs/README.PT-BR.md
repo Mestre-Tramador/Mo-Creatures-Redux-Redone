@@ -12,7 +12,7 @@ Este é meu primeiro mod de todos pra Minecraft, mas não menos que uma honra te
 
 | Versão Atual |
 | ------------ |
-|     0.0.9    |
+|     0.0.10    |
 
 # Introdução
 

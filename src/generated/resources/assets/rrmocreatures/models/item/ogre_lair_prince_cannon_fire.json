@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "rrmocreatures:item/ogre_lair_prince_cannon_fire"
+  }
+}

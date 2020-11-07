@@ -95,12 +95,51 @@ import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelKittyFood;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelKittyLitter;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelKittyWoolBall;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelMedallion;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOgreLairPrinceCannonFire;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOgreLairPrinceHammerBuilder;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOgreLairPrinceStaffTeleport;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOstrichCooked;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelOstrichRaw;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelRatBurger;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelRatCooked;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelRatRaw;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelRecordZebra;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelReptileHide;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelReptileHideBoots;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelReptileHideChest;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelReptileHideHelmet;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelReptileHideLegs;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelScrollBlank;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelScrollFreedom;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelScrollOwner;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelScrollSale;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelSharkTeeth;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelSharkTeethSword;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelSilverSkeletonSword;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStaffBase;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStaffDiamond;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStaffEnder;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStaffLight;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStingDark;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStingDarkSword;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStingDirt;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStingDirtSword;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStingFrost;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStingFrostSword;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStingNether;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelStingNetherSword;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelSugarLump;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTMNTBo;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTMNTKatana;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTMNTNunchaku;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTMNTSai;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurkeyCooked;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurkeyRaw;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurtleCooked;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurtleCookedSoup;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurtleRaw;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelUnicornHorn;
+import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWhip;
 import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockTagsGeneration;
 import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagsGeneration;
 import mestretramador.rrmocreatures.util.Constants;
@@ -116,7 +155,7 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 /**
  * Mo'Creatures Redux&Redone Data Generators.
  * 
- * @version 0.0.9
+ * @version 0.0.10
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 @Mod.EventBusSubscriber(modid = Constants.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -275,12 +314,52 @@ public final class DataGeneration
         generator.addProvider(new RRMoCItemModelKittyLitter(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelKittyWoolBall(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelMedallion(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelOgreLairPrinceCannonFire(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelOgreLairPrinceHammerBuilder(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelOgreLairPrinceStaffTeleport(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelOstrichCooked(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelOstrichRaw(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelRatBurger(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelRatCooked(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelRatRaw(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelRecordZebra(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelReptileHide(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelReptileHideBoots(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelReptileHideChest(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelReptileHideHelmet(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelReptileHideLegs(generator, existingFileHelper));
+        // generator.addProvider(new RRMoCItemModelScrollBlank(generator, existingFileHelper)); // TODO: Create model for Blank Scroll.
+        generator.addProvider(new RRMoCItemModelScrollFreedom(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelScrollOwner(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelScrollSale(generator, existingFileHelper));
         generator.addProvider(new RRMoCItemModelSharkTeeth(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelSharkTeethSword(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelSilverSkeletonSword(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStaffBase(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStaffDiamond(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStaffEnder(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStaffLight(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStingDark(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStingDarkSword(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStingDirt(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStingDirtSword(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStingFrost(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStingFrostSword(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStingNether(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelStingNetherSword(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelSugarLump(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelTMNTBo(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelTMNTKatana(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelTMNTNunchaku(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelTMNTSai(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelTMNTSai(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelTurkeyCooked(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelTurkeyRaw(generator, existingFileHelper));
+        // generator.addProvider(new RRMoCItemModelTurtleCooked(generator, existingFileHelper)); // TODO: Create model for Cooked Turtle. 
+        generator.addProvider(new RRMoCItemModelTurtleCookedSoup(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelTurtleRaw(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelUnicornHorn(generator, existingFileHelper));
+        generator.addProvider(new RRMoCItemModelWhip(generator, existingFileHelper));
 
         // TODO: Add more Items.
     }

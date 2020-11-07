@@ -1,3 +1,25 @@
+[0.0.10]
+- First implementation of Ogre Princes' Loot (Fire Cannon, Builder Hammer, Staff of Teleportation) item.
+- First implementation of Ostrich Meat (raw and cooked) item.
+- First implementation of Rat Meat (raw and cooked, also burguer) item.
+- First implementation of Zebra Record item.
+- First implementation of Scrolls (Blank (textureless), Freedom, Owner, Sale) item.
+- First implementation of Shark Teeth Sword item.
+- First implementation of Silver Skeleton Sword item.
+- First implementation of Staffs (Base, Diamond, Ender, Light) item.
+- First implementation of Dark Sting (also sword) item.
+- First implementation of Dirt Sting (also sword) item.
+- First implementation of Frost Sting (also sword) item.
+- First implementation of Nether Sting (also sword) item.
+- First implementation of Sugar Lumps item.
+- First implementation of TMNT Weapons (Bo, Katana, Nunchaku, Sai) item.
+- First implementation of Turkey Meat (raw and cooked) item.
+- First implementation of Turtle Meat (raw and cooked (textureless), also soup) item.
+- First implementation of Unicorn Horn item.
+- First implementation of Whip item.
+- Generated Data for all implemented items, expect Cooked Turtle amd Blank Scroll.
+- Provided English translation form all implemented items.
+
 [0.0.9]
 - Reimported most Mo'Creatures' items images.
 - Created Item ID Constants for the Mo'Creatures Redux&Redone items.
@@ -35,7 +57,7 @@
 - First implementation of Medallion item.
 - First implementation of Reptile Hide (also full armor set) item.
 - First implementation of Shark Teeth item.
-- Generated Data for all implemented items.
+- Generated Data for all implemented items, expect Leather Handmade Mount Armor and Handmade Saddlebag.
 - Provided English translation form all implemented items.
 - Updated Forge MDK to 1.16.3-34.1.42 Version.
 

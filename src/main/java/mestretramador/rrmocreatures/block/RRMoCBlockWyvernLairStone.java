@@ -8,7 +8,7 @@ import net.minecraft.item.BlockItem;
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block and block item.
  * 
- * @version 0.0.9
+ * @version 0.0.10
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockWyvernLairStone extends RRMoCBlock implements RRMoCBlockItem

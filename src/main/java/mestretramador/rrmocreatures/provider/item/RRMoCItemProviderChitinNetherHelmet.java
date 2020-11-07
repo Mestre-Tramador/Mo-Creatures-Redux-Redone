@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Nether Chitin Helmet item provider.            
  *                                                              
- * @version 0.0.9                                           
+ * @version 0.0.10                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderChitinNetherHelmet extends RRMoCItemProvider 

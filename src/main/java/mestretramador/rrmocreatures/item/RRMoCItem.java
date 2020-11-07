@@ -5,7 +5,7 @@ import net.minecraft.item.Item;
 /**
  * Mo'Creatures Redux&Redone Item base.
  * 
- * @version 0.0.9
+ * @version 0.0.10
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCItem

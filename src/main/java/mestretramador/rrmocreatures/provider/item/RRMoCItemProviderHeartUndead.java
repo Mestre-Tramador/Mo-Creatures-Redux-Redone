@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Heart of the Undead item provider.            
  *                                                              
- * @version 0.0.9                                           
+ * @version 0.0.10                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderHeartUndead extends RRMoCItemProvider 

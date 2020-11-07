@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Iron Elephant Tusk Sword item provider.            
  *                                                              
- * @version 0.0.9                                           
+ * @version 0.0.10                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderElephantTusksIron extends RRMoCItemProvider 
