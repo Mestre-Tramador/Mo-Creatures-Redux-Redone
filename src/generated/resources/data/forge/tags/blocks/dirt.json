@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "rrmocreatures:ogre_lair_dirt",
+    "rrmocreatures:ogre_lair_grass",
+    "rrmocreatures:wyvern_lair_dirt",
+    "rrmocreatures:wyvern_lair_grass"
+  ]
+}

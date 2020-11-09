@@ -1,7 +1,5 @@
 package mestretramador.rrmocreatures.data.client.provider.block;
 
-import java.util.HashMap;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.tags.ITag;
@@ -9,37 +7,44 @@ import net.minecraft.tags.ITag;
 /**
  * Mo'Creatures Redux&Redone BlockItem Tag Provider base.
  * 
- * @version 0.0.11
+ * @version 0.0.12
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockItemTagProvider
 {
-    /**
-     * A Map to define wich item block tags will be copied by a
-     * item tag.
-     */
-    protected static final HashMap<ITag.INamedTag<Block>, ITag.INamedTag<Item>> blocksToCopy = new HashMap<ITag.INamedTag<Block>, ITag.INamedTag<Item>>();
+    /** The key tag to be copied. */
+    private ITag.INamedTag<Block> KEY;
+
+    /** The value tag to receive the copied key. */
+    private ITag.INamedTag<Item> VALUE;
 
     /**
      * When creating a BlockItem Tag Provider, it already set the blocks tags to the item tags.
      */
-    protected RRMoCBlockItemTagProvider()
+    protected RRMoCBlockItemTagProvider(ITag.INamedTag<Block> BLOCKS, ITag.INamedTag<Item> ITEMS)
     {
-        setBlocksToCopy();
+        KEY = BLOCKS;
+
+        VALUE = ITEMS;
     }
 
     /**
-     * Public getter to the data.
+     * Public getter to the key.
      * 
-     * @return The {@link java.util.HashMap Map} with all the data.
+     * @return The {@link net.minecraft.tags.ITag Tag} wich corresponds to the copied.
      */
-    public HashMap<ITag.INamedTag<Block>, ITag.INamedTag<Item>> getBlocksToCopy()
+    public ITag.INamedTag<Block> provideKeyTag()
     {
-        return blocksToCopy;
+        return KEY;
     }
 
     /**
-     * A method to each provider set its blocks tags and item tags.
+     * Public getter to the value.
+     * 
+     * @return The {@link net.minecraft.tags.ITag Tag} wich corresponds to the reciever of the copy.
      */
-    protected abstract void setBlocksToCopy();
+    public ITag.INamedTag<Item> provideValueTag()
+    {
+        return VALUE;
+    }
 }

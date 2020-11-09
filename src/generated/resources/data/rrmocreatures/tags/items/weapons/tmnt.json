@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "rrmocreatures:tmnt_bo",
+    "rrmocreatures:tmnt_katana",
+    "rrmocreatures:tmnt_nunchaku",
+    "rrmocreatures:tmnt_sai"
+  ]
+}

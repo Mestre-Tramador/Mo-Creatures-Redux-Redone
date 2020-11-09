@@ -1,13 +1,13 @@
-########################################################################
-# This shell script file creates creates a Block Tag Generator class.
+###############################################################
+# This shell script file creates a Block Tag Generator class.
 # It does not create a Constant for the Tag.
 # Neither add it in the Tag Generation class.
 #
 # Please be gentle with this code.
-########################################################################
+###############################################################
 
 # Gloval variables.
-version="0.0.11"
+version="0.0.12"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -55,13 +55,9 @@ chmod 744 "RRMoCBlockTag$class.java"
 
 echo "package mestretramador.rrmocreatures.data.client.tags.block;                          " >> "RRMoCBlockTag$class.java"
 echo "                                                                                      " >> "RRMoCBlockTag$class.java"
-echo "import java.util.ArrayList;                                                           " >> "RRMoCBlockTag$class.java"
-echo "                                                                                      " >> "RRMoCBlockTag$class.java"
 echo "import mestretramador.rrmocreatures.data.client.provider.block.RRMoCBlockTagProvider; " >> "RRMoCBlockTag$class.java"
 echo "import mestretramador.rrmocreatures.init.RegisterBlock;                               " >> "RRMoCBlockTag$class.java"
 echo "import mestretramador.rrmocreatures.util.Tags;                                        " >> "RRMoCBlockTag$class.java"
-echo "                                                                                      " >> "RRMoCBlockTag$class.java"
-echo "import net.minecraft.block.Block;                                                     " >> "RRMoCBlockTag$class.java"
 echo "                                                                                      " >> "RRMoCBlockTag$class.java"
 echo "/**                                                                                   " >> "RRMoCBlockTag$class.java"
 echo " * Mo'Creatures Redux&Redone $name Tag's Blocks.                                      " >> "RRMoCBlockTag$class.java"
@@ -71,6 +67,14 @@ echo " * @author $author                                                        
 echo " */                                                                                   " >> "RRMoCBlockTag$class.java"
 echo "public class RRMoCBlockTag$class extends RRMoCBlockTagProvider                        " >> "RRMoCBlockTag$class.java"
 echo "{                                                                                     " >> "RRMoCBlockTag$class.java"
+echo "    /**                                                                               " >> "RRMoCBlockTag$class.java"
+echo "     * Using the parent constructor, creates the $name tag.                           " >> "RRMoCBlockTag$class.java"
+echo "     */                                                                               " >> "RRMoCBlockTag$class.java"
+echo "    public RRMoCBlockTag$class()                                                      " >> "RRMoCBlockTag$class.java"
+echo "    {                                                                                 " >> "RRMoCBlockTag$class.java"
+echo "        super(Tags.Block.$id);                                                        " >> "RRMoCBlockTag$class.java"
+echo "    }                                                                                 " >> "RRMoCBlockTag$class.java"
+echo "                                                                                      " >> "RRMoCBlockTag$class.java"
 echo "    /**                                                                               " >> "RRMoCBlockTag$class.java"
 echo "     * <p>                                                                            " >> "RRMoCBlockTag$class.java"
 echo "     * The setter sets the {@link Tags.Blocks#$id $name block                         " >> "RRMoCBlockTag$class.java"
@@ -83,11 +87,8 @@ echo "     */                                                                   
 echo "    @Override                                                                         " >> "RRMoCBlockTag$class.java"
 echo "    protected void setBlocksToTag()                                                   " >> "RRMoCBlockTag$class.java"
 echo "    {                                                                                 " >> "RRMoCBlockTag$class.java"
-echo "        final ArrayList<Block> $class = new ArrayList<Block>();                       " >> "RRMoCBlockTag$class.java"
-echo "                                                                                      " >> "RRMoCBlockTag$class.java"
 echo "        // Add here your blocks to this tag.                                          " >> "RRMoCBlockTag$class.java"
-echo "                                                                                      " >> "RRMoCBlockTag$class.java"
-echo "        blocksToTag.put(Tags.Blocks.$id, $class);                                     " >> "RRMoCBlockTag$class.java"
+echo "        // Use BLOCKS.add(block);                                                     " >> "RRMoCBlockTag$class.java"
 echo "    }                                                                                 " >> "RRMoCBlockTag$class.java"
 echo "}                                                                                     " >> "RRMoCBlockTag$class.java"
 

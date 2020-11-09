@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Silver Skeleton Sword item provider.            
  *                                                              
- * @version 0.0.11                                           
+ * @version 0.0.12                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderSilverSkeletonSword extends RRMoCItemProvider 

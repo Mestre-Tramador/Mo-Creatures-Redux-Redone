@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "rrmocreatures:handmade_mount_armor_crystal",
+    "rrmocreatures:handmade_mount_armor_diamond",
+    "rrmocreatures:handmade_mount_armor_gold",
+    "rrmocreatures:handmade_mount_armor_iron",
+    "rrmocreatures:handmade_mount_armor_leather",
+    "minecraft:iron_horse_armor",
+    "minecraft:golden_horse_armor",
+    "minecraft:diamond_horse_armor",
+    "minecraft:leather_horse_armor"
+  ]
+}

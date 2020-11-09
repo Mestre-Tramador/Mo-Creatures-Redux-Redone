@@ -9,7 +9,7 @@ import net.minecraft.item.ItemGroup;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Wyvern Lair Log block item provider.                           
  *                                                                                   
- * @version 0.0.11                                                                
+ * @version 0.0.12                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderWyvernLairLog extends RRMoCBlockItemProvider            

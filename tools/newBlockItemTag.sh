@@ -1,13 +1,13 @@
-################################################################################
-# This shell script file creates creates a BlockItem Tag Copy Generator class.
+#########################################################################
+# This shell script file creates a BlockItem Tag Copy Generator class.
 # It does not create a Constant for the Tags.
 # Neither add it in the Tag Generation class.
 #
 # Please be gentle with this code.
-################################################################################
+#########################################################################
 
 # Gloval variables.
-version="0.0.11"
+version="0.0.12"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -77,15 +77,11 @@ echo " */                                                                       
 echo "public class RRMoCBlockItemTag$class extends RRMoCBlockItemTagProvider                    " >> "RRMoCBlockItemTag$class.java"
 echo "{                                                                                         " >> "RRMoCBlockItemTag$class.java"
 echo "    /**                                                                                   " >> "RRMoCBlockItemTag$class.java"
-echo "     * The setter copies the {@link Tags.Blocks#$fid $name Blocks                         " >> "RRMoCBlockItemTag$class.java"
-echo "     * blocks tag} to the                                                                 " >> "RRMoCBlockItemTag$class.java"
-echo "     * {@link Tags.Items.BlockItems#$id $name BlockItems                                  " >> "RRMoCBlockItemTag$class.java"
-echo "     * blockitems tag}.                                                                   " >> "RRMoCBlockItemTag$class.java"
+echo "     * Using the parent constructor, creates the $name tag.                               " >> "RRMoCBlockItemTag$class.java"
 echo "     */                                                                                   " >> "RRMoCBlockItemTag$class.java"
-echo "    @Override                                                                             " >> "RRMoCBlockItemTag$class.java"
-echo "    protected void setBlocksToCopy()                                                      " >> "RRMoCBlockItemTag$class.java"
+echo "    public RRMoCBlockItemTag$class()                                                      " >> "RRMoCBlockItemTag$class.java"
 echo "    {                                                                                     " >> "RRMoCBlockItemTag$class.java"
-echo "        blocksToCopy.put(Tags.Blocks.$fid, Tags.Items.BlockItems.$id);                    " >> "RRMoCBlockItemTag$class.java"
+echo "        super(Tags.Blocks.$fid, Tags.Items.$id);                                          " >> "RRMoCBlockItemTag$class.java"
 echo "    }                                                                                     " >> "RRMoCBlockItemTag$class.java"
 echo "}                                                                                         " >> "RRMoCBlockItemTag$class.java"
 

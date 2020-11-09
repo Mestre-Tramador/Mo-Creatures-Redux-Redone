@@ -13,7 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 /**
  * Initialization class for Registration.
  * 
- * @version 0.0.11
+ * @version 0.0.12
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class Register

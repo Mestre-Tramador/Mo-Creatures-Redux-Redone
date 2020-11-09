@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Filled Fairy Amulet item.                                          
  *                                                                                   
- * @version 0.0.11                                                                
+ * @version 0.0.12                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemAmuletFairyFilled extends RRMoCItem                                      

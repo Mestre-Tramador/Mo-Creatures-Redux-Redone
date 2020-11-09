@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.11
+@SET version=0.0.12
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -44,7 +44,6 @@ SET /p name=Name:
 IF ["%name%"] == [] EXIT 1
 
 
-
 @REM Go to the BlockItem Tag directory.
 CD %tagdir%
 
@@ -63,15 +62,11 @@ ECHO  */                                                                        
 ECHO public class RRMoCBlockItemTag%class% extends RRMoCBlockItemTagProvider                   >> RRMoCBlockItemTag%class%.java
 ECHO {                                                                                         >> RRMoCBlockItemTag%class%.java
 ECHO     /**                                                                                   >> RRMoCBlockItemTag%class%.java
-ECHO      * The setter copies the {@link Tags.Blocks#%fid% %name% Blocks                       >> RRMoCBlockItemTag%class%.java
-ECHO      * blocks tag} to the                                                                 >> RRMoCBlockItemTag%class%.java
-ECHO      * {@link Tags.Items.BlockItems#%id% %name% BlockItems                                >> RRMoCBlockItemTag%class%.java
-ECHO      * blockitems tag}.                                                                   >> RRMoCBlockItemTag%class%.java
+ECHO      * Using the parent constructor, creates the %name% tag.                              >> RRMoCBlockItemTag%class%.java
 ECHO      */                                                                                   >> RRMoCBlockItemTag%class%.java
-ECHO     @Override                                                                             >> RRMoCBlockItemTag%class%.java
-ECHO     protected void setBlocksToCopy()                                                      >> RRMoCBlockItemTag%class%.java
+ECHO     public RRMoCBlockItemTag%class%()                                                     >> RRMoCBlockItemTag%class%.java
 ECHO     {                                                                                     >> RRMoCBlockItemTag%class%.java
-ECHO         blocksToCopy.put(Tags.Blocks.%fid%, Tags.Items.BlockItems.%id%);                  >> RRMoCBlockItemTag%class%.java
+ECHO         super(Tags.Blocks.%fid%, Tags.Items.%id%);                                        >> RRMoCBlockItemTag%class%.java
 ECHO     }                                                                                     >> RRMoCBlockItemTag%class%.java
 ECHO }                                                                                         >> RRMoCBlockItemTag%class%.java
 

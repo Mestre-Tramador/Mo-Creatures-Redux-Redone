@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.11
+@SET version=0.0.12
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -37,20 +37,16 @@ SET /p name=Name:
 IF ["%name%"] == [] EXIT 1
 
 
-
 @REM Go to the Block Tag directory.
 CD %tagdir%
 
 @REM Create the Block Tag.
 ECHO package mestretramador.rrmocreatures.data.client.tags.block;                          >> RRMoCBlockTag%class%.java
 ECHO.                                                                                      >> RRMoCBlockTag%class%.java
-ECHO import java.util.ArrayList;                                                           >> RRMoCBlockTag%class%.java
-ECHO.                                                                                      >> RRMoCBlockTag%class%.java
 ECHO import mestretramador.rrmocreatures.data.client.provider.block.RRMoCBlockTagProvider; >> RRMoCBlockTag%class%.java
-ECHO import mestretramador.rrmocreatures.init.RegisterItem;                                >> RRMoCBlockTag%class%.java
+ECHO import mestretramador.rrmocreatures.init.RegisterBlock;                               >> RRMoCBlockTag%class%.java
 ECHO import mestretramador.rrmocreatures.util.Tags;                                        >> RRMoCBlockTag%class%.java
 ECHO.                                                                                      >> RRMoCBlockTag%class%.java
-ECHO import net.minecraft.block.Block;                                                     >> RRMoCBlockTag%class%.java
 ECHO /**                                                                                   >> RRMoCBlockTag%class%.java
 ECHO  * Mo^'Creatures Redux^&Redone %name% Tag's Blocks.                                   >> RRMoCBlockTag%class%.java
 ECHO  *                                                                                    >> RRMoCBlockTag%class%.java
@@ -59,6 +55,14 @@ ECHO  * @author %author%                                                        
 ECHO  */                                                                                   >> RRMoCBlockTag%class%.java
 ECHO public class RRMoCBlockTag%class% extends RRMoCBlockTagProvider                       >> RRMoCBlockTag%class%.java
 ECHO {                                                                                     >> RRMoCBlockTag%class%.java
+ECHO     /**                                                                               >> RRMoCBlockTag%class%.java
+ECHO      * Using the parent constructor, creates the %name% tag.                          >> RRMoCBlockTag%class%.java
+ECHO      */                                                                               >> RRMoCBlockTag%class%.java
+ECHO     public RRMoCBlockTag%class%()                                                     >> RRMoCBlockTag%class%.java
+ECHO     {                                                                                 >> RRMoCBlockTag%class%.java
+ECHO         super(Tags.Blocks.%id%);                                                      >> RRMoCBlockTag%class%.java
+ECHO     }                                                                                 >> RRMoCBlockTag%class%.java
+ECHO.                                                                                      >> RRMoCBlockTag%class%.java
 ECHO     /**                                                                               >> RRMoCBlockTag%class%.java
 ECHO      * ^<p^>                                                                          >> RRMoCBlockTag%class%.java
 ECHO      * The setter sets the {@link Tags.Blocks#%id% %name% block                       >> RRMoCBlockTag%class%.java
@@ -71,11 +75,8 @@ ECHO      */                                                                    
 ECHO     @Override                                                                         >> RRMoCBlockTag%class%.java
 ECHO     protected void setBlocksToTag()                                                   >> RRMoCBlockTag%class%.java
 ECHO     {                                                                                 >> RRMoCBlockTag%class%.java
-ECHO         final ArrayList^<Block^> %class% = new ArrayList^<Block^>();                  >> RRMoCBlockTag%class%.java
-ECHO.                                                                                      >> RRMoCBlockTag%class%.java
 ECHO         // Add here your blocks to this tag.                                          >> RRMoCBlockTag%class%.java
-ECHO.                                                                                      >> RRMoCBlockTag%class%.java
-ECHO         blocksToTag.put(Tags.Blocks.%id%, %class%);                                   >> RRMoCBlockTag%class%.java
+ECHO         // Use BLOCKS.add(block);                                                     >> RRMoCBlockTag%class%.java
 ECHO     }                                                                                 >> RRMoCBlockTag%class%.java
 ECHO }                                                                                     >> RRMoCBlockTag%class%.java
 

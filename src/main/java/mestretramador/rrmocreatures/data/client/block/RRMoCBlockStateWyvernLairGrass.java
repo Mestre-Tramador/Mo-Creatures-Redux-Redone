@@ -11,7 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Wyvern Lair Grass block state.                                                
  *                                                                                                
- * @version 0.0.11                                                                             
+ * @version 0.0.12                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockStateWyvernLairGrass extends RRMoCBlockStateProvider                               

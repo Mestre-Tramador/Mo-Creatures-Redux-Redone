@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Hide Helmet item.                                          
  *                                                                                   
- * @version 0.0.11                                                                
+ * @version 0.0.12                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemHideHelmet extends RRMoCItem                                      

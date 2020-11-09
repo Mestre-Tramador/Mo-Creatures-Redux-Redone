@@ -166,8 +166,8 @@ import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurtleRaw;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelUnicornHorn;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWhip;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWyvernLairTallGrass;
-import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockTagsGeneration;
-import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagsGeneration;
+import mestretramador.rrmocreatures.data.client.tags.RRMoCBlockTagsGeneration;
+import mestretramador.rrmocreatures.data.client.tags.RRMoCItemTagsGeneration;
 import mestretramador.rrmocreatures.util.Constants;
 
 import net.minecraft.data.BlockTagsProvider;
@@ -181,7 +181,7 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 /**
  * Mo'Creatures Redux&Redone Data Generators.
  * 
- * @version 0.0.11
+ * @version 0.0.12
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 @Mod.EventBusSubscriber(modid = Constants.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -423,7 +423,5 @@ public final class DataGeneration
         generator.addProvider(rrmocBlockTags);
 
         generator.addProvider(new RRMoCItemTagsGeneration(generator, rrmocBlockTags, existingFileHelper));
-
-        // TODO: Add more Tags.
     }
 }

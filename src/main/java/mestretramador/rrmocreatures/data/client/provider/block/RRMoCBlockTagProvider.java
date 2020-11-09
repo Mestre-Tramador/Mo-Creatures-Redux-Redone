@@ -1,7 +1,6 @@
 package mestretramador.rrmocreatures.data.client.provider.block;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import net.minecraft.block.Block;
 import net.minecraft.tags.ITag;
@@ -9,33 +8,49 @@ import net.minecraft.tags.ITag;
 /**
  * Mo'Creatures Redux&Redone Block Tag Provider base.
  * 
- * @version 0.0.11
+ * @version 0.0.12
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockTagProvider
 {
-    /**
-     * A Map to define wich list of block will be tagged by a Minecraft of MoCR&R
-     * Tag.
-     */
-    protected static final HashMap<ITag.INamedTag<Block>, ArrayList<Block>> blocksToTag = new HashMap<ITag.INamedTag<Block>, ArrayList<Block>>();
+    /** The key tag to the list of blocks */
+    private ITag.INamedTag<Block> KEY;
+
+    /** An Array to define wich list of blocks will be tagged by a Minecraft of MoCR&R Tag. */
+    protected ArrayList<Block> BLOCKS;
 
     /**
-     * When creating a Block Tag Provider, it already set the blocks to the tags.
+     * When creating a Block Tag Provider, it already set the blocks to the tag.
+     * 
+     * @param TAG There is need to pass the Key Tag.
      */
-    protected RRMoCBlockTagProvider()
+    protected RRMoCBlockTagProvider(ITag.INamedTag<Block> TAG)
     {
+        KEY = TAG;
+
+        BLOCKS = new ArrayList<Block>();
+
         setBlocksToTag();
     }
 
     /**
-     * Public getter to the data.
+     * Public getter to the key.
      * 
-     * @return The {@link java.util.HashMap Map} with all the data.
+     * @return The {@link net.minecraft.tags.ITag Tag} wich corresponds to the list.
      */
-    public HashMap<ITag.INamedTag<Block>, ArrayList<Block>> provideBlocksToTag()
+    public ITag.INamedTag<Block> provideTagKey()
     {
-        return blocksToTag;
+        return KEY;
+    }
+
+    /**
+     * Public getter to the values.
+     * 
+     * @return The {@link java.util.ArrayList Array} with all the values.
+     */
+    public ArrayList<Block> provideBlocksToTag()
+    {
+        return BLOCKS;
     }
 
     /**

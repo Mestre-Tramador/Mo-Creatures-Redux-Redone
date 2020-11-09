@@ -1,13 +1,13 @@
-########################################################################
-# This shell script file creates creates an Item Tag Generator class.
+#################################################################
+# This shell script file creates an Item Tag Generator class.
 # It does not create a Constant for the Tag.
 # Neither add it in the Tag Generation class.
 #
 # Please be gentle with this code.
-########################################################################
+#################################################################
 
 # Gloval variables.
-version="0.0.11"
+version="0.0.12"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -55,13 +55,9 @@ chmod 744 "RRMoCItemTag$class.java"
 
 echo "package mestretramador.rrmocreatures.data.client.tags.item;                         " >> "RRMoCItemTag$class.java"
 echo "                                                                                    " >> "RRMoCItemTag$class.java"
-echo "import java.util.ArrayList;                                                         " >> "RRMoCItemTag$class.java"
-echo "                                                                                    " >> "RRMoCItemTag$class.java"
 echo "import mestretramador.rrmocreatures.data.client.provider.item.RRMoCItemTagProvider; " >> "RRMoCItemTag$class.java"
 echo "import mestretramador.rrmocreatures.init.RegisterItem;                              " >> "RRMoCItemTag$class.java"
 echo "import mestretramador.rrmocreatures.util.Tags;                                      " >> "RRMoCItemTag$class.java"
-echo "                                                                                    " >> "RRMoCItemTag$class.java"
-echo "import net.minecraft.item.Item;                                                     " >> "RRMoCItemTag$class.java"
 echo "                                                                                    " >> "RRMoCItemTag$class.java"
 echo "/**                                                                                 " >> "RRMoCItemTag$class.java"
 echo " * Mo'Creatures Redux&Redone $name Tag's Items.                                     " >> "RRMoCItemTag$class.java"
@@ -71,6 +67,14 @@ echo " * @author $author                                                        
 echo " */                                                                                 " >> "RRMoCItemTag$class.java"
 echo "public class RRMoCItemTag$class extends RRMoCItemTagProvider                        " >> "RRMoCItemTag$class.java"
 echo "{                                                                                   " >> "RRMoCItemTag$class.java"
+echo "    /**                                                                             " >> "RRMoCItemTag$class.java"
+echo "     * Using the parent constructor, creates the $name tag.                         " >> "RRMoCItemTag$class.java"
+echo "     */                                                                             " >> "RRMoCItemTag$class.java"
+echo "    public RRMoCItemTag$class()                                                     " >> "RRMoCItemTag$class.java"
+echo "    {                                                                               " >> "RRMoCItemTag$class.java"
+echo "        super(Tags.Items.$id);                                                      " >> "RRMoCItemTag$class.java"
+echo "    }                                                                               " >> "RRMoCItemTag$class.java"
+echo "                                                                                    " >> "RRMoCItemTag$class.java"
 echo "    /**                                                                             " >> "RRMoCItemTag$class.java"
 echo "     * <p>                                                                          " >> "RRMoCItemTag$class.java"
 echo "     * The setter sets the {@link Tags.Items#$id $name item                         " >> "RRMoCItemTag$class.java"
@@ -83,11 +87,8 @@ echo "     */                                                                   
 echo "    @Override                                                                       " >> "RRMoCItemTag$class.java"
 echo "    protected void setItemsToTag()                                                  " >> "RRMoCItemTag$class.java"
 echo "    {                                                                               " >> "RRMoCItemTag$class.java"
-echo "        final ArrayList<Item> $class = new ArrayList<Item>();                       " >> "RRMoCItemTag$class.java"
-echo "                                                                                    " >> "RRMoCItemTag$class.java"
 echo "        // Add here your items to this tag.                                         " >> "RRMoCItemTag$class.java"
-echo "                                                                                    " >> "RRMoCItemTag$class.java"
-echo "        itemsToTag.put(Tags.Items.$id, $class);                                     " >> "RRMoCItemTag$class.java"
+echo "        // Use ITEMS.add(item);                                                     " >> "RRMoCItemTag$class.java"
 echo "    }                                                                               " >> "RRMoCItemTag$class.java"
 echo "}                                                                                   " >> "RRMoCItemTag$class.java"
 

@@ -1,3 +1,35 @@
+[0.0.12]
+- Total improvement of the Tags Generation. 
+- Actualized Tools for creation of Tags Providers.
+- Added support for Minecraft Vanilla's and Forge's Tags.
+- Created an enumeration utility for Minecraft Vanilla IDs.
+- Created Tags for Mo'Creatures Redux&Redone.
+- First implementation of Mo'Creatures Redux&Redone "Ogre Lair's Dirt" Block Tag.
+- First implementation of Mo'Creatures Redux&Redone "Ogre Lair's Logs" Block Tag.
+- First implementation of Mo'Creatures Redux&Redone "Ogre Lair's Stone" Block Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wyvern Lair's Dirt" Block Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wyvern Lair's Logs" Block Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wyvern Lair's Stone" Block Tag.
+- First implementation of Mo'Creatures Redux&Redone "TMNT Weapons" Item Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wereables to Attack" Item Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wereables to Protect" Item Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wereables to Ride" Item Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wereables for Storage" Item Tag.
+- First implementation of Mo'Creatures Redux&Redone "Ogre Lair's Dirt" BlockItem Tag.
+- First implementation of Mo'Creatures Redux&Redone "Ogre Lair's Logs" BlockItem Tag.
+- First implementation of Mo'Creatures Redux&Redone "Ogre Lair's Stone" BlockItem Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wyvern Lair's Dirt" BlockItem Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wyvern Lair's Logs" BlockItem Tag.
+- First implementation of Mo'Creatures Redux&Redone "Wyvern Lair's Stone" BlockItem Tag.
+- Added Blocks to Forge "Dirt" Block Tag.
+- Added Blocks to Forge "Stone" Block Tag.
+- Added Blocks to Forge "Stone" BlockItem Tag.
+- Appended the Mo'Creatures Redux&Redone "Ogre Lair's Logs" Block Tag to the Minecraft "Logs That Burn" Block Tag.
+- Appended the Mo'Creatures Redux&Redone "Ogre Lair's Logs" BlockItem Tag to the Minecraft "Logs That Burn" BlockItem Tag.
+- Appended the Mo'Creatures Redux&Redone "Wyvern Lair's Logs" Block Tag to the Minecraft "Logs That Burn" Block Tag.
+- Appended the Mo'Creatures Redux&Redone "Wyvern Lair's Logs" BlockItem Tag to the Minecraft "Logs That Burn" BlockItem Tag.
+- Generated Data for all implemented tags.
+
 [0.0.11]
 - Reimported most Mo'Creatures' blocks images.
 - Created Block ID Constants for the Mo'Creatures Redux&Redone items.
