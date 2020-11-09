@@ -1,5 +1,5 @@
 @REM ########################################################################
-@REM This batch file creates a Item Forge Tag Append Generator class.
+@REM This batch file creates an Item Forge Tag Append Generator class.
 @REM It does not create a Constant for the Tags.
 @REM Neither add it in the Tag Generation class.
 @REM
@@ -7,7 +7,7 @@
 @REM ########################################################################
 
 @REM Gloval variables.
-@SET version=0.0.12
+@SET version=0.0.13
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 

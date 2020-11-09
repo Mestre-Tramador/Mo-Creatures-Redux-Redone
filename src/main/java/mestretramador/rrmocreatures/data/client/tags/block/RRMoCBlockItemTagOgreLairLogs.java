@@ -6,7 +6,7 @@ import mestretramador.rrmocreatures.util.Tags;
 /**                                                                                       
  * Mo'Creatures Redux&Redone Ogre Lair's Logs Tag's BlockItems.                                   
  *                                                                                        
- * @version 0.0.12                                                                     
+ * @version 0.0.13                                                                     
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                       
  */                                                                                       
 public class RRMoCBlockItemTagOgreLairLogs extends RRMoCBlockItemTagProvider                   

@@ -6,7 +6,7 @@ import net.minecraft.tags.ITag;
 /**
  * Mo'Creatures Redux&Redone Item Tag Append Provider base.
  * 
- * @version 0.0.12
+ * @version 0.0.13
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCItemTagAppendProvider
@@ -21,7 +21,7 @@ public abstract class RRMoCItemTagAppendProvider
      * When creating a Item Tag Append, both parent and child tags must be passed.
      * 
      * @param PARENT The tag to append to.
-     * @param CHILD The tag to be appended.
+     * @param CHILD  The tag to be appended.
      */
     protected RRMoCItemTagAppendProvider(ITag.INamedTag<Item> PARENT, ITag.INamedTag<Item> CHILD)
     {

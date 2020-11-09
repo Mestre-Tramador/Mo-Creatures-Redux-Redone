@@ -1,3 +1,11 @@
+[0.0.13]
+- Removed Hard Coded EN-US language JSON file.
+- Implemented langs providers.
+- Added languages IDs on Constants class.
+- Created batch and shell script tools for Lang Data Generators
+- Adjust on batch and shell script misspellings.
+- Improved JavaDoc on some classes.
+
 [0.0.12]
 - Total improvement of the Tags Generation. 
 - Actualized Tools for creation of Tags Providers.

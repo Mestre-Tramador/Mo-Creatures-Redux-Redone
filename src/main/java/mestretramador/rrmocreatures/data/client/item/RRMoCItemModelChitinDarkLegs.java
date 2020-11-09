@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Dark Chitin Legs item model.                                                        
  *                                                                                                       
- * @version 0.0.12                                                                                    
+ * @version 0.0.13                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelChitinDarkLegs extends RRMoCItemModelProvider                                        

@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Constants class to use generally.
  * 
- * @version 0.0.12
+ * @version 0.0.13
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Constants
@@ -19,6 +19,13 @@ public final class Constants
 
     /** Path to Blocks resources. */
     public static final String BLOCK_PATH = "block/";
+
+    /** Supported Languages IDs. */
+    public static class Langs
+    {
+        /** English (US). */
+        public static final String EN_US = "en_us";
+    }
 
     /** Items IDs. */
     public static class Items

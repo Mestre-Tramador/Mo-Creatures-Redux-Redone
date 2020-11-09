@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Staff of Teleportation item provider.            
  *                                                              
- * @version 0.0.12                                           
+ * @version 0.0.13                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderOgreLairPrinceStaffTeleport extends RRMoCItemProvider 

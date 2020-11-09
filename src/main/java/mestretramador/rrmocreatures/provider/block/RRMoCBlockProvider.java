@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 /**
  * Mo'Creatures Redux&Redone Block Provider base.
  * 
- * @version 0.0.12
+ * @version 0.0.13
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockProvider

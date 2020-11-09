@@ -1,5 +1,5 @@
 ###############################################################################
-# This shell script file creates a Item Forge Tag Append Generator class.
+# This shell script file creates an Item Forge Tag Append Generator class.
 # It does not create a Constant for the Tags.
 # Neither add it in the Tag Generation class.
 #
@@ -7,7 +7,7 @@
 ###############################################################################
 
 # Gloval variables.
-version="0.0.12"
+version="0.0.13"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 

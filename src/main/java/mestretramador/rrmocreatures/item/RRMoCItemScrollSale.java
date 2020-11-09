@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Scroll - Sale item.                                          
  *                                                                                   
- * @version 0.0.12                                                                
+ * @version 0.0.13                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemScrollSale extends RRMoCItem                                      

@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Dark Sting Sword item provider.            
  *                                                              
- * @version 0.0.12                                           
+ * @version 0.0.13                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderStingDarkSword extends RRMoCItemProvider 

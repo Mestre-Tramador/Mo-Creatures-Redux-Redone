@@ -7,7 +7,7 @@ import mestretramador.rrmocreatures.util.Tags;
 /**                                                                                   
  * Mo'Creatures Redux&Redone Ogre Lair's Dirt Tag's Blocks.                                   
  *                                                                                    
- * @version 0.0.12                                                                 
+ * @version 0.0.13                                                                 
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                   
  */                                                                                   
 public class RRMoCBlockTagOgreLairDirt extends RRMoCBlockTagProvider                       

@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Bo item.                                          
  *                                                                                   
- * @version 0.0.12                                                                
+ * @version 0.0.13                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemTMNTBo extends RRMoCItem                                      

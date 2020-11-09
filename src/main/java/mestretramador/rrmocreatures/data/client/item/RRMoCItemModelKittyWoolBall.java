@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Kitty Wool Ball item model.                                                        
  *                                                                                                       
- * @version 0.0.12                                                                                    
+ * @version 0.0.13                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelKittyWoolBall extends RRMoCItemModelProvider                                        

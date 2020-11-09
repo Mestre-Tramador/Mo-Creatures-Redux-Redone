@@ -7,7 +7,7 @@ import net.minecraft.tags.ITag;
 /**
  * Mo'Creatures Redux&Redone BlockItem Tag Provider base.
  * 
- * @version 0.0.12
+ * @version 0.0.13
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockItemTagProvider
@@ -20,6 +20,9 @@ public abstract class RRMoCBlockItemTagProvider
 
     /**
      * When creating a BlockItem Tag Provider, it already set the blocks tags to the item tags.
+     * 
+     * @param BLOCKS The Block Tag to be copied.
+     * @param ITEMS  The Item Tag to receive the copy.
      */
     protected RRMoCBlockItemTagProvider(ITag.INamedTag<Block> BLOCKS, ITag.INamedTag<Item> ITEMS)
     {

@@ -142,7 +142,7 @@ import mestretramador.rrmocreatures.item.RRMoCItemWhip;
 /**
  * Items to registrate.
  * 
- * @version 0.0.12
+ * @version 0.0.13
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RegisterItem

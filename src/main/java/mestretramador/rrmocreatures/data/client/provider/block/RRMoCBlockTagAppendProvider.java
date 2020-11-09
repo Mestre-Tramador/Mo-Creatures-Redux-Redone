@@ -6,7 +6,7 @@ import net.minecraft.tags.ITag;
 /**
  * Mo'Creatures Redux&Redone Block Tag Append Provider base.
  * 
- * @version 0.0.12
+ * @version 0.0.13
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockTagAppendProvider
@@ -21,7 +21,7 @@ public abstract class RRMoCBlockTagAppendProvider
      * When creating a Block Tag Append, both parent and child tags must be passed.
      * 
      * @param PARENT The tag to append to.
-     * @param CHILD The tag to be appended.
+     * @param CHILD  The tag to be appended.
      */
     protected RRMoCBlockTagAppendProvider(ITag.INamedTag<Block> PARENT, ITag.INamedTag<Block> CHILD)
     {
