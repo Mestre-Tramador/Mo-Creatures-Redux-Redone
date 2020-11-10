@@ -1,26 +1,32 @@
 package mestretramador.rrmocreatures.provider.block;
 
+import java.util.function.ToIntFunction;
+
 import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Rarity;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Wyvern Lair Tall Grass block item provider.                           
  *                                                                                   
- * @version 0.0.13                                                                
+ * @version 0.0.14                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderWyvernLairTallGrass extends RRMoCBlockItemProvider            
 {                                                                                    
     /**                                                                              
      * Using the parent constructor, start the Wyvern Lair Tall Grass with a                         
-     * {@link net.minecraft.block.material.Material#PLANTS PLANTS material}. 
+     * {@link net.minecraft.block.material.Material#TALL_PLANTS TALL_PLANTS material}. 
      */                                                                              
     public RRMoCBlockItemProviderWyvernLairTallGrass()                                           
     {                                                                                
-        super(Material.PLANTS);                                                  
+        super(Material.TALL_PLANTS); 
+        
+        // TODO: Add transparency.                                                 
     }                                                                                
                                                                                      
     /**                                                                              
@@ -32,6 +38,9 @@ public class RRMoCBlockItemProviderWyvernLairTallGrass extends RRMoCBlockItemPro
     public AbstractBlock.Properties provideBlockProperties()                         
     {                                                                                
         BLOCK_PROPERTIES().sound(SoundType.PLANT);
+        BLOCK_PROPERTIES().doesNotBlockMovement();
+        BLOCK_PROPERTIES().zeroHardnessAndResistance();
+        BLOCK_PROPERTIES().setLightLevel(getLightLevel()); 
                                                                                      
         return BLOCK_PROPERTIES();                                                   
     }                                                                                
@@ -45,7 +54,22 @@ public class RRMoCBlockItemProviderWyvernLairTallGrass extends RRMoCBlockItemPro
     public Item.Properties provideItemProperties()                                   
     {                                                                                
         ITEM_PROPERTIES().group(ItemGroup.DECORATIONS);
+        ITEM_PROPERTIES().rarity(Rarity.COMMON);
+        ITEM_PROPERTIES().maxStackSize(64);
                                                                                      
         return ITEM_PROPERTIES();                                                    
-    }                                                                                
+    } 
+    
+    /**
+     * A helper getter to the {@link AbstractBlock.Properties#setLightLevel(ToIntFunction) Light Level Setter}.
+     * The BlockState is irrelevant to the value.
+     * 
+     * @return An int returnable function wich returns <b>1</b>.
+     */
+    private ToIntFunction<BlockState> getLightLevel()
+    {
+        return (state) -> {
+            return 1;
+        };
+    }
 }                                                                                    

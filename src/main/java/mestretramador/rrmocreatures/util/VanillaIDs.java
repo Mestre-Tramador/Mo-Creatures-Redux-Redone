@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Enumeration of the current Minecraft Items IDs.
  * 
- * @version 0.0.13
+ * @version 0.0.14
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public enum VanillaIDs

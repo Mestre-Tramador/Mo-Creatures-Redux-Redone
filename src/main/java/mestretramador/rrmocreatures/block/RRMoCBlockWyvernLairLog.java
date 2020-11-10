@@ -10,7 +10,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Wyvern Lair Log block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.13                                                                                              
+ * @version 0.0.14                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockWyvernLairLog extends RRMoCBlock implements RRMoCBlockItem                                        

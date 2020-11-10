@@ -1,3 +1,34 @@
+[0.0.14]
+- Added more Block Properties to Ogre Lair Dirt block.
+- Added more Block Properties to Ogre Lair Grass block.
+- Added more Block Properties to Ogre Lair Leaves block.
+- Added more Block Properties to Ogre Lair Log block.
+- Added more Block Properties to Ogre Lair Planks block.
+- Added more Block Properties to Ogre Lair Stone block.
+- Added more Block Properties to Ogre Lair Tall Grass block.
+- Added more Block Properties to Wyvern Lair Dirt block.
+- Added more Block Properties to Wyvern Lair Grass block.
+- Added more Block Properties to Wyvern Lair Leaves block.
+- Added more Block Properties to Wyvern Lair Log block.
+- Added more Block Properties to Wyvern Lair Planks block.
+- Added more Block Properties to Wyvern Lair Stone block.
+- Added more Block Properties to Wyvern Lair Tall Grass block.
+- Added more Item Properties to Ogre Lair Dirt blockitem.
+- Added more Item Properties to Ogre Lair Grass blockitem.
+- Added more Item Properties to Ogre Lair Leaves blockitem.
+- Added more Item Properties to Ogre Lair Log blockitem.
+- Added more Item Properties to Ogre Lair Planks blockitem.
+- Added more Item Properties to Ogre Lair Stone blockitem.
+- Added more Item Properties to Ogre Lair Tall Grass blockitem.
+- Added more Item Properties to Wyvern Lair Dirt blockitem.
+- Added more Item Properties to Wyvern Lair Grass blockitem.
+- Added more Item Properties to Wyvern Lair Leaves blockitem.
+- Added more Item Properties to Wyvern Lair Log blockitem.
+- Added more Item Properties to Wyvern Lair Planks blockitem.
+- Added more Item Properties to Wyvern Lair Stone blockitem.
+- Added more Item Properties to Wyvern Lair Tall Grass blockitem.
+- Transparency still not implemented.
+
 [0.0.13]
 - Removed Hard Coded EN-US language JSON file.
 - Implemented langs providers.

@@ -1,15 +1,18 @@
-package mestretramador.rrmocreatures.provider.block;                                 
-                                                                                     
+package mestretramador.rrmocreatures.provider.block;
+
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;                                                      
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Rarity;
+
+import net.minecraftforge.common.ToolType;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Wyvern Lair Leaves block item provider.                           
  *                                                                                   
- * @version 0.0.13                                                                
+ * @version 0.0.14                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderWyvernLairLeaves extends RRMoCBlockItemProvider            
@@ -20,7 +23,9 @@ public class RRMoCBlockItemProviderWyvernLairLeaves extends RRMoCBlockItemProvid
      */                                                                              
     public RRMoCBlockItemProviderWyvernLairLeaves()                                           
     {                                                                                
-        super(Material.LEAVES);                                                  
+        super(Material.LEAVES);  
+        
+        // TODO: Add transparency.                                                  
     }                                                                                
                                                                                      
     /**                                                                              
@@ -32,6 +37,10 @@ public class RRMoCBlockItemProviderWyvernLairLeaves extends RRMoCBlockItemProvid
     public AbstractBlock.Properties provideBlockProperties()                         
     {                                                                                
         BLOCK_PROPERTIES().sound(SoundType.PLANT);
+        BLOCK_PROPERTIES().harvestTool(ToolType.HOE);
+        BLOCK_PROPERTIES().harvestLevel(0);
+        BLOCK_PROPERTIES().hardnessAndResistance(0.2F);
+        BLOCK_PROPERTIES().tickRandomly();
                                                                                      
         return BLOCK_PROPERTIES();                                                   
     }                                                                                
@@ -44,7 +53,9 @@ public class RRMoCBlockItemProviderWyvernLairLeaves extends RRMoCBlockItemProvid
     @Override                                                                        
     public Item.Properties provideItemProperties()                                   
     {                                                                                
-        ITEM_PROPERTIES().group(ItemGroup.DECORATIONS);                                     
+        ITEM_PROPERTIES().group(ItemGroup.DECORATIONS);
+        ITEM_PROPERTIES().rarity(Rarity.COMMON);
+        ITEM_PROPERTIES().maxStackSize(64);                                     
                                                                                      
         return ITEM_PROPERTIES();                                                    
     }                                                                                

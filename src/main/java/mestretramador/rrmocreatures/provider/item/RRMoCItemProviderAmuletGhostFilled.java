@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Filled Ghost Amulet item provider.            
  *                                                              
- * @version 0.0.13                                           
+ * @version 0.0.14                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderAmuletGhostFilled extends RRMoCItemProvider 

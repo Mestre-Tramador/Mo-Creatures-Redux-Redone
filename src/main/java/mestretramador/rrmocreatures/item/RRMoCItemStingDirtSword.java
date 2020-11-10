@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Dirt Sting Sword item.                                          
  *                                                                                   
- * @version 0.0.13                                                                
+ * @version 0.0.14                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemStingDirtSword extends RRMoCItem                                      

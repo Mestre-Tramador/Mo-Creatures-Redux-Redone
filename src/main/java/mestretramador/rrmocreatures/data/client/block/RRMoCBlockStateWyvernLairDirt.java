@@ -11,7 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Wyvern Lair Dirt block state.                                                
  *                                                                                                
- * @version 0.0.13                                                                             
+ * @version 0.0.14                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockStateWyvernLairDirt extends RRMoCBlockStateProvider                               
