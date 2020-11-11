@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Item Model Provider base.
  * 
- * @version 0.0.15
+ * @version 0.0.16
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCItemModelProvider extends RRMoCModelProvider
@@ -19,12 +19,12 @@ public abstract class RRMoCItemModelProvider extends RRMoCModelProvider
     protected String layer;
 
     /** The constant location for the Items resources. */
-    protected static ResourceLocation LOCATION;
+    protected ResourceLocation LOCATION;
 
     /**
      * To create an Item Model, besides providing a DataGenerator and a
      * ExistingFileHelper, there is still need to pass the item model ID and its
-     * path, also a layer. The Location is automatically loaded.
+     * path, also a layer. The Location is automatically loaded, but can be changed.
      * 
      * @param generator          Minecraft {@link net.minecraft.data.DataGenerator
      *                           Data Generator}.

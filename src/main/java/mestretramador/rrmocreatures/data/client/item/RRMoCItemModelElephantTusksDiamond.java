@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Diamond Elephant Tusk Sword item model.                                                        
  *                                                                                                       
- * @version 0.0.15                                                                                    
+ * @version 0.0.16                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelElephantTusksDiamond extends RRMoCItemModelProvider                                        
@@ -28,7 +28,9 @@ public class RRMoCItemModelElephantTusksDiamond extends RRMoCItemModelProvider
      */                                                                                                  
     public RRMoCItemModelElephantTusksDiamond(DataGenerator generator, ExistingFileHelper existingFileHelper)         
     {                                                                                                    
-        super(generator, existingFileHelper, Constants.Items.ELEPHANT_TUSKS_DIAMOND, Constants.ITEM_PATH, "layer0");      
+        super(generator, existingFileHelper, Constants.Items.ELEPHANT_TUSKS_DIAMOND, Constants.ITEM_PATH, "layer0");
+        
+        LOCATION = mcLoc("item/handheld");
     }                                                                                                    
                                                                                                          
     /**                                                                                                  

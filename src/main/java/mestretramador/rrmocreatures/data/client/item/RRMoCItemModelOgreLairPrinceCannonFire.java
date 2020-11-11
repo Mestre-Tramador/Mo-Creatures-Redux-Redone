@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Fire Cannon item model.                                                        
  *                                                                                                       
- * @version 0.0.15                                                                                    
+ * @version 0.0.16                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelOgreLairPrinceCannonFire extends RRMoCItemModelProvider                                        
@@ -28,7 +28,9 @@ public class RRMoCItemModelOgreLairPrinceCannonFire extends RRMoCItemModelProvid
      */                                                                                                  
     public RRMoCItemModelOgreLairPrinceCannonFire(DataGenerator generator, ExistingFileHelper existingFileHelper)         
     {                                                                                                    
-        super(generator, existingFileHelper, Constants.Items.OGRE_LAIR_PRINCE_CANNON_FIRE, Constants.ITEM_PATH, "layer0");       
+        super(generator, existingFileHelper, Constants.Items.OGRE_LAIR_PRINCE_CANNON_FIRE, Constants.ITEM_PATH, "layer0");   
+        
+        LOCATION = mcLoc("item/handheld");
     }                                                                                                    
                                                                                                          
     /**                                                                                                  

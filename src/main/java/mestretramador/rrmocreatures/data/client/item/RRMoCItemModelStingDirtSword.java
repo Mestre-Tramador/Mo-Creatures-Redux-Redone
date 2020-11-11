@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Dirt Sting Sword item model.                                                        
  *                                                                                                       
- * @version 0.0.15                                                                                    
+ * @version 0.0.16                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelStingDirtSword extends RRMoCItemModelProvider                                        
@@ -28,7 +28,9 @@ public class RRMoCItemModelStingDirtSword extends RRMoCItemModelProvider
      */                                                                                                  
     public RRMoCItemModelStingDirtSword(DataGenerator generator, ExistingFileHelper existingFileHelper)         
     {                                                                                                    
-        super(generator, existingFileHelper, Constants.Items.STING_DIRT_SWORD, Constants.ITEM_PATH, "layer0");       
+        super(generator, existingFileHelper, Constants.Items.STING_DIRT_SWORD, Constants.ITEM_PATH, "layer0");
+        
+        LOCATION = mcLoc("item/handheld");
     }                                                                                                    
                                                                                                          
     /**                                                                                                  

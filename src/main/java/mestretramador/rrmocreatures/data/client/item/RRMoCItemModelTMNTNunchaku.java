@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Nunchaku item model.                                                        
  *                                                                                                       
- * @version 0.0.15                                                                                    
+ * @version 0.0.16                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelTMNTNunchaku extends RRMoCItemModelProvider                                        
@@ -28,7 +28,9 @@ public class RRMoCItemModelTMNTNunchaku extends RRMoCItemModelProvider
      */                                                                                                  
     public RRMoCItemModelTMNTNunchaku(DataGenerator generator, ExistingFileHelper existingFileHelper)         
     {                                                                                                    
-        super(generator, existingFileHelper, Constants.Items.TMNT_NUNCHAKU, Constants.ITEM_PATH, "layer0");       
+        super(generator, existingFileHelper, Constants.Items.TMNT_NUNCHAKU, Constants.ITEM_PATH, "layer0");   
+        
+        LOCATION = mcLoc("item/handheld");
     }                                                                                                    
                                                                                                          
     /**                                                                                                  

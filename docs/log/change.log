@@ -1,4 +1,30 @@
-[0.0.15]
+[0.0.16]
+- Created batch and shell script files for creating Sound Events, also Provider.
+- Implemented custom model classes to all Blocks, BlockItems and Items.
+- Implemented handheld item model to Diamond Elephant Tusk Sword.
+- Implemented handheld item model to Iron Elephant Tusk Sword.
+- Implemented handheld item model to Wood Elephant Tusk Sword.
+- Implemented handheld item model to Fire Cannon.
+- Implemented handheld item model to Builder Hammer.
+- Implemented handheld item model to Staff of Teleportation.
+- Implemented handheld item model to Shark Teeth Sword.
+- Implemented handheld item model to Silver Skeleton Sword.
+- Implemented handheld item model to Staff Base.
+- Implemented handheld item model to Diamond Staff.
+- Implemented handheld item model to Ender Staff.
+- Implemented handheld item model to Light Staff.
+- Implemented handheld item model to Dark Sting Sword.
+- Implemented handheld item model to Dirt Sting Sword.
+- Implemented handheld item model to Frost Sting Sword.
+- Implemented handheld item model to Nether Sting Sword.
+- Implemented handheld item model to Bo.
+- Implemented handheld item model to Katana.
+- Implemented handheld item model to Nunchaku.
+- Implemented handheld item model to Sai.
+- Implemented handheld item model to Whip.
+- Generated Data for all modified items.
+
+[0.0.16]
 - Implemented "model" package for custom models of Blocks, Items, and Sound Events.
 - Implemented "sound" package for handling and registering SoundEvents.
 - Implemented funcionallities of Music Disc - Zebra item.

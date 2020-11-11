@@ -1,6 +1,7 @@
-package mestretramador.rrmocreatures.item;                                           
-                                                                                     
-import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderHandmadeMountArmorLeather;          
+package mestretramador.rrmocreatures.item;
+
+import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderHandmadeMountArmorLeather;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
 import net.minecraft.item.Item;                                                      
@@ -8,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Handmade Leather Mount Armor item.                                          
  *                                                                                   
- * @version 0.0.15                                                                
+ * @version 0.0.16                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemHandmadeMountArmorLeather extends RRMoCItem                                      
@@ -37,6 +38,6 @@ public class RRMoCItemHandmadeMountArmorLeather extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new Item(((RRMoCItemProviderHandmadeMountArmorLeather) provider).provideProperties())); 
+       setItem(new RRMoCItemModel(((RRMoCItemProviderHandmadeMountArmorLeather) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

@@ -1,6 +1,7 @@
-package mestretramador.rrmocreatures.item;                                           
-                                                                                     
-import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderKittyBedBrown;          
+package mestretramador.rrmocreatures.item;
+
+import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderKittyBedBrown;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
 import net.minecraft.item.Item;                                                      
@@ -8,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Brown Kitty Bed item.                                          
  *                                                                                   
- * @version 0.0.15                                                                
+ * @version 0.0.16                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemKittyBedBrown extends RRMoCItem                                      
@@ -37,6 +38,6 @@ public class RRMoCItemKittyBedBrown extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new Item(((RRMoCItemProviderKittyBedBrown) provider).provideProperties())); 
+       setItem(new RRMoCItemModel(((RRMoCItemProviderKittyBedBrown) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

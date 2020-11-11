@@ -1,6 +1,7 @@
-package mestretramador.rrmocreatures.item;                                           
-                                                                                     
-import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderOgreLairPrinceStaffTeleport;          
+package mestretramador.rrmocreatures.item;
+
+import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderOgreLairPrinceStaffTeleport;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
 import net.minecraft.item.Item;                                                      
@@ -8,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Staff of Teleportation item.                                          
  *                                                                                   
- * @version 0.0.15                                                                
+ * @version 0.0.16                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemOgreLairPrinceStaffTeleport extends RRMoCItem                                      
@@ -37,6 +38,6 @@ public class RRMoCItemOgreLairPrinceStaffTeleport extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new Item(((RRMoCItemProviderOgreLairPrinceStaffTeleport) provider).provideProperties())); 
+       setItem(new RRMoCItemModel(((RRMoCItemProviderOgreLairPrinceStaffTeleport) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

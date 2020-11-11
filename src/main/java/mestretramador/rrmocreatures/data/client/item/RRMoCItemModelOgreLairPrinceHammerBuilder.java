@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Builder Hammer item model.                                                        
  *                                                                                                       
- * @version 0.0.15                                                                                    
+ * @version 0.0.16                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelOgreLairPrinceHammerBuilder extends RRMoCItemModelProvider                                        
@@ -28,7 +28,9 @@ public class RRMoCItemModelOgreLairPrinceHammerBuilder extends RRMoCItemModelPro
      */                                                                                                  
     public RRMoCItemModelOgreLairPrinceHammerBuilder(DataGenerator generator, ExistingFileHelper existingFileHelper)         
     {                                                                                                    
-        super(generator, existingFileHelper, Constants.Items.OGRE_LAIR_PRINCE_HAMMER_BUILDER, Constants.ITEM_PATH, "layer0");       
+        super(generator, existingFileHelper, Constants.Items.OGRE_LAIR_PRINCE_HAMMER_BUILDER, Constants.ITEM_PATH, "layer0");  
+        
+        LOCATION = mcLoc("item/handheld");
     }                                                                                                    
                                                                                                          
     /**                                                                                                  

@@ -7,7 +7,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Mo'Creatures Redux&Redone Sound Event Provider base.
  * 
- * @version 0.0.15
+ * @version 0.0.16
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCSoundEventProvider

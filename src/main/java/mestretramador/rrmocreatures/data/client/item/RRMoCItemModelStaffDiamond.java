@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Staff - Diamond item model.                                                        
  *                                                                                                       
- * @version 0.0.15                                                                                    
+ * @version 0.0.16                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelStaffDiamond extends RRMoCItemModelProvider                                        
@@ -28,7 +28,9 @@ public class RRMoCItemModelStaffDiamond extends RRMoCItemModelProvider
      */                                                                                                  
     public RRMoCItemModelStaffDiamond(DataGenerator generator, ExistingFileHelper existingFileHelper)         
     {                                                                                                    
-        super(generator, existingFileHelper, Constants.Items.STAFF_DIAMOND, Constants.ITEM_PATH, "layer0");       
+        super(generator, existingFileHelper, Constants.Items.STAFF_DIAMOND, Constants.ITEM_PATH, "layer0");  
+        
+        LOCATION = mcLoc("item/handheld");
     }                                                                                                    
                                                                                                          
     /**                                                                                                  

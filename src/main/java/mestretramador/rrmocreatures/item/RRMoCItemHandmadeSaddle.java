@@ -1,5 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
+import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderHandmadeSaddle;
 import mestretramador.rrmocreatures.util.Constants;
 
@@ -8,7 +9,7 @@ import net.minecraft.item.Item;
 /**
  * Mo'Creatures Redux&Redone Handmade Saddle item.
  * 
- * @version 0.0.15
+ * @version 0.0.16
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemHandmadeSaddle extends RRMoCItem
@@ -37,6 +38,6 @@ public class RRMoCItemHandmadeSaddle extends RRMoCItem
     @Override
     protected void createItem()
     {
-        setItem(new Item(((RRMoCItemProviderHandmadeSaddle) provider).provideProperties()));
+        setItem(new RRMoCItemModel(((RRMoCItemProviderHandmadeSaddle) provider).provideProperties()));
     }
 }

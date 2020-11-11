@@ -11,7 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Ogre Lair Planks block state.                                                
  *                                                                                                
- * @version 0.0.15                                                                             
+ * @version 0.0.16                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockStateOgreLairPlanks extends RRMoCBlockStateProvider                               

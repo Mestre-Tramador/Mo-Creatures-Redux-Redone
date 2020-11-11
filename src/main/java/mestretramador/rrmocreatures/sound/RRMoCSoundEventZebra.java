@@ -1,7 +1,7 @@
 package mestretramador.rrmocreatures.sound;
 
 import mestretramador.rrmocreatures.model.sound.RRMoCSoundEventModel;
-import mestretramador.rrmocreatures.provider.sound.RRMoCSoundEventZebraProvider;
+import mestretramador.rrmocreatures.provider.sound.RRMoCSoundEventProviderZebra;
 import mestretramador.rrmocreatures.util.Constants;
 
 import net.minecraft.util.SoundEvent;
@@ -9,7 +9,7 @@ import net.minecraft.util.SoundEvent;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone <i>The Zebra Shuffling!</i> music sound event. 
  *                                                                                                                 
- * @version 0.0.15                                                                                              
+ * @version 0.0.16                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */   
 public class RRMoCSoundEventZebra extends RRMoCSoundEvent
@@ -19,7 +19,7 @@ public class RRMoCSoundEventZebra extends RRMoCSoundEvent
      */
     public RRMoCSoundEventZebra()
     {
-        super(Constants.Sounds.Music.ZEBRA, new RRMoCSoundEventZebraProvider());
+        super(Constants.Sounds.Music.ZEBRA, new RRMoCSoundEventProviderZebra());
     }
 
     /**
@@ -29,11 +29,11 @@ public class RRMoCSoundEventZebra extends RRMoCSoundEvent
     @Override
     protected void createSoundEvent()
     {
-        setSoundEvent(new RRMoCSoundEventModel(((RRMoCSoundEventZebraProvider) provider).provideProperties()));
+        setSoundEvent(new RRMoCSoundEventModel(((RRMoCSoundEventProviderZebra) provider).provideProperties()));
     }
 
     /**
-     * Return the the <i>The Zebra Shuffling!</i> music sound event in its current state.
+     * Return the <i>The Zebra Shuffling!</i> music sound event in its current state.
      */
     @Override
     public SoundEvent returnAsSoundEvent()

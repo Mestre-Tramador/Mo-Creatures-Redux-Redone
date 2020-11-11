@@ -7,18 +7,17 @@ import net.minecraft.util.ResourceLocation;
 /**                                                                                  
  * Mo'Creatures Redux&Redone <i>The Zebra Shuffling!</i> sound event provider.                           
  *                                                                                   
- * @version 0.0.15                                                                
+ * @version 0.0.16                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */ 
-public class RRMoCSoundEventZebraProvider extends RRMoCSoundEventProvider
+public class RRMoCSoundEventProviderZebra extends RRMoCSoundEventProvider
 {
-
     /**                                                                              
      * Using the parent constructor, start <i>The Zebra Shuffling!</i> with the                         
      * {@link mestretramador.rrmocreatures.util.Constants.Sounds.Music#ZEBRA ZEBRA}
      * constant path. 
      */
-    public RRMoCSoundEventZebraProvider()
+    public RRMoCSoundEventProviderZebra()
     {
         super(Constants.Sounds.Music.ZEBRA);
     }

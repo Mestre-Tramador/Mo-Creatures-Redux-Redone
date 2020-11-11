@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "rrmocreatures:item/ogre_lair_prince_cannon_fire"
   }

@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Handmade Lead item provider.            
  *                                                              
- * @version 0.0.15                                           
+ * @version 0.0.16                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderHandmadeLead extends RRMoCItemProvider 
