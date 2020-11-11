@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Kitty Food item model.                                                        
  *                                                                                                       
- * @version 0.0.14                                                                                    
+ * @version 0.0.15                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelKittyFood extends RRMoCItemModelProvider                                        

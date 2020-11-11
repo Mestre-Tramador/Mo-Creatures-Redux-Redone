@@ -10,17 +10,17 @@ import net.minecraft.data.DataGenerator;
 /**
  * Mo'Creatures Redux&Redone English (US) translator.
  * 
- * @version 0.0.14
+ * @version 0.0.15
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCLangEnUS extends RRMoCLangProvider
 {
     /**
-     * Using the parent constructor to provide English (US) support,
-     * just pass a Data Generator.
+     * Using the parent constructor to provide English (US) support, just pass a
+     * Data Generator.
      * 
-     * @param generator Minecraft {@link net.minecraft.data.DataGenerator
-     *                  Data Generator}.
+     * @param generator Minecraft {@link net.minecraft.data.DataGenerator Data
+     *                  Generator}.
      */
     public RRMoCLangEnUS(DataGenerator generator)
     {
@@ -39,6 +39,10 @@ public class RRMoCLangEnUS extends RRMoCLangProvider
 
         ITEMS.forEach((item, translation) -> {
             add(item, translation);
+        });
+
+        MUSIC_DISCS.forEach((item, translation) -> {
+            add((item.getTranslationKey() + ".desc"), translation);
         });
     }
 
@@ -208,5 +212,14 @@ public class RRMoCLangEnUS extends RRMoCLangProvider
         ITEMS.put(RegisterItem.TURTLE_RAW.returnAsItem(), "Raw Turtle");
         ITEMS.put(RegisterItem.UNICORN_HORN.returnAsItem(), "Unicorn Horn");
         ITEMS.put(RegisterItem.WHIP.returnAsItem(), "Whip");
-    }    
+    }
+
+    /**
+     * Translate all Music Discs to English (US).
+     */
+    @Override
+    protected void setMusicDiscs()
+    {
+        MUSIC_DISCS.put(RegisterItem.RECORD_ZEBRA.returnAsItem(), "Zebra");
+    }
 }

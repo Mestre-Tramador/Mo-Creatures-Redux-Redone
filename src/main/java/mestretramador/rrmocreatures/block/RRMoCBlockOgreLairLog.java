@@ -1,16 +1,17 @@
-package mestretramador.rrmocreatures.block;                                                                        
-                                                                                                                   
+package mestretramador.rrmocreatures.block;
+
+import mestretramador.rrmocreatures.model.block.RRMoCBlockItemModel;
+import mestretramador.rrmocreatures.model.block.RRMoCRotatedPillarBlockModel;
 import mestretramador.rrmocreatures.provider.block.RRMoCBlockItemProviderOgreLairLog;                                  
 import mestretramador.rrmocreatures.util.Constants;                                                                
                                                                                                                    
 import net.minecraft.block.Block;
-import net.minecraft.block.RotatedPillarBlock;
 import net.minecraft.item.BlockItem;                                                                               
                                                                                                                    
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Ogre Lair Log block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.14                                                                                              
+ * @version 0.0.15                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockOgreLairLog extends RRMoCBlock implements RRMoCBlockItem                                        
@@ -30,7 +31,7 @@ public class RRMoCBlockOgreLairLog extends RRMoCBlock implements RRMoCBlockItem
     @Override                                                                                                      
     protected void createBlock()                                                                                   
     {                                                                                                              
-        setBlock(new RotatedPillarBlock(((RRMoCBlockItemProviderOgreLairLog) provider).provideBlockProperties()));                  
+        setBlock(new RRMoCRotatedPillarBlockModel(((RRMoCBlockItemProviderOgreLairLog) provider).provideBlockProperties()));                  
     }                                                                                                              
                                                                                                                    
     /**                                                                                                            
@@ -53,6 +54,6 @@ public class RRMoCBlockOgreLairLog extends RRMoCBlock implements RRMoCBlockItem
     @Override                                                                                                      
     public BlockItem returnAsBlockItem()                                                                           
     {                                                                                                              
-        return new BlockItem(returnAsBlock(), ((RRMoCBlockItemProviderOgreLairLog) provider).provideItemProperties()); 
+        return new RRMoCBlockItemModel(returnAsBlock(), ((RRMoCBlockItemProviderOgreLairLog) provider).provideItemProperties()); 
     }                                                                                                              
 }                                                                                                                  

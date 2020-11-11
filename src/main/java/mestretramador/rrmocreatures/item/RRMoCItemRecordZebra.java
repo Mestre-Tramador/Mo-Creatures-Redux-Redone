@@ -1,5 +1,7 @@
 package mestretramador.rrmocreatures.item;                                           
                                                                                      
+import mestretramador.rrmocreatures.init.RegisterSoundEvent;
+import mestretramador.rrmocreatures.model.item.RRMoCMusicDiscItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderRecordZebra;          
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -8,7 +10,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Music Disc - Zebra item.                                          
  *                                                                                   
- * @version 0.0.14                                                                
+ * @version 0.0.15                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemRecordZebra extends RRMoCItem                                      
@@ -37,6 +39,6 @@ public class RRMoCItemRecordZebra extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new Item(((RRMoCItemProviderRecordZebra) provider).provideProperties())); 
+       setItem(new RRMoCMusicDiscItemModel(0, () -> RegisterSoundEvent.ZEBRA.returnAsSoundEvent(), ((RRMoCItemProviderRecordZebra) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

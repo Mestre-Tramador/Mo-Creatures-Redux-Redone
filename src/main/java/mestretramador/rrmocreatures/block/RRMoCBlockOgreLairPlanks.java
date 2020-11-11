@@ -1,5 +1,7 @@
-package mestretramador.rrmocreatures.block;                                                                        
-                                                                                                                   
+package mestretramador.rrmocreatures.block;
+
+import mestretramador.rrmocreatures.model.block.RRMoCBlockItemModel;
+import mestretramador.rrmocreatures.model.block.RRMoCBlockModel;
 import mestretramador.rrmocreatures.provider.block.RRMoCBlockItemProviderOgreLairPlanks;                                  
 import mestretramador.rrmocreatures.util.Constants;                                                                
                                                                                                                    
@@ -9,7 +11,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Ogre Lair Planks block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.14                                                                                              
+ * @version 0.0.15                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockOgreLairPlanks extends RRMoCBlock implements RRMoCBlockItem                                        
@@ -29,7 +31,7 @@ public class RRMoCBlockOgreLairPlanks extends RRMoCBlock implements RRMoCBlockIt
     @Override                                                                                                      
     protected void createBlock()                                                                                   
     {                                                                                                              
-        setBlock(new Block(((RRMoCBlockItemProviderOgreLairPlanks) provider).provideBlockProperties()));                  
+        setBlock(new RRMoCBlockModel(((RRMoCBlockItemProviderOgreLairPlanks) provider).provideBlockProperties()));                  
     }                                                                                                              
                                                                                                                    
     /**                                                                                                            
@@ -52,6 +54,6 @@ public class RRMoCBlockOgreLairPlanks extends RRMoCBlock implements RRMoCBlockIt
     @Override                                                                                                      
     public BlockItem returnAsBlockItem()                                                                           
     {                                                                                                              
-        return new BlockItem(returnAsBlock(), ((RRMoCBlockItemProviderOgreLairPlanks) provider).provideItemProperties()); 
+        return new RRMoCBlockItemModel(returnAsBlock(), ((RRMoCBlockItemProviderOgreLairPlanks) provider).provideItemProperties()); 
     }                                                                                                              
 }                                                                                                                  

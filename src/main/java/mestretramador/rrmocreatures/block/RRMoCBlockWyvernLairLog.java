@@ -1,16 +1,17 @@
-package mestretramador.rrmocreatures.block;                                                                        
-                                                                                                                   
+package mestretramador.rrmocreatures.block;
+
+import mestretramador.rrmocreatures.model.block.RRMoCBlockItemModel;
+import mestretramador.rrmocreatures.model.block.RRMoCRotatedPillarBlockModel;
 import mestretramador.rrmocreatures.provider.block.RRMoCBlockItemProviderWyvernLairLog;                                  
 import mestretramador.rrmocreatures.util.Constants;                                                                
                                                                                                                    
 import net.minecraft.block.Block;
-import net.minecraft.block.RotatedPillarBlock;
 import net.minecraft.item.BlockItem;                                                                               
                                                                                                                    
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Wyvern Lair Log block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.14                                                                                              
+ * @version 0.0.15                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockWyvernLairLog extends RRMoCBlock implements RRMoCBlockItem                                        
@@ -30,7 +31,7 @@ public class RRMoCBlockWyvernLairLog extends RRMoCBlock implements RRMoCBlockIte
     @Override                                                                                                      
     protected void createBlock()                                                                                   
     {                                                                                                              
-        setBlock(new RotatedPillarBlock(((RRMoCBlockItemProviderWyvernLairLog) provider).provideBlockProperties()));                  
+        setBlock(new RRMoCRotatedPillarBlockModel(((RRMoCBlockItemProviderWyvernLairLog) provider).provideBlockProperties()));                  
     }                                                                                                              
                                                                                                                    
     /**                                                                                                            
@@ -53,6 +54,6 @@ public class RRMoCBlockWyvernLairLog extends RRMoCBlock implements RRMoCBlockIte
     @Override                                                                                                      
     public BlockItem returnAsBlockItem()                                                                           
     {                                                                                                              
-        return new BlockItem(returnAsBlock(), ((RRMoCBlockItemProviderWyvernLairLog) provider).provideItemProperties()); 
+        return new RRMoCBlockItemModel(returnAsBlock(), ((RRMoCBlockItemProviderWyvernLairLog) provider).provideItemProperties()); 
     }                                                                                                              
 }                                                                                                                  

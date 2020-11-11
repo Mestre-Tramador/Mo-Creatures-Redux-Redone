@@ -1,0 +1,13 @@
+{
+    "zebra": {
+        "subtitle": "The Zebra Shuffling!",
+        "sounds": [
+            {
+                "name": "rrmocreatures:music/zebra",
+                "pitch": 1.0,
+                "stream": true,
+                "volume": 1.0                
+            }
+        ]
+    }
+}

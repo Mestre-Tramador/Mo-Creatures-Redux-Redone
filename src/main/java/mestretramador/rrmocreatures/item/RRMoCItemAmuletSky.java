@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Sky Amulet item.                                          
  *                                                                                   
- * @version 0.0.14                                                                
+ * @version 0.0.15                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemAmuletSky extends RRMoCItem                                      

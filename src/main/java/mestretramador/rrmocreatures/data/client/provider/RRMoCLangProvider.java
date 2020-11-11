@@ -13,7 +13,7 @@ import net.minecraftforge.common.data.LanguageProvider;
 /**
  * Mo'Creatures Redux&Redone Language Translator Provider base.
  * 
- * @version 0.0.14
+ * @version 0.0.15
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCLangProvider extends LanguageProvider
@@ -23,6 +23,9 @@ public abstract class RRMoCLangProvider extends LanguageProvider
 
     /** A Mapping for Item translations. */
     protected HashMap<Item, String> ITEMS;
+
+    /** A Mapping for Music Discs Items and Translations. */
+    protected HashMap<Item, String> MUSIC_DISCS;
 
     /**
      * To create a Translator, there is need to pass a Data Generator
@@ -40,8 +43,11 @@ public abstract class RRMoCLangProvider extends LanguageProvider
 
         ITEMS = new HashMap<Item, String>();
 
+        MUSIC_DISCS = new HashMap<Item, String>();
+
         setBlocks();
         setItems();
+        setMusicDiscs();
     }
 
     /**
@@ -53,4 +59,10 @@ public abstract class RRMoCLangProvider extends LanguageProvider
      * Helper function to set the Items and lang entries on the Map.
      */
     protected abstract void setItems();
+
+    /**
+     * Helper function to set the Music Discs Items and 
+     * desc lang entries on the Map.
+     */
+    protected abstract void setMusicDiscs();
 }

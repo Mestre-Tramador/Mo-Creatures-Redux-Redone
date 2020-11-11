@@ -1,3 +1,14 @@
+[0.0.15]
+- Implemented "model" package for custom models of Blocks, Items, and Sound Events.
+- Implemented "sound" package for handling and registering SoundEvents.
+- Implemented funcionallities of Music Disc - Zebra item.
+- Improved Langs Data Generators.
+- Created sounds.json file.
+- Registered The Zebra Shuffling! music.
+- Added Constants for sounds.
+- Added more Item Properties to Music Disc - Zebra item.
+- Added custom models to the Blocks and Items tools.
+
 [0.0.14]
 - Added more Block Properties to Ogre Lair Dirt block.
 - Added more Block Properties to Ogre Lair Grass block.

@@ -1,6 +1,8 @@
-package mestretramador.rrmocreatures.block;                                                                        
-                                                                                                                   
-import mestretramador.rrmocreatures.provider.block.RRMoCBlockItemProviderWyvernLairLeaves;                                  
+package mestretramador.rrmocreatures.block;
+
+import mestretramador.rrmocreatures.model.block.RRMoCBlockItemModel;
+import mestretramador.rrmocreatures.model.block.RRMoCBlockModel;
+import mestretramador.rrmocreatures.provider.block.RRMoCBlockItemProviderWyvernLairLeaves;
 import mestretramador.rrmocreatures.util.Constants;                                                                
                                                                                                                    
 import net.minecraft.block.Block;                                                                                  
@@ -9,7 +11,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Wyvern Lair Leaves block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.14                                                                                              
+ * @version 0.0.15                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockWyvernLairLeaves extends RRMoCBlock implements RRMoCBlockItem                                        
@@ -29,7 +31,7 @@ public class RRMoCBlockWyvernLairLeaves extends RRMoCBlock implements RRMoCBlock
     @Override                                                                                                      
     protected void createBlock()                                                                                   
     {                                                                                                              
-        setBlock(new Block(((RRMoCBlockItemProviderWyvernLairLeaves) provider).provideBlockProperties()));                  
+        setBlock(new RRMoCBlockModel(((RRMoCBlockItemProviderWyvernLairLeaves) provider).provideBlockProperties()));                  
     }                                                                                                              
                                                                                                                    
     /**                                                                                                            
@@ -52,6 +54,6 @@ public class RRMoCBlockWyvernLairLeaves extends RRMoCBlock implements RRMoCBlock
     @Override                                                                                                      
     public BlockItem returnAsBlockItem()                                                                           
     {                                                                                                              
-        return new BlockItem(returnAsBlock(), ((RRMoCBlockItemProviderWyvernLairLeaves) provider).provideItemProperties()); 
+        return new RRMoCBlockItemModel(returnAsBlock(), ((RRMoCBlockItemProviderWyvernLairLeaves) provider).provideItemProperties()); 
     }                                                                                                              
 }                                                                                                                  

@@ -1,15 +1,18 @@
-package mestretramador.rrmocreatures.block;                                                                        
-                                                                                                                   
+package mestretramador.rrmocreatures.block;
+
+import mestretramador.rrmocreatures.model.block.RRMoCBlockItemModel;
+import mestretramador.rrmocreatures.model.block.RRMoCBushBlockModel;
 import mestretramador.rrmocreatures.provider.block.RRMoCBlockItemProviderWyvernLairTallGrass;                                  
-import mestretramador.rrmocreatures.util.Constants;                                                                
-                                                                                                                   
+import mestretramador.rrmocreatures.util.Constants;
+import mestretramador.rrmocreatures.util.Tags;
+
 import net.minecraft.block.Block;                                                                                  
 import net.minecraft.item.BlockItem;                                                                               
                                                                                                                    
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Wyvern Lair Tall Grass block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.14                                                                                              
+ * @version 0.0.15                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockWyvernLairTallGrass extends RRMoCBlock implements RRMoCBlockItem                                        
@@ -29,7 +32,7 @@ public class RRMoCBlockWyvernLairTallGrass extends RRMoCBlock implements RRMoCBl
     @Override                                                                                                      
     protected void createBlock()                                                                                   
     {                                                                                                              
-        setBlock(new Block(((RRMoCBlockItemProviderWyvernLairTallGrass) provider).provideBlockProperties()));                  
+        setBlock(new RRMoCBushBlockModel(((RRMoCBlockItemProviderWyvernLairTallGrass) provider).provideBlockProperties(), Tags.Blocks.WYVERN_LAIR_DIRT));                  
     }                                                                                                              
                                                                                                                    
     /**                                                                                                            
@@ -52,6 +55,6 @@ public class RRMoCBlockWyvernLairTallGrass extends RRMoCBlock implements RRMoCBl
     @Override                                                                                                      
     public BlockItem returnAsBlockItem()                                                                           
     {                                                                                                              
-        return new BlockItem(returnAsBlock(), ((RRMoCBlockItemProviderWyvernLairTallGrass) provider).provideItemProperties()); 
+        return new RRMoCBlockItemModel(returnAsBlock(), ((RRMoCBlockItemProviderWyvernLairTallGrass) provider).provideItemProperties()); 
     }                                                                                                              
 }                                                                                                                  

@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Constants class to use generally.
  * 
- * @version 0.0.14
+ * @version 0.0.15
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Constants
@@ -19,6 +19,12 @@ public final class Constants
 
     /** Path to Blocks resources. */
     public static final String BLOCK_PATH = "block/";
+
+    /** Path to Sound Events resources. */
+    public static final String SOUNDS_PATH = "sounds/";
+
+    /** Path to music Sound Events resoureces. */
+    public static final String MUSICS_PATH = SOUNDS_PATH + "music/";
 
     /** Supported Languages IDs. */
     public static class Langs
@@ -513,6 +519,17 @@ public final class Constants
 
         /** {@link mestretramador.rrmocreatures.block.RRMoCBlockWyvernLairTallGrass Wyvern Lair Tall Grass} block ID. */
 		public static final String WYVERN_LAIR_TALL_GRASS = Prefix.WYVERN_LAIR + "tall_grass";
+    }
+
+    /** Sound Events IDs. */
+    public static class Sounds
+    {
+        /** Music Sound Events IDs. */
+        public static class Music
+        {
+            /** <i>{@link mestretramador.rrmocreatures.sound.RRMoCSoundEventZebra The Zebra Shuffling!}</i> music sound event ID. */
+            public static final String ZEBRA = "zebra";
+        }
     }
 
     /** Prefixes to use on Constant creation. */

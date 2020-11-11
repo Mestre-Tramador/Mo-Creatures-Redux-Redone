@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.14
+@SET version=0.0.15
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -83,6 +83,10 @@ ECHO         });                                                                
 ECHO.                                                                                    >> RRMoCLang%class%.java
 ECHO         ITEMS.forEach((item, translation) -^> {                                     >> RRMoCLang%class%.java
 ECHO             add(item, translation);                                                 >> RRMoCLang%class%.java
+ECHO         });                                                                         >> RRMoCLang%class%.java
+ECHO.                                                                                    >> RRMoCLang%class%.java
+ECHO         MUSIC_DISCS.forEach((item, translation) -^> {                               >> RRMoCLang%class%.java
+ECHO             add((item.getTranslationKey() + ".desc"), translation);                 >> RRMoCLang%class%.java
 ECHO         });                                                                         >> RRMoCLang%class%.java
 ECHO     }                                                                               >> RRMoCLang%class%.java
 ECHO.                                                                                    >> RRMoCLang%class%.java
@@ -254,6 +258,16 @@ ECHO         ITEMS.put(RegisterItem.TURTLE_COOKED_SOUP.returnAsItem(), "");     
 ECHO         ITEMS.put(RegisterItem.TURTLE_RAW.returnAsItem(), "");                      >> RRMoCLang%class%.java
 ECHO         ITEMS.put(RegisterItem.UNICORN_HORN.returnAsItem(), "");                    >> RRMoCLang%class%.java
 ECHO         ITEMS.put(RegisterItem.WHIP.returnAsItem(), "");                            >> RRMoCLang%class%.java
+ECHO     }                                                                               >> RRMoCLang%class%.java
+ECHO.                                                                                    >> RRMoCLang%class%.java
+ECHO     /**                                                                             >> RRMoCLang%class%.java
+ECHO      * Translate all Music Discs to %name%.                                         >> RRMoCLang%class%.java
+ECHO      */                                                                             >> RRMoCLang%class%.java
+ECHO     @Override                                                                       >> RRMoCLang%class%.java
+ECHO     protected void setMusicDiscs()                                                  >> RRMoCLang%class%.java
+ECHO     {                                                                               >> RRMoCLang%class%.java
+ECHO         // * Last actualization in 11/11/2020                                       >> RRMoCLang%class%.java
+ECHO         MUSIC_DISCS.put(RegisterItem.RECORD_ZEBRA.returnAsItem(), "");              >> RRMoCLang%class%.java
 ECHO     }                                                                               >> RRMoCLang%class%.java
 ECHO }                                                                                   >> RRMoCLang%class%.java
 

@@ -6,7 +6,7 @@ import net.minecraft.tags.ITag;
 /**
  * Mo'Creatures Redux&Redone Item Tag Append Provider base.
  * 
- * @version 0.0.14
+ * @version 0.0.15
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCItemTagAppendProvider

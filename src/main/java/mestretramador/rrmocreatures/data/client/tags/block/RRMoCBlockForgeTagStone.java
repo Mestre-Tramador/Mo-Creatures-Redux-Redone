@@ -8,7 +8,7 @@ import net.minecraftforge.common.Tags;
 /**                                                                                   
  * Mo'Creatures Redux&Redone Stone Forge Tag's Blocks.                             
  *                                                                                    
- * @version 0.0.14                                                                 
+ * @version 0.0.15                                                                 
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                   
  */                                                                                   
 public class RRMoCBlockForgeTagStone extends RRMoCBlockTagProvider                  

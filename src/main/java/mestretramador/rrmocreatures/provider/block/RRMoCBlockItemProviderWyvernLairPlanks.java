@@ -12,7 +12,7 @@ import net.minecraftforge.common.ToolType;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Wyvern Lair Planks block item provider.                           
  *                                                                                   
- * @version 0.0.14                                                                
+ * @version 0.0.15                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderWyvernLairPlanks extends RRMoCBlockItemProvider            

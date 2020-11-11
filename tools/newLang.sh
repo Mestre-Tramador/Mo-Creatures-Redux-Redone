@@ -7,7 +7,7 @@
 ########################################################################
 
 # Gloval variables.
-version="0.0.14"
+version="0.0.15"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -94,6 +94,10 @@ echo "        });                                                               
 echo "                                                                                      " >> "RRMoCLang$class.java"
 echo "        ITEMS.forEach((item, translation) -> {                                        " >> "RRMoCLang$class.java"
 echo "            add(item, translation);                                                   " >> "RRMoCLang$class.java"
+echo "        });                                                                           " >> "RRMoCLang$class.java"
+echo "                                                                                      " >> "RRMoCLang$class.java"
+echo "        MUSIC_DISCS.forEach((item, translation) -> {                                  " >> "RRMoCLang$class.java"
+echo "            add((item.getTranslationKey() + \".desc\"), translation);                 " >> "RRMoCLang$class.java"
 echo "        });                                                                           " >> "RRMoCLang$class.java"
 echo "    }                                                                                 " >> "RRMoCLang$class.java"
 echo "                                                                                      " >> "RRMoCLang$class.java"
@@ -266,6 +270,15 @@ echo "        ITEMS.put(RegisterItem.TURTLE_RAW.returnAsItem(), \"\");          
 echo "        ITEMS.put(RegisterItem.UNICORN_HORN.returnAsItem(), \"\");                    " >> "RRMoCLang$class.java"
 echo "        ITEMS.put(RegisterItem.WHIP.returnAsItem(), \"\");                            " >> "RRMoCLang$class.java"
 echo "    }                                                                                 " >> "RRMoCLang$class.java"
+echo "                                                                                      " >> "RRMoCLang$class.java"
+echo "    /**                                                                               " >> "RRMoCLang$class.java"
+echo "     * Translate all Music Discs to $name.                                            " >> "RRMoCLang$class.java"
+echo "     */                                                                               " >> "RRMoCLang$class.java"
+echo "    @Override                                                                         " >> "RRMoCLang$class.java"
+echo "    protected void setMusicDiscs()                                                    " >> "RRMoCLang$class.java"
+echo "    {                                                                                 " >> "RRMoCLang$class.java"
+echo "        // * Last actualization in 11/11/2020                                         " >> "RRMoCLang$class.java"
+echo "        MUSIC_DISCS.put(RegisterItem.RECORD_ZEBRA.returnAsItem(), \"\");              " >> "RRMoCLang$class.java"
 echo "}                                                                                     " >> "RRMoCLang$class.java"
 
 # Add the Lang in Git.
