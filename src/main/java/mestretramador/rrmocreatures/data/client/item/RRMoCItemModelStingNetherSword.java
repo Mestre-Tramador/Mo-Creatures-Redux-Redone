@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Nether Sting Sword item model.                                                        
  *                                                                                                       
- * @version 0.0.16                                                                                    
+ * @version 0.0.17                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelStingNetherSword extends RRMoCItemModelProvider                                        

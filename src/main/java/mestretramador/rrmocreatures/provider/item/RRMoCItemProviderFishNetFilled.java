@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Filled Fish Net item provider.            
  *                                                              
- * @version 0.0.16                                           
+ * @version 0.0.17                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderFishNetFilled extends RRMoCItemProvider 
@@ -19,7 +19,10 @@ public class RRMoCItemProviderFishNetFilled extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
+       PROPERTIES().group(null);
        PROPERTIES().rarity(Rarity.UNCOMMON);
+       PROPERTIES().maxStackSize(1);
+       PROPERTIES().isImmuneToFire();
                                                                 
        return PROPERTIES();                                       
    }                                                            

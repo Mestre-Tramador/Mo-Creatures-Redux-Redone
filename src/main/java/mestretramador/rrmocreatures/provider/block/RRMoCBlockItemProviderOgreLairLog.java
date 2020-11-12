@@ -12,7 +12,7 @@ import net.minecraftforge.common.ToolType;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Ogre Lair Log block item provider.                           
  *                                                                                   
- * @version 0.0.16                                                                
+ * @version 0.0.17                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderOgreLairLog extends RRMoCBlockItemProvider            

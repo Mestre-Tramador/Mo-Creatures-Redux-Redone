@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Staff - Ender item provider.            
  *                                                              
- * @version 0.0.16                                           
+ * @version 0.0.17                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderStaffEnder extends RRMoCItemProvider 
@@ -21,7 +21,8 @@ public class RRMoCItemProviderStaffEnder extends RRMoCItemProvider
    public Properties provideProperties()                        
    {                                                            
        PROPERTIES().group(ItemGroup.TOOLS);
-       PROPERTIES().rarity(Rarity.RARE);                      
+       PROPERTIES().rarity(Rarity.RARE); 
+       PROPERTIES().maxStackSize(1);                      
                                                                 
        return PROPERTIES();                                       
    }                                                            

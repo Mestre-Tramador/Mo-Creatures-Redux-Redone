@@ -11,7 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Wyvern Lair Leaves block state.                                                
  *                                                                                                
- * @version 0.0.16                                                                             
+ * @version 0.0.17                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockStateWyvernLairLeaves extends RRMoCBlockStateProvider                               

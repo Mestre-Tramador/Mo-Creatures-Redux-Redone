@@ -12,7 +12,7 @@ import net.minecraftforge.common.ToolType;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Wyvern Lair Dirt block item provider.                           
  *                                                                                   
- * @version 0.0.16                                                                
+ * @version 0.0.17                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderWyvernLairDirt extends RRMoCBlockItemProvider            

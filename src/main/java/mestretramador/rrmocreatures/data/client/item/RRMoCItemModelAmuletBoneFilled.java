@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Filled Bone Amulet item model.                                                        
  *                                                                                                       
- * @version 0.0.16                                                                                    
+ * @version 0.0.17                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelAmuletBoneFilled extends RRMoCItemModelProvider                                        

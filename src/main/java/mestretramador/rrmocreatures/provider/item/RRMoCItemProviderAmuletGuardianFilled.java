@@ -6,7 +6,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Filled Guardian Amulet item provider.            
  *                                                              
- * @version 0.0.16                                           
+ * @version 0.0.17                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderAmuletGuardianFilled extends RRMoCItemProvider 
@@ -18,8 +18,11 @@ public class RRMoCItemProviderAmuletGuardianFilled extends RRMoCItemProvider
     */                                                          
    @Override                                                    
    public Properties provideProperties()                        
-   {                                                            
-       PROPERTIES().rarity(Rarity.UNCOMMON);                    
+   {                      
+       PROPERTIES().group(null);                                      
+       PROPERTIES().rarity(Rarity.UNCOMMON);   
+       PROPERTIES().maxStackSize(1);
+       PROPERTIES().isImmuneToFire();                  
                                                                 
        return PROPERTIES();                                       
    }                                                            

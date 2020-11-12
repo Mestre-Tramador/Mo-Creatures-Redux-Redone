@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Dark Chitin Legs item.                                          
  *                                                                                   
- * @version 0.0.16                                                                
+ * @version 0.0.17                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemChitinDarkLegs extends RRMoCItem                                      

@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Constants class to use generally.
  * 
- * @version 0.0.16
+ * @version 0.0.17
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Constants
@@ -306,7 +306,7 @@ public final class Constants
         /** {@link mestretramador.rrmocreatures.item.RRMoCItemKittyFood Kitty Food} item ID. */
         public static final String KITTY_FOOD = Prefix.KITTY + "food";
 
-        /** {@link mestretramador.rrmocreatures.item.RRMoCItemKittyLither Kitty Lither} item ID. */
+        /** {@link mestretramador.rrmocreatures.item.RRMoCItemKittyLitter Kitty Litter} item ID. */
         public static final String KITTY_LITTER = Prefix.KITTY + "litter";
 
         /** {@link mestretramador.rrmocreatures.item.RRMoCItemKittyWoolBall Kitty Wool Ball} item ID. */

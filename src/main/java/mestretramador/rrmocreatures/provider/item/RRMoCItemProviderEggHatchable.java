@@ -1,11 +1,12 @@
-package mestretramador.rrmocreatures.provider.item;             
-                                                                
-import net.minecraft.item.Item.Properties;                      
+package mestretramador.rrmocreatures.provider.item;
+
+import net.minecraft.item.Rarity;
+import net.minecraft.item.Item.Properties;
                                                                 
 /**                                                             
  * Mo'Creatures Redux&Redone Egg Hatchable item provider.            
  *                                                              
- * @version 0.0.16                                           
+ * @version 0.0.17                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderEggHatchable extends RRMoCItemProvider 
@@ -18,7 +19,9 @@ public class RRMoCItemProviderEggHatchable extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       // Add here the properties of Egg Hatchable.                    
+       PROPERTIES().group(null);
+       PROPERTIES().rarity(Rarity.COMMON);
+       PROPERTIES().maxStackSize(16);                    
                                                                 
        return PROPERTIES();                                       
    }                                                            

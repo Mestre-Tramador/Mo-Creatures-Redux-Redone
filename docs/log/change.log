@@ -1,3 +1,58 @@
+[0.0.17]
+- Fixed JavaDoc on some files.
+- Added more Item Properties to Bone Amulet (also Filled) item.
+- Added more Item Properties to Fairy Amulet (also Filled) item.
+- Added more Item Properties to Ghost Amulet (also Filled) item.
+- Added more Item Properties to Guardian Amulet (also Filled) item.
+- Added more Item Properties to Sky Amulet (also Filled) item.
+- Added more Item Properties to BigCat Claw item.
+- Added more Item Properties to Dark Chitin (also full armor set) item.
+- Added more Item Properties to Dirt Chitin (also full armor set) item.
+- Added more Item Properties to Frost Chitin (also full armor set) item.
+- Added more Item Properties to Nether Chitin (also full armor set) item.
+- Added more Item Properties to Crab Meat (raw and cooked) item.
+- Added more Item Properties to Creaturepedia item.
+- Added more Item Properties to Hatchable Egg item.
+- Added more Item Properties to Omelet item.
+- Added more Item Properties to Elephant Harness and Saddlebag item.
+- Added more Item Properties to Indian Elephant Garment and Howdah item.
+- Added more Item Properties to Songhua River Mammoth Platform item.
+- Added more Item Properties to Diamond, Iron and Wood Elephant Tusk Sword item.
+- Added more Item Properties to Essence of Darkness, Fire, Light, and the Undead item.
+- Added more Item Properties to Fish Net (also Filled) item.
+- Added more Item Properties to Fur (also full armor set) item.
+- Added more Item Properties to Handmade Lead item.
+- Added more Item Properties to Crystal, Diamond, Gold and Iron Handmade Mount Armor item.
+- Added more Item Properties to Leather Handmade Mount Armor item.
+- Added more Item Properties to Handmade Saddlebag item.
+- Added more Item Properties to Heart of Darkness, Fire, and the Undead item.
+- Added more Item Properties to Hide (also full armor set) item.
+- Added more Item Properties to Key item.
+- Added more Item Properties to Kitty Bed (also all dyed options) item.
+- Added more Item Properties to Kitty Food item.
+- Added more Item Properties to Kitty Litter item.
+- Added more Item Properties to Kitty Wool Ball item.
+- Added more Item Properties to Reptile Hide (also full armor set) item.
+- Added more Item Properties to Ogre Princes' Loot (Fire Cannon, Builder Hammer, Staff of Teleportation) item.
+- Added more Item Properties to Ostrich Meat (raw and cooked) item.
+- Added more Item Properties to Rat Meat (raw and cooked, also burguer) item.
+- Added more Item Properties to Medallion item.
+- Added more Item Properties to Zebra Record item.
+- Added more Item Properties to Scrolls (Blank (textureless), Freedom, Owner, Sale) item.
+- Added more Item Properties to Shark Teeth (also Sword) item.
+- Added more Item Properties to Silver Skeleton Sword item.
+- Added more Item Properties to Staffs (Base, Diamond, Ender, Light) item.
+- Added more Item Properties to Dark Sting (also sword) item.
+- Added more Item Properties to Dirt Sting (also sword) item.
+- Added more Item Properties to Frost Sting (also sword) item.
+- Added more Item Properties to Nether Sting (also sword) item.
+- Added more Item Properties to Sugar Lumps item.
+- Added more Item Properties to TMNT Weapons (Bo, Katana, Nunchaku, Sai) item.
+- Added more Item Properties to Turkey Meat (raw and cooked) item.
+- Added more Item Properties to Turtle Meat (raw and cooked, also soup) item.
+- Added more Item Properties to Unicorn Horn item.
+- Added more Item Properties to Whip item.
+
 [0.0.16]
 - Created batch and shell script files for creating Sound Events, also Provider.
 - Implemented custom model classes to all Blocks, BlockItems and Items.

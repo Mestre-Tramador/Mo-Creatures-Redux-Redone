@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Staff - Light item provider.            
  *                                                              
- * @version 0.0.16                                           
+ * @version 0.0.17                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderStaffLight extends RRMoCItemProvider 
@@ -22,6 +22,7 @@ public class RRMoCItemProviderStaffLight extends RRMoCItemProvider
    {                                                            
        PROPERTIES().group(ItemGroup.TOOLS);
        PROPERTIES().rarity(Rarity.RARE);  
+       PROPERTIES().maxStackSize(1); 
                                                                 
        return PROPERTIES();                                       
    }                                                            

@@ -5,7 +5,7 @@ import net.minecraft.block.RotatedPillarBlock;
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.block.RotatedPillarBlock RotatedPillarBlock}.
  * 
- * @version 0.0.16
+ * @version 0.0.17
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCRotatedPillarBlockModel extends RotatedPillarBlock

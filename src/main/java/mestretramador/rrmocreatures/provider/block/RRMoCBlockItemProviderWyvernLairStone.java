@@ -12,7 +12,7 @@ import net.minecraftforge.common.ToolType;
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block item provider.
  * 
- * @version 0.0.16
+ * @version 0.0.17
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvider
@@ -28,7 +28,7 @@ public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvide
 
     /**
      * Return the block properties of
-     * {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone
+     * {@link mestretramador.rrmocreatures.block.RRMoCBlockWyvernLairStone
      * Wyvern Lair Stone}.
      */
     @Override
@@ -45,7 +45,7 @@ public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvide
 
     /**
      * Return the blockitem properties of
-     * {@link mestretramador.rrmocreatures.block.RRMoCBlockItemWyvernLairStone
+     * {@link mestretramador.rrmocreatures.block.RRMoCBlockWyvernLairStone
      * Wyvern Lair Stone}.
      */
     @Override

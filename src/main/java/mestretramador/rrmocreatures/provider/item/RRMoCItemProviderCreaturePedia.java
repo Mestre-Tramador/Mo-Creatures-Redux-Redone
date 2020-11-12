@@ -1,11 +1,13 @@
-package mestretramador.rrmocreatures.provider.item;             
-                                                                
-import net.minecraft.item.Item.Properties;                      
+package mestretramador.rrmocreatures.provider.item;
+
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.Item.Properties;
                                                                 
 /**                                                             
  * Mo'Creatures Redux&Redone Creaturepedia item provider.            
  *                                                              
- * @version 0.0.16                                           
+ * @version 0.0.17                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderCreaturePedia extends RRMoCItemProvider 
@@ -18,7 +20,9 @@ public class RRMoCItemProviderCreaturePedia extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       // Add here the properties of Creaturepedia.                    
+       PROPERTIES().group(ItemGroup.MISC);
+       PROPERTIES().rarity(Rarity.COMMON);
+       PROPERTIES().maxStackSize(1);                 
                                                                 
        return PROPERTIES();                                       
    }                                                            

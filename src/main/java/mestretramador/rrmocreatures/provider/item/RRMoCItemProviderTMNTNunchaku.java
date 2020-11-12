@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Nunchaku item provider.            
  *                                                              
- * @version 0.0.16                                           
+ * @version 0.0.17                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderTMNTNunchaku extends RRMoCItemProvider 
@@ -22,6 +22,7 @@ public class RRMoCItemProviderTMNTNunchaku extends RRMoCItemProvider
    {                                                            
        PROPERTIES().group(ItemGroup.COMBAT);
        PROPERTIES().rarity(Rarity.UNCOMMON);
+       PROPERTIES().maxStackSize(1); 
                                                                 
        return PROPERTIES();                                       
    }                                                            
