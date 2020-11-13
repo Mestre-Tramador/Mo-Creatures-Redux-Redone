@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 /**                                                                                 
  * Mo'Creatures Redux&Redone Wereables to Protect Tag's Items.                                  
  *                                                                                  
- * @version 0.0.17                                                               
+ * @version 0.0.18                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagWereablesProtect extends RRMoCItemTagProvider                       

@@ -1,3 +1,20 @@
+[0.0.18]
+- Added Food Properties to Crab Raw and Cooked item.
+- Added Food Properties to Omelet item.
+- Added Food Properties to Heart of Darkness item.
+- Added Food Properties to Heart of Fire item.
+- Added Food Properties to Heart of the Undead item.
+- Added Food Properties to Kitty Food item.
+- Added Food Properties to Ostrich Raw and Cooked item.
+- Added Food Properties to Rat Raw and Cooked, also Burger item.
+- Added Food Properties to Suger Lumps item.
+- Added Food Properties to Turkey Raw and Cooked item.
+- Added Food Properties to Turtle Raw and Cooked, also Soup item.
+- Added Food Properties to Unicorn Horn item.
+- Better formatted some classes.
+- Added "final" attribute to base classes.
+- Created Food Item Model.
+
 [0.0.17]
 - Fixed JavaDoc on some files.
 - Added more Item Properties to Bone Amulet (also Filled) item.

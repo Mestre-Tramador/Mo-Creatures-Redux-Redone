@@ -7,7 +7,7 @@ import net.minecraft.tags.ITag;
 /**
  * Mo'Creatures Redux&Redone BlockItem Tag Provider base.
  * 
- * @version 0.0.17
+ * @version 0.0.18
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockItemTagProvider

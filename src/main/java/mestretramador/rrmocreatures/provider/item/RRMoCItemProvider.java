@@ -5,7 +5,7 @@ import net.minecraft.item.Item.Properties;
 /**
  * Mo'Creatures Redux&Redone Item Provider base.
  * 
- * @version 0.0.17
+ * @version 0.0.18
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCItemProvider

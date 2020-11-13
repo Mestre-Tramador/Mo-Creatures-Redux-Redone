@@ -8,7 +8,7 @@ import net.minecraftforge.common.Tags;
 /**                                                                                   
  * Mo'Creatures Redux&Redone Dirt Forge Tag's Blocks.                             
  *                                                                                    
- * @version 0.0.17                                                                 
+ * @version 0.0.18                                                                 
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                   
  */                                                                                   
 public class RRMoCBlockForgeTagDirt extends RRMoCBlockTagProvider                  

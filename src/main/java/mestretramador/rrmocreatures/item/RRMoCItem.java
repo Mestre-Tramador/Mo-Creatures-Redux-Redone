@@ -5,16 +5,16 @@ import net.minecraft.item.Item;
 /**
  * Mo'Creatures Redux&Redone Item base.
  * 
- * @version 0.0.17
+ * @version 0.0.18
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCItem
 {
     /** The Item ID. */
-    public String ID;
+    public final String ID;
 
     /** The Item provider. */
-    protected Object provider;
+    protected final Object provider;
 
     /** The {@link net.minecraft.item.Item Item} as is. */
     private Item rrmocitem;

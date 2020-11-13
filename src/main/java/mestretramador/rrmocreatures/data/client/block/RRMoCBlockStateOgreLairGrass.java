@@ -11,7 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Ogre Lair Grass block state.                                                
  *                                                                                                
- * @version 0.0.17                                                                             
+ * @version 0.0.18                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockStateOgreLairGrass extends RRMoCBlockStateProvider

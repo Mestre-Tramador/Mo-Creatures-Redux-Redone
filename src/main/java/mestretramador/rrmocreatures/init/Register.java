@@ -14,7 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 /**
  * Initialization class for Registration.
  * 
- * @version 0.0.17
+ * @version 0.0.18
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class Register
@@ -43,6 +43,16 @@ public class Register
 
         RegisterSoundEvent.registerAll();
     }
+    
+    /**
+     * A getter method to the Blocks Deferred Register.
+     * 
+     * @return Blocks register.
+     */
+    public static DeferredRegister<Block> getBlocksDeferredRegister()
+    {
+        return BLOCKS;
+    }
 
     /**
      * A getter method to the Items Deferred Register.
@@ -52,16 +62,6 @@ public class Register
     public static DeferredRegister<Item> getItemsDeferredRegister()
     {
         return ITEMS;
-    }
-
-    /**
-     * A getter method to the Blocks Deferred Register.
-     * 
-     * @return Blocks register.
-     */
-    public static DeferredRegister<Block> getBlocksDeferredRegister()
-    {
-        return BLOCKS;
     }
 
     /**

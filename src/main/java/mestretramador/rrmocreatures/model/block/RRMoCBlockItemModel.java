@@ -6,7 +6,7 @@ import net.minecraft.item.BlockItem;
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.BlockItem BlockItem}.
  * 
- * @version 0.0.17
+ * @version 0.0.18
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockItemModel extends BlockItem

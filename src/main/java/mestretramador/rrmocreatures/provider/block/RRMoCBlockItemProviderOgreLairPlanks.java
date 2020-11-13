@@ -12,7 +12,7 @@ import net.minecraftforge.common.ToolType;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Ogre Lair Planks block item provider.                           
  *                                                                                   
- * @version 0.0.17                                                                
+ * @version 0.0.18                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderOgreLairPlanks extends RRMoCBlockItemProvider            

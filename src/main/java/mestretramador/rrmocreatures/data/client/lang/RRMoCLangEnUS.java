@@ -10,7 +10,7 @@ import net.minecraft.data.DataGenerator;
 /**
  * Mo'Creatures Redux&Redone English (US) translator.
  * 
- * @version 0.0.17
+ * @version 0.0.18
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCLangEnUS extends RRMoCLangProvider

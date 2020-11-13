@@ -5,16 +5,16 @@ import net.minecraft.util.SoundEvent;
 /**
  * Mo'Creatures Redux&Redone {@link net.minecraft.util.SoundEvent Sound Event} base.
  * 
- * @version 0.0.17
+ * @version 0.0.18
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCSoundEvent
 {
     /** The Sound Event ID. */
-    public String ID;
+    public final String ID;
 
     /** The Sound Event Provider. */
-    protected Object provider;
+    protected final Object provider;
 
     /** The {@link net.minecraft.util.SoundEvent Sound Event} as is. */
     private SoundEvent rrmocSoundEvent;

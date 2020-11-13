@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Hide Boots item provider.            
  *                                                              
- * @version 0.0.17                                           
+ * @version 0.0.18                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderHideBoots extends RRMoCItemProvider 
