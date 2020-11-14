@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Whip item provider.            
  *                                                              
- * @version 0.0.19                                           
+ * @version 0.0.20                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderWhip extends RRMoCItemProvider 
@@ -22,7 +22,8 @@ public class RRMoCItemProviderWhip extends RRMoCItemProvider
    {                                                            
        PROPERTIES().group(ItemGroup.TOOLS);
        PROPERTIES().rarity(Rarity.COMMON);
-       PROPERTIES().maxStackSize(1); 
+       PROPERTIES().maxStackSize(1);
+       PROPERTIES().maxDamage(24); 
                                                                 
        return PROPERTIES();                                       
    }                                                            

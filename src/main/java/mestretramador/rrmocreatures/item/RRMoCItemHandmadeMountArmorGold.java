@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Handmade Gold Mount Armor item.                                          
  *                                                                                   
- * @version 0.0.19                                                                
+ * @version 0.0.20                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemHandmadeMountArmorGold extends RRMoCItem                                      

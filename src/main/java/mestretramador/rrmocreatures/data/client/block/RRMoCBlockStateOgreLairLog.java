@@ -11,7 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Ogre Lair Log block state.                                                
  *                                                                                                
- * @version 0.0.19                                                                             
+ * @version 0.0.20                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockStateOgreLairLog extends RRMoCBlockStateProvider                               

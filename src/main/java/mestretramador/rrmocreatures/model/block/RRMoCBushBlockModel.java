@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockReader;
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.block.BushBlock BushBlock}.
  * 
- * @version 0.0.19
+ * @version 0.0.20
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBushBlockModel extends BushBlock

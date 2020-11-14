@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Music Disc - Zebra item.                                          
  *                                                                                   
- * @version 0.0.19                                                                
+ * @version 0.0.20                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemRecordZebra extends RRMoCItem                                      

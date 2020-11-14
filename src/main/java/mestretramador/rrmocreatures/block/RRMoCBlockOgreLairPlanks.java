@@ -11,7 +11,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Ogre Lair Planks block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.19                                                                                              
+ * @version 0.0.20                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockOgreLairPlanks extends RRMoCBlock implements RRMoCBlockItem                                        

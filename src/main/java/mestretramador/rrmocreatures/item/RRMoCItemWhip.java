@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCItemWhipModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderWhip;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Whip item.                                          
  *                                                                                   
- * @version 0.0.19                                                                
+ * @version 0.0.20                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemWhip extends RRMoCItem                                      
@@ -38,6 +38,6 @@ public class RRMoCItemWhip extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderWhip) provider).provideProperties())); 
+       setItem(new RRMoCItemWhipModel(((RRMoCItemProviderWhip) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

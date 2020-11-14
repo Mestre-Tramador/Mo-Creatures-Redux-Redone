@@ -21,7 +21,7 @@ import net.minecraft.world.World;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} to use
  * as an Essence.
  * 
- * @version 0.0.19
+ * @version 0.0.20
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemEssenceModel extends RRMoCItemModel
@@ -70,17 +70,17 @@ public class RRMoCItemEssenceModel extends RRMoCItemModel
     /**
      * Redefines the usage of the Essence to be like a potion consumage.
      * 
-     * @param worldIn  Current World.
-     * @param playerIn The player who had used.
-     * @param handIn   The hand that started the action.
+     * @param world  Current World.
+     * @param player The player who had used.
+     * @param hand   The hand that started the action.
      * @return An action result of consume.
      */
     @Override
-    public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn)
+    public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player, Hand hand)
     {
-        playerIn.setActiveHand(handIn);
+        player.setActiveHand(hand);
 
-        return ActionResult.resultConsume(playerIn.getHeldItem(handIn));
+        return ActionResult.resultConsume(player.getHeldItem(hand));
     }
 
     /**
@@ -118,15 +118,15 @@ public class RRMoCItemEssenceModel extends RRMoCItemModel
      * Redefines the finishing to give the correct effects to the player, also
      * return a glass bottle.
      * 
-     * @param stack        Used ItemStack.
-     * @param worldIn      Current world
-     * @param entityLiving The entity that finished the use.
+     * @param stack  Used ItemStack.
+     * @param world  Current world
+     * @param entity The entity that finished the use.
      * @return The new ItemStack.
      */
     @Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving)
+    public ItemStack onItemUseFinish(ItemStack stack, World world, LivingEntity entity)
     {
-        final PlayerEntity player = (PlayerEntity) entityLiving;
+        final PlayerEntity player = (PlayerEntity) entity;
 
         switch(getEssenceType())
         {
@@ -161,12 +161,12 @@ public class RRMoCItemEssenceModel extends RRMoCItemModel
 
         if(!player.isCreative())
         {
-            super.onItemUseFinish(stack, worldIn, entityLiving);
+            super.onItemUseFinish(stack, world, entity);
 
             return new ItemStack(Items.GLASS_BOTTLE);
         }
 
-        return super.onItemUseFinish(stack, worldIn, entityLiving);
+        return super.onItemUseFinish(stack, world, entity);
     }
 
     /**
@@ -202,17 +202,15 @@ public class RRMoCItemEssenceModel extends RRMoCItemModel
     @Nullable
     private String getEssenceType()
     {
-        final String PREFIX = Constants.MOD_ID + ":";
-
-        switch(this.getRegistryName().toString())
+        switch(this.getRegistryName().getPath())
         {
-            case (PREFIX + Constants.Items.ESSENCE_DARKNESS): return DARKNESS;
+            case (Constants.Items.ESSENCE_DARKNESS): return DARKNESS;
             
-            case (PREFIX + Constants.Items.ESSENCE_FIRE): return FIRE;
+            case (Constants.Items.ESSENCE_FIRE): return FIRE;
             
-            case (PREFIX + Constants.Items.ESSENCE_LIGHT): return LIGHT;
+            case (Constants.Items.ESSENCE_LIGHT): return LIGHT;
             
-            case (PREFIX + Constants.Items.ESSENCE_UNDEAD): return UNDEAD;
+            case (Constants.Items.ESSENCE_UNDEAD): return UNDEAD;
             
             default: return null;
         }

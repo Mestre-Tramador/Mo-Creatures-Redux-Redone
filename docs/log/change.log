@@ -1,3 +1,13 @@
+[0.0.20]
+- Created Whip Item Model.
+- Implemented funcionallities to Whip.
+- Whip still do not intereact with mobs.
+- Added Whip effect Sound Event.
+- Improved Essence definition.
+- Improved JavaDoc.
+- Removed Vanilla IDs enumeration.
+- Tags wich use Vanilla Blocks or Items now get them directly from Vanilla Registry.
+
 [0.0.19]
 - Created Essence Item Model.
 - Implemented funcionallities to Essences be like potions.

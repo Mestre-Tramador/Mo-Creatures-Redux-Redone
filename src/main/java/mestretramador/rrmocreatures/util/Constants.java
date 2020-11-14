@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Constants class to use generally.
  * 
- * @version 0.0.19
+ * @version 0.0.20
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Constants
@@ -25,6 +25,9 @@ public final class Constants
 
     /** Path to music Sound Events resoureces. */
     public static final String MUSICS_PATH = SOUNDS_PATH + "music/";
+
+    /** Path to effect Sound Events resources. */
+    public static final String SFX_PATH = SOUNDS_PATH + "fx/";
 
     /** Supported Languages IDs. */
     public static class Langs
@@ -524,6 +527,13 @@ public final class Constants
     /** Sound Events IDs. */
     public static class Sounds
     {
+        /** Effects Sound Events IDs. */
+        public static class FX
+        {
+            /** {@link mestretramador.rrmocreatures.sound.RRMoCWhip Whip Crack} effect sound event ID. */
+            public final static String WHIP = "whip";
+        }
+
         /** Music Sound Events IDs. */
         public static class Music
         {

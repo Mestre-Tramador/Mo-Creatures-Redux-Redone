@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Fur Boots item provider.            
  *                                                              
- * @version 0.0.19                                           
+ * @version 0.0.20                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderFurBoots extends RRMoCItemProvider 

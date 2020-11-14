@@ -3,14 +3,13 @@ package mestretramador.rrmocreatures.data.client.tags.item;
 import mestretramador.rrmocreatures.data.client.provider.item.RRMoCItemTagProvider; 
 import mestretramador.rrmocreatures.init.RegisterItem;                              
 import mestretramador.rrmocreatures.util.Tags;
-import mestretramador.rrmocreatures.util.VanillaIDs;
 
-import net.minecraft.item.Item;                                      
+import net.minecraft.item.Items;                                      
                                                                                     
 /**                                                                                 
  * Mo'Creatures Redux&Redone Wereables to Ride Tag's Items.                                  
  *                                                                                  
- * @version 0.0.19                                                               
+ * @version 0.0.20                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagWereablesRide extends RRMoCItemTagProvider                       
@@ -30,7 +29,7 @@ public class RRMoCItemTagWereablesRide extends RRMoCItemTagProvider
      * </p>                                                                       
      * <ul>                                                                       
      * <li>{@link mestretramador.rrmocreatures.item.RRMoCItemHandmadeSaddle Handmade Saddle}</li>
-     * <li><a href="https://minecraft.gamepedia.com/Saddle"> Minecraft's Saddle</a></li>
+     * <li>{@link net.minecraft.item.Items#SADDLE Minecraft's Saddle}</li>
      * </ul>                                                                      
      */                                                                             
     @Override                                                                       
@@ -38,6 +37,6 @@ public class RRMoCItemTagWereablesRide extends RRMoCItemTagProvider
     {                                                                               
         ITEMS.add(RegisterItem.HANDMADE_SADDLE.returnAsItem());
         
-        ITEMS.add(Item.getItemById(VanillaIDs.SADDLE.ID()));
+        ITEMS.add(Items.SADDLE);
     }                                                                               
 }                                                                                   

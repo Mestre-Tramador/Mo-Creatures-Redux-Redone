@@ -3,14 +3,13 @@ package mestretramador.rrmocreatures.data.client.tags.item;
 import mestretramador.rrmocreatures.data.client.provider.item.RRMoCItemTagProvider; 
 import mestretramador.rrmocreatures.init.RegisterItem;                              
 import mestretramador.rrmocreatures.util.Tags;
-import mestretramador.rrmocreatures.util.VanillaIDs;
 
-import net.minecraft.item.Item;                            
+import net.minecraft.item.Items;                            
                                                                                     
 /**                                                                                 
  * Mo'Creatures Redux&Redone Wereables to Protect Tag's Items.                                  
  *                                                                                  
- * @version 0.0.19                                                               
+ * @version 0.0.20                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagWereablesProtect extends RRMoCItemTagProvider                       
@@ -34,10 +33,10 @@ public class RRMoCItemTagWereablesProtect extends RRMoCItemTagProvider
      * <li>{@link mestretramador.rrmocreatures.item.RRMoCItemHandmadeMountArmorGold Gold Handmade Mount Armor}</li>
      * <li>{@link mestretramador.rrmocreatures.item.RRMoCItemHandmadeMountArmorIron Iron Handmade Mount Armor}</li>
      * <li>{@link mestretramador.rrmocreatures.item.RRMoCItemHandmadeMountArmorLeather Leather Handmade Mount Armor}</li>
-     * <li><a href="https://minecraft.gamepedia.com/Horse_Armor"> Minecraft's Diamond Horse Armor</a></li>
-     * <li><a href="https://minecraft.gamepedia.com/Horse_Armor"> Minecraft's Golden Horse Armor</a></li>
-     * <li><a href="https://minecraft.gamepedia.com/Horse_Armor"> Minecraft's Iron Horse Armor</a></li>
-     * <li><a href="https://minecraft.gamepedia.com/Horse_Armor"> Minecraft's Leather Horse Armor</a></li>
+     * <li>{@link net.minecraft.item.Items#IRON_HORSE_ARMOR Minecraft's Diamond Horse Armor}</li>
+     * <li>{@link net.minecraft.item.Items#GOLDEN_HORSE_ARMOR Minecraft's Golden Horse Armor}</li>
+     * <li>{@link net.minecraft.item.Items#DIAMOND_HORSE_ARMOR Minecraft's Iron Horse Armor}</li>
+     * <li>{@link net.minecraft.item.Items#LEATHER_HORSE_ARMOR Minecraft's Leather Horse Armor}</li>
      * </ul>                                                                      
      */                                                                             
     @Override                                                                       
@@ -49,9 +48,9 @@ public class RRMoCItemTagWereablesProtect extends RRMoCItemTagProvider
         ITEMS.add(RegisterItem.HANDMADE_MOUNT_ARMOR_IRON.returnAsItem());
         ITEMS.add(RegisterItem.HANDMADE_MOUNT_ARMOR_LEATHER.returnAsItem());   
         
-        ITEMS.add(Item.getItemById(VanillaIDs.IRON_HORSE_ARMOR.ID()));
-        ITEMS.add(Item.getItemById(VanillaIDs.GOLDEN_HORSE_ARMOR.ID()));
-        ITEMS.add(Item.getItemById(VanillaIDs.DIAMOND_HORSE_ARMOR.ID()));
-        ITEMS.add(Item.getItemById(VanillaIDs.LEATHER_HORSE_ARMOR.ID()));
+        ITEMS.add(Items.IRON_HORSE_ARMOR);
+        ITEMS.add(Items.GOLDEN_HORSE_ARMOR);
+        ITEMS.add(Items.DIAMOND_HORSE_ARMOR);
+        ITEMS.add(Items.LEATHER_HORSE_ARMOR);
     }                                                                               
 }                                                                                   

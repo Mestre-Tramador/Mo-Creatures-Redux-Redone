@@ -7,7 +7,7 @@ import mestretramador.rrmocreatures.util.Tags;
 /**                                                                                 
  * Mo'Creatures Redux&Redone Wereables for Storage Tag's Items.                                  
  *                                                                                  
- * @version 0.0.19                                                               
+ * @version 0.0.20                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagWereablesStorage extends RRMoCItemTagProvider                       

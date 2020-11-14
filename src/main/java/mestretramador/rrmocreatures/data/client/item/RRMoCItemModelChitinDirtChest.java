@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Dirt Chitin Chest item model.                                                        
  *                                                                                                       
- * @version 0.0.19                                                                                    
+ * @version 0.0.20                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelChitinDirtChest extends RRMoCItemModelProvider                                        

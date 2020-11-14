@@ -1,4 +1,15 @@
 {
+    "whip": {
+        "subtitle": "WUH-PSSSH!",
+        "sounds": [
+            {
+                "name": "rrmocreatures:fx/whip",
+                "pitch": 1.0,
+                "stream": false,
+                "volume": 1.0
+            }
+        ]
+    },
     "zebra": {
         "subtitle": "The Zebra Shuffling!",
         "sounds": [
