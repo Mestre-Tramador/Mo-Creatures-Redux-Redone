@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Ghost Amulet item provider.            
  *                                                              
- * @version 0.0.18                                           
+ * @version 0.0.19                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderAmuletGhost extends RRMoCItemProvider 

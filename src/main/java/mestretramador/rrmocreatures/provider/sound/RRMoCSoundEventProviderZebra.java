@@ -7,7 +7,7 @@ import net.minecraft.util.ResourceLocation;
 /**                                                                                  
  * Mo'Creatures Redux&Redone <i>The Zebra Shuffling!</i> sound event provider.                           
  *                                                                                   
- * @version 0.0.18                                                                
+ * @version 0.0.19                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */ 
 public class RRMoCSoundEventProviderZebra extends RRMoCSoundEventProvider

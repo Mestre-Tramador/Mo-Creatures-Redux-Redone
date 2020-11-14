@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Dirt Sting item model.                                                        
  *                                                                                                       
- * @version 0.0.18                                                                                    
+ * @version 0.0.19                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelStingDirt extends RRMoCItemModelProvider                                        

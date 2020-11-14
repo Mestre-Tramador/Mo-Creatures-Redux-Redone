@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Indian Elephant Garment item provider.            
  *                                                              
- * @version 0.0.18                                           
+ * @version 0.0.19                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderElephantIndianGarment extends RRMoCItemProvider 

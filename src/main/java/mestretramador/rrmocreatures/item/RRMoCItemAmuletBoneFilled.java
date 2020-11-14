@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Filled Bone Amulet item.                                          
  *                                                                                   
- * @version 0.0.18                                                                
+ * @version 0.0.19                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemAmuletBoneFilled extends RRMoCItem                                      

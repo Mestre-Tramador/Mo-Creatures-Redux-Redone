@@ -6,7 +6,7 @@ import net.minecraft.tags.ITag;
 /**
  * Mo'Creatures Redux&Redone Block Tag Append Provider base.
  * 
- * @version 0.0.18
+ * @version 0.0.19
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockTagAppendProvider

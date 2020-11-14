@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Shark Teeth Sword item provider.            
  *                                                              
- * @version 0.0.18                                           
+ * @version 0.0.19                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderSharkTeethSword extends RRMoCItemProvider 

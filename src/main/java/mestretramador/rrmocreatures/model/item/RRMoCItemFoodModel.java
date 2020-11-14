@@ -11,7 +11,7 @@ import net.minecraft.world.World;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} with
  * {@link net.minecraft.item.Food Food} properties or uses.
  * 
- * @version 0.0.18
+ * @version 0.0.19
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemFoodModel extends RRMoCItemModel
@@ -28,7 +28,7 @@ public class RRMoCItemFoodModel extends RRMoCItemModel
 
     /**
      * <p>
-     * Called when the item use finishes. This implementation handle food cases.
+     * Redefines the implementation to handle food cases.
      * </p>
      * <p>
      * When a {@link mestretramador.rrmocreatures.item.RRMoCItemTurtleCookedSoup
@@ -49,17 +49,17 @@ public class RRMoCItemFoodModel extends RRMoCItemModel
     {
         final String PREFIX = Constants.MOD_ID + ":";
 
-        switch (stack.getItem().getRegistryName().toString())
+        switch(stack.getItem().getRegistryName().toString())
         {
             // ? When eating a Turtle Soup, the bowl is returned.
             case (PREFIX + Constants.Items.TURTLE_COOKED_SOUP):
                 super.onItemUseFinish(stack, worldIn, entityLiving);
-                return new ItemStack(Items.BOWL);
+            return new ItemStack(Items.BOWL);
 
             // ? When eating a Heart of Fire, set the player on fire.
             case (PREFIX + Constants.Items.HEART_FIRE):
                 entityLiving.setFire(400);
-                break;
+            break;
         }
 
         return super.onItemUseFinish(stack, worldIn, entityLiving);

@@ -11,7 +11,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Wyvern Lair Planks block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.18                                                                                              
+ * @version 0.0.19                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockWyvernLairPlanks extends RRMoCBlock implements RRMoCBlockItem                                        

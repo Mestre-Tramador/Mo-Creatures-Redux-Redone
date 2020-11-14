@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCItemEssenceModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderEssenceFire;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Essence of Fire item.                                          
  *                                                                                   
- * @version 0.0.18                                                                
+ * @version 0.0.19                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemEssenceFire extends RRMoCItem                                      
@@ -38,6 +38,6 @@ public class RRMoCItemEssenceFire extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderEssenceFire) provider).provideProperties())); 
+       setItem(new RRMoCItemEssenceModel(((RRMoCItemProviderEssenceFire) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

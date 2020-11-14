@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCItemEssenceModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderEssenceLight;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Essence of Light item.                                          
  *                                                                                   
- * @version 0.0.18                                                                
+ * @version 0.0.19                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemEssenceLight extends RRMoCItem                                      
@@ -38,6 +38,6 @@ public class RRMoCItemEssenceLight extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderEssenceLight) provider).provideProperties())); 
+       setItem(new RRMoCItemEssenceModel(((RRMoCItemProviderEssenceLight) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

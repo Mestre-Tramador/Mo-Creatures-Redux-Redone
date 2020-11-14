@@ -13,7 +13,7 @@ import net.minecraft.item.Rarity;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Wyvern Lair Tall Grass block item provider.                           
  *                                                                                   
- * @version 0.0.18                                                                
+ * @version 0.0.19                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderWyvernLairTallGrass extends RRMoCBlockItemProvider            
