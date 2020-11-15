@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCItemStaffModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderStaffEnder;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Staff - Ender item.                                          
  *                                                                                   
- * @version 0.0.20                                                                
+ * @version 0.0.21                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemStaffEnder extends RRMoCItem                                      
@@ -38,6 +38,6 @@ public class RRMoCItemStaffEnder extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderStaffEnder) provider).provideProperties())); 
+       setItem(new RRMoCItemStaffModel(((RRMoCItemProviderStaffEnder) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

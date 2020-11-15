@@ -7,7 +7,7 @@
 #############################################################################
 
 # Gloval variables.
-version="0.0.20"
+version="0.0.21"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 

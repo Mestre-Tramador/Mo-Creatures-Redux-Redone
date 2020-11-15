@@ -12,7 +12,7 @@ import net.minecraftforge.common.ToolType;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Wyvern Lair Leaves block item provider.                           
  *                                                                                   
- * @version 0.0.20                                                                
+ * @version 0.0.21                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderWyvernLairLeaves extends RRMoCBlockItemProvider            

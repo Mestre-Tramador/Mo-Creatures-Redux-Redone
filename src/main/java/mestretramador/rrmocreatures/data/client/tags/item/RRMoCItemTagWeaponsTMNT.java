@@ -7,7 +7,7 @@ import mestretramador.rrmocreatures.util.Tags;
 /**                                                                                 
  * Mo'Creatures Redux&Redone TMNT Weapons Tag's Items.                                  
  *                                                                                  
- * @version 0.0.20                                                               
+ * @version 0.0.21                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagWeaponsTMNT extends RRMoCItemTagProvider                       

@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Diamond Elephant Tusk Sword item.                                          
  *                                                                                   
- * @version 0.0.20                                                                
+ * @version 0.0.21                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemElephantTusksDiamond extends RRMoCItem                                      

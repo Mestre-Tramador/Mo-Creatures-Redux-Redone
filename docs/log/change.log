@@ -1,3 +1,13 @@
+[0.0.21]
+- Created Scroll Item Model.
+- Created Staff Item Model.
+- Added Scrolls (except blank) tooltip text.
+- Added Staffs (except base) tooltip text.
+- Scrolls still do not have usage.
+- Staffs still do not have usage.
+- Fixed Owner and Sale Scrolls switched images.
+- Now Scrolls are on the "Tools" group.
+
 [0.0.20]
 - Created Whip Item Model.
 - Implemented funcionallities to Whip.

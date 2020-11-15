@@ -11,7 +11,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Ogre Lair Stone block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.20                                                                                              
+ * @version 0.0.21                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockOgreLairStone extends RRMoCBlock implements RRMoCBlockItem                                        

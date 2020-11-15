@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCItemScrollModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderScrollFreedom;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Scroll - Freedom item.                                          
  *                                                                                   
- * @version 0.0.20                                                                
+ * @version 0.0.21                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemScrollFreedom extends RRMoCItem                                      
@@ -38,6 +38,6 @@ public class RRMoCItemScrollFreedom extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderScrollFreedom) provider).provideProperties())); 
+       setItem(new RRMoCItemScrollModel(((RRMoCItemProviderScrollFreedom) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

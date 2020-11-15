@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Wyvern Lair Log block model.                                                
  *                                                                                                
- * @version 0.0.20                                                                             
+ * @version 0.0.21                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockModelWyvernLairLog extends RRMoCBlockModelProvider                               

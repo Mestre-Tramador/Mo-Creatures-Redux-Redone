@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCItemScrollModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderScrollSale;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Scroll - Sale item.                                          
  *                                                                                   
- * @version 0.0.20                                                                
+ * @version 0.0.21                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemScrollSale extends RRMoCItem                                      
@@ -38,6 +38,6 @@ public class RRMoCItemScrollSale extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderScrollSale) provider).provideProperties())); 
+       setItem(new RRMoCItemScrollModel(((RRMoCItemProviderScrollSale) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

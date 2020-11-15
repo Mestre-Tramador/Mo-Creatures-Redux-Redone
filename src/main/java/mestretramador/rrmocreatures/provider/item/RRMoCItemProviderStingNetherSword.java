@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Nether Sting Sword item provider.            
  *                                                              
- * @version 0.0.20                                           
+ * @version 0.0.21                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderStingNetherSword extends RRMoCItemProvider 

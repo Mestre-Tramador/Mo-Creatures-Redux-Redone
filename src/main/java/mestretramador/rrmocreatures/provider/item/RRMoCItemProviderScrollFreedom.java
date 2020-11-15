@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Scroll - Freedom item provider.            
  *                                                              
- * @version 0.0.20                                           
+ * @version 0.0.21                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderScrollFreedom extends RRMoCItemProvider 
@@ -20,7 +20,7 @@ public class RRMoCItemProviderScrollFreedom extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES().group(ItemGroup.MISC);
+       PROPERTIES().group(ItemGroup.TOOLS);
        PROPERTIES().rarity(Rarity.RARE);
        PROPERTIES().maxStackSize(1); 
                                                                 
