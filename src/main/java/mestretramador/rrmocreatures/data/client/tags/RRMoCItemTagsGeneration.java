@@ -10,6 +10,9 @@ import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockItemTagOgre
 import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockItemTagWyvernLairDirt;
 import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockItemTagWyvernLairLogs;
 import mestretramador.rrmocreatures.data.client.tags.block.RRMoCBlockItemTagWyvernLairStone;
+import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagMaterialsSting;
+import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagMaterialsTMNT;
+import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagMaterialsTusk;
 import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagWeaponsTMNT;
 import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagWereablesAttack;
 import mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagWereablesProtect;
@@ -31,7 +34,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Item and BlockItem Tags Generator.
  * 
- * @version 0.0.21
+ * @version 0.0.22
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemTagsGeneration extends ItemTagsProvider
@@ -92,12 +95,18 @@ public class RRMoCItemTagsGeneration extends ItemTagsProvider
      */
     private static void setItems()
     {
+        final RRMoCItemTagMaterialsSting materialsSting = new RRMoCItemTagMaterialsSting();
+        final RRMoCItemTagMaterialsTusk materialsTusk = new RRMoCItemTagMaterialsTusk();
+        final RRMoCItemTagMaterialsTMNT materialsTMNT = new RRMoCItemTagMaterialsTMNT();
         final RRMoCItemTagWeaponsTMNT weaponsTMNT = new RRMoCItemTagWeaponsTMNT();
         final RRMoCItemTagWereablesAttack wereablesAttack = new RRMoCItemTagWereablesAttack();
         final RRMoCItemTagWereablesProtect wereablesProtect = new RRMoCItemTagWereablesProtect();
         final RRMoCItemTagWereablesRide wereablesRide = new RRMoCItemTagWereablesRide();
         final RRMoCItemTagWereablesStorage wereablesStorage = new RRMoCItemTagWereablesStorage();
 
+        TAGS_ITEMS.put(materialsSting.provideTagKey(), materialsSting.provideItemsToTag());
+        TAGS_ITEMS.put(materialsTusk.provideTagKey(), materialsTusk.provideItemsToTag());
+        TAGS_ITEMS.put(materialsTMNT.provideTagKey(), materialsTMNT.provideItemsToTag());
         TAGS_ITEMS.put(weaponsTMNT.provideTagKey(), weaponsTMNT.provideItemsToTag());
         TAGS_ITEMS.put(wereablesAttack.provideTagKey(), wereablesAttack.provideItemsToTag());
         TAGS_ITEMS.put(wereablesProtect.provideTagKey(), wereablesProtect.provideItemsToTag());

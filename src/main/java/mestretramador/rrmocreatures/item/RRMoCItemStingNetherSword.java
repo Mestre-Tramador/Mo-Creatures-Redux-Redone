@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCStingSwordItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderStingNetherSword;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Nether Sting Sword item.                                          
  *                                                                                   
- * @version 0.0.21                                                                
+ * @version 0.0.22                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemStingNetherSword extends RRMoCItem                                      
@@ -37,7 +37,11 @@ public class RRMoCItemStingNetherSword extends RRMoCItem
     */                                                                               
    @Override                                                                         
    protected void createItem()                                                       
-   {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderStingNetherSword) provider).provideProperties())); 
+   {
+        final int attackDamage = ((RRMoCItemProviderStingNetherSword) provider).provideAttackDamage();
+        final float attackSpeed = ((RRMoCItemProviderStingNetherSword) provider).provideAttackSpeed();
+        final Item.Properties providerProperties = ((RRMoCItemProviderStingNetherSword) provider).provideProperties();
+        
+        setItem(new RRMoCStingSwordItemModel(attackDamage, attackSpeed, providerProperties)); 
    }                                                                                 
 }                                                                                    

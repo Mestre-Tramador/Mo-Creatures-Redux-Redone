@@ -1,15 +1,16 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCSwordItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderSilverSkeletonSword;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
-import net.minecraft.item.Item;                                                      
+import mestretramador.rrmocreatures.util.Constants;
+
+import net.minecraft.item.IItemTier;
+import net.minecraft.item.Item;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Silver Skeleton Sword item.                                          
  *                                                                                   
- * @version 0.0.21                                                                
+ * @version 0.0.22                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemSilverSkeletonSword extends RRMoCItem                                      
@@ -37,7 +38,12 @@ public class RRMoCItemSilverSkeletonSword extends RRMoCItem
     */                                                                               
    @Override                                                                         
    protected void createItem()                                                       
-   {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderSilverSkeletonSword) provider).provideProperties())); 
+   {          
+        final IItemTier tier = ((RRMoCItemProviderSilverSkeletonSword) provider).provideTier();
+        final int attackDamage = ((RRMoCItemProviderSilverSkeletonSword) provider).provideAttackDamage();
+        final float attackSpeed = ((RRMoCItemProviderSilverSkeletonSword) provider).provideAttackSpeed();
+        final Item.Properties providerProperties = ((RRMoCItemProviderSilverSkeletonSword) provider).provideProperties();
+    
+        setItem(new RRMoCSwordItemModel(tier, attackDamage, attackSpeed, providerProperties)); 
    }                                                                                 
 }                                                                                    

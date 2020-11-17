@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Dark Chitin Helmet item.                                          
  *                                                                                   
- * @version 0.0.21                                                                
+ * @version 0.0.22                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemChitinDarkHelmet extends RRMoCItem                                      

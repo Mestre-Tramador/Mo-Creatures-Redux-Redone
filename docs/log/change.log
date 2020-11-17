@@ -1,3 +1,13 @@
+[0.0.22]
+- Created SwordItem Model.
+- Created Tiers Provider for all Weapons.
+- Implemented Weapon funcionallities to Elephant Tusks Sword items.
+- Implemented Weapon funcionallities to Shark Teeth Sword item.
+- Implemented Weapon funcionallities to Silver Skeleton Sword item.
+- Implemented Weapon funcionallities to Sting Swords items.
+- Implemented Weapon funcionallities to TMNT Weapons items.
+- Created new tags for Repair Materials Ingredients.
+
 [0.0.21]
 - Created Scroll Item Model.
 - Created Staff Item Model.

@@ -1,15 +1,15 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCElephantTusksItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderElephantTusksDiamond;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
+import mestretramador.rrmocreatures.util.Constants;
+
 import net.minecraft.item.Item;                                                      
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Diamond Elephant Tusk Sword item.                                          
  *                                                                                   
- * @version 0.0.21                                                                
+ * @version 0.0.22                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemElephantTusksDiamond extends RRMoCItem                                      
@@ -37,7 +37,11 @@ public class RRMoCItemElephantTusksDiamond extends RRMoCItem
     */                                                                               
    @Override                                                                         
    protected void createItem()                                                       
-   {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderElephantTusksDiamond) provider).provideProperties())); 
+   {         
+        final int attackDamage = ((RRMoCItemProviderElephantTusksDiamond) provider).provideAttackDamage();
+        final float attackSpeed = ((RRMoCItemProviderElephantTusksDiamond) provider).provideAttackSpeed();
+        final Item.Properties providerProperties = ((RRMoCItemProviderElephantTusksDiamond) provider).provideProperties();
+
+        setItem(new RRMoCElephantTusksItemModel(attackDamage, attackSpeed, providerProperties));
    }                                                                                 
 }                                                                                    

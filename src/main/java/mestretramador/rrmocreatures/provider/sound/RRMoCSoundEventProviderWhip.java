@@ -7,7 +7,7 @@ import net.minecraft.util.ResourceLocation;
 /**                                                                          
  * Mo'Creatures Redux&Redone Whip Crack sound event provider.                  
  *                                                                           
- * @version 0.0.21                                                        
+ * @version 0.0.22                                                        
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                          
  */                                                                          
 public class RRMoCSoundEventProviderWhip extends RRMoCSoundEventProvider  

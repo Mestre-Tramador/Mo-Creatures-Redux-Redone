@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCTMNTWeaponItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderTMNTBo;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Bo item.                                          
  *                                                                                   
- * @version 0.0.21                                                                
+ * @version 0.0.22                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemTMNTBo extends RRMoCItem                                      
@@ -37,7 +37,11 @@ public class RRMoCItemTMNTBo extends RRMoCItem
     */                                                                               
    @Override                                                                         
    protected void createItem()                                                       
-   {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderTMNTBo) provider).provideProperties())); 
+   {                         
+        final int attackDamage = ((RRMoCItemProviderTMNTBo) provider).provideAttackDamage();
+        final float attackSpeed = ((RRMoCItemProviderTMNTBo) provider).provideAttackSpeed();
+        final Item.Properties providerProperties = ((RRMoCItemProviderTMNTBo) provider).provideProperties();
+
+        setItem(new RRMoCTMNTWeaponItemModel(attackDamage, attackSpeed, providerProperties));
    }                                                                                 
 }                                                                                    

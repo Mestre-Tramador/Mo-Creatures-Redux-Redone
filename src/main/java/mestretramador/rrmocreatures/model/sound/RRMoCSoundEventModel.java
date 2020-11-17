@@ -6,7 +6,7 @@ import net.minecraft.util.SoundEvent;
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.util.SoundEvent SoundEvent}.
  * 
- * @version 0.0.21
+ * @version 0.0.22
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCSoundEventModel extends SoundEvent

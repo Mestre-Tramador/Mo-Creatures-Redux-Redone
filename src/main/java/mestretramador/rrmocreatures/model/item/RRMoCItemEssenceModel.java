@@ -21,7 +21,7 @@ import net.minecraft.world.World;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} to use
  * as an Essence.
  * 
- * @version 0.0.21
+ * @version 0.0.22
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemEssenceModel extends RRMoCItemModel
@@ -204,13 +204,13 @@ public class RRMoCItemEssenceModel extends RRMoCItemModel
     {
         switch(this.getRegistryName().getPath())
         {
-            case (Constants.Items.ESSENCE_DARKNESS): return DARKNESS;
+            case Constants.Items.ESSENCE_DARKNESS: return DARKNESS;
             
-            case (Constants.Items.ESSENCE_FIRE): return FIRE;
+            case Constants.Items.ESSENCE_FIRE: return FIRE;
             
-            case (Constants.Items.ESSENCE_LIGHT): return LIGHT;
+            case Constants.Items.ESSENCE_LIGHT: return LIGHT;
             
-            case (Constants.Items.ESSENCE_UNDEAD): return UNDEAD;
+            case Constants.Items.ESSENCE_UNDEAD: return UNDEAD;
             
             default: return null;
         }

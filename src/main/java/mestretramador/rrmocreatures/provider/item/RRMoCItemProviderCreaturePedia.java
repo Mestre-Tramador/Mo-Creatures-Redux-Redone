@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Creaturepedia item provider.            
  *                                                              
- * @version 0.0.21                                           
+ * @version 0.0.22                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderCreaturePedia extends RRMoCItemProvider 

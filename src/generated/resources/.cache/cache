@@ -188,6 +188,9 @@ e9e26b83eefe32a0e1bc48cf7a001c307efe2ce5 data/minecraft/tags/items/logs_that_bur
 317b87936a4ca51e86f32f2f7a81eb33bcc6d89f data/rrmocreatures/tags/blocks/wyvern_lair/dirt.json
 44ba580c4e768899874d106ebb69593cb790f8e8 data/rrmocreatures/tags/blocks/wyvern_lair/logs.json
 9189b417e91741b934737ad5d13dadd87e566b22 data/rrmocreatures/tags/blocks/wyvern_lair/stone.json
+1918e6b7ab683a2f61fcf85bfc283156b6f62364 data/rrmocreatures/tags/items/materials/sting.json
+a73347cb19ee7926d79ace340f2754eaf5a09497 data/rrmocreatures/tags/items/materials/tmnt.json
+d94c6d2409e33f7ca719c67170eae0a9b1d335f3 data/rrmocreatures/tags/items/materials/tusk.json
 4907507e36fc27390e21cf6558d350029e02be62 data/rrmocreatures/tags/items/ogre_lair/dirt.json
 81f6847b8624d82c7d441d78837663c3afaa4fcb data/rrmocreatures/tags/items/ogre_lair/logs.json
 079f104867ac21b10100dcaf64e41ded6e542f26 data/rrmocreatures/tags/items/ogre_lair/stone.json

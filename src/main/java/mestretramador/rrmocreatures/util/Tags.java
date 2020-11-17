@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Tags class to use generally and in the Data Generation.
  * 
- * @version 0.0.21
+ * @version 0.0.22
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Tags
@@ -18,6 +18,30 @@ public final class Tags
     /** Item Tags. */
     public static class Items
     {
+        /**
+         * <p> <b>Sting Materials</b> Tag. </p>
+         * <p> This tag groups Stings as materials. </p>
+         * @see Group#MATERIALS Materials Group
+         * @see SubGroup#STING Sting SubGroup
+         */
+        public static final ITag.INamedTag<Item> MATERIALS_STING = rrmocreatures(Group.MATERIALS + SubGroup.STING);
+
+        /**
+         * <p> <b>TMNT Materials</b> Tag. </p>
+         * <p> This tag groups all materials of TMNT Weapons. </p>
+         * @see Group#MATERIALS Materials Group
+         * @see SubGroup#TMNT TMNT SubGroup
+         */
+        public static final ITag.INamedTag<Item> MATERIALS_TMNT = rrmocreatures(Group.MATERIALS + SubGroup.TMNT);
+
+        /**
+         * <p> <b>Tusk Materials</b> Tag. </p>
+         * <p> This tag groups all materials of Tusk Swords. </p>
+         * @see Group#MATERIALS Materials Group
+         * @see SubGroup#TUSK Tusk SubGroup
+         */
+        public static final ITag.INamedTag<Item> MATERIALS_TUSK = rrmocreatures(Group.MATERIALS + SubGroup.TUSK);
+
         /**
          * <p> <b>Ogre Lair's Dirt</b> Tag. </p>
          * <p> This tag groups all accept Ogre Lair dirt block items. </p>
@@ -209,6 +233,15 @@ public final class Tags
     private static class Group
     {
         /**
+         * <p> <b>Materials</b> Group. </p>
+         * <p> This group defines MoCRR material items. </p>
+         * <ul>
+         * <li> A amterial item is an itme used majoritarily to craft others. </li>
+         * </ul>
+         */
+        private static final String MATERIALS = "materials";
+
+        /**
          * <p> <b>Ogre Lair</b> Group. </p>
          * <p> This group defines if a item or a block is related to the Ogre Lair Dimension. </p>
          * <ul>
@@ -295,6 +328,15 @@ public final class Tags
         private static final String RIDE = "/ride";
 
         /**
+         * <p> <b>Sting Sword</b> SubGroup. </p>
+         * <p> This subgroup defines if a item is a Sting from a Scorpion of entity like. </p>
+         * <ul>
+         * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#MATERIALS Materials}</b> group. </li>
+         * </ul>
+         */
+        private static final String STING = "/sting";
+
+        /**
          * <p> <b>Stone</b> SubGroup. </p>
          * <p> This subgroup defines if a block corresponds or is related to general rock types. </p>
          * <ul>
@@ -314,11 +356,20 @@ public final class Tags
 
         /**
          * <p> <b>TMNT</b> SubGroup. </p>
-         * <p> This subgroup defines if a item is a Teename Mutant Ninja Turtles easter egg. </p>
+         * <p> This subgroup defines if a item is a Teenage Mutant Ninja Turtles easter egg. </p>
          * <ul>
          * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#WEAPONS Weapons}</b> group. </li>
          * </ul>
          */
         private static final String TMNT = "/tmnt";
+
+        /**
+         * <p> <b>Tusk</b> SubGroup. </p>
+         * <p> This subgroup defines if a item is a Tusk Sword for Elephants of Mammoths. </p>
+         * <ul>
+         * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#MATERIALS Materials}</b> group. </li>
+         * </ul>
+         */
+        private static final String TUSK = "/tusk";
     }
 }

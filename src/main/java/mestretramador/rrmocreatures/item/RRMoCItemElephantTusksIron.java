@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCElephantTusksItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderElephantTusksIron;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Iron Elephant Tusk Sword item.                                          
  *                                                                                   
- * @version 0.0.21                                                                
+ * @version 0.0.22                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemElephantTusksIron extends RRMoCItem                                      
@@ -38,6 +38,10 @@ public class RRMoCItemElephantTusksIron extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderElephantTusksIron) provider).provideProperties())); 
+        final int attackDamage = ((RRMoCItemProviderElephantTusksIron) provider).provideAttackDamage();
+        final float attackSpeed = ((RRMoCItemProviderElephantTusksIron) provider).provideAttackSpeed();
+        final Item.Properties providerProperties = ((RRMoCItemProviderElephantTusksIron) provider).provideProperties();
+
+        setItem(new RRMoCElephantTusksItemModel(attackDamage, attackSpeed, providerProperties));
    }                                                                                 
 }                                                                                    

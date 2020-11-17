@@ -11,7 +11,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Wyvern Lair Leaves block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.21                                                                                              
+ * @version 0.0.22                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockWyvernLairLeaves extends RRMoCBlock implements RRMoCBlockItem                                        

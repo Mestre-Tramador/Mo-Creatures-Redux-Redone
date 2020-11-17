@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "rrmocreatures:sting_dark",
+    "rrmocreatures:sting_dirt",
+    "rrmocreatures:sting_frost",
+    "rrmocreatures:sting_nether"
+  ]
+}

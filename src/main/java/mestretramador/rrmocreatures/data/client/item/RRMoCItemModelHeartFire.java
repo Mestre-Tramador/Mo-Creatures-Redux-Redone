@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Heart of Fire item model.                                                        
  *                                                                                                       
- * @version 0.0.21                                                                                    
+ * @version 0.0.22                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelHeartFire extends RRMoCItemModelProvider                                        

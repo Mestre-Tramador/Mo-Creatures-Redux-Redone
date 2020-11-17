@@ -1,15 +1,16 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCSwordItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderSharkTeethSword;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
-import net.minecraft.item.Item;                                                      
+import mestretramador.rrmocreatures.util.Constants;
+
+import net.minecraft.item.IItemTier;
+import net.minecraft.item.Item;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Shark Teeth Sword item.                                          
  *                                                                                   
- * @version 0.0.21                                                                
+ * @version 0.0.22                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemSharkTeethSword extends RRMoCItem                                      
@@ -37,7 +38,12 @@ public class RRMoCItemSharkTeethSword extends RRMoCItem
     */                                                                               
    @Override                                                                         
    protected void createItem()                                                       
-   {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderSharkTeethSword) provider).provideProperties())); 
+   {    
+        final IItemTier tier = ((RRMoCItemProviderSharkTeethSword) provider).provideTier();
+        final int attackDamage = ((RRMoCItemProviderSharkTeethSword) provider).provideAttackDamage();
+        final float attackSpeed = ((RRMoCItemProviderSharkTeethSword) provider).provideAttackSpeed();
+        final Item.Properties providerProperties = ((RRMoCItemProviderSharkTeethSword) provider).provideProperties();                                                                             
+
+        setItem(new RRMoCSwordItemModel(tier, attackDamage, attackSpeed, providerProperties));
    }                                                                                 
 }                                                                                    

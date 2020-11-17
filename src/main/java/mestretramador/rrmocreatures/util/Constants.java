@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Constants class to use generally.
  * 
- * @version 0.0.21
+ * @version 0.0.22
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Constants
