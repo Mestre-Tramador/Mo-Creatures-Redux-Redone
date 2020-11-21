@@ -8,7 +8,7 @@ import net.minecraft.item.Item.Properties;
 /**
  * Mo'Creatures Redux&Redone Omelet item provider.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderEggHatchableOmelet extends RRMoCItemProvider implements RRMoCItemFoodProvider

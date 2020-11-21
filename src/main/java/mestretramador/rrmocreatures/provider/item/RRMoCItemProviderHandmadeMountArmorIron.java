@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Handmade Iron Mount Armor item provider.            
  *                                                              
- * @version 0.0.22                                           
+ * @version 0.0.23                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderHandmadeMountArmorIron extends RRMoCItemProvider 

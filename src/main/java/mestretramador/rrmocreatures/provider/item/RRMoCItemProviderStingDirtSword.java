@@ -8,7 +8,7 @@ import net.minecraft.item.Item.Properties;
 /**
  * Mo'Creatures Redux&Redone Dirt Sting Sword item provider.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderStingDirtSword extends RRMoCItemProvider implements RRMoCSwordItemProvider
@@ -23,7 +23,6 @@ public class RRMoCItemProviderStingDirtSword extends RRMoCItemProvider implement
     {
         PROPERTIES().group(ItemGroup.COMBAT);
         PROPERTIES().rarity(Rarity.COMMON);
-        PROPERTIES().maxDamage(1561);
 
         return PROPERTIES();
     }

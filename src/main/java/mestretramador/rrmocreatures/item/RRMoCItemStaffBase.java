@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Staff Base item.                                          
  *                                                                                   
- * @version 0.0.22                                                                
+ * @version 0.0.23                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemStaffBase extends RRMoCItem                                      

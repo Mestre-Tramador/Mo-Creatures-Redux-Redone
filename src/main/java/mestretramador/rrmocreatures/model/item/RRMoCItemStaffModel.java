@@ -20,7 +20,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} to use
  * as a Staff.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemStaffModel extends RRMoCItemModel

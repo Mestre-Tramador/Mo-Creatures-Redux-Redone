@@ -1,15 +1,17 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCArmorItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderHideLegs;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
-import net.minecraft.item.Item;                                                      
+import mestretramador.rrmocreatures.util.Constants;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.IArmorMaterial;
+import net.minecraft.item.Item;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Hide Legs item.                                          
  *                                                                                   
- * @version 0.0.22                                                                
+ * @version 0.0.23                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemHideLegs extends RRMoCItem                                      
@@ -38,6 +40,10 @@ public class RRMoCItemHideLegs extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderHideLegs) provider).provideProperties())); 
+        final IArmorMaterial material = ((RRMoCItemProviderHideLegs) provider).provideMaterial();            
+        final EquipmentSlotType slot = ((RRMoCItemProviderHideLegs) provider).provideSlot();            
+        final Item.Properties providerProperties = ((RRMoCItemProviderHideLegs) provider).provideProperties();            
+
+        setItem(new RRMoCArmorItemModel(material, slot, providerProperties));
    }                                                                                 
 }                                                                                    

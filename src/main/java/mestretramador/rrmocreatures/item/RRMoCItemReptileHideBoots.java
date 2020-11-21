@@ -1,15 +1,17 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCArmorItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderReptileHideBoots;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
-import net.minecraft.item.Item;                                                      
+import mestretramador.rrmocreatures.util.Constants;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.IArmorMaterial;
+import net.minecraft.item.Item;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Reptile Hide Boots item.                                          
  *                                                                                   
- * @version 0.0.22                                                                
+ * @version 0.0.23                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemReptileHideBoots extends RRMoCItem                                      
@@ -38,6 +40,10 @@ public class RRMoCItemReptileHideBoots extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderReptileHideBoots) provider).provideProperties())); 
+        final IArmorMaterial material = ((RRMoCItemProviderReptileHideBoots) provider).provideMaterial();            
+        final EquipmentSlotType slot = ((RRMoCItemProviderReptileHideBoots) provider).provideSlot();            
+        final Item.Properties providerProperties = ((RRMoCItemProviderReptileHideBoots) provider).provideProperties();            
+
+        setItem(new RRMoCArmorItemModel(material, slot, providerProperties));
    }                                                                                 
 }                                                                                    

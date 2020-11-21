@@ -1,15 +1,16 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCChitinArmorItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderChitinFrostChest;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
-import net.minecraft.item.Item;                                                      
+import mestretramador.rrmocreatures.util.Constants;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.Item;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Frost Chitin Chest item.                                          
  *                                                                                   
- * @version 0.0.22                                                                
+ * @version 0.0.23                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemChitinFrostChest extends RRMoCItem                                      
@@ -38,6 +39,9 @@ public class RRMoCItemChitinFrostChest extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderChitinFrostChest) provider).provideProperties())); 
+        final EquipmentSlotType slot = ((RRMoCItemProviderChitinFrostChest) provider).provideSlot();            
+        final Item.Properties providerProperties = ((RRMoCItemProviderChitinFrostChest) provider).provideProperties();            
+
+        setItem(new RRMoCChitinArmorItemModel(slot, providerProperties));
    }                                                                                 
 }                                                                                    

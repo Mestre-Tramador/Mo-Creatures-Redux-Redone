@@ -1,14 +1,14 @@
 package mestretramador.rrmocreatures.provider.item;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Rarity;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item.Properties;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Rarity;
 
 /**
  * Mo'Creatures Redux&Redone Iron Elephant Tusk Sword item provider.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderElephantTusksIron extends RRMoCItemProvider implements RRMoCSwordItemProvider
@@ -23,7 +23,6 @@ public class RRMoCItemProviderElephantTusksIron extends RRMoCItemProvider implem
     {
         PROPERTIES().group(ItemGroup.COMBAT);
         PROPERTIES().rarity(Rarity.COMMON);
-        PROPERTIES().maxDamage(1300);
 
         return PROPERTIES();
     }

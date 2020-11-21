@@ -7,7 +7,7 @@ import mestretramador.rrmocreatures.util.Tags;
 /**                                                                                 
  * Mo'Creatures Redux&Redone Wereables to Attack Tag's Items.                                  
  *                                                                                  
- * @version 0.0.22                                                               
+ * @version 0.0.23                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagWereablesAttack extends RRMoCItemTagProvider                       

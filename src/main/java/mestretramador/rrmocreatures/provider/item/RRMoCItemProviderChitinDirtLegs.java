@@ -1,29 +1,52 @@
 package mestretramador.rrmocreatures.provider.item;
 
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Rarity;
+import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item.Properties;
-                                                                
-/**                                                             
- * Mo'Creatures Redux&Redone Dirt Chitin Legs item provider.            
- *                                                              
- * @version 0.0.22                                           
- * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
- */                                                             
-public class RRMoCItemProviderChitinDirtLegs extends RRMoCItemProvider 
-{                                                               
-   /**                                                          
-    * Return the properties of                                  
-    * {@link mestretramador.rrmocreatures.item.RRMoCItemChitinDirtLegs 
-    * Dirt Chitin Legs}.                                                  
-    */                                                          
-   @Override                                                    
-   public Properties provideProperties()                        
-   {                                                            
+
+/**
+ * Mo'Creatures Redux&Redone Dirt Chitin Legs item provider.
+ * 
+ * @version 0.0.23
+ * @author Eduardo de Oliveira Rosa, Mestre Tramador.
+ */
+public class RRMoCItemProviderChitinDirtLegs extends RRMoCItemProvider implements RRMoCArmorItemProvider
+{
+   /**
+    * Return the properties of
+    * {@link mestretramador.rrmocreatures.item.RRMoCItemChitinDirtLegs Dirt Chitin
+    * Legs}.
+    */
+   @Override
+   public Properties provideProperties()
+   {
       PROPERTIES().group(ItemGroup.COMBAT);
       PROPERTIES().rarity(Rarity.COMMON);
-      PROPERTIES().maxStackSize(1);
-                                                                
-      return PROPERTIES();                                       
-   }                                                            
+
+      return PROPERTIES();
+   }
+
+   /**
+    * Return the material of
+    * {@link mestretramador.rrmocreatures.item.RRMoCItemChitinDirtLegs Dirt Chitin
+    * Legs}.
+    */
+   @Override
+   public IArmorMaterial provideMaterial()
+   {
+      return RRMoCItemMaterialProvider.CHITIN;
+   }
+
+   /**
+    * Return the equipment slot of
+    * {@link mestretramador.rrmocreatures.item.RRMoCItemChitinDirtLegs Dirt Chitin
+    * Legs}.
+    */
+   @Override
+   public EquipmentSlotType provideSlot()
+   {
+      return EquipmentSlotType.LEGS;
+   }
 }                                                               

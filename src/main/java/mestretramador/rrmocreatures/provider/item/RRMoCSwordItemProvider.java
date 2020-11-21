@@ -5,7 +5,7 @@ import net.minecraft.item.IItemTier;
 /**
  * Mo'Creatures Redux&Redone SwordItem Provider base.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public interface RRMoCSwordItemProvider

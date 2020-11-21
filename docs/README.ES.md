@@ -10,9 +10,9 @@
 Mo'Creatures Redux & Redone es en un primer momento un intento de dar vida a Mo'Creatures de DrZhark de nuevo, pero con ligeras diferencias.
 Este es mi primer mod para Minecraft, pero, no obstante, es un honor intentar continuar con un trabajo tan bueno.
 
-| Versión Actual |
-| -------------- |
-|      0.0.22     |
+|  Versión Actual  |
+| ---------------  |
+|      0.0.23      |
 
 # Introducción
 

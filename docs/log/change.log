@@ -1,3 +1,15 @@
+[0.0.23]
+- Created ArmorItem Model.
+- Created Materials Provider for all Armors.
+- Implemented Armor funcionallities to Chitin Armors items.
+- Implemented Armor funcionallities to Fur Armor item.
+- Implemented Armor funcionallities to Hide Armor item.
+- Implemented Armor funcionallities to Reptile Hide Armor item.
+- Created new tags for Repair Materials Ingredients.
+- Formatted some Item Properties.
+- Improved JavaDoc.
+- Reimported Mo'Creatures Armors rendering images.
+
 [0.0.22]
 - Created SwordItem Model.
 - Created Tiers Provider for all Weapons.

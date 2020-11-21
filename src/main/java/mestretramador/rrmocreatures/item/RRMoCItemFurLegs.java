@@ -1,15 +1,17 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCArmorItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderFurLegs;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
-import net.minecraft.item.Item;                                                      
+import mestretramador.rrmocreatures.util.Constants;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.IArmorMaterial;
+import net.minecraft.item.Item;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Fur Legs item.                                          
  *                                                                                   
- * @version 0.0.22                                                                
+ * @version 0.0.23                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemFurLegs extends RRMoCItem                                      
@@ -38,6 +40,10 @@ public class RRMoCItemFurLegs extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderFurLegs) provider).provideProperties())); 
+        final IArmorMaterial material = ((RRMoCItemProviderFurLegs) provider).provideMaterial();            
+        final EquipmentSlotType slot = ((RRMoCItemProviderFurLegs) provider).provideSlot();            
+        final Item.Properties providerProperties = ((RRMoCItemProviderFurLegs) provider).provideProperties();            
+
+        setItem(new RRMoCArmorItemModel(material, slot, providerProperties));
    }                                                                                 
 }                                                                                    

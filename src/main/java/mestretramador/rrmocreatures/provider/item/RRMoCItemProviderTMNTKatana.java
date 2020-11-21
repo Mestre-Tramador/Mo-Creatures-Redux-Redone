@@ -8,7 +8,7 @@ import net.minecraft.item.Item.Properties;
 /**
  * Mo'Creatures Redux&Redone Katana item provider.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderTMNTKatana extends RRMoCItemProvider implements RRMoCSwordItemProvider
@@ -22,7 +22,6 @@ public class RRMoCItemProviderTMNTKatana extends RRMoCItemProvider implements RR
     {
         PROPERTIES().group(ItemGroup.COMBAT);
         PROPERTIES().rarity(Rarity.UNCOMMON);
-        PROPERTIES().maxDamage(250);
 
         return PROPERTIES();
     }

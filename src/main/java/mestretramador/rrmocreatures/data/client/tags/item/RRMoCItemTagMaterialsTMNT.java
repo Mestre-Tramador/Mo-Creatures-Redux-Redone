@@ -7,7 +7,7 @@ import net.minecraft.item.Items;
 /**                                                                                 
  * Mo'Creatures Redux&Redone TMNT Materials Tag's Items.                                  
  *                                                                                  
- * @version 0.0.22                                                               
+ * @version 0.0.23                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagMaterialsTMNT extends RRMoCItemTagProvider                       

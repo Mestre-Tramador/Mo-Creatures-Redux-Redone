@@ -9,7 +9,7 @@ import net.minecraft.item.Items;
 /**                                                                                 
  * Mo'Creatures Redux&Redone Wereables to Ride Tag's Items.                                  
  *                                                                                  
- * @version 0.0.22                                                               
+ * @version 0.0.23                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagWereablesRide extends RRMoCItemTagProvider                       

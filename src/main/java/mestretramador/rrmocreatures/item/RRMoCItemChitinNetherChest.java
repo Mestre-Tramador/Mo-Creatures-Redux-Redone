@@ -1,15 +1,16 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCChitinArmorItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderChitinNetherChest;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
-import net.minecraft.item.Item;                                                      
+import mestretramador.rrmocreatures.util.Constants;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.Item;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Nether Chitin Chest item.                                          
  *                                                                                   
- * @version 0.0.22                                                                
+ * @version 0.0.23                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemChitinNetherChest extends RRMoCItem                                      
@@ -38,6 +39,9 @@ public class RRMoCItemChitinNetherChest extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderChitinNetherChest) provider).provideProperties())); 
+        final EquipmentSlotType slot = ((RRMoCItemProviderChitinNetherChest) provider).provideSlot();            
+        final Item.Properties providerProperties = ((RRMoCItemProviderChitinNetherChest) provider).provideProperties();            
+
+        setItem(new RRMoCChitinArmorItemModel(slot, providerProperties));
    }                                                                                 
 }                                                                                    

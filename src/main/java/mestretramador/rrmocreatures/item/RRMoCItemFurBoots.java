@@ -1,15 +1,17 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemModel;
+import mestretramador.rrmocreatures.model.item.RRMoCArmorItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderFurBoots;
-import mestretramador.rrmocreatures.util.Constants;                                  
-                                                                                     
+import mestretramador.rrmocreatures.util.Constants;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;                                                      
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Fur Boots item.                                          
  *                                                                                   
- * @version 0.0.22                                                                
+ * @version 0.0.23                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemFurBoots extends RRMoCItem                                      
@@ -37,7 +39,11 @@ public class RRMoCItemFurBoots extends RRMoCItem
     */                                                                               
    @Override                                                                         
    protected void createItem()                                                       
-   {                                                                                 
-       setItem(new RRMoCItemModel(((RRMoCItemProviderFurBoots) provider).provideProperties())); 
+   {                                  
+        final IArmorMaterial material = ((RRMoCItemProviderFurBoots) provider).provideMaterial();            
+        final EquipmentSlotType slot = ((RRMoCItemProviderFurBoots) provider).provideSlot();            
+        final Item.Properties providerProperties = ((RRMoCItemProviderFurBoots) provider).provideProperties();            
+       
+        setItem(new RRMoCArmorItemModel(material, slot, providerProperties));
    }                                                                                 
 }                                                                                    

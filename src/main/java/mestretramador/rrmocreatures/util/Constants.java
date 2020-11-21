@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Constants class to use generally.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Constants
@@ -13,6 +13,9 @@ public final class Constants
 
     /** Forge ID. */
     public static final String FORGE_ID = "forge";
+
+    /** Path to Armors resources. */
+    public static final String ARMOR_PATH = "armor/";
 
     /** Path to Items resources. */
     public static final String ITEM_PATH = "item/";
@@ -28,6 +31,9 @@ public final class Constants
 
     /** Path to effect Sound Events resources. */
     public static final String SFX_PATH = SOUNDS_PATH + "fx/";
+
+    /** Path to general Textures. */
+    public static final String TEXTURES_PATH = "textures/";
 
     /** Supported Languages IDs. */
     public static class Langs

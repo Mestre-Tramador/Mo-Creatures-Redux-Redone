@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Tags class to use generally and in the Data Generation.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Tags
@@ -18,6 +18,14 @@ public final class Tags
     /** Item Tags. */
     public static class Items
     {
+        /**
+         * <p> <b>Chitin Materials</b> Tag. </p>
+         * <p> This tag groups Chitins as materials. </p>
+         * @see Group#MATERIALS Materials Group
+         * @see SubGroup#CHITIN Chitin SubGroup
+         */
+        public static final ITag.INamedTag<Item> MATERIALS_CHITIN = rrmocreatures(Group.MATERIALS + SubGroup.CHITIN);
+
         /**
          * <p> <b>Sting Materials</b> Tag. </p>
          * <p> This tag groups Stings as materials. </p>
@@ -290,6 +298,15 @@ public final class Tags
          * </ul>
          */
         private static final String ATTACK = "/attack";
+
+        /**
+         * <p> <b>Chitin</b> SubGroup. </p>
+         * <p> This subgroup defines if a item is a Chitin from a Scorpion of entity like. </p>
+         * <ul>
+         * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#MATERIALS Materials}</b> group. </li>
+         * </ul>
+         */
+        private static final String CHITIN = "/chitin";
 
         /**
          * <p> <b>Dirt</b> SubGroup. </p>

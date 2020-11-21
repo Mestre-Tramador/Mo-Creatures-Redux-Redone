@@ -12,7 +12,7 @@ import net.minecraft.util.LazyValue;
 /**
  * Mo'Creatures Redux&Redone Item Tier Provider base.
  * 
- * @version 0.0.22
+ * @version 0.0.23
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public enum RRMoCItemTierProvider implements IItemTier
@@ -139,7 +139,7 @@ public enum RRMoCItemTierProvider implements IItemTier
     }
 
     /**
-     * Return the tier The Material(s) Ingredient(s) to repair.
+     * Return the repairable materials.
      * 
      * @return The Material(s) Ingredient(s) to repair.
      */

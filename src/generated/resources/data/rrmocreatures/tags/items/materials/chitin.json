@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "rrmocreatures:chitin_dark",
+    "rrmocreatures:chitin_dirt",
+    "rrmocreatures:chitin_frost",
+    "rrmocreatures:chitin_nether"
+  ]
+}

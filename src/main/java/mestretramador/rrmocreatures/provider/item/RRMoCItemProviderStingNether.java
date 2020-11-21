@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Nether Sting item provider.            
  *                                                              
- * @version 0.0.22                                           
+ * @version 0.0.23                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderStingNether extends RRMoCItemProvider 
@@ -23,6 +23,7 @@ public class RRMoCItemProviderStingNether extends RRMoCItemProvider
        PROPERTIES().group(ItemGroup.MATERIALS);
        PROPERTIES().rarity(Rarity.COMMON);
        PROPERTIES().maxStackSize(64);
+       PROPERTIES().isImmuneToFire();
                                                                 
        return PROPERTIES();                                       
    }                                                            

@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Filled Fish Net item model.                                                        
  *                                                                                                       
- * @version 0.0.22                                                                                    
+ * @version 0.0.23                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelFishNetFilled extends RRMoCItemModelProvider                                        
