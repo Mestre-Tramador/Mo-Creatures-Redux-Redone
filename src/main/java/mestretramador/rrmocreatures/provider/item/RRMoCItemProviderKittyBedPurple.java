@@ -7,7 +7,7 @@ import net.minecraft.item.Item.Properties;
 /**                                                             
  * Mo'Creatures Redux&Redone Purple Kitty Bed item provider.            
  *                                                              
- * @version 0.0.23                                           
+ * @version 0.0.24                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderKittyBedPurple extends RRMoCItemProvider 

@@ -22,7 +22,7 @@ import net.minecraft.world.World;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} to use
  * to {@link mestretramador.rrmocreatures.item.RRMoCItemWhip Whip}.
  * 
- * @version 0.0.23
+ * @version 0.0.24
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemWhipModel extends RRMoCItemModel

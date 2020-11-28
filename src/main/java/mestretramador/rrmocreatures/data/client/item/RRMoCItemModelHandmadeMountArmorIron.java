@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Handmade Iron Mount Armor item model.                                                        
  *                                                                                                       
- * @version 0.0.23                                                                                    
+ * @version 0.0.24                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelHandmadeMountArmorIron extends RRMoCItemModelProvider                                        

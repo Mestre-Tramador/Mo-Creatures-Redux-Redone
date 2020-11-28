@@ -13,7 +13,7 @@ import net.minecraft.tags.ItemTags;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.SwordItem Sword Item} to act
  * as an Elephant Tusks Sword.
  * 
- * @version 0.0.23
+ * @version 0.0.24
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCElephantTusksItemModel extends RRMoCSwordItemModel

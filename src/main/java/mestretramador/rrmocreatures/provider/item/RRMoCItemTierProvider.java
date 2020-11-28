@@ -12,7 +12,7 @@ import net.minecraft.util.LazyValue;
 /**
  * Mo'Creatures Redux&Redone Item Tier Provider base.
  * 
- * @version 0.0.23
+ * @version 0.0.24
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public enum RRMoCItemTierProvider implements IItemTier

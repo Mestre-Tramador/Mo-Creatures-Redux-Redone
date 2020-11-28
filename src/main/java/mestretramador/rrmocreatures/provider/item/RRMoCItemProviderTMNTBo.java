@@ -8,7 +8,7 @@ import net.minecraft.item.Item.Properties;
 /**
  * Mo'Creatures Redux&Redone Bo item provider.
  * 
- * @version 0.0.23
+ * @version 0.0.24
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderTMNTBo extends RRMoCItemProvider implements RRMoCSwordItemProvider

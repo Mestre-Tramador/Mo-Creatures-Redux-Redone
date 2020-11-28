@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Heart of the Undead item.                                          
  *                                                                                   
- * @version 0.0.23                                                                
+ * @version 0.0.24                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemHeartUndead extends RRMoCItem                                      

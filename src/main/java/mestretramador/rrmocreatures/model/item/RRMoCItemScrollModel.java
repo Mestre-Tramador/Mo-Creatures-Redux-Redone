@@ -20,7 +20,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} to use
  * as a Scroll.
  * 
- * @version 0.0.23
+ * @version 0.0.24
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemScrollModel extends RRMoCItemModel

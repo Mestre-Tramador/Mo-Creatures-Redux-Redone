@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Essence of Light item model.                                                        
  *                                                                                                       
- * @version 0.0.23                                                                                    
+ * @version 0.0.24                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelEssenceLight extends RRMoCItemModelProvider                                        

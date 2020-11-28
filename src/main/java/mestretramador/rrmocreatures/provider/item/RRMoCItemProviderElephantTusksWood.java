@@ -8,7 +8,7 @@ import net.minecraft.item.Rarity;
 /**
  * Mo'Creatures Redux&Redone Wood Elephant Tusk Sword item provider.
  * 
- * @version 0.0.23
+ * @version 0.0.24
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderElephantTusksWood extends RRMoCItemProvider implements RRMoCSwordItemProvider
