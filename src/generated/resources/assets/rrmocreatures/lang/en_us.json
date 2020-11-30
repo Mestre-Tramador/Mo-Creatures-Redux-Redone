@@ -151,5 +151,14 @@
   "item.rrmocreatures.turtle_cooked_soup": "Turtle Soup",
   "item.rrmocreatures.turtle_raw": "Raw Turtle",
   "item.rrmocreatures.unicorn_horn": "Unicorn Horn",
-  "item.rrmocreatures.whip": "Whip"
+  "item.rrmocreatures.whip": "Whip",
+  "itemGroup.rrmocreatures_animalstuff": "MoC R&R Animal Caring",
+  "itemGroup.rrmocreatures_blocks": "MoC R&R Blocks",
+  "itemGroup.rrmocreatures_combat": "MoC R&R Combat",
+  "itemGroup.rrmocreatures_eggs": "MoC R&R Hatchable Eggs",
+  "itemGroup.rrmocreatures_food": "MoC R&R Food",
+  "itemGroup.rrmocreatures_magic": "MoC R&R Magic",
+  "itemGroup.rrmocreatures_materials": "MoC R&R Materials",
+  "itemGroup.rrmocreatures_misc": "MoC R&R Miscellaneous",
+  "itemGroup.rrmocreatures_tools": "MoC R&R Tools"
 }

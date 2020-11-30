@@ -1,14 +1,15 @@
 package mestretramador.rrmocreatures.provider.item;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Rarity;
+import mestretramador.rrmocreatures.util.Tabs;
+
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item.Properties;
+import net.minecraft.item.Rarity;
 
 /**
  * Mo'Creatures Redux&Redone Katana item provider.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderTMNTKatana extends RRMoCItemProvider implements RRMoCSwordItemProvider
@@ -20,7 +21,7 @@ public class RRMoCItemProviderTMNTKatana extends RRMoCItemProvider implements RR
     @Override
     public Properties provideProperties()
     {
-        PROPERTIES().group(ItemGroup.COMBAT);
+        PROPERTIES().group(Tabs.COMBAT);
         PROPERTIES().rarity(Rarity.UNCOMMON);
 
         return PROPERTIES();

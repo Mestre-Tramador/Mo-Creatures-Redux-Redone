@@ -1,10 +1,11 @@
 package mestretramador.rrmocreatures.provider.block;
 
+import mestretramador.rrmocreatures.util.Tabs;
+
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Rarity;
 
 import net.minecraftforge.common.ToolType;
@@ -12,7 +13,7 @@ import net.minecraftforge.common.ToolType;
 /**
  * Mo'Creatures Redux&Redone Wyvern Lair Stone block item provider.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvider
@@ -51,7 +52,7 @@ public class RRMoCBlockItemProviderWyvernLairStone extends RRMoCBlockItemProvide
     @Override
     public Item.Properties provideItemProperties()
     {
-        ITEM_PROPERTIES().group(ItemGroup.BUILDING_BLOCKS);
+        ITEM_PROPERTIES().group(Tabs.BLOCKS);
         ITEM_PROPERTIES().rarity(Rarity.COMMON);
         ITEM_PROPERTIES().maxStackSize(64);
 

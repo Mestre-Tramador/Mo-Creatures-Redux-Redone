@@ -1,14 +1,15 @@
 package mestretramador.rrmocreatures.provider.item;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Rarity;
+import mestretramador.rrmocreatures.util.Tabs;
+
 import net.minecraft.item.Food;
 import net.minecraft.item.Item.Properties;
+import net.minecraft.item.Rarity;
 
 /**
  * Mo'Creatures Redux&Redone Heart of Fire item provider.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderHeartFire extends RRMoCItemProvider implements RRMoCItemFoodProvider
@@ -20,7 +21,7 @@ public class RRMoCItemProviderHeartFire extends RRMoCItemProvider implements RRM
     @Override
     public Properties provideProperties()
     {
-        PROPERTIES().group(ItemGroup.MATERIALS);
+        PROPERTIES().group(Tabs.MATERIALS);
         PROPERTIES().rarity(Rarity.COMMON);
         PROPERTIES().food(provideFoodProperties());
         PROPERTIES().maxStackSize(64);

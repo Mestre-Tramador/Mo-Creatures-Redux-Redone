@@ -3,7 +3,7 @@ package mestretramador.rrmocreatures.util;
 /**
  * Constants class to use generally.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Constants
@@ -36,14 +36,14 @@ public final class Constants
     public static final String TEXTURES_PATH = "textures/";
 
     /** Supported Languages IDs. */
-    public static class Langs
+    public static final class Langs
     {
         /** English (US). */
         public static final String EN_US = "en_us";
     }
 
     /** Items IDs. */
-    public static class Items
+    public static final class Items
     {
         /** {@link mestretramador.rrmocreatures.item.RRMoCItemAmuletBone Bone Amulet} item ID. */
         public static final String AMULET_BONE = Prefix.AMULET + "bone";
@@ -461,7 +461,7 @@ public final class Constants
     }
 
     /** Blocks IDs. */
-    public static class Blocks
+    public static final class Blocks
     {
         /** {@link mestretramador.rrmocreatures.block.RRMoCBlockOgreLairDirt Ogre Lair Dirt} block ID. */
         public static final String OGRE_LAIR_DIRT = Prefix.OGRE_LAIR + "dirt";
@@ -531,17 +531,17 @@ public final class Constants
     }
 
     /** Sound Events IDs. */
-    public static class Sounds
+    public static final class Sounds
     {
         /** Effects Sound Events IDs. */
-        public static class FX
+        public static final class FX
         {
             /** {@link mestretramador.rrmocreatures.sound.RRMoCWhip Whip Crack} effect sound event ID. */
             public final static String WHIP = "whip";
         }
 
         /** Music Sound Events IDs. */
-        public static class Music
+        public static final class Music
         {
             /** <i>{@link mestretramador.rrmocreatures.sound.RRMoCSoundEventZebra The Zebra Shuffling!}</i> music sound event ID. */
             public static final String ZEBRA = "zebra";
@@ -549,7 +549,7 @@ public final class Constants
     }
 
     /** Prefixes to use on Constant creation. */
-    private static class Prefix
+    private static final class Prefix
     {
         /** Amulet storager prefix. */
         private static final String AMULET = "amulet_";
@@ -607,7 +607,7 @@ public final class Constants
     }
 
     /** Sufixes to use on Constant creation. */
-    private static class Sufix
+    private static final class Sufix
     {
         /** Black color sufix. */
         private static final String BLACK = "_black";

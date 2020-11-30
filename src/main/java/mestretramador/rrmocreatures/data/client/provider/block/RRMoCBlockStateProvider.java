@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone BlockState Provider base.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCBlockStateProvider extends BlockStateProvider

@@ -1,15 +1,16 @@
 package mestretramador.rrmocreatures.provider.item;
 
+import mestretramador.rrmocreatures.util.Tabs;
+
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item.Properties;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Rarity;
 
 /**
  * Mo'Creatures Redux&Redone Reptile Hide Helmet item provider.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderReptileHideHelmet extends RRMoCItemProvider implements RRMoCArmorItemProvider
@@ -22,7 +23,7 @@ public class RRMoCItemProviderReptileHideHelmet extends RRMoCItemProvider implem
     @Override
     public Properties provideProperties()
     {
-        PROPERTIES().group(ItemGroup.COMBAT);
+        PROPERTIES().group(Tabs.COMBAT);
         PROPERTIES().rarity(Rarity.COMMON);
 
         return PROPERTIES();

@@ -4,13 +4,14 @@ import mestretramador.rrmocreatures.data.client.provider.RRMoCLangProvider;
 import mestretramador.rrmocreatures.init.RegisterBlock;
 import mestretramador.rrmocreatures.init.RegisterItem;
 import mestretramador.rrmocreatures.util.Constants;
+import mestretramador.rrmocreatures.util.Tabs;
 
 import net.minecraft.data.DataGenerator;
 
 /**
  * Mo'Creatures Redux&Redone English (US) translator.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCLangEnUS extends RRMoCLangProvider
@@ -42,7 +43,11 @@ public class RRMoCLangEnUS extends RRMoCLangProvider
         });
 
         MUSIC_DISCS.forEach((item, translation) -> {
-            add((item.getTranslationKey() + ".desc"), translation);
+            add(getMusicDiscTranslationKey(item.getTranslationKey()), translation);
+        });
+
+        TABS.forEach((tab, translation) -> {
+            add(getItemGroupTranslationKey(tab.getPath()), translation);
         });
     }
 
@@ -221,5 +226,22 @@ public class RRMoCLangEnUS extends RRMoCLangProvider
     protected void setMusicDiscs()
     {
         MUSIC_DISCS.put(RegisterItem.RECORD_ZEBRA.returnAsItem(), "Zebra");
+    }
+
+    /**
+     * Translate all Tabs to English (US).
+     */
+    @Override
+    protected void setTabs()
+    {
+        TABS.put(Tabs.ANIMALSTUFF, "MoC R&R Animal Caring");
+        TABS.put(Tabs.BLOCKS, "MoC R&R Blocks");
+        TABS.put(Tabs.COMBAT, "MoC R&R Combat");
+        TABS.put(Tabs.EGGS, "MoC R&R Hatchable Eggs");
+        TABS.put(Tabs.FOOD, "MoC R&R Food");
+        TABS.put(Tabs.MAGIC, "MoC R&R Magic");
+        TABS.put(Tabs.MATERIALS, "MoC R&R Materials");
+        TABS.put(Tabs.MISC, "MoC R&R Miscellaneous");
+        TABS.put(Tabs.TOOLS, "MoC R&R Tools");
     }
 }

@@ -1,14 +1,15 @@
 package mestretramador.rrmocreatures.provider.item;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Rarity;
+import mestretramador.rrmocreatures.util.Tabs;
+
 import net.minecraft.item.Food;
 import net.minecraft.item.Item.Properties;
+import net.minecraft.item.Rarity;
 
 /**
  * Mo'Creatures Redux&Redone Cooked Turtle item provider.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderTurtleCooked extends RRMoCItemProvider implements RRMoCItemFoodProvider
@@ -21,7 +22,7 @@ public class RRMoCItemProviderTurtleCooked extends RRMoCItemProvider implements 
     @Override
     public Properties provideProperties()
     {
-        PROPERTIES().group(ItemGroup.FOOD);
+        PROPERTIES().group(Tabs.FOOD);
         PROPERTIES().rarity(Rarity.COMMON);
         PROPERTIES().food(provideFoodProperties());
         PROPERTIES().maxStackSize(64);

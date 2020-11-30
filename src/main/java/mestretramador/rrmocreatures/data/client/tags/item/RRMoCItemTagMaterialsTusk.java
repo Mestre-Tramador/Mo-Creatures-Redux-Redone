@@ -8,7 +8,7 @@ import net.minecraft.item.Items;
 /**                                                                                 
  * Mo'Creatures Redux&Redone Tusk Materials Tag's Items.                                  
  *                                                                                  
- * @version 0.0.24                                                               
+ * @version 0.0.25                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagMaterialsTusk extends RRMoCItemTagProvider                       

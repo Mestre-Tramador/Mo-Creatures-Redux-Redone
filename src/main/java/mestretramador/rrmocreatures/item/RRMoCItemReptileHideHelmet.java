@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Reptile Hide Helmet item.                                          
  *                                                                                   
- * @version 0.0.24                                                                
+ * @version 0.0.25                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemReptileHideHelmet extends RRMoCItem                                      

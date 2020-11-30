@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Heart of Darkness item.                                          
  *                                                                                   
- * @version 0.0.24                                                                
+ * @version 0.0.25                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemHeartDarkness extends RRMoCItem                                      

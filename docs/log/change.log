@@ -1,3 +1,19 @@
+[0.0.25]
+- Created ItemGroups (Creative Tabs) class.
+- Created "Animal Caring" Tab.
+- Created "Blocks" Tab.
+- Created "Combat" Tab.
+- Created "Hatchable Eggs" Tab.
+- Created "Food" Tab.
+- Created "Magic" Tab.
+- Created "Materials" Tab.
+- Created "Miscellaneous" Tab.
+- Created "Tools" Tab.
+- Refactored all itens to their according MoC R&R tab.
+- Added "final" attribute to all constant classes.
+- Provided translation to all added tabs.
+- Actualized translation creation tools.
+
 [0.0.24]
 - Updated Gradle to Minecraft 1.16.4 version.
 - Updated Dist JSON to Minecraft 1.16.4 version.

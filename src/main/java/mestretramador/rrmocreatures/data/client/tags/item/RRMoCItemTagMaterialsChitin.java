@@ -7,7 +7,7 @@ import mestretramador.rrmocreatures.util.Tags;
 /**                                                                                 
  * Mo'Creatures Redux&Redone Chitin Materials Tag's Items.                                  
  *                                                                                  
- * @version 0.0.24                                                               
+ * @version 0.0.25                                                               
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                 
  */                                                                                 
 public class RRMoCItemTagMaterialsChitin extends RRMoCItemTagProvider                       

@@ -1,13 +1,14 @@
 package mestretramador.rrmocreatures.provider.item;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Rarity;
+import mestretramador.rrmocreatures.util.Tabs;
+
 import net.minecraft.item.Item.Properties;
+import net.minecraft.item.Rarity;
                                                                 
 /**                                                             
  * Mo'Creatures Redux&Redone Whip item provider.            
  *                                                              
- * @version 0.0.24                                           
+ * @version 0.0.25                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderWhip extends RRMoCItemProvider 
@@ -20,7 +21,7 @@ public class RRMoCItemProviderWhip extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES().group(ItemGroup.TOOLS);
+       PROPERTIES().group(Tabs.TOOLS);
        PROPERTIES().rarity(Rarity.COMMON);
        PROPERTIES().maxStackSize(1);
        PROPERTIES().maxDamage(24); 

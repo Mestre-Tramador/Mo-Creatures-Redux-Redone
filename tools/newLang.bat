@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.24
+@SET version=0.0.25
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -48,6 +48,7 @@ ECHO import mestretramador.rrmocreatures.data.client.provider.RRMoCLangProvider;
 ECHO import mestretramador.rrmocreatures.init.RegisterBlock;                             >> RRMoCLang%class%.java
 ECHO import mestretramador.rrmocreatures.init.RegisterItem;                              >> RRMoCLang%class%.java
 ECHO import mestretramador.rrmocreatures.util.Constants;                                 >> RRMoCLang%class%.java
+ECHO import mestretramador.rrmocreatures.util.Tabs;                                      >> RRMoCLang%class%.java
 ECHO.                                                                                    >> RRMoCLang%class%.java
 ECHO import net.minecraft.data.DataGenerator;                                            >> RRMoCLang%class%.java
 ECHO.                                                                                    >> RRMoCLang%class%.java
@@ -86,7 +87,11 @@ ECHO             add(item, translation);                                        
 ECHO         });                                                                         >> RRMoCLang%class%.java
 ECHO.                                                                                    >> RRMoCLang%class%.java
 ECHO         MUSIC_DISCS.forEach((item, translation) -^> {                               >> RRMoCLang%class%.java
-ECHO             add((item.getTranslationKey() + ".desc"), translation);                 >> RRMoCLang%class%.java
+ECHO             add(getMusicDiscTranslationKey(item.getTranslationKey()), translation); >> RRMoCLang%class%.java
+ECHO         });                                                                         >> RRMoCLang%class%.java
+ECHO.                                                                                    >> RRMoCLang%class%.java
+ECHO         TABS.forEach((tab, translation) -^> {                                       >> RRMoCLang%class%.java
+ECHO             add(getItemGroupTranslationKey(tab.getPath()), translation);            >> RRMoCLang%class%.java
 ECHO         });                                                                         >> RRMoCLang%class%.java
 ECHO     }                                                                               >> RRMoCLang%class%.java
 ECHO.                                                                                    >> RRMoCLang%class%.java
@@ -268,6 +273,24 @@ ECHO     protected void setMusicDiscs()                                         
 ECHO     {                                                                               >> RRMoCLang%class%.java
 ECHO         // * Last actualization in 11/11/2020                                       >> RRMoCLang%class%.java
 ECHO         MUSIC_DISCS.put(RegisterItem.RECORD_ZEBRA.returnAsItem(), "");              >> RRMoCLang%class%.java
+ECHO     }                                                                               >> RRMoCLang%class%.java
+ECHO.                                                                                    >> RRMoCLang%class%.java
+ECHO     /**                                                                             >> RRMoCLang%class%.java
+ECHO      * Translate all Tabs to %name%.                                                >> RRMoCLang%class%.java
+ECHO      */                                                                             >> RRMoCLang%class%.java
+ECHO     @Override                                                                       >> RRMoCLang%class%.java
+ECHO     protected void setTabs()                                                        >> RRMoCLang%class%.java
+ECHO     {                                                                               >> RRMoCLang%class%.java
+ECHO         // * Last actualization in 29/11/2020                                       >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.ANIMALSTUFF, "");                                             >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.BLOCKS, "");                                                  >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.COMBAT, "");                                                  >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.EGGS, "");                                                    >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.FOOD, "");                                                    >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.MAGIC, "");                                                   >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.MATERIALS, "");                                               >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.MISC, "");                                                    >> RRMoCLang%class%.java
+ECHO         TABS.put(Tabs.TOOLS, "");                                                   >> RRMoCLang%class%.java
 ECHO     }                                                                               >> RRMoCLang%class%.java
 ECHO }                                                                                   >> RRMoCLang%class%.java
 

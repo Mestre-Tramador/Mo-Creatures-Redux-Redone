@@ -7,7 +7,7 @@
 ########################################################################
 
 # Gloval variables.
-version="0.0.24"
+version="0.0.25"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -59,6 +59,7 @@ echo "import mestretramador.rrmocreatures.data.client.provider.RRMoCLangProvider
 echo "import mestretramador.rrmocreatures.init.RegisterBlock;                               " >> "RRMoCLang$class.java"
 echo "import mestretramador.rrmocreatures.init.RegisterItem;                                " >> "RRMoCLang$class.java"
 echo "import mestretramador.rrmocreatures.util.Constants;                                   " >> "RRMoCLang$class.java"
+echo "import mestretramador.rrmocreatures.util.Tabs;                                        " >> "RRMoCLang$class.java"
 echo "                                                                                      " >> "RRMoCLang$class.java"
 echo "import net.minecraft.data.DataGenerator;                                              " >> "RRMoCLang$class.java"
 echo "                                                                                      " >> "RRMoCLang$class.java"
@@ -97,7 +98,11 @@ echo "            add(item, translation);                                       
 echo "        });                                                                           " >> "RRMoCLang$class.java"
 echo "                                                                                      " >> "RRMoCLang$class.java"
 echo "        MUSIC_DISCS.forEach((item, translation) -> {                                  " >> "RRMoCLang$class.java"
-echo "            add((item.getTranslationKey() + \".desc\"), translation);                 " >> "RRMoCLang$class.java"
+echo "            add(getMusicDiscTranslationKey(item.getTranslationKey()), translation);   " >> "RRMoCLang$class.java"
+echo "        });                                                                           " >> "RRMoCLang$class.java"
+echo "                                                                                      " >> "RRMoCLang$class.java"
+echo "        TABS.forEach((tab, translation) -> {                                          " >> "RRMoCLang$class.java"
+echo "            add(getItemGroupTranslationKey(tab.getPath()), translation);              " >> "RRMoCLang$class.java"
 echo "        });                                                                           " >> "RRMoCLang$class.java"
 echo "    }                                                                                 " >> "RRMoCLang$class.java"
 echo "                                                                                      " >> "RRMoCLang$class.java"
@@ -279,6 +284,25 @@ echo "    protected void setMusicDiscs()                                        
 echo "    {                                                                                 " >> "RRMoCLang$class.java"
 echo "        // * Last actualization in 11/11/2020                                         " >> "RRMoCLang$class.java"
 echo "        MUSIC_DISCS.put(RegisterItem.RECORD_ZEBRA.returnAsItem(), \"\");              " >> "RRMoCLang$class.java"
+echo "    }                                                                                 " >> "RRMoCLang$class.java"
+echo "                                                                                      " >> "RRMoCLang$class.java"
+echo "    /**                                                                               " >> "RRMoCLang$class.java"
+echo "     * Translate all Tabs to $name.                                                   " >> "RRMoCLang$class.java"
+echo "     */                                                                               " >> "RRMoCLang$class.java"
+echo "    @Override                                                                         " >> "RRMoCLang$class.java"
+echo "    protected void setTabs()                                                          " >> "RRMoCLang$class.java"
+echo "    {                                                                                 " >> "RRMoCLang$class.java"
+echo "        // * Last actualization in 29/11/2020                                         " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.ANIMALSTUFF, \"\");                                             " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.BLOCKS, \"\");                                                  " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.COMBAT, \"\");                                                  " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.EGGS, \"\");                                                    " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.FOOD, \"\");                                                    " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.MAGIC, \"\");                                                   " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.MATERIALS, \"\");                                               " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.MISC, \"\");                                                    " >> "RRMoCLang$class.java"
+echo "        TABS.put(Tabs.TOOLS, \"\");                                                   " >> "RRMoCLang$class.java"
+echo "    }                                                                                 " >> "RRMoCLang$class.java"
 echo "}                                                                                     " >> "RRMoCLang$class.java"
 
 # Add the Lang in Git.
@@ -290,4 +314,4 @@ echo
 echo "Created Lang for $name!"
 echo "Plase insert it on and run Data Generation."
 read -s -n 1 -p "Press any key to continue . . ."
-echo \"\"
+echo ""

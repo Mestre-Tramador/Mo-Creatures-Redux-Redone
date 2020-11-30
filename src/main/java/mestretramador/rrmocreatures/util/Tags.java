@@ -10,13 +10,13 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Tags class to use generally and in the Data Generation.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Tags
 {
     /** Item Tags. */
-    public static class Items
+    public static final class Items
     {
         /**
          * <p> <b>Chitin Materials</b> Tag. </p>
@@ -145,7 +145,7 @@ public final class Tags
          * @return The Item Tag.
          */
         @SuppressWarnings("unused")
-        private static ITag.INamedTag<Item> forge(String path)
+        private static final ITag.INamedTag<Item> forge(String path)
         {
             return ItemTags.makeWrapperTag(new ResourceLocation(Constants.FORGE_ID, path).toString());
         }
@@ -156,14 +156,14 @@ public final class Tags
          * @param path The path to the Tag.
          * @return The Item Tag.
          */
-        private static ITag.INamedTag<Item> rrmocreatures(String path)
+        private static final ITag.INamedTag<Item> rrmocreatures(String path)
         {
             return ItemTags.makeWrapperTag(new ResourceLocation(Constants.MOD_ID, path).toString());
         }
     }
 
     /** Block Tags. */
-    public static class Blocks
+    public static final class Blocks
     {
         /**
          * <p> <b>Ogre Lair's Dirt</b> Tag. </p>
@@ -220,7 +220,7 @@ public final class Tags
          * @return The Block Tag.
          */
         @SuppressWarnings("unused")
-        private static ITag.INamedTag<Block> forge(String path)
+        private static final ITag.INamedTag<Block> forge(String path)
         {
             return BlockTags.makeWrapperTag(new ResourceLocation(Constants.FORGE_ID, path).toString());
         }
@@ -231,14 +231,14 @@ public final class Tags
          * @param path The path to the Tag.
          * @return The Block Tag.
          */
-        private static ITag.INamedTag<Block> rrmocreatures(String path)
+        private static final ITag.INamedTag<Block> rrmocreatures(String path)
         {
             return BlockTags.makeWrapperTag(new ResourceLocation(Constants.MOD_ID, path).toString());
         }
     }
 
     /** Constants to Tags Groups. */
-    private static class Group
+    private static final class Group
     {
         /**
          * <p> <b>Materials</b> Group. </p>
@@ -288,7 +288,7 @@ public final class Tags
     }
 
     /** Constants to Tags SubGroups. */
-    private static class SubGroup
+    private static final class SubGroup
     {
         /**
          * <p> <b>Attack</b> SubGroup. </p>

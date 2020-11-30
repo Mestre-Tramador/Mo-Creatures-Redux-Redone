@@ -15,7 +15,7 @@ import net.minecraft.util.SoundEvents;
 /**
  * Mo'Creatures Redux&Redone Item Material Provider base.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public enum RRMoCItemMaterialProvider implements IArmorMaterial

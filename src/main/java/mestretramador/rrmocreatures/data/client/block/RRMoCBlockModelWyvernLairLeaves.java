@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Wyvern Lair Leaves block model.                                                
  *                                                                                                
- * @version 0.0.24                                                                             
+ * @version 0.0.25                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockModelWyvernLairLeaves extends RRMoCBlockModelProvider                               

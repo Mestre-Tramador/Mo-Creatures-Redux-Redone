@@ -10,7 +10,7 @@ import net.minecraft.item.BlockItem;
  * Generally implemented with a Mo'Creatures Redux&Redone Block inherited class.
  * </p>
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 @FunctionalInterface

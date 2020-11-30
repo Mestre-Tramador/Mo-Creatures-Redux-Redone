@@ -2,18 +2,19 @@ package mestretramador.rrmocreatures.provider.block;
 
 import java.util.function.ToIntFunction;
 
+import mestretramador.rrmocreatures.util.Tabs;
+
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Rarity;
                                                                                      
 /**                                                                                  
  * Mo'Creatures Redux&Redone Wyvern Lair Tall Grass block item provider.                           
  *                                                                                   
- * @version 0.0.24                                                                
+ * @version 0.0.25                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderWyvernLairTallGrass extends RRMoCBlockItemProvider            
@@ -53,7 +54,7 @@ public class RRMoCBlockItemProviderWyvernLairTallGrass extends RRMoCBlockItemPro
     @Override                                                                        
     public Item.Properties provideItemProperties()                                   
     {                                                                                
-        ITEM_PROPERTIES().group(ItemGroup.DECORATIONS);
+        ITEM_PROPERTIES().group(Tabs.BLOCKS);
         ITEM_PROPERTIES().rarity(Rarity.COMMON);
         ITEM_PROPERTIES().maxStackSize(64);
                                                                                      

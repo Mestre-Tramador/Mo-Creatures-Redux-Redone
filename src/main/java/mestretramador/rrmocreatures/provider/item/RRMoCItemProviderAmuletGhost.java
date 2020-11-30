@@ -1,13 +1,14 @@
 package mestretramador.rrmocreatures.provider.item;
 
-import net.minecraft.item.ItemGroup;
+import mestretramador.rrmocreatures.util.Tabs;
+
 import net.minecraft.item.Rarity;
 import net.minecraft.item.Item.Properties;                      
                                                                 
 /**                                                             
  * Mo'Creatures Redux&Redone Ghost Amulet item provider.            
  *                                                              
- * @version 0.0.24                                           
+ * @version 0.0.25                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderAmuletGhost extends RRMoCItemProvider 
@@ -20,7 +21,7 @@ public class RRMoCItemProviderAmuletGhost extends RRMoCItemProvider
    @Override                                                    
    public Properties provideProperties()                        
    {                                                            
-       PROPERTIES().group(ItemGroup.TOOLS);    
+       PROPERTIES().group(Tabs.MAGIC);    
        PROPERTIES().rarity(Rarity.COMMON);
        PROPERTIES().maxStackSize(1);      
                                                                 

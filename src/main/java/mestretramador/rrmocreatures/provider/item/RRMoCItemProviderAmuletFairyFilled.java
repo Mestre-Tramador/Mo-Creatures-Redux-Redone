@@ -1,12 +1,12 @@
 package mestretramador.rrmocreatures.provider.item;
 
-import net.minecraft.item.Rarity;
 import net.minecraft.item.Item.Properties;                      
+import net.minecraft.item.Rarity;
                                                                 
 /**                                                             
  * Mo'Creatures Redux&Redone Filled Fairy Amulet item provider.            
  *                                                              
- * @version 0.0.24                                           
+ * @version 0.0.25                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderAmuletFairyFilled extends RRMoCItemProvider 

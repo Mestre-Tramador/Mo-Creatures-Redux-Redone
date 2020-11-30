@@ -6,7 +6,7 @@ import net.minecraft.item.SwordItem;
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.SwordItem Sword Item}.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCSwordItemModel extends SwordItem

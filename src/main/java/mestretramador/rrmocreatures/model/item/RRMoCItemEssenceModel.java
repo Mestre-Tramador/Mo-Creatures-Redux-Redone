@@ -21,7 +21,7 @@ import net.minecraft.world.World;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} to use
  * as an Essence.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemEssenceModel extends RRMoCItemModel
@@ -131,31 +131,31 @@ public class RRMoCItemEssenceModel extends RRMoCItemModel
         switch(getEssenceType())
         {
             case DARKNESS:
-                player.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 1800, 0, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 1800, 0, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 1800, 1, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 1800, 2, false, false));
+                player.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 1800, 0, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 1800, 0, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 1800, 1, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 1800, 2, false, true));
             break;
 
             case FIRE:
-                player.addPotionEffect(new EffectInstance(Effects.HASTE, 1800, 0, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 1800, 0, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.SPEED, 1800, 1, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 1800, 2, false, false));
+                player.addPotionEffect(new EffectInstance(Effects.HASTE, 1800, 0, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 1800, 0, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.SPEED, 1800, 1, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 1800, 2, false, true));
             break;
 
             case LIGHT:
-                player.addPotionEffect(new EffectInstance(Effects.SATURATION, 1800, 0, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 1800, 1, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.LUCK, 1800, 1, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.SLOW_FALLING, 1800, 2, false, false));
+                player.addPotionEffect(new EffectInstance(Effects.SATURATION, 1800, 0, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 1800, 1, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.LUCK, 1800, 1, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.SLOW_FALLING, 1800, 2, false, true));
             break;
 
             case UNDEAD:
-                player.addPotionEffect(new EffectInstance(Effects.SATURATION, 1800, 0, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.WATER_BREATHING, 1800, 0, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 1800, 1, false, false));
-                player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 1800, 2, false, false));
+                player.addPotionEffect(new EffectInstance(Effects.SATURATION, 1800, 0, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.WATER_BREATHING, 1800, 0, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 1800, 1, false, true));
+                player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 1800, 2, false, true));
             break;
         }
 

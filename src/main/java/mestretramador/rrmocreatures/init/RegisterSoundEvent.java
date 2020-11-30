@@ -6,7 +6,7 @@ import mestretramador.rrmocreatures.sound.RRMoCSoundEventZebra;
 /**
  * Sound Events to registrate.
  * 
- * @version 0.0.24
+ * @version 0.0.25
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RegisterSoundEvent
