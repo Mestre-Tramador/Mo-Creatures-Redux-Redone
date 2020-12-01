@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.25
+@SET version=0.0.26
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -42,9 +42,9 @@ IF ["%name%"] == [] EXIT 1
 CD %langdir%
 
 @REM Create the Lang.
-ECHO package mestretramador.rrmocreatures.data.client.lang;                              >> RRMoCLang%class%.java
+ECHO package mestretramador.rrmocreatures.data.lang;                                     >> RRMoCLang%class%.java
 ECHO.                                                                                    >> RRMoCLang%class%.java
-ECHO import mestretramador.rrmocreatures.data.client.provider.RRMoCLangProvider;         >> RRMoCLang%class%.java
+ECHO import mestretramador.rrmocreatures.data.provider.RRMoCLangProvider;                >> RRMoCLang%class%.java
 ECHO import mestretramador.rrmocreatures.init.RegisterBlock;                             >> RRMoCLang%class%.java
 ECHO import mestretramador.rrmocreatures.init.RegisterItem;                              >> RRMoCLang%class%.java
 ECHO import mestretramador.rrmocreatures.util.Constants;                                 >> RRMoCLang%class%.java

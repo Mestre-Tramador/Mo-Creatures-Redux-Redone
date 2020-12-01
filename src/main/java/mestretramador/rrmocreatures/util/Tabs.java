@@ -16,7 +16,7 @@ import net.minecraftforge.api.distmarker.Dist;
 /**
  * ItemGroups (aka Creative Tabs) to use on Itens Providers and generaly.
  * 
- * @version 0.0.25
+ * @version 0.0.26
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Tabs

@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Filled Guardian Amulet item.                                          
  *                                                                                   
- * @version 0.0.25                                                                
+ * @version 0.0.26                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemAmuletGuardianFilled extends RRMoCItem                                      

@@ -9,7 +9,7 @@ import net.minecraft.item.Rarity;
 /**
  * Mo'Creatures Redux&Redone Cooked Rat item provider.
  * 
- * @version 0.0.25
+ * @version 0.0.26
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderRatCooked extends RRMoCItemProvider implements RRMoCItemFoodProvider

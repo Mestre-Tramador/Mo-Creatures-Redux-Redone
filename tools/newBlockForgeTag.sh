@@ -7,12 +7,12 @@
 ########################################################################
 
 # Gloval variables.
-version="0.0.25"
+version="0.0.26"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
 # Get all the directories to save the files.
-tagdir="../src/main/java/mestretramador/rrmocreatures/data/client/tags/block"
+tagdir="../src/main/java/mestretramador/rrmocreatures/data/common/tags/block"
 
 
 # Collect the block forge tag new name.
@@ -53,9 +53,9 @@ cd "$tagdir"
 touch "RRMoCBlockForgeTag$class.java"
 chmod 744 "RRMoCBlockForgeTag$class.java"
 
-echo "package mestretramador.rrmocreatures.data.client.tags.block;                          " >> "RRMoCBlockForgeTag$class.java"
+echo "package mestretramador.rrmocreatures.data.common.tags.block;                          " >> "RRMoCBlockForgeTag$class.java"
 echo "                                                                                      " >> "RRMoCBlockForgeTag$class.java"
-echo "import mestretramador.rrmocreatures.data.client.provider.block.RRMoCBlockTagProvider; " >> "RRMoCBlockForgeTag$class.java"
+echo "import mestretramador.rrmocreatures.data.common.provider.block.RRMoCBlockTagProvider; " >> "RRMoCBlockForgeTag$class.java"
 echo "import mestretramador.rrmocreatures.init.RegisterBlock;                               " >> "RRMoCBlockForgeTag$class.java"
 echo "                                                                                      " >> "RRMoCBlockForgeTag$class.java"
 echo "import net.minecraftforge.common.Tags;                                                " >> "RRMoCBlockForgeTag$class.java"

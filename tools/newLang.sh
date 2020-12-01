@@ -7,7 +7,7 @@
 ########################################################################
 
 # Gloval variables.
-version="0.0.25"
+version="0.0.26"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
@@ -53,9 +53,9 @@ cd "$modeldir"
 touch "RRMoCLang$class.java"
 chmod 744 "RRMoCLang$class.java"
 
-echo "package mestretramador.rrmocreatures.data.client.lang;                                " >> "RRMoCLang$class.java"
+echo "package mestretramador.rrmocreatures.data.lang;                                       " >> "RRMoCLang$class.java"
 echo "                                                                                      " >> "RRMoCLang$class.java"
-echo "import mestretramador.rrmocreatures.data.client.provider.RRMoCLangProvider;           " >> "RRMoCLang$class.java"
+echo "import mestretramador.rrmocreatures.data.provider.RRMoCLangProvider;                  " >> "RRMoCLang$class.java"
 echo "import mestretramador.rrmocreatures.init.RegisterBlock;                               " >> "RRMoCLang$class.java"
 echo "import mestretramador.rrmocreatures.init.RegisterItem;                                " >> "RRMoCLang$class.java"
 echo "import mestretramador.rrmocreatures.util.Constants;                                   " >> "RRMoCLang$class.java"

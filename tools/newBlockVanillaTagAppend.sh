@@ -7,12 +7,12 @@
 #################################################################################
 
 # Gloval variables.
-version="0.0.25"
+version="0.0.26"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
 # Get all the directories to save the files.
-tagdir="../src/main/java/mestretramador/rrmocreatures/data/client/tags/block"
+tagdir="../src/main/java/mestretramador/rrmocreatures/data/common/tags/block"
 
 
 # Collect the block vanilla tag append new name.
@@ -63,9 +63,9 @@ cd "$tagdir"
 touch "RRMoCBlockVanillaTagAppend$class.java"
 chmod 744 "RRMoCBlockVanillaTagAppend$class.java"
 
-echo "package mestretramador.rrmocreatures.data.client.tags.block;                                " >> "RRMoCBlockVanillaTagAppend$class.java"
+echo "package mestretramador.rrmocreatures.data.common.tags.block;                                " >> "RRMoCBlockVanillaTagAppend$class.java"
 echo "                                                                                            " >> "RRMoCBlockVanillaTagAppend$class.java"
-echo "import mestretramador.rrmocreatures.data.client.provider.block.RRMoCBlockTagAppendProvider; " >> "RRMoCBlockVanillaTagAppend$class.java"
+echo "import mestretramador.rrmocreatures.data.common.provider.block.RRMoCBlockTagAppendProvider; " >> "RRMoCBlockVanillaTagAppend$class.java"
 echo "import mestretramador.rrmocreatures.util.Tags;                                              " >> "RRMoCBlockVanillaTagAppend$class.java"
 echo "                                                                                            " >> "RRMoCBlockVanillaTagAppend$class.java"
 echo "import net.minecraft.tags.BlockTags;                                                        " >> "RRMoCBlockVanillaTagAppend$class.java"

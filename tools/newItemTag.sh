@@ -7,12 +7,12 @@
 #################################################################
 
 # Gloval variables.
-version="0.0.25"
+version="0.0.26"
 author="Eduardo de Oliveira Rosa, Mestre Tramador."
 
 
 # Get all the directories to save the files.
-tagdir="../src/main/java/mestretramador/rrmocreatures/data/client/tags/item"
+tagdir="../src/main/java/mestretramador/rrmocreatures/data/common/tags/item"
 
 
 # Collect the item tag new name.
@@ -53,9 +53,9 @@ cd "$tagdir"
 touch "RRMoCItemTag$class.java"
 chmod 744 "RRMoCItemTag$class.java"
 
-echo "package mestretramador.rrmocreatures.data.client.tags.item;                         " >> "RRMoCItemTag$class.java"
+echo "package mestretramador.rrmocreatures.data.common.tags.item;                         " >> "RRMoCItemTag$class.java"
 echo "                                                                                    " >> "RRMoCItemTag$class.java"
-echo "import mestretramador.rrmocreatures.data.client.provider.item.RRMoCItemTagProvider; " >> "RRMoCItemTag$class.java"
+echo "import mestretramador.rrmocreatures.data.common.provider.item.RRMoCItemTagProvider; " >> "RRMoCItemTag$class.java"
 echo "import mestretramador.rrmocreatures.init.RegisterItem;                              " >> "RRMoCItemTag$class.java"
 echo "import mestretramador.rrmocreatures.util.Tags;                                      " >> "RRMoCItemTag$class.java"
 echo "                                                                                    " >> "RRMoCItemTag$class.java"

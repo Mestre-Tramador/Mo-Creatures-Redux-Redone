@@ -1,3 +1,9 @@
+[0.0.26]
+- Created "common" package for server side Data Generation.
+- Refactored all Tags generation and providers classes to "common" package.
+- Refactored all Lang translation and providers classes to only "data" package.
+- Actualized Tools to match the new packages paths.
+
 [0.0.25]
 - Created ItemGroups (Creative Tabs) class.
 - Created "Animal Caring" Tab.

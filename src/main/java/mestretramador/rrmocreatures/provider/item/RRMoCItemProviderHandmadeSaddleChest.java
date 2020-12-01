@@ -8,7 +8,7 @@ import net.minecraft.item.Rarity;
 /**                                                             
  * Mo'Creatures Redux&Redone Handmade Saddlebag item provider.            
  *                                                              
- * @version 0.0.25                                           
+ * @version 0.0.26                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderHandmadeSaddleChest extends RRMoCItemProvider 

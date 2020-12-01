@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Ogre Lair Stone block model.                                                
  *                                                                                                
- * @version 0.0.25                                                                             
+ * @version 0.0.26                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockModelOgreLairStone extends RRMoCBlockModelProvider                               

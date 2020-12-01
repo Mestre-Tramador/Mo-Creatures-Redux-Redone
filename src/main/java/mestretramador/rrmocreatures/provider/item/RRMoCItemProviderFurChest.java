@@ -10,7 +10,7 @@ import net.minecraft.item.Rarity;
 /**
  * Mo'Creatures Redux&Redone Fur Chest item provider.
  * 
- * @version 0.0.25
+ * @version 0.0.26
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderFurChest extends RRMoCItemProvider implements RRMoCArmorItemProvider

@@ -15,7 +15,7 @@ import net.minecraft.potion.Effects;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.SwordItem Sword Item} to act
  * as a Sting Sword.
  * 
- * @version 0.0.25
+ * @version 0.0.26
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCStingSwordItemModel extends RRMoCSwordItemModel
@@ -110,7 +110,7 @@ public class RRMoCStingSwordItemModel extends RRMoCSwordItemModel
      * 
      * @param toRepair The Sting Sword to repair.
      * @param repair   An Ingredient Material in the
-     *                 {@link mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagMaterialsSting
+     *                 {@link mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagMaterialsSting
      *                 Sting Materials}.
      * @return <b>True</b> if the type of the Sting Sword matches the type of the Sting.
      */

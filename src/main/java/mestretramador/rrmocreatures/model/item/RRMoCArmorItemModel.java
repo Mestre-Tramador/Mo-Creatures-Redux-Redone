@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.ArmorItem Armor Item}.
  * 
- * @version 0.0.25
+ * @version 0.0.26
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCArmorItemModel extends ArmorItem

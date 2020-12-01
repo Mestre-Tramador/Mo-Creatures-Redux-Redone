@@ -20,7 +20,7 @@ import net.minecraft.world.World;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.ArmorItem Armor Item} to act
  * as a Chitin Armor.
  * 
- * @version 0.0.25
+ * @version 0.0.26
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCChitinArmorItemModel extends RRMoCArmorItemModel
@@ -118,7 +118,7 @@ public class RRMoCChitinArmorItemModel extends RRMoCArmorItemModel
      * 
      * @param toRepair The Chitin Armor to repair.
      * @param repair   An Ingredient Material in the
-     *                 {@link mestretramador.rrmocreatures.data.client.tags.item.RRMoCItemTagMaterialsChitin
+     *                 {@link mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagMaterialsChitin
      *                 Chitin Materials}.
      * @return <b>True</b> if the type of the Chitin Armor matches the type of the Chitin.
      */

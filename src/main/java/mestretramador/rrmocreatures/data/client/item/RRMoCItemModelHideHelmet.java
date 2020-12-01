@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Hide Helmet item model.                                                        
  *                                                                                                       
- * @version 0.0.25                                                                                    
+ * @version 0.0.26                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelHideHelmet extends RRMoCItemModelProvider                                        

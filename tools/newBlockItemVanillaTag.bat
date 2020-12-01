@@ -7,12 +7,12 @@
 @REM ############################################################################
 
 @REM Gloval variables.
-@SET version=0.0.25
+@SET version=0.0.26
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
 @REM Get all the directories to save the files.
-@SET tagdir="..\src\main\java\mestretramador\rrmocreatures\data\client\tags\block"
+@SET tagdir="..\src\main\java\mestretramador\rrmocreatures\data\common\tags\block"
 
 
 @REM Collect the blockitem vanilla tag new name.
@@ -48,9 +48,9 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the BlockItem Vanilla Tag.
-ECHO package mestretramador.rrmocreatures.data.client.tags.block;                              >> RRMoCBlockItemVanillaTag%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.block;                              >> RRMoCBlockItemVanillaTag%class%.java
 ECHO.                                                                                          >> RRMoCBlockItemVanillaTag%class%.java
-ECHO import mestretramador.rrmocreatures.data.client.provider.block.RRMoCBlockItemTagProvider; >> RRMoCBlockItemVanillaTag%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.block.RRMoCBlockItemTagProvider; >> RRMoCBlockItemVanillaTag%class%.java
 ECHO.                                                                                          >> RRMoCBlockItemVanillaTag%class%.java
 ECHO import net.minecraft.tags.BlockTags;                                                      >> RRMoCBlockItemVanillaTag%class%.java
 ECHO import net.minecraft.tags.ItemTags;                                                       >> RRMoCBlockItemVanillaTag%class%.java
