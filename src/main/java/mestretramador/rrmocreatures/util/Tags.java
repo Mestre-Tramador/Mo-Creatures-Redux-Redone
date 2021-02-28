@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Tags class to use generally and in the Data Generation.
  * 
- * @version 0.0.26
+ * @version 0.0.27
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Tags

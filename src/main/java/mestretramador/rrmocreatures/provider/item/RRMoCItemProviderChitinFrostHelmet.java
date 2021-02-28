@@ -10,7 +10,7 @@ import net.minecraft.item.Item.Properties;
 /**
  * Mo'Creatures Redux&Redone Frost Chitin Helmet item provider.
  * 
- * @version 0.0.26
+ * @version 0.0.27
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderChitinFrostHelmet extends RRMoCItemProvider implements RRMoCArmorItemProvider

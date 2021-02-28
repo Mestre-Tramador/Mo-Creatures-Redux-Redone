@@ -1,3 +1,25 @@
+[0.0.27]
+- Created "loot" packages for Loot Table Data Generation.
+- Created Block Loot Tables Provider Class for the Data Generation.
+- Implemented "Drop Self" Loot Table to Ogre Lair Dirt Block.
+- Implemented "Drop Self" Loot Table to Ogre Lair Log Block.
+- Implemented "Drop Self" Loot Table to Ogre Lair Planks Block.
+- Implemented "Drop Self" Loot Table to Ogre Lair Stone Block.
+- Implemented "Drop Self" Loot Table to Wyvern Lair Dirt Block.
+- Implemented "Drop Self" Loot Table to Wyvern Lair Log Block.
+- Implemented "Drop Self" Loot Table to Wyvern Lair Planks Block.
+- Implemented "Drop Self" Loot Table to Wyvern Lair Stone Block.
+- Implemented "With Silk Touch" Loot Table to Ogre Lair Grass Block.
+- Implemented "With Silk Touch" Loot Table to Wyvern Lair Grass Block.
+- Implemented "Only With Shears" Loot Table to Ogre Lair Leaves Block.
+- Implemented "Only With Shears" Loot Table to Ogre Lair Tall Grass Block.
+- Implemented "Only With Shears" Loot Table to Wyvern Lair Leaves Block.
+- Implemented "Only With Shears" Loot Table to Wyvern Lair Tall Grass Block.
+- Fixed Ogre Lair Stone Block Not requiring tool to be minered on Survival Mode.
+- Fixed Wyvern Lair Stone Block Not requiring tool to be minered on Survival Mode.
+- Fixed the MoCR&R "ogre_lair_logs" Tag not been appended to the Minecraft "logs_that_burn" Tag.
+- Generated Data for all implemented loot tables.
+
 [0.0.26]
 - Created "common" package for server side Data Generation.
 - Refactored all Tags generation and providers classes to "common" package.

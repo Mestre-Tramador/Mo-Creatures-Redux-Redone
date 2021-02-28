@@ -7,7 +7,7 @@
 @REM ##########################################################################
 
 @REM Gloval variables.
-@SET version=0.0.26
+@SET version=0.0.27
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 

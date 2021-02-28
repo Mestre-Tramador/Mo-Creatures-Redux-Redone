@@ -35,7 +35,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Item and BlockItem Tags Generator.
  * 
- * @version 0.0.26
+ * @version 0.0.27
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemTagsGeneration extends ItemTagsProvider

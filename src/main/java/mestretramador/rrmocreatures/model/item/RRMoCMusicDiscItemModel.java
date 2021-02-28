@@ -8,7 +8,7 @@ import net.minecraft.util.SoundEvent;
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.MusicDiscItem MusicDiscItem}.
  * 
- * @version 0.0.26
+ * @version 0.0.27
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCMusicDiscItemModel extends MusicDiscItem

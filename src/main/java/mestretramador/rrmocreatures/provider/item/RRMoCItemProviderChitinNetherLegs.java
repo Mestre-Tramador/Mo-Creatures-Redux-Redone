@@ -10,7 +10,7 @@ import net.minecraft.item.Rarity;
 /**
  * Mo'Creatures Redux&Redone Nether Chitin Legs item provider.
  * 
- * @version 0.0.26
+ * @version 0.0.27
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderChitinNetherLegs extends RRMoCItemProvider implements RRMoCArmorItemProvider

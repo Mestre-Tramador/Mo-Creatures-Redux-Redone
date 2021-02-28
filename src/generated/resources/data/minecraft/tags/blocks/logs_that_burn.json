@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "#rrmocreatures:ogre_lair/logs",
     "#rrmocreatures:wyvern_lair/logs"
   ]
 }

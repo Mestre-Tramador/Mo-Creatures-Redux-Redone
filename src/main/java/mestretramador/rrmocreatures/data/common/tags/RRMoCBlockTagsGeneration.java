@@ -3,6 +3,7 @@ package mestretramador.rrmocreatures.data.common.tags;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import mestretramador.rrmocreatures.data.common.provider.tags.block.RRMoCBlockTagAppendProvider;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockForgeTagDirt;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockForgeTagStone;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockTagOgreLairDirt;
@@ -25,7 +26,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Block Tags Generator.
  * 
- * @version 0.0.26
+ * @version 0.0.27
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockTagsGeneration extends BlockTagsProvider
@@ -34,7 +35,7 @@ public class RRMoCBlockTagsGeneration extends BlockTagsProvider
     private static final HashMap<ITag.INamedTag<Block>, ArrayList<Block>> TAGS_BLOCKS = new HashMap<ITag.INamedTag<Block>, ArrayList<Block>>();
 
     /** A Map for tags to Append. */
-    private static final HashMap<ITag.INamedTag<Block>,  ITag.INamedTag<Block>> TAGS_APPEND = new HashMap<ITag.INamedTag<Block>,  ITag.INamedTag<Block>>();
+    private static final HashMap<ITag.INamedTag<Block>,  ArrayList<ITag.INamedTag<Block>>> TAGS_APPEND = new HashMap<ITag.INamedTag<Block>,  ArrayList<ITag.INamedTag<Block>>>();
 
     /**
      * When creating the Block Tags Generator, the tags are already loaded.
@@ -64,8 +65,11 @@ public class RRMoCBlockTagsGeneration extends BlockTagsProvider
             });
         });
 
-        TAGS_APPEND.forEach((parentTag, childTag) -> {
-            getOrCreateBuilder(parentTag).addTag(childTag);
+        TAGS_APPEND.forEach((parentTag, childTags) -> {
+            for (ITag.INamedTag<Block> childTag : childTags)
+            {
+                getOrCreateBuilder(parentTag).addTag(childTag);                
+            }
         });
     }
 
@@ -100,11 +104,23 @@ public class RRMoCBlockTagsGeneration extends BlockTagsProvider
      */
     private static void setAppends()
     {
-        final RRMoCBlockVanillaTagAppendOgreLairLogsThatBurn ogreLairLogsThatBurn = new RRMoCBlockVanillaTagAppendOgreLairLogsThatBurn();
-        final RRMoCBlockVanillaTagAppendWyvernLairLogsThatBurn wyvernLairLogsThatBurn = new RRMoCBlockVanillaTagAppendWyvernLairLogsThatBurn();
+        final RRMoCBlockTagAppendProvider[] appends = new RRMoCBlockTagAppendProvider[]{
+            new RRMoCBlockVanillaTagAppendOgreLairLogsThatBurn(),
+            new RRMoCBlockVanillaTagAppendWyvernLairLogsThatBurn()
+        };
 
-        TAGS_APPEND.put(ogreLairLogsThatBurn.provideParentTag(), ogreLairLogsThatBurn.provideChildTag());
-        TAGS_APPEND.put(wyvernLairLogsThatBurn.provideParentTag(), wyvernLairLogsThatBurn.provideChildTag());
+        for(RRMoCBlockTagAppendProvider appending : appends)
+        {
+            final ITag.INamedTag<Block> parent = appending.provideParentTag();
+            final ITag.INamedTag<Block> child = appending.provideChildTag();
+
+            if(TAGS_APPEND.get(parent) == null)
+            {
+                TAGS_APPEND.put(parent, new ArrayList<ITag.INamedTag<Block>>());
+            }
+
+            TAGS_APPEND.get(parent).add(child);
+        }
         
         // TODO: Append more Tags.
     }

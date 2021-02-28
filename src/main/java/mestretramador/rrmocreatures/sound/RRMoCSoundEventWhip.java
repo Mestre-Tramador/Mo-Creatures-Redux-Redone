@@ -9,7 +9,7 @@ import net.minecraft.util.SoundEvent;
 /**                                                                                                              
  * Mo'Creatures Redux&Redone Whip Crack sound event.                                                               
  *                                                                                                               
- * @version 0.0.26                                                                                            
+ * @version 0.0.27                                                                                            
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                              
  */                                                                                                              
 public class RRMoCSoundEventWhip extends RRMoCSoundEvent                                                      

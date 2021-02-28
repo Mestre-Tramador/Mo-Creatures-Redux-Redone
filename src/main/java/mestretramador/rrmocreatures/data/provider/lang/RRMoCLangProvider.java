@@ -14,7 +14,7 @@ import net.minecraftforge.common.data.LanguageProvider;
 /**
  * Mo'Creatures Redux&Redone Language Translator Provider base.
  * 
- * @version 0.0.26
+ * @version 0.0.27
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public abstract class RRMoCLangProvider extends LanguageProvider

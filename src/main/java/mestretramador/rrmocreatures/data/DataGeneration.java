@@ -166,6 +166,7 @@ import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelTurtleRaw;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelUnicornHorn;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWhip;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWyvernLairTallGrass;
+import mestretramador.rrmocreatures.data.common.loot.RRMoCLootTablesGeneration;
 import mestretramador.rrmocreatures.data.common.tags.RRMoCBlockTagsGeneration;
 import mestretramador.rrmocreatures.data.common.tags.RRMoCItemTagsGeneration;
 import mestretramador.rrmocreatures.data.lang.RRMoCLangEnUS;
@@ -182,7 +183,7 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 /**
  * Mo'Creatures Redux&Redone Data Generators.
  * 
- * @version 0.0.26
+ * @version 0.0.27
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 @Mod.EventBusSubscriber(modid = Constants.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -212,6 +213,8 @@ public final class DataGeneration
         gatherItemDataGeneration(generator, existingFileHelper);
 
         gatherTagsDataGeneration(generator, existingFileHelper);
+
+        gatherLootTablesDataGeneration(generator);
 
         gatherLocalesDataGeneration(generator);
     }
@@ -426,6 +429,16 @@ public final class DataGeneration
         generator.addProvider(rrmocBlockTags);
 
         generator.addProvider(new RRMoCItemTagsGeneration(generator, rrmocBlockTags, existingFileHelper));
+    }
+
+    /**
+     * Gather data generation to Loot Tables.
+     * 
+     * @param generator The actual Data Generator.
+     */
+    private static void gatherLootTablesDataGeneration(DataGenerator generator)
+    {
+        generator.addProvider(new RRMoCLootTablesGeneration(generator));
     }
 
     /**
