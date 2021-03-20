@@ -7,7 +7,7 @@
 @REM ########################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -48,27 +48,27 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the Item Append Forge Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.item;                               >> RRMoCItemForgeTagAppend%class%.java
-ECHO.                                                                                          >> RRMoCItemForgeTagAppend%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.item.RRMoCItemTagAppendProvider; >> RRMoCItemForgeTagAppend%class%.java
-ECHO import mestretramador.rrmocreatures.util.Tags;                                            >> RRMoCItemForgeTagAppend%class%.java
-ECHO.                                                                                          >> RRMoCItemForgeTagAppend%class%.java
-ECHO /**                                                                                       >> RRMoCItemForgeTagAppend%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag Append's.                                 >> RRMoCItemForgeTagAppend%class%.java
-ECHO  *                                                                                        >> RRMoCItemForgeTagAppend%class%.java
-ECHO  * @version %version%                                                                     >> RRMoCItemForgeTagAppend%class%.java
-ECHO  * @author %author%                                                                       >> RRMoCItemForgeTagAppend%class%.java
-ECHO  */                                                                                       >> RRMoCItemForgeTagAppend%class%.java
-ECHO public class RRMoCItemForgeTagAppend%class% extends RRMoCItemTagAppendProvider            >> RRMoCItemForgeTagAppend%class%.java
-ECHO {                                                                                         >> RRMoCItemForgeTagAppend%class%.java
-ECHO     /**                                                                                   >> RRMoCItemForgeTagAppend%class%.java
-ECHO      * Using the parent constructor, appends the %name% tag.                              >> RRMoCItemForgeTagAppend%class%.java
-ECHO      */                                                                                   >> RRMoCItemForgeTagAppend%class%.java
-ECHO     public RRMoCItemForgeTagAppend%class%()                                               >> RRMoCItemForgeTagAppend%class%.java
-ECHO     {                                                                                     >> RRMoCItemForgeTagAppend%class%.java
-ECHO         super(net.minecraftforge.common.Tags.Items.%fid%, Tags.Items.%id%);               >> RRMoCItemForgeTagAppend%class%.java
-ECHO     }                                                                                     >> RRMoCItemForgeTagAppend%class%.java
-ECHO }                                                                                         >> RRMoCItemForgeTagAppend%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.item;                                    >> RRMoCItemForgeTagAppend%class%.java
+ECHO.                                                                                               >> RRMoCItemForgeTagAppend%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.item.RRMoCItemTagAppendProvider; >> RRMoCItemForgeTagAppend%class%.java
+ECHO import mestretramador.rrmocreatures.util.Tags;                                                 >> RRMoCItemForgeTagAppend%class%.java
+ECHO.                                                                                               >> RRMoCItemForgeTagAppend%class%.java
+ECHO /**                                                                                            >> RRMoCItemForgeTagAppend%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag Append's.                                      >> RRMoCItemForgeTagAppend%class%.java
+ECHO  *                                                                                             >> RRMoCItemForgeTagAppend%class%.java
+ECHO  * @version %version%                                                                          >> RRMoCItemForgeTagAppend%class%.java
+ECHO  * @author %author%                                                                            >> RRMoCItemForgeTagAppend%class%.java
+ECHO  */                                                                                            >> RRMoCItemForgeTagAppend%class%.java
+ECHO public class RRMoCItemForgeTagAppend%class% extends RRMoCItemTagAppendProvider                 >> RRMoCItemForgeTagAppend%class%.java
+ECHO {                                                                                              >> RRMoCItemForgeTagAppend%class%.java
+ECHO     /**                                                                                        >> RRMoCItemForgeTagAppend%class%.java
+ECHO      * Using the parent constructor, appends the %name% tag.                                   >> RRMoCItemForgeTagAppend%class%.java
+ECHO      */                                                                                        >> RRMoCItemForgeTagAppend%class%.java
+ECHO     public RRMoCItemForgeTagAppend%class%()                                                    >> RRMoCItemForgeTagAppend%class%.java
+ECHO     {                                                                                          >> RRMoCItemForgeTagAppend%class%.java
+ECHO         super(net.minecraftforge.common.Tags.Items.%fid%, Tags.Items.%id%);                    >> RRMoCItemForgeTagAppend%class%.java
+ECHO     }                                                                                          >> RRMoCItemForgeTagAppend%class%.java
+ECHO }                                                                                              >> RRMoCItemForgeTagAppend%class%.java
 
 @REM Add the Item Forge Tag Append in Git.
 git add RRMoCItemForgeTagAppend%class%.java

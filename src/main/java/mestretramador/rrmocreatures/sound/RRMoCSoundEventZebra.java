@@ -9,7 +9,7 @@ import net.minecraft.util.SoundEvent;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone <i>The Zebra Shuffling!</i> music sound event. 
  *                                                                                                                 
- * @version 0.0.27                                                                                              
+ * @version 0.028                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */   
 public class RRMoCSoundEventZebra extends RRMoCSoundEvent

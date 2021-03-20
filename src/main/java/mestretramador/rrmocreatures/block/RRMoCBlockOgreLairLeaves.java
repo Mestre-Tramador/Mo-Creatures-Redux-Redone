@@ -11,7 +11,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Ogre Lair Leaves block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.27                                                                                              
+ * @version 0.028                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockOgreLairLeaves extends RRMoCBlock implements RRMoCBlockItem                                        

@@ -15,7 +15,7 @@ import net.minecraftforge.fml.RegistryObject;
 /**
  * Mo'Creatures Redux&Redone Blocks Loot Tables Provider.
  * 
- * @version 0.0.27
+ * @version 0.028
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCBlockLootTablesProvider extends BlockLootTables

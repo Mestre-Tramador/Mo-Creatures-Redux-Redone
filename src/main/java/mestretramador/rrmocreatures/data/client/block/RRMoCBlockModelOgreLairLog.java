@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                               
  * Mo'Creatures Redux&Redone Ogre Lair Log block model.                                                
  *                                                                                                
- * @version 0.0.27                                                                             
+ * @version 0.028                                                                             
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                               
  */                                                                                               
 public class RRMoCBlockModelOgreLairLog extends RRMoCBlockModelProvider                               

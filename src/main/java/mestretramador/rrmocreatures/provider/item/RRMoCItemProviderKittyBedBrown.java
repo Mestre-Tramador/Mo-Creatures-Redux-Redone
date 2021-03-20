@@ -8,7 +8,7 @@ import net.minecraft.item.Rarity;
 /**                                                             
  * Mo'Creatures Redux&Redone Brown Kitty Bed item provider.            
  *                                                              
- * @version 0.0.27                                           
+ * @version 0.028                                           
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                             
  */                                                             
 public class RRMoCItemProviderKittyBedBrown extends RRMoCItemProvider 

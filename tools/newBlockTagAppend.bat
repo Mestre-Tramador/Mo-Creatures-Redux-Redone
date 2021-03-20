@@ -7,7 +7,7 @@
 @REM ########################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -48,27 +48,27 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the Block Append Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.block;                                >> RRMoCBlockTagAppend%class%.java
-ECHO.                                                                                            >> RRMoCBlockTagAppend%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.block.RRMoCBlockTagAppendProvider; >> RRMoCBlockTagAppend%class%.java
-ECHO import mestretramador.rrmocreatures.util.Tags;                                              >> RRMoCBlockTagAppend%class%.java
-ECHO.                                                                                            >> RRMoCBlockTagAppend%class%.java
-ECHO /**                                                                                         >> RRMoCBlockTagAppend%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Tag Append's.                                         >> RRMoCBlockTagAppend%class%.java
-ECHO  *                                                                                          >> RRMoCBlockTagAppend%class%.java
-ECHO  * @version %version%                                                                       >> RRMoCBlockTagAppend%class%.java
-ECHO  * @author %author%                                                                         >> RRMoCBlockTagAppend%class%.java
-ECHO  */                                                                                         >> RRMoCBlockTagAppend%class%.java
-ECHO public class RRMoCBlockTagAppend%class% extends RRMoCBlockTagAppendProvider                 >> RRMoCBlockTagAppend%class%.java
-ECHO {                                                                                           >> RRMoCBlockTagAppend%class%.java
-ECHO     /**                                                                                     >> RRMoCBlockTagAppend%class%.java
-ECHO      * Using the parent constructor, appends the %name% tag.                                >> RRMoCBlockTagAppend%class%.java
-ECHO      */                                                                                     >> RRMoCBlockTagAppend%class%.java
-ECHO     public RRMoCBlockTagAppend%class%()                                                     >> RRMoCBlockTagAppend%class%.java
-ECHO     {                                                                                       >> RRMoCBlockTagAppend%class%.java
-ECHO         super(Tags.Blocks.%fid%, Tags.Blocks.%id%);                                         >> RRMoCBlockTagAppend%class%.java
-ECHO     }                                                                                       >> RRMoCBlockTagAppend%class%.java
-ECHO }                                                                                           >> RRMoCBlockTagAppend%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.block;                                     >> RRMoCBlockTagAppend%class%.java
+ECHO.                                                                                                 >> RRMoCBlockTagAppend%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.block.RRMoCBlockTagAppendProvider; >> RRMoCBlockTagAppend%class%.java
+ECHO import mestretramador.rrmocreatures.util.Tags;                                                   >> RRMoCBlockTagAppend%class%.java
+ECHO.                                                                                                 >> RRMoCBlockTagAppend%class%.java
+ECHO /**                                                                                              >> RRMoCBlockTagAppend%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Tag Append's.                                              >> RRMoCBlockTagAppend%class%.java
+ECHO  *                                                                                               >> RRMoCBlockTagAppend%class%.java
+ECHO  * @version %version%                                                                            >> RRMoCBlockTagAppend%class%.java
+ECHO  * @author %author%                                                                              >> RRMoCBlockTagAppend%class%.java
+ECHO  */                                                                                              >> RRMoCBlockTagAppend%class%.java
+ECHO public class RRMoCBlockTagAppend%class% extends RRMoCBlockTagAppendProvider                      >> RRMoCBlockTagAppend%class%.java
+ECHO {                                                                                                >> RRMoCBlockTagAppend%class%.java
+ECHO     /**                                                                                          >> RRMoCBlockTagAppend%class%.java
+ECHO      * Using the parent constructor, appends the %name% tag.                                     >> RRMoCBlockTagAppend%class%.java
+ECHO      */                                                                                          >> RRMoCBlockTagAppend%class%.java
+ECHO     public RRMoCBlockTagAppend%class%()                                                          >> RRMoCBlockTagAppend%class%.java
+ECHO     {                                                                                            >> RRMoCBlockTagAppend%class%.java
+ECHO         super(Tags.Blocks.%fid%, Tags.Blocks.%id%);                                              >> RRMoCBlockTagAppend%class%.java
+ECHO     }                                                                                            >> RRMoCBlockTagAppend%class%.java
+ECHO }                                                                                                >> RRMoCBlockTagAppend%class%.java
 
 @REM Add the Block Tag Append in Git.
 git add RRMoCBlockTagAppend%class%.java

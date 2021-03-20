@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -41,44 +41,44 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the Item Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.item;                         >> RRMoCItemTag%class%.java
-ECHO.                                                                                    >> RRMoCItemTag%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.item.RRMoCItemTagProvider; >> RRMoCItemTag%class%.java
-ECHO import mestretramador.rrmocreatures.init.RegisterItem;                              >> RRMoCItemTag%class%.java
-ECHO import mestretramador.rrmocreatures.util.Tags;                                      >> RRMoCItemTag%class%.java
-ECHO.                                                                                    >> RRMoCItemTag%class%.java
-ECHO /**                                                                                 >> RRMoCItemTag%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Tag's Items.                                  >> RRMoCItemTag%class%.java
-ECHO  *                                                                                  >> RRMoCItemTag%class%.java
-ECHO  * @version %version%                                                               >> RRMoCItemTag%class%.java
-ECHO  * @author %author%                                                                 >> RRMoCItemTag%class%.java
-ECHO  */                                                                                 >> RRMoCItemTag%class%.java
-ECHO public class RRMoCItemTag%class% extends RRMoCItemTagProvider                       >> RRMoCItemTag%class%.java
-ECHO {                                                                                   >> RRMoCItemTag%class%.java
-ECHO     /**                                                                             >> RRMoCItemTag%class%.java
-ECHO      * Using the parent constructor, creates the %name% tag.                        >> RRMoCItemTag%class%.java
-ECHO      */                                                                             >> RRMoCItemTag%class%.java
-ECHO     public RRMoCItemTag%class%()                                                    >> RRMoCItemTag%class%.java
-ECHO     {                                                                               >> RRMoCItemTag%class%.java
-ECHO         super(Tags.Items.%id%);                                                     >> RRMoCItemTag%class%.java
-ECHO     }                                                                               >> RRMoCItemTag%class%.java
-ECHO.                                                                                    >> RRMoCItemTag%class%.java
-ECHO     /**                                                                             >> RRMoCItemTag%class%.java
-ECHO      * ^<p^>                                                                        >> RRMoCItemTag%class%.java
-ECHO      * The setter sets the {@link Tags.Items#%id% %name% item                       >> RRMoCItemTag%class%.java
-ECHO      * tag} to the below items:                                                     >> RRMoCItemTag%class%.java
-ECHO      * ^</p^>                                                                       >> RRMoCItemTag%class%.java
-ECHO      * ^<ul^>                                                                       >> RRMoCItemTag%class%.java
-ECHO      * ^<li^>Link your items here.^</li^>                                           >> RRMoCItemTag%class%.java
-ECHO      * ^</ul^>                                                                      >> RRMoCItemTag%class%.java
-ECHO      */                                                                             >> RRMoCItemTag%class%.java
-ECHO     @Override                                                                       >> RRMoCItemTag%class%.java
-ECHO     protected void setItemsToTag()                                                  >> RRMoCItemTag%class%.java
-ECHO     {                                                                               >> RRMoCItemTag%class%.java
-ECHO         // Add here your items to this tag.                                         >> RRMoCItemTag%class%.java
-ECHO         // Use ITEMS.add(item);                                                     >> RRMoCItemTag%class%.java
-ECHO     }                                                                               >> RRMoCItemTag%class%.java
-ECHO }                                                                                   >> RRMoCItemTag%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.item;                              >> RRMoCItemTag%class%.java
+ECHO.                                                                                         >> RRMoCItemTag%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.item.RRMoCItemTagProvider; >> RRMoCItemTag%class%.java
+ECHO import mestretramador.rrmocreatures.init.RegisterItem;                                   >> RRMoCItemTag%class%.java
+ECHO import mestretramador.rrmocreatures.util.Tags;                                           >> RRMoCItemTag%class%.java
+ECHO.                                                                                         >> RRMoCItemTag%class%.java
+ECHO /**                                                                                      >> RRMoCItemTag%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Tag's Items.                                       >> RRMoCItemTag%class%.java
+ECHO  *                                                                                       >> RRMoCItemTag%class%.java
+ECHO  * @version %version%                                                                    >> RRMoCItemTag%class%.java
+ECHO  * @author %author%                                                                      >> RRMoCItemTag%class%.java
+ECHO  */                                                                                      >> RRMoCItemTag%class%.java
+ECHO public class RRMoCItemTag%class% extends RRMoCItemTagProvider                            >> RRMoCItemTag%class%.java
+ECHO {                                                                                        >> RRMoCItemTag%class%.java
+ECHO     /**                                                                                  >> RRMoCItemTag%class%.java
+ECHO      * Using the parent constructor, creates the %name% tag.                             >> RRMoCItemTag%class%.java
+ECHO      */                                                                                  >> RRMoCItemTag%class%.java
+ECHO     public RRMoCItemTag%class%()                                                         >> RRMoCItemTag%class%.java
+ECHO     {                                                                                    >> RRMoCItemTag%class%.java
+ECHO         super(Tags.Items.%id%);                                                          >> RRMoCItemTag%class%.java
+ECHO     }                                                                                    >> RRMoCItemTag%class%.java
+ECHO.                                                                                         >> RRMoCItemTag%class%.java
+ECHO     /**                                                                                  >> RRMoCItemTag%class%.java
+ECHO      * ^<p^>                                                                             >> RRMoCItemTag%class%.java
+ECHO      * The setter sets the {@link Tags.Items#%id% %name% item                            >> RRMoCItemTag%class%.java
+ECHO      * tag} to the below items:                                                          >> RRMoCItemTag%class%.java
+ECHO      * ^</p^>                                                                            >> RRMoCItemTag%class%.java
+ECHO      * ^<ul^>                                                                            >> RRMoCItemTag%class%.java
+ECHO      * ^<li^>Link your items here.^</li^>                                                >> RRMoCItemTag%class%.java
+ECHO      * ^</ul^>                                                                           >> RRMoCItemTag%class%.java
+ECHO      */                                                                                  >> RRMoCItemTag%class%.java
+ECHO     @Override                                                                            >> RRMoCItemTag%class%.java
+ECHO     protected void setItemsToTag()                                                       >> RRMoCItemTag%class%.java
+ECHO     {                                                                                    >> RRMoCItemTag%class%.java
+ECHO         // Add here your items to this tag.                                              >> RRMoCItemTag%class%.java
+ECHO         // Use ITEMS.add(item);                                                          >> RRMoCItemTag%class%.java
+ECHO     }                                                                                    >> RRMoCItemTag%class%.java
+ECHO }                                                                                        >> RRMoCItemTag%class%.java
 
 @REM Add the Item Tag in Git.
 git add RRMoCItemTag%class%.java

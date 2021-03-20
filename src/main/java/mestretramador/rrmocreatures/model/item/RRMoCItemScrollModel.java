@@ -7,7 +7,9 @@ import javax.annotation.Nullable;
 import mestretramador.rrmocreatures.util.Constants;
 
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
@@ -20,7 +22,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} to use
  * as a Scroll.
  * 
- * @version 0.0.27
+ * @version 0.028
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemScrollModel extends RRMoCItemModel
@@ -79,6 +81,20 @@ public class RRMoCItemScrollModel extends RRMoCItemModel
 
             default: return null;
         }
+    }
+
+    /**
+     * Overides the creation method to return the quill used, that is, the
+     * {@link net.minecraft.item.Items#FEATHER Vanillla Feather}.
+     * 
+     * @param stack  Current ItemStack.
+     * @param world  Current World.
+     * @param player The player who had created.
+     */
+    @Override
+    public void onCreated(ItemStack stack, World world, PlayerEntity player)
+    {
+        player.addItemStackToInventory(new ItemStack(Items.FEATHER));
     }
 
     // ! Client side.

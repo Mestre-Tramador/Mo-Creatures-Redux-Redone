@@ -4,15 +4,15 @@ import mestretramador.rrmocreatures.data.common.provider.tags.block.RRMoCBlockIt
 import mestretramador.rrmocreatures.util.Tags;                                            
                                                                                           
 /**                                                                                       
- * Mo'Creatures Redux&Redone Wyvern Lair's Dirt Tag's BlockItems.                                   
+ * Mo'Creatures Redux&Redone Wyvern Lair Dirt Tag's BlockItems.                                   
  *                                                                                        
- * @version 0.0.27                                                                     
+ * @version 0.028                                                                     
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                       
  */                                                                                       
 public class RRMoCBlockItemTagWyvernLairDirt extends RRMoCBlockItemTagProvider                   
 {                                                                                         
     /**                                                                                   
-     * Using the parent constructor, creates the Wyvern Lair's Dirt tag.                                  
+     * Using the parent constructor, creates the Wyvern Lair Dirt tag.                                  
      */                                                                                   
     public RRMoCBlockItemTagWyvernLairDirt()                                                     
     {                                                                                     

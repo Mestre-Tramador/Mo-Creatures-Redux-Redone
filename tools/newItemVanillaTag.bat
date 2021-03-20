@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -41,45 +41,45 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the Item Vanilla Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.item;                         >> RRMoCItemVanillaTag%class%.java
-ECHO.                                                                                    >> RRMoCItemVanillaTag%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.item.RRMoCItemTagProvider; >> RRMoCItemVanillaTag%class%.java
-ECHO import mestretramador.rrmocreatures.init.RegisterItem;                              >> RRMoCItemVanillaTag%class%.java
-ECHO.                                                                                    >> RRMoCItemVanillaTag%class%.java
-ECHO import net.minecraft.tags.ItemTags;                                                 >> RRMoCItemVanillaTag%class%.java
-ECHO.                                                                                    >> RRMoCItemVanillaTag%class%.java
-ECHO /**                                                                                 >> RRMoCItemVanillaTag%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Minecraft Tag's Items.                        >> RRMoCItemVanillaTag%class%.java
-ECHO  *                                                                                  >> RRMoCItemVanillaTag%class%.java
-ECHO  * @version %version%                                                               >> RRMoCItemVanillaTag%class%.java
-ECHO  * @author %author%                                                                 >> RRMoCItemVanillaTag%class%.java
-ECHO  */                                                                                 >> RRMoCItemVanillaTag%class%.java
-ECHO public class RRMoCItemVanillaTag%class% extends RRMoCItemTagProvider                >> RRMoCItemVanillaTag%class%.java
-ECHO {                                                                                   >> RRMoCItemVanillaTag%class%.java
-ECHO     /**                                                                             >> RRMoCItemVanillaTag%class%.java
-ECHO      * Using the parent constructor, adds to %name% Minecraft tag.                  >> RRMoCItemVanillaTag%class%.java
-ECHO      */                                                                             >> RRMoCItemVanillaTag%class%.java
-ECHO     public RRMoCItemVanillaTag%class%()                                             >> RRMoCItemVanillaTag%class%.java
-ECHO     {                                                                               >> RRMoCItemVanillaTag%class%.java
-ECHO         super(ItemTags.%id%);                                                       >> RRMoCItemVanillaTag%class%.java
-ECHO     }                                                                               >> RRMoCItemVanillaTag%class%.java
-ECHO.                                                                                    >> RRMoCItemVanillaTag%class%.java
-ECHO     /**                                                                             >> RRMoCItemVanillaTag%class%.java
-ECHO      * ^<p^>                                                                        >> RRMoCItemVanillaTag%class%.java
-ECHO      * The setter sets the {@link ItemTags#%id% %name% item                         >> RRMoCItemVanillaTag%class%.java
-ECHO      * Minecraft tag} to the below items:                                           >> RRMoCItemVanillaTag%class%.java
-ECHO      * ^</p^>                                                                       >> RRMoCItemVanillaTag%class%.java
-ECHO      * ^<ul^>                                                                       >> RRMoCItemVanillaTag%class%.java
-ECHO      * ^<li^>Link your items here.^</li^>                                           >> RRMoCItemVanillaTag%class%.java
-ECHO      * ^</ul^>                                                                      >> RRMoCItemVanillaTag%class%.java
-ECHO      */                                                                             >> RRMoCItemVanillaTag%class%.java
-ECHO     @Override                                                                       >> RRMoCItemVanillaTag%class%.java
-ECHO     protected void setItemsToTag()                                                  >> RRMoCItemVanillaTag%class%.java
-ECHO     {                                                                               >> RRMoCItemVanillaTag%class%.java
-ECHO         // Add here your items to this tag.                                         >> RRMoCItemVanillaTag%class%.java
-ECHO         // Use ITEMS.add(item);                                                     >> RRMoCItemVanillaTag%class%.java
-ECHO     }                                                                               >> RRMoCItemVanillaTag%class%.java
-ECHO }                                                                                   >> RRMoCItemVanillaTag%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.item;                              >> RRMoCItemVanillaTag%class%.java
+ECHO.                                                                                         >> RRMoCItemVanillaTag%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.item.RRMoCItemTagProvider; >> RRMoCItemVanillaTag%class%.java
+ECHO import mestretramador.rrmocreatures.init.RegisterItem;                                   >> RRMoCItemVanillaTag%class%.java
+ECHO.                                                                                         >> RRMoCItemVanillaTag%class%.java
+ECHO import net.minecraft.tags.ItemTags;                                                      >> RRMoCItemVanillaTag%class%.java
+ECHO.                                                                                         >> RRMoCItemVanillaTag%class%.java
+ECHO /**                                                                                      >> RRMoCItemVanillaTag%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Minecraft Tag's Items.                             >> RRMoCItemVanillaTag%class%.java
+ECHO  *                                                                                       >> RRMoCItemVanillaTag%class%.java
+ECHO  * @version %version%                                                                    >> RRMoCItemVanillaTag%class%.java
+ECHO  * @author %author%                                                                      >> RRMoCItemVanillaTag%class%.java
+ECHO  */                                                                                      >> RRMoCItemVanillaTag%class%.java
+ECHO public class RRMoCItemVanillaTag%class% extends RRMoCItemTagProvider                     >> RRMoCItemVanillaTag%class%.java
+ECHO {                                                                                        >> RRMoCItemVanillaTag%class%.java
+ECHO     /**                                                                                  >> RRMoCItemVanillaTag%class%.java
+ECHO      * Using the parent constructor, adds to %name% Minecraft tag.                       >> RRMoCItemVanillaTag%class%.java
+ECHO      */                                                                                  >> RRMoCItemVanillaTag%class%.java
+ECHO     public RRMoCItemVanillaTag%class%()                                                  >> RRMoCItemVanillaTag%class%.java
+ECHO     {                                                                                    >> RRMoCItemVanillaTag%class%.java
+ECHO         super(ItemTags.%id%);                                                            >> RRMoCItemVanillaTag%class%.java
+ECHO     }                                                                                    >> RRMoCItemVanillaTag%class%.java
+ECHO.                                                                                         >> RRMoCItemVanillaTag%class%.java
+ECHO     /**                                                                                  >> RRMoCItemVanillaTag%class%.java
+ECHO      * ^<p^>                                                                             >> RRMoCItemVanillaTag%class%.java
+ECHO      * The setter sets the {@link ItemTags#%id% %name% item                              >> RRMoCItemVanillaTag%class%.java
+ECHO      * Minecraft tag} to the below items:                                                >> RRMoCItemVanillaTag%class%.java
+ECHO      * ^</p^>                                                                            >> RRMoCItemVanillaTag%class%.java
+ECHO      * ^<ul^>                                                                            >> RRMoCItemVanillaTag%class%.java
+ECHO      * ^<li^>Link your items here.^</li^>                                                >> RRMoCItemVanillaTag%class%.java
+ECHO      * ^</ul^>                                                                           >> RRMoCItemVanillaTag%class%.java
+ECHO      */                                                                                  >> RRMoCItemVanillaTag%class%.java
+ECHO     @Override                                                                            >> RRMoCItemVanillaTag%class%.java
+ECHO     protected void setItemsToTag()                                                       >> RRMoCItemVanillaTag%class%.java
+ECHO     {                                                                                    >> RRMoCItemVanillaTag%class%.java
+ECHO         // Add here your items to this tag.                                              >> RRMoCItemVanillaTag%class%.java
+ECHO         // Use ITEMS.add(item);                                                          >> RRMoCItemVanillaTag%class%.java
+ECHO     }                                                                                    >> RRMoCItemVanillaTag%class%.java
+ECHO }                                                                                        >> RRMoCItemVanillaTag%class%.java
 
 @REM Add the Item Vanilla Tag in Git.
 git add RRMoCItemVanillaTag%class%.java

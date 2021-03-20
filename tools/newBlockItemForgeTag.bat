@@ -7,7 +7,7 @@
 @REM ########################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -48,28 +48,28 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the BlockItem Forge Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.block;                              >> RRMoCBlockItemForgeTag%class%.java
-ECHO.                                                                                          >> RRMoCBlockItemForgeTag%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.block.RRMoCBlockItemTagProvider; >> RRMoCBlockItemForgeTag%class%.java
-ECHO.                                                                                          >> RRMoCBlockItemForgeTag%class%.java
-ECHO import net.minecraftforge.common.Tags;                                                    >> RRMoCBlockItemForgeTag%class%.java
-ECHO.                                                                                          >> RRMoCBlockItemForgeTag%class%.java
-ECHO /**                                                                                       >> RRMoCBlockItemForgeTag%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag's BlockItems.                             >> RRMoCBlockItemForgeTag%class%.java
-ECHO  *                                                                                        >> RRMoCBlockItemForgeTag%class%.java
-ECHO  * @version %version%                                                                     >> RRMoCBlockItemForgeTag%class%.java
-ECHO  * @author %author%                                                                       >> RRMoCBlockItemForgeTag%class%.java
-ECHO  */                                                                                       >> RRMoCBlockItemForgeTag%class%.java
-ECHO public class RRMoCBlockItemForgeTag%class% extends RRMoCBlockItemTagProvider              >> RRMoCBlockItemForgeTag%class%.java
-ECHO {                                                                                         >> RRMoCBlockItemForgeTag%class%.java
-ECHO     /**                                                                                   >> RRMoCBlockItemForgeTag%class%.java
-ECHO      * Using the parent constructor, adds to %name% Forge tag.                            >> RRMoCBlockItemForgeTag%class%.java
-ECHO      */                                                                                   >> RRMoCBlockItemForgeTag%class%.java
-ECHO     public RRMoCBlockItemForgeTag%class%()                                                >> RRMoCBlockItemForgeTag%class%.java
-ECHO     {                                                                                     >> RRMoCBlockItemForgeTag%class%.java
-ECHO         super(Tags.Blocks.%fid%, Tags.Items.%id%);                                        >> RRMoCBlockItemForgeTag%class%.java
-ECHO     }                                                                                     >> RRMoCBlockItemForgeTag%class%.java
-ECHO }                                                                                         >> RRMoCBlockItemForgeTag%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.block;                                   >> RRMoCBlockItemForgeTag%class%.java
+ECHO.                                                                                               >> RRMoCBlockItemForgeTag%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.block.RRMoCBlockItemTagProvider; >> RRMoCBlockItemForgeTag%class%.java
+ECHO.                                                                                               >> RRMoCBlockItemForgeTag%class%.java
+ECHO import net.minecraftforge.common.Tags;                                                         >> RRMoCBlockItemForgeTag%class%.java
+ECHO.                                                                                               >> RRMoCBlockItemForgeTag%class%.java
+ECHO /**                                                                                            >> RRMoCBlockItemForgeTag%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag's BlockItems.                                  >> RRMoCBlockItemForgeTag%class%.java
+ECHO  *                                                                                             >> RRMoCBlockItemForgeTag%class%.java
+ECHO  * @version %version%                                                                          >> RRMoCBlockItemForgeTag%class%.java
+ECHO  * @author %author%                                                                            >> RRMoCBlockItemForgeTag%class%.java
+ECHO  */                                                                                            >> RRMoCBlockItemForgeTag%class%.java
+ECHO public class RRMoCBlockItemForgeTag%class% extends RRMoCBlockItemTagProvider                   >> RRMoCBlockItemForgeTag%class%.java
+ECHO {                                                                                              >> RRMoCBlockItemForgeTag%class%.java
+ECHO     /**                                                                                        >> RRMoCBlockItemForgeTag%class%.java
+ECHO      * Using the parent constructor, adds to %name% Forge tag.                                 >> RRMoCBlockItemForgeTag%class%.java
+ECHO      */                                                                                        >> RRMoCBlockItemForgeTag%class%.java
+ECHO     public RRMoCBlockItemForgeTag%class%()                                                     >> RRMoCBlockItemForgeTag%class%.java
+ECHO     {                                                                                          >> RRMoCBlockItemForgeTag%class%.java
+ECHO         super(Tags.Blocks.%fid%, Tags.Items.%id%);                                             >> RRMoCBlockItemForgeTag%class%.java
+ECHO     }                                                                                          >> RRMoCBlockItemForgeTag%class%.java
+ECHO }                                                                                              >> RRMoCBlockItemForgeTag%class%.java
 
 @REM Add the BlockItem Forge Tag in Git.
 git add RRMoCBlockItemForgeTag%class%.java

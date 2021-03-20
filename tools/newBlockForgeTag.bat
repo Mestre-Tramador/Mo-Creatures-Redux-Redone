@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -41,45 +41,45 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the Block Forge Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.block;                          >> RRMoCBlockForgeTag%class%.java
-ECHO.                                                                                      >> RRMoCBlockForgeTag%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.block.RRMoCBlockTagProvider; >> RRMoCBlockForgeTag%class%.java
-ECHO import mestretramador.rrmocreatures.init.RegisterBlock;                               >> RRMoCBlockForgeTag%class%.java
-ECHO.                                                                                      >> RRMoCBlockForgeTag%class%.java
-ECHO import net.minecraftforge.common.Tags;                                                >> RRMoCBlockForgeTag%class%.java
-ECHO.                                                                                      >> RRMoCBlockForgeTag%class%.java
-ECHO /**                                                                                   >> RRMoCBlockForgeTag%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag's Blocks.                             >> RRMoCBlockForgeTag%class%.java
-ECHO  *                                                                                    >> RRMoCBlockForgeTag%class%.java
-ECHO  * @version %version%                                                                 >> RRMoCBlockForgeTag%class%.java
-ECHO  * @author %author%                                                                   >> RRMoCBlockForgeTag%class%.java
-ECHO  */                                                                                   >> RRMoCBlockForgeTag%class%.java
-ECHO public class RRMoCBlockForgeTag%class% extends RRMoCBlockTagProvider                  >> RRMoCBlockForgeTag%class%.java
-ECHO {                                                                                     >> RRMoCBlockForgeTag%class%.java
-ECHO     /**                                                                               >> RRMoCBlockForgeTag%class%.java
-ECHO      * Using the parent constructor, adds to %name% Forge tag.                        >> RRMoCBlockForgeTag%class%.java
-ECHO      */                                                                               >> RRMoCBlockForgeTag%class%.java
-ECHO     public RRMoCBlockForgeTag%class%()                                                >> RRMoCBlockForgeTag%class%.java
-ECHO     {                                                                                 >> RRMoCBlockForgeTag%class%.java
-ECHO         super(Tags.Blocks.%id%);                                                      >> RRMoCBlockForgeTag%class%.java
-ECHO     }                                                                                 >> RRMoCBlockForgeTag%class%.java
-ECHO.                                                                                      >> RRMoCBlockForgeTag%class%.java
-ECHO     /**                                                                               >> RRMoCBlockForgeTag%class%.java
-ECHO      * ^<p^>                                                                          >> RRMoCBlockForgeTag%class%.java
-ECHO      * The setter sets the {@link Tags.Blocks#%id% %name% block                       >> RRMoCBlockForgeTag%class%.java
-ECHO      * Forge tag} to the below blocks:                                                >> RRMoCBlockForgeTag%class%.java
-ECHO      * ^</p^>                                                                         >> RRMoCBlockForgeTag%class%.java
-ECHO      * ^<ul^>                                                                         >> RRMoCBlockForgeTag%class%.java
-ECHO      * ^<li^>Link your blocks here.^</li^>                                            >> RRMoCBlockForgeTag%class%.java
-ECHO      * ^</ul^>                                                                        >> RRMoCBlockForgeTag%class%.java
-ECHO      */                                                                               >> RRMoCBlockForgeTag%class%.java
-ECHO     @Override                                                                         >> RRMoCBlockForgeTag%class%.java
-ECHO     protected void setBlocksToTag()                                                   >> RRMoCBlockForgeTag%class%.java
-ECHO     {                                                                                 >> RRMoCBlockForgeTag%class%.java
-ECHO         // Add here your blocks to this tag.                                          >> RRMoCBlockForgeTag%class%.java
-ECHO         // Use BLOCKS.add(block);                                                     >> RRMoCBlockForgeTag%class%.java
-ECHO     }                                                                                 >> RRMoCBlockForgeTag%class%.java
-ECHO }                                                                                     >> RRMoCBlockForgeTag%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.block;                               >> RRMoCBlockForgeTag%class%.java
+ECHO.                                                                                           >> RRMoCBlockForgeTag%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.block.RRMoCBlockTagProvider; >> RRMoCBlockForgeTag%class%.java
+ECHO import mestretramador.rrmocreatures.init.RegisterBlock;                                    >> RRMoCBlockForgeTag%class%.java
+ECHO.                                                                                           >> RRMoCBlockForgeTag%class%.java
+ECHO import net.minecraftforge.common.Tags;                                                     >> RRMoCBlockForgeTag%class%.java
+ECHO.                                                                                           >> RRMoCBlockForgeTag%class%.java
+ECHO /**                                                                                        >> RRMoCBlockForgeTag%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag's Blocks.                                  >> RRMoCBlockForgeTag%class%.java
+ECHO  *                                                                                         >> RRMoCBlockForgeTag%class%.java
+ECHO  * @version %version%                                                                      >> RRMoCBlockForgeTag%class%.java
+ECHO  * @author %author%                                                                        >> RRMoCBlockForgeTag%class%.java
+ECHO  */                                                                                        >> RRMoCBlockForgeTag%class%.java
+ECHO public class RRMoCBlockForgeTag%class% extends RRMoCBlockTagProvider                       >> RRMoCBlockForgeTag%class%.java
+ECHO {                                                                                          >> RRMoCBlockForgeTag%class%.java
+ECHO     /**                                                                                    >> RRMoCBlockForgeTag%class%.java
+ECHO      * Using the parent constructor, adds to %name% Forge tag.                             >> RRMoCBlockForgeTag%class%.java
+ECHO      */                                                                                    >> RRMoCBlockForgeTag%class%.java
+ECHO     public RRMoCBlockForgeTag%class%()                                                     >> RRMoCBlockForgeTag%class%.java
+ECHO     {                                                                                      >> RRMoCBlockForgeTag%class%.java
+ECHO         super(Tags.Blocks.%id%);                                                           >> RRMoCBlockForgeTag%class%.java
+ECHO     }                                                                                      >> RRMoCBlockForgeTag%class%.java
+ECHO.                                                                                           >> RRMoCBlockForgeTag%class%.java
+ECHO     /**                                                                                    >> RRMoCBlockForgeTag%class%.java
+ECHO      * ^<p^>                                                                               >> RRMoCBlockForgeTag%class%.java
+ECHO      * The setter sets the {@link Tags.Blocks#%id% %name% block                            >> RRMoCBlockForgeTag%class%.java
+ECHO      * Forge tag} to the below blocks:                                                     >> RRMoCBlockForgeTag%class%.java
+ECHO      * ^</p^>                                                                              >> RRMoCBlockForgeTag%class%.java
+ECHO      * ^<ul^>                                                                              >> RRMoCBlockForgeTag%class%.java
+ECHO      * ^<li^>Link your blocks here.^</li^>                                                 >> RRMoCBlockForgeTag%class%.java
+ECHO      * ^</ul^>                                                                             >> RRMoCBlockForgeTag%class%.java
+ECHO      */                                                                                    >> RRMoCBlockForgeTag%class%.java
+ECHO     @Override                                                                              >> RRMoCBlockForgeTag%class%.java
+ECHO     protected void setBlocksToTag()                                                        >> RRMoCBlockForgeTag%class%.java
+ECHO     {                                                                                      >> RRMoCBlockForgeTag%class%.java
+ECHO         // Add here your blocks to this tag.                                               >> RRMoCBlockForgeTag%class%.java
+ECHO         // Use BLOCKS.add(block);                                                          >> RRMoCBlockForgeTag%class%.java
+ECHO     }                                                                                      >> RRMoCBlockForgeTag%class%.java
+ECHO }                                                                                          >> RRMoCBlockForgeTag%class%.java
 
 @REM Add the Block Forge Tag in Git.
 git add RRMoCBlockForgeTag%class%.java

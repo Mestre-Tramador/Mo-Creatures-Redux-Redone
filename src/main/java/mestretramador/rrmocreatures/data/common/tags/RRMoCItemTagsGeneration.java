@@ -3,12 +3,15 @@ package mestretramador.rrmocreatures.data.common.tags;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import mestretramador.rrmocreatures.data.common.provider.tags.item.RRMoCItemTagAppendProvider;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemForgeTagStone;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagOgreLairDirt;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagOgreLairLogs;
+import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagOgreLairPlanks;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagOgreLairStone;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagWyvernLairDirt;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagWyvernLairLogs;
+import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagWyvernLairPlanks;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagWyvernLairStone;
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagMaterialsChitin;
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagMaterialsSting;
@@ -20,7 +23,9 @@ import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagWereablesP
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagWereablesRide;
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagWereablesStorage;
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemVanillaTagAppendOgreLairLogsThatBurn;
+import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemVanillaTagAppendOgreLairPlanks;
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemVanillaTagAppendWyvernLairLogsThatBurn;
+import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemVanillaTagAppendWyvernLairPlanks;
 import mestretramador.rrmocreatures.util.Constants;
 
 import net.minecraft.block.Block;
@@ -35,7 +40,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Item and BlockItem Tags Generator.
  * 
- * @version 0.0.27
+ * @version 0.028
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemTagsGeneration extends ItemTagsProvider
@@ -44,7 +49,7 @@ public class RRMoCItemTagsGeneration extends ItemTagsProvider
     private static final HashMap<ITag.INamedTag<Item>, ArrayList<Item>> TAGS_ITEMS = new HashMap<ITag.INamedTag<Item>, ArrayList<Item>>();
 
     /** A Map for tags to Append. */
-    private static final HashMap<ITag.INamedTag<Item>,ITag.INamedTag<Item>> TAGS_APPEND = new HashMap<ITag.INamedTag<Item>, ITag.INamedTag<Item>>();
+    private static final HashMap<ITag.INamedTag<Item>, ArrayList<ITag.INamedTag<Item>>> TAGS_APPEND = new HashMap<ITag.INamedTag<Item>,  ArrayList<ITag.INamedTag<Item>>>();
 
     /** A Map for the BlockItem tags to copy. */
     private static final HashMap<ITag.INamedTag<Block>, ITag.INamedTag<Item>> TAGS_COPIES = new HashMap<ITag.INamedTag<Block>, ITag.INamedTag<Item>>();
@@ -82,8 +87,10 @@ public class RRMoCItemTagsGeneration extends ItemTagsProvider
             });
         });
 
-        TAGS_APPEND.forEach((parentTag, childTag) -> {
-            getOrCreateBuilder(parentTag).addTag(childTag);
+        TAGS_APPEND.forEach((parentTag, childTags) -> {
+            childTags.forEach((childTag) -> {
+                getOrCreateBuilder(parentTag).addTag(childTag);
+            });
         });
 
         TAGS_COPIES.forEach((blockTag, itemTag) -> {
@@ -124,11 +131,25 @@ public class RRMoCItemTagsGeneration extends ItemTagsProvider
      */
     private static void setAppends()
     {
-        final RRMoCItemVanillaTagAppendOgreLairLogsThatBurn ogreLairLogsThatBurn = new RRMoCItemVanillaTagAppendOgreLairLogsThatBurn();
-        final RRMoCItemVanillaTagAppendWyvernLairLogsThatBurn wyvernLairLogsThatBurn = new RRMoCItemVanillaTagAppendWyvernLairLogsThatBurn();
+        final RRMoCItemTagAppendProvider[] appends = new RRMoCItemTagAppendProvider[]{
+            new RRMoCItemVanillaTagAppendOgreLairLogsThatBurn(),
+            new RRMoCItemVanillaTagAppendWyvernLairLogsThatBurn(),
+            new RRMoCItemVanillaTagAppendOgreLairPlanks(),
+            new RRMoCItemVanillaTagAppendWyvernLairPlanks()
+        };
 
-        TAGS_APPEND.put(ogreLairLogsThatBurn.provideParentTag(), ogreLairLogsThatBurn.provideChildTag());
-        TAGS_APPEND.put(wyvernLairLogsThatBurn.provideParentTag(), wyvernLairLogsThatBurn.provideChildTag());
+        for(RRMoCItemTagAppendProvider appending : appends)
+        {
+            final ITag.INamedTag<Item> parent = appending.provideParentTag();
+            final ITag.INamedTag<Item> child = appending.provideChildTag();
+
+            if(TAGS_APPEND.get(parent) == null)
+            {
+                TAGS_APPEND.put(parent, new ArrayList<ITag.INamedTag<Item>>());
+            }
+
+            TAGS_APPEND.get(parent).add(child);
+        }
 
         // TODO: Append more Tags.
     }
@@ -140,17 +161,21 @@ public class RRMoCItemTagsGeneration extends ItemTagsProvider
     {
         final RRMoCBlockItemTagOgreLairDirt ogreLairDirt = new RRMoCBlockItemTagOgreLairDirt();
         final RRMoCBlockItemTagOgreLairLogs ogreLairLogs = new RRMoCBlockItemTagOgreLairLogs();
+        final RRMoCBlockItemTagOgreLairPlanks ogreLairPlanks = new RRMoCBlockItemTagOgreLairPlanks();
         final RRMoCBlockItemTagOgreLairStone ogreLairStone = new RRMoCBlockItemTagOgreLairStone();
         final RRMoCBlockItemTagWyvernLairDirt wyvernLairDirt = new RRMoCBlockItemTagWyvernLairDirt();
         final RRMoCBlockItemTagWyvernLairLogs wyvernLairLogs = new RRMoCBlockItemTagWyvernLairLogs();
+        final RRMoCBlockItemTagWyvernLairPlanks wyvernLairPlanks = new RRMoCBlockItemTagWyvernLairPlanks();
         final RRMoCBlockItemTagWyvernLairStone wyvernLairStone = new RRMoCBlockItemTagWyvernLairStone();
         final RRMoCBlockItemForgeTagStone forgeStone = new RRMoCBlockItemForgeTagStone();
 
         TAGS_COPIES.put(ogreLairDirt.provideKeyTag(), ogreLairDirt.provideValueTag());
         TAGS_COPIES.put(ogreLairLogs.provideKeyTag(), ogreLairLogs.provideValueTag());
+        TAGS_COPIES.put(ogreLairPlanks.provideKeyTag(), ogreLairPlanks.provideValueTag());
         TAGS_COPIES.put(ogreLairStone.provideKeyTag(), ogreLairStone.provideValueTag());
         TAGS_COPIES.put(wyvernLairDirt.provideKeyTag(), wyvernLairDirt.provideValueTag());
         TAGS_COPIES.put(wyvernLairLogs.provideKeyTag(), wyvernLairLogs.provideValueTag());
+        TAGS_COPIES.put(wyvernLairPlanks.provideKeyTag(), wyvernLairPlanks.provideValueTag());
         TAGS_COPIES.put(wyvernLairStone.provideKeyTag(), wyvernLairStone.provideValueTag());
         TAGS_COPIES.put(forgeStone.provideKeyTag(), forgeStone.provideValueTag());
 

@@ -5,15 +5,15 @@ import mestretramador.rrmocreatures.init.RegisterBlock;
 import mestretramador.rrmocreatures.util.Tags;                                        
                                                                                       
 /**                                                                                   
- * Mo'Creatures Redux&Redone Wyvern Lair's Dirt Tag's Blocks.                                   
+ * Mo'Creatures Redux&Redone Wyvern Lair Dirt Tag's Blocks.                                   
  *                                                                                    
- * @version 0.0.27                                                                 
+ * @version 0.028                                                                 
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                   
  */                                                                                   
 public class RRMoCBlockTagWyvernLairDirt extends RRMoCBlockTagProvider                       
 {                                                                                     
     /**                                                                               
-     * Using the parent constructor, creates the Wyvern Lair's Dirt tag.                              
+     * Using the parent constructor, creates the Wyvern Lair Dirt tag.                              
      */                                                                               
     public RRMoCBlockTagWyvernLairDirt()                                                     
     {                                                                                 
@@ -22,7 +22,7 @@ public class RRMoCBlockTagWyvernLairDirt extends RRMoCBlockTagProvider
                                                                                       
     /**                                                                               
      * <p>                                                                          
-     * The setter sets the {@link Tags.Blocks#WYVERN_LAIR_DIRT Wyvern Lair's Dirt block                       
+     * The setter sets the {@link Tags.Blocks#WYVERN_LAIR_DIRT Wyvern Lair Dirt block                       
      * tag} to the below blocks:                                                      
      * </p>                                                                         
      * <ul>                                                                         

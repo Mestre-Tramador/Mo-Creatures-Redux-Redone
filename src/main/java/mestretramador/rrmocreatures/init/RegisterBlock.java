@@ -18,7 +18,7 @@ import mestretramador.rrmocreatures.block.RRMoCBlockWyvernLairTallGrass;
 /**
  * Blocks to registrate.
  * 
- * @version 0.0.27
+ * @version 0.028
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RegisterBlock

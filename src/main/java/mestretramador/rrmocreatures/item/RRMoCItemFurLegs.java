@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Fur Legs item.                                          
  *                                                                                   
- * @version 0.0.27                                                                
+ * @version 0.028                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemFurLegs extends RRMoCItem                                      

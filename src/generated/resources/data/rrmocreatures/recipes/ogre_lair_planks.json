@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "rrmocreatures:ogre_lair_log"
+    }
+  ],
+  "result": {
+    "item": "rrmocreatures:ogre_lair_planks",
+    "count": 4
+  }
+}

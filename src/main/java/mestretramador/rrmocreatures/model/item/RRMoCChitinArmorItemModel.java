@@ -20,7 +20,7 @@ import net.minecraft.world.World;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.ArmorItem Armor Item} to act
  * as a Chitin Armor.
  * 
- * @version 0.0.27
+ * @version 0.028
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCChitinArmorItemModel extends RRMoCArmorItemModel

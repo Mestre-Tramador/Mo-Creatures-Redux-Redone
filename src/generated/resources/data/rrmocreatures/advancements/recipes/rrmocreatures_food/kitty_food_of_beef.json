@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "rrmocreatures:kitty_food_of_beef"
+    ]
+  },
+  "criteria": {
+    "has_flour": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wheat"
+          }
+        ]
+      }
+    },
+    "has_flavor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_beef"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "rrmocreatures:kitty_food_of_beef"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_flour",
+      "has_flavor",
+      "has_the_recipe"
+    ]
+  ]
+}

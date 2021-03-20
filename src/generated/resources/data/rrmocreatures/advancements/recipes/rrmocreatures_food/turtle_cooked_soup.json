@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "rrmocreatures:turtle_cooked_soup"
+    ]
+  },
+  "criteria": {
+    "has_bowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:bowl"
+          }
+        ]
+      }
+    },
+    "has_meat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "rrmocreatures:turtle_cooked"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "rrmocreatures:turtle_cooked_soup"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bowl",
+      "has_meat",
+      "has_the_recipe"
+    ]
+  ]
+}

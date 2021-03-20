@@ -7,7 +7,7 @@
 @REM ############################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -48,29 +48,29 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the BlockItem Vanilla Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.block;                              >> RRMoCBlockItemVanillaTag%class%.java
-ECHO.                                                                                          >> RRMoCBlockItemVanillaTag%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.block.RRMoCBlockItemTagProvider; >> RRMoCBlockItemVanillaTag%class%.java
-ECHO.                                                                                          >> RRMoCBlockItemVanillaTag%class%.java
-ECHO import net.minecraft.tags.BlockTags;                                                      >> RRMoCBlockItemVanillaTag%class%.java
-ECHO import net.minecraft.tags.ItemTags;                                                       >> RRMoCBlockItemVanillaTag%class%.java
-ECHO.                                                                                          >> RRMoCBlockItemVanillaTag%class%.java
-ECHO /**                                                                                       >> RRMoCBlockItemVanillaTag%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Minecraft Tag's BlockItems.                         >> RRMoCBlockItemVanillaTag%class%.java
-ECHO  *                                                                                        >> RRMoCBlockItemVanillaTag%class%.java
-ECHO  * @version %version%                                                                     >> RRMoCBlockItemVanillaTag%class%.java
-ECHO  * @author %author%                                                                       >> RRMoCBlockItemVanillaTag%class%.java
-ECHO  */                                                                                       >> RRMoCBlockItemVanillaTag%class%.java
-ECHO public class RRMoCBlockItemVanillaTag%class% extends RRMoCBlockItemTagProvider            >> RRMoCBlockItemVanillaTag%class%.java
-ECHO {                                                                                         >> RRMoCBlockItemVanillaTag%class%.java
-ECHO     /**                                                                                   >> RRMoCBlockItemVanillaTag%class%.java
-ECHO      * Using the parent constructor, adds to %name% Minecraft tag.                        >> RRMoCBlockItemVanillaTag%class%.java
-ECHO      */                                                                                   >> RRMoCBlockItemVanillaTag%class%.java
-ECHO     public RRMoCBlockItemVanillaTag%class%()                                              >> RRMoCBlockItemVanillaTag%class%.java
-ECHO     {                                                                                     >> RRMoCBlockItemVanillaTag%class%.java
-ECHO         super(BlockTags.%fid%, ItemTags.%id%);                                            >> RRMoCBlockItemVanillaTag%class%.java
-ECHO     }                                                                                     >> RRMoCBlockItemVanillaTag%class%.java
-ECHO }                                                                                         >> RRMoCBlockItemVanillaTag%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.block;                                   >> RRMoCBlockItemVanillaTag%class%.java
+ECHO.                                                                                               >> RRMoCBlockItemVanillaTag%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.block.RRMoCBlockItemTagProvider; >> RRMoCBlockItemVanillaTag%class%.java
+ECHO.                                                                                               >> RRMoCBlockItemVanillaTag%class%.java
+ECHO import net.minecraft.tags.BlockTags;                                                           >> RRMoCBlockItemVanillaTag%class%.java
+ECHO import net.minecraft.tags.ItemTags;                                                            >> RRMoCBlockItemVanillaTag%class%.java
+ECHO.                                                                                               >> RRMoCBlockItemVanillaTag%class%.java
+ECHO /**                                                                                            >> RRMoCBlockItemVanillaTag%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Minecraft Tag's BlockItems.                              >> RRMoCBlockItemVanillaTag%class%.java
+ECHO  *                                                                                             >> RRMoCBlockItemVanillaTag%class%.java
+ECHO  * @version %version%                                                                          >> RRMoCBlockItemVanillaTag%class%.java
+ECHO  * @author %author%                                                                            >> RRMoCBlockItemVanillaTag%class%.java
+ECHO  */                                                                                            >> RRMoCBlockItemVanillaTag%class%.java
+ECHO public class RRMoCBlockItemVanillaTag%class% extends RRMoCBlockItemTagProvider                 >> RRMoCBlockItemVanillaTag%class%.java
+ECHO {                                                                                              >> RRMoCBlockItemVanillaTag%class%.java
+ECHO     /**                                                                                        >> RRMoCBlockItemVanillaTag%class%.java
+ECHO      * Using the parent constructor, adds to %name% Minecraft tag.                             >> RRMoCBlockItemVanillaTag%class%.java
+ECHO      */                                                                                        >> RRMoCBlockItemVanillaTag%class%.java
+ECHO     public RRMoCBlockItemVanillaTag%class%()                                                   >> RRMoCBlockItemVanillaTag%class%.java
+ECHO     {                                                                                          >> RRMoCBlockItemVanillaTag%class%.java
+ECHO         super(BlockTags.%fid%, ItemTags.%id%);                                                 >> RRMoCBlockItemVanillaTag%class%.java
+ECHO     }                                                                                          >> RRMoCBlockItemVanillaTag%class%.java
+ECHO }                                                                                              >> RRMoCBlockItemVanillaTag%class%.java
 
 @REM Add the BlockItem Vanilla Tag in Git.
 git add RRMoCBlockItemVanillaTag%class%.java

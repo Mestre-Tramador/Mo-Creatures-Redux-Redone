@@ -4,7 +4,6 @@ license="GNU GENERAL PUBLIC LICENSE Version 3"
 issueTrackerURL="https://github.com/Mestre-Tramador/Mo-Creatures-Redux-Redone/issues"
 
 [[mods]]
-
     modId="rrmocreatures"
     version="${file.jarVersion}"
     displayName="Mo'Creatures Redux&Redone"
@@ -16,8 +15,7 @@ issueTrackerURL="https://github.com/Mestre-Tramador/Mo-Creatures-Redux-Redone/is
     authors="Eduardo de Oliveira Rosa, Mestre Tramador."
     description='''This mod is an attempt to bring DrZhark's Mo'Creatures to life again and improve it.'''
 
-[[dependencies.rrmocreatures]]
-    
+[[dependencies.rrmocreatures]]    
     modId="forge"
     mandatory=true
     versionRange="[34,)"
@@ -27,6 +25,6 @@ issueTrackerURL="https://github.com/Mestre-Tramador/Mo-Creatures-Redux-Redone/is
 [[dependencies.rrmocreatures]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.3]"
+    versionRange="[1.16.3,)"
     ordering="NONE"
     side="BOTH"

@@ -7,7 +7,7 @@
 @REM ################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -41,45 +41,45 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the Item Forge Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.item;                         >> RRMoCItemForgeTag%class%.java
-ECHO.                                                                                    >> RRMoCItemForgeTag%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.item.RRMoCItemTagProvider; >> RRMoCItemForgeTag%class%.java
-ECHO import mestretramador.rrmocreatures.init.RegisterItem;                              >> RRMoCItemForgeTag%class%.java
-ECHO.                                                                                    >> RRMoCItemForgeTag%class%.java
-ECHO import net.minecraftforge.common.Tags;                                              >> RRMoCItemForgeTag%class%.java
-ECHO.                                                                                    >> RRMoCItemForgeTag%class%.java
-ECHO /**                                                                                 >> RRMoCItemForgeTag%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag's Items.                            >> RRMoCItemForgeTag%class%.java
-ECHO  *                                                                                  >> RRMoCItemForgeTag%class%.java
-ECHO  * @version %version%                                                               >> RRMoCItemForgeTag%class%.java
-ECHO  * @author %author%                                                                 >> RRMoCItemForgeTag%class%.java
-ECHO  */                                                                                 >> RRMoCItemForgeTag%class%.java
-ECHO public class RRMoCItemForgeTag%class% extends RRMoCItemTagProvider                  >> RRMoCItemForgeTag%class%.java
-ECHO {                                                                                   >> RRMoCItemForgeTag%class%.java
-ECHO     /**                                                                             >> RRMoCItemForgeTag%class%.java
-ECHO      * Using the parent constructor, adds to %name% Forge tag.                      >> RRMoCItemForgeTag%class%.java
-ECHO      */                                                                             >> RRMoCItemForgeTag%class%.java
-ECHO     public RRMoCItemForgeTag%class%()                                               >> RRMoCItemForgeTag%class%.java
-ECHO     {                                                                               >> RRMoCItemForgeTag%class%.java
-ECHO         super(Tags.Items.%id%);                                                     >> RRMoCItemForgeTag%class%.java
-ECHO     }                                                                               >> RRMoCItemForgeTag%class%.java
-ECHO.                                                                                    >> RRMoCItemForgeTag%class%.java
-ECHO     /**                                                                             >> RRMoCItemForgeTag%class%.java
-ECHO      * ^<p^>                                                                        >> RRMoCItemForgeTag%class%.java
-ECHO      * The setter sets the {@link Tags.Items#%id% %name% item                       >> RRMoCItemForgeTag%class%.java
-ECHO      * Forge tag} to the below items:                                               >> RRMoCItemForgeTag%class%.java
-ECHO      * ^</p^>                                                                       >> RRMoCItemForgeTag%class%.java
-ECHO      * ^<ul^>                                                                       >> RRMoCItemForgeTag%class%.java
-ECHO      * ^<li^>Link your items here.^</li^>                                           >> RRMoCItemForgeTag%class%.java
-ECHO      * ^</ul^>                                                                      >> RRMoCItemForgeTag%class%.java
-ECHO      */                                                                             >> RRMoCItemForgeTag%class%.java
-ECHO     @Override                                                                       >> RRMoCItemForgeTag%class%.java
-ECHO     protected void setItemsToTag()                                                  >> RRMoCItemForgeTag%class%.java
-ECHO     {                                                                               >> RRMoCItemForgeTag%class%.java
-ECHO         // Add here your items to this tag.                                         >> RRMoCItemForgeTag%class%.java
-ECHO         // Use ITEMS.add(item);                                                     >> RRMoCItemForgeTag%class%.java
-ECHO     }                                                                               >> RRMoCItemForgeTag%class%.java
-ECHO }                                                                                   >> RRMoCItemForgeTag%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.item;                              >> RRMoCItemForgeTag%class%.java
+ECHO.                                                                                         >> RRMoCItemForgeTag%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.item.RRMoCItemTagProvider; >> RRMoCItemForgeTag%class%.java
+ECHO import mestretramador.rrmocreatures.init.RegisterItem;                                   >> RRMoCItemForgeTag%class%.java
+ECHO.                                                                                         >> RRMoCItemForgeTag%class%.java
+ECHO import net.minecraftforge.common.Tags;                                                   >> RRMoCItemForgeTag%class%.java
+ECHO.                                                                                         >> RRMoCItemForgeTag%class%.java
+ECHO /**                                                                                      >> RRMoCItemForgeTag%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag's Items.                                 >> RRMoCItemForgeTag%class%.java
+ECHO  *                                                                                       >> RRMoCItemForgeTag%class%.java
+ECHO  * @version %version%                                                                    >> RRMoCItemForgeTag%class%.java
+ECHO  * @author %author%                                                                      >> RRMoCItemForgeTag%class%.java
+ECHO  */                                                                                      >> RRMoCItemForgeTag%class%.java
+ECHO public class RRMoCItemForgeTag%class% extends RRMoCItemTagProvider                       >> RRMoCItemForgeTag%class%.java
+ECHO {                                                                                        >> RRMoCItemForgeTag%class%.java
+ECHO     /**                                                                                  >> RRMoCItemForgeTag%class%.java
+ECHO      * Using the parent constructor, adds to %name% Forge tag.                           >> RRMoCItemForgeTag%class%.java
+ECHO      */                                                                                  >> RRMoCItemForgeTag%class%.java
+ECHO     public RRMoCItemForgeTag%class%()                                                    >> RRMoCItemForgeTag%class%.java
+ECHO     {                                                                                    >> RRMoCItemForgeTag%class%.java
+ECHO         super(Tags.Items.%id%);                                                          >> RRMoCItemForgeTag%class%.java
+ECHO     }                                                                                    >> RRMoCItemForgeTag%class%.java
+ECHO.                                                                                         >> RRMoCItemForgeTag%class%.java
+ECHO     /**                                                                                  >> RRMoCItemForgeTag%class%.java
+ECHO      * ^<p^>                                                                             >> RRMoCItemForgeTag%class%.java
+ECHO      * The setter sets the {@link Tags.Items#%id% %name% item                            >> RRMoCItemForgeTag%class%.java
+ECHO      * Forge tag} to the below items:                                                    >> RRMoCItemForgeTag%class%.java
+ECHO      * ^</p^>                                                                            >> RRMoCItemForgeTag%class%.java
+ECHO      * ^<ul^>                                                                            >> RRMoCItemForgeTag%class%.java
+ECHO      * ^<li^>Link your items here.^</li^>                                                >> RRMoCItemForgeTag%class%.java
+ECHO      * ^</ul^>                                                                           >> RRMoCItemForgeTag%class%.java
+ECHO      */                                                                                  >> RRMoCItemForgeTag%class%.java
+ECHO     @Override                                                                            >> RRMoCItemForgeTag%class%.java
+ECHO     protected void setItemsToTag()                                                       >> RRMoCItemForgeTag%class%.java
+ECHO     {                                                                                    >> RRMoCItemForgeTag%class%.java
+ECHO         // Add here your items to this tag.                                              >> RRMoCItemForgeTag%class%.java
+ECHO         // Use ITEMS.add(item);                                                          >> RRMoCItemForgeTag%class%.java
+ECHO     }                                                                                    >> RRMoCItemForgeTag%class%.java
+ECHO }                                                                                        >> RRMoCItemForgeTag%class%.java
 
 @REM Add the Item Forge Tag in Git.
 git add RRMoCItemForgeTag%class%.java

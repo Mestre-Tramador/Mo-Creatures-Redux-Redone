@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Scroll - Freedom item.                                          
  *                                                                                   
- * @version 0.0.27                                                                
+ * @version 0.028                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemScrollFreedom extends RRMoCItem                                      

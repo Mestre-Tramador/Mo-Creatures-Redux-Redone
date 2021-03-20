@@ -5,15 +5,15 @@ import mestretramador.rrmocreatures.init.RegisterBlock;
 import mestretramador.rrmocreatures.util.Tags;                                        
                                                                                       
 /**                                                                                   
- * Mo'Creatures Redux&Redone Ogre Lair's Dirt Tag's Blocks.                                   
+ * Mo'Creatures Redux&Redone Ogre Lair Dirt Tag's Blocks.                                   
  *                                                                                    
- * @version 0.0.27                                                                 
+ * @version 0.028                                                                 
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                   
  */                                                                                   
 public class RRMoCBlockTagOgreLairDirt extends RRMoCBlockTagProvider                       
 {                                                                                     
     /**                                                                               
-     * Using the parent constructor, creates the Ogre Lair's Dirt tag.                          
+     * Using the parent constructor, creates the Ogre Lair Dirt tag.                          
      */                                                                               
     public RRMoCBlockTagOgreLairDirt()                                                     
     {                                                                                 
@@ -22,7 +22,7 @@ public class RRMoCBlockTagOgreLairDirt extends RRMoCBlockTagProvider
                                                                                       
     /**                                                                               
      * <p>                                                                          
-     * The setter sets the {@link Tags.Blocks#OGRE_LAIR_DIRT Ogre Lair's Dirt block                       
+     * The setter sets the {@link Tags.Blocks#OGRE_LAIR_DIRT Ogre Lair Dirt block                       
      * tag} to the below blocks:                                                      
      * </p>                                                                         
      * <ul>                                                                         

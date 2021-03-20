@@ -4,15 +4,15 @@ import mestretramador.rrmocreatures.data.common.provider.tags.block.RRMoCBlockIt
 import mestretramador.rrmocreatures.util.Tags;                                            
                                                                                           
 /**                                                                                       
- * Mo'Creatures Redux&Redone Ogre Lair's Stone Tag's BlockItems.                                   
+ * Mo'Creatures Redux&Redone Ogre Lair Stone Tag's BlockItems.                                   
  *                                                                                        
- * @version 0.0.27                                                                     
+ * @version 0.028                                                                     
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                       
  */                                                                                       
 public class RRMoCBlockItemTagOgreLairStone extends RRMoCBlockItemTagProvider                   
 {                                                                                         
     /**                                                                                   
-     * Using the parent constructor, creates the Ogre Lair's Stone tag.                              
+     * Using the parent constructor, creates the Ogre Lair Stone tag.                              
      */                                                                                   
     public RRMoCBlockItemTagOgreLairStone()                                                     
     {                                                                                     

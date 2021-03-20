@@ -1,6 +1,6 @@
 package mestretramador.rrmocreatures.item;
 
-import mestretramador.rrmocreatures.model.item.RRMoCItemFoodModel;
+import mestretramador.rrmocreatures.model.item.RRMoCSoupItemModel;
 import mestretramador.rrmocreatures.provider.item.RRMoCItemProviderTurtleCookedSoup;
 import mestretramador.rrmocreatures.util.Constants;                                  
                                                                                      
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Turtle Soup item.                                          
  *                                                                                   
- * @version 0.0.27                                                                
+ * @version 0.028                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemTurtleCookedSoup extends RRMoCItem                                      
@@ -38,6 +38,6 @@ public class RRMoCItemTurtleCookedSoup extends RRMoCItem
    @Override                                                                         
    protected void createItem()                                                       
    {                                                                                 
-       setItem(new RRMoCItemFoodModel(((RRMoCItemProviderTurtleCookedSoup) provider).provideProperties())); 
+       setItem(new RRMoCSoupItemModel(((RRMoCItemProviderTurtleCookedSoup) provider).provideProperties())); 
    }                                                                                 
 }                                                                                    

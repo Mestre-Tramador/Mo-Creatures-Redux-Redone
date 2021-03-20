@@ -1,3 +1,24 @@
+[0.0.28]
+- Improved Gradle Properties usage.
+- Updated Forge to v36.1.0.
+- Updated Minecraft to v1.16.5.
+- Updated dist JSON.
+- Added Mezz's JEI to improve development of the mod.
+- Create "recipe" packages for Recipes Data Generation.
+- Created Shapeless Recipes Data Generation classes and methods.
+- Created Tags for Ogre Lair Planks and Wyvern Lair Planks.
+- Append Ogre Lair Planks and Wyvern Lair Planks' Tags to the Vanilla Planks Tag.
+- Create Shapeless Recipes for Planks.
+- Create Shapeless Recipes for Scrolls.
+- Create Shapeless Recipes for Kitty Food.
+- Create Shapeless Recipe for Turtle Soup.
+- Generated Data for all implemented recipes.
+- Created Soup Item Model.
+- Fixed Providers paths of some tools.
+- Improved JavaDoc.
+- Improved README MarkDown.
+- Issue #2 not fixed [https://github.com/Mestre-Tramador/Mo-Creatures-Redux-Redone/issues/2].
+
 [0.0.27]
 - Created "loot" packages for Loot Table Data Generation.
 - Created Block Loot Tables Provider Class for the Data Generation.

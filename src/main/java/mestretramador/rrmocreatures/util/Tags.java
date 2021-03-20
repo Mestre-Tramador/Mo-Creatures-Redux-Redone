@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Tags class to use generally and in the Data Generation.
  * 
- * @version 0.0.27
+ * @version 0.028
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Tags
@@ -51,7 +51,7 @@ public final class Tags
         public static final ITag.INamedTag<Item> MATERIALS_TUSK = rrmocreatures(Group.MATERIALS + SubGroup.TUSK);
 
         /**
-         * <p> <b>Ogre Lair's Dirt</b> Tag. </p>
+         * <p> <b>Ogre Lair Dirt</b> Tag. </p>
          * <p> This tag groups all accept Ogre Lair dirt block items. </p>
          * @see Group#OGRE_LAIR Ogre Lair Group
          * @see SubGroup#DIRT Dirt SubGroup
@@ -59,7 +59,7 @@ public final class Tags
         public static final ITag.INamedTag<Item> OGRE_LAIR_DIRT = rrmocreatures(Group.OGRE_LAIR + SubGroup.DIRT);
 
         /**
-         * <p> <b>Ogre Lair's Logs</b> Tag. </p>
+         * <p> <b>Ogre Lair Logs</b> Tag. </p>
          * <p> This tag groups all accept Ogre Lair unique logs block items. </p>
          * @see Group#OGRE_LAIR Ogre Lair Group
          * @see SubGroup#LOGS Logs SubGroup
@@ -67,7 +67,15 @@ public final class Tags
         public static final ITag.INamedTag<Item> OGRE_LAIR_LOGS = rrmocreatures(Group.OGRE_LAIR + SubGroup.LOGS);
 
         /**
-         * <p> <b>Ogre Lair's Stone</b> Tag. </p>
+         * <p> <b>Ogre Lair Planks</b> Tag. </p>
+         * <p> This tag groups all accept Ogre Lair unique planks block items. </p>
+         * @see Group#OGRE_LAIR Ogre Lair Group
+         * @see SubGroup#PLANKS Planks SubGroup
+         */
+        public static final ITag.INamedTag<Item> OGRE_LAIR_PLANKS = rrmocreatures(Group.OGRE_LAIR + SubGroup.PLANKS);
+
+        /**
+         * <p> <b>Ogre Lair Stone</b> Tag. </p>
          * <p> This tag groups all accept Ogre Lair stone block items. </p>
          * @see Group#OGRE_LAIR Ogre Lair Group
          * @see SubGroup#STONE Stone SubGroup
@@ -115,7 +123,7 @@ public final class Tags
         public static final ITag.INamedTag<Item> WEREABLES_STORAGE = rrmocreatures(Group.WEREABLES + SubGroup.STORAGE);
 
         /**
-         * <p> <b>Wyvern Lair's Dirt</b> Tag. </p>
+         * <p> <b>Wyvern Lair Dirt</b> Tag. </p>
          * <p> This tag groups all accept Wyvern Lair dirt block items. </p>
          * @see Group#WYVERN_LAIR Wyvern Lair Group
          * @see SubGroup#DIRT Dirt SubGroup
@@ -123,7 +131,7 @@ public final class Tags
         public static final ITag.INamedTag<Item> WYVERN_LAIR_DIRT = rrmocreatures(Group.WYVERN_LAIR + SubGroup.DIRT);
 
         /**
-         * <p> <b>Wyvern Lair's Logs</b> Tag. </p>
+         * <p> <b>Wyvern Lair Logs</b> Tag. </p>
          * <p> This tag groups all accept Wyvern Lair unique logs block items. </p>
          * @see Group#WYVERN_LAIR Wyvern Lair Group
          * @see SubGroup#LOGS Logs SubGroup
@@ -131,7 +139,15 @@ public final class Tags
         public static final ITag.INamedTag<Item> WYVERN_LAIR_LOGS = rrmocreatures(Group.WYVERN_LAIR + SubGroup.LOGS);
 
         /**
-         * <p> <b>Wyvern Lair's Stone</b> Tag. </p>
+         * <p> <b>Wyvern Lair Planks</b> Tag. </p>
+         * <p> This tag groups all accept Wyvern Lair unique planks block items. </p>
+         * @see Group#WYVERN_LAIR Wyvern Lair Group
+         * @see SubGroup#PLANKS Planks SubGroup
+         */
+        public static final ITag.INamedTag<Item> WYVERN_LAIR_PLANKS = rrmocreatures(Group.WYVERN_LAIR + SubGroup.PLANKS);
+
+        /**
+         * <p> <b>Wyvern Lair Stone</b> Tag. </p>
          * <p> This tag groups all accept Wyvern Lair stone block items. </p>
          * @see Group#WYVERN_LAIR Wyvern Lair Group
          * @see SubGroup#STONE Stone SubGroup
@@ -166,7 +182,7 @@ public final class Tags
     public static final class Blocks
     {
         /**
-         * <p> <b>Ogre Lair's Dirt</b> Tag. </p>
+         * <p> <b>Ogre Lair Dirt</b> Tag. </p>
          * <p> This tag groups all accept Ogre Lair dirt blocks. </p>
          * @see Group#OGRE_LAIR Ogre Lair Group
          * @see SubGroup#DIRT Dirt SubGroup
@@ -174,15 +190,7 @@ public final class Tags
         public static final ITag.INamedTag<Block> OGRE_LAIR_DIRT = rrmocreatures(Group.OGRE_LAIR + SubGroup.DIRT);
 
         /**
-         * <p> <b>Ogre Lair's Stone</b> Tag. </p>
-         * <p> This tag groups all accept Ogre Lair stone blocks. </p>
-         * @see Group#OGRE_LAIR Ogre Lair Group
-         * @see SubGroup#STONE Stone SubGroup
-         */
-        public static final ITag.INamedTag<Block> OGRE_LAIR_STONE = rrmocreatures(Group.OGRE_LAIR + SubGroup.STONE);
-
-        /**
-         * <p> <b>Ogre Lair's Logs</b> Tag. </p>
+         * <p> <b>Ogre Lair Logs</b> Tag. </p>
          * <p> This tag groups all accept Ogre Lair unique logs block items. </p>
          * @see Group#OGRE_LAIR Ogre Lair Group
          * @see SubGroup#LOGS Logs SubGroup
@@ -190,7 +198,23 @@ public final class Tags
         public static final ITag.INamedTag<Block> OGRE_LAIR_LOGS = rrmocreatures(Group.OGRE_LAIR + SubGroup.LOGS);
 
         /**
-         * <p> <b>Wyvern Lair's Dirt</b> Tag. </p>
+         * <p> <b>Ogre Lair Planks</b> Tag. </p>
+         * <p> This tag groups all accept Ogre Lair unique planks block items. </p>
+         * @see Group#OGRE_LAIR Ogre Lair Group
+         * @see SubGroup#PLANKS Planks SubGroup
+         */
+        public static final ITag.INamedTag<Block> OGRE_LAIR_PLANKS = rrmocreatures(Group.OGRE_LAIR + SubGroup.PLANKS);
+
+        /**
+         * <p> <b>Ogre Lair Stone</b> Tag. </p>
+         * <p> This tag groups all accept Ogre Lair stone blocks. </p>
+         * @see Group#OGRE_LAIR Ogre Lair Group
+         * @see SubGroup#STONE Stone SubGroup
+         */
+        public static final ITag.INamedTag<Block> OGRE_LAIR_STONE = rrmocreatures(Group.OGRE_LAIR + SubGroup.STONE);        
+
+        /**
+         * <p> <b>Wyvern Lair Dirt</b> Tag. </p>
          * <p> This tag groups all accept Wyvern Lair dirt blocks. </p>
          * @see Group#WYVERN_LAIR Wyvern Lair Group
          * @see SubGroup#DIRT Dirt SubGroup
@@ -198,20 +222,28 @@ public final class Tags
         public static final ITag.INamedTag<Block> WYVERN_LAIR_DIRT = rrmocreatures(Group.WYVERN_LAIR + SubGroup.DIRT);
 
         /**
-         * <p> <b>Wyvern Lair's Stone</b> Tag. </p>
-         * <p> This tag groups all accept Wyvern Lair stone blocks. </p>
-         * @see Group#WYVERN_LAIR Wyvern Lair Group
-         * @see SubGroup#STONE Stone SubGroup
-         */
-        public static final ITag.INamedTag<Block> WYVERN_LAIR_STONE = rrmocreatures(Group.WYVERN_LAIR + SubGroup.STONE);
-
-        /**
-         * <p> <b>Wyvern Lair's Logs</b> Tag. </p>
+         * <p> <b>Wyvern Lair Logs</b> Tag. </p>
          * <p> This tag groups all accept Wyvern Lair unique logs block items. </p>
          * @see Group#WYVERN_LAIR Wyvern Lair Group
          * @see SubGroup#LOGS Logs SubGroup
          */
         public static final ITag.INamedTag<Block> WYVERN_LAIR_LOGS = rrmocreatures(Group.WYVERN_LAIR + SubGroup.LOGS);
+
+        /**
+         * <p> <b>Wyvern Lair Planks</b> Tag. </p>
+         * <p> This tag groups all accept Wyvern Lair unique planks block items. </p>
+         * @see Group#WYVERN_LAIR Wyvern Lair Group
+         * @see SubGroup#PLANKS Planks SubGroup
+         */
+        public static final ITag.INamedTag<Block> WYVERN_LAIR_PLANKS = rrmocreatures(Group.WYVERN_LAIR + SubGroup.PLANKS);
+        
+        /**
+         * <p> <b>Wyvern Lair Stone</b> Tag. </p>
+         * <p> This tag groups all accept Wyvern Lair stone blocks. </p>
+         * @see Group#WYVERN_LAIR Wyvern Lair Group
+         * @see SubGroup#STONE Stone SubGroup
+         */
+        public static final ITag.INamedTag<Block> WYVERN_LAIR_STONE = rrmocreatures(Group.WYVERN_LAIR + SubGroup.STONE);
 
         /**
          * Helper method to create a tag for Forge.
@@ -312,6 +344,7 @@ public final class Tags
          * <p> <b>Dirt</b> SubGroup. </p>
          * <p> This subgroup defines if a block corresponds or is related to general earth types. </p>
          * <ul>
+         * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#OGRE_LAIR Ogre Lair}</b> group. </li>
          * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#WYVERN_LAIR Wyvern Lair}</b> group. </li>
          * </ul>
          */
@@ -321,10 +354,21 @@ public final class Tags
          * <p> <b>Logs</b> SubGroup. </p>
          * <p> This subgroup defines if a block corresponds or is related to general wood logs types. </p>
          * <ul>
+         * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#OGRE_LAIR Ogre Lair}</b> group. </li>
          * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#WYVERN_LAIR Wyvern Lair}</b> group. </li>
          * </ul>
          */
         private static final String LOGS = "/logs";
+
+        /**
+         * <p> <b>Planks</b> SubGroup. </p>
+         * <p> This subgroup defines if a block corresponds or is related to general wood planks types. </p>
+         * <ul>
+         * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#OGRE_LAIR Ogre Lair}</b> group. </li>
+         * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#WYVERN_LAIR Wyvern Lair}</b> group. </li>
+         * </ul>
+         */
+        private static final String PLANKS = "/planks";
 
         /**
          * <p> <b>Protect</b> SubGroup. </p>
@@ -357,6 +401,7 @@ public final class Tags
          * <p> <b>Stone</b> SubGroup. </p>
          * <p> This subgroup defines if a block corresponds or is related to general rock types. </p>
          * <ul>
+         * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#OGRE_LAIR Ogre Lair}</b> group. </li>
          * <li> This subgroup is appended to the <b>{@link mestretramador.rrmocreatures.util.Tags.Group#WYVERN_LAIR Wyvern Lair}</b> group. </li>
          * </ul>
          */

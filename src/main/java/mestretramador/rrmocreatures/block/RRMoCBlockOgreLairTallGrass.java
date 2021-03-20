@@ -12,7 +12,7 @@ import net.minecraft.item.BlockItem;
 /**                                                                                                                
  * Mo'Creatures Redux&Redone Ogre Lair Tall Grass block and block item.                                                        
  *                                                                                                                 
- * @version 0.0.27                                                                                              
+ * @version 0.028                                                                                              
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                                
  */                                                                                                                
 public class RRMoCBlockOgreLairTallGrass extends RRMoCBlock implements RRMoCBlockItem                                        

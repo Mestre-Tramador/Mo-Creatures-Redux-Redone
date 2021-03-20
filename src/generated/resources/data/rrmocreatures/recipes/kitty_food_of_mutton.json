@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kitty_foods",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:cooked_mutton"
+    },
+    {
+      "item": "minecraft:cooked_mutton"
+    }
+  ],
+  "result": {
+    "item": "rrmocreatures:kitty_food",
+    "count": 3
+  }
+}

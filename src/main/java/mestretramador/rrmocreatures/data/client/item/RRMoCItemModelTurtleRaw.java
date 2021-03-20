@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Raw Turtle item model.                                                        
  *                                                                                                       
- * @version 0.0.27                                                                                    
+ * @version 0.028                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelTurtleRaw extends RRMoCItemModelProvider                                        

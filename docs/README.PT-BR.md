@@ -3,16 +3,14 @@
 
 # Mo'Creatures Redux&Redone
 
----
+![Versão Atual 0.028](./assets/bdg_pt_br_version.svg)
+![Minecraft 1.16.5](./assets/bdg_mc_version.svg)
+![CurseForge 36.1.0](./assets/bdg_forge_version.svg)
 
 **Leia também em:** [English](./README.md), [Español](./README.ES.md)
 
 Mo'Creatures Redux&Redone é em primeira mão uma tentativa de trazer Mo'Creatures de DrZhark à vida de novo, mas com algumas diferenças.
 Este é meu primeiro mod de todos pra Minecraft, mas não menos que uma honra tentar continuar um trabalho tão bom.
-
-|  Versão Atual   |
-| --------------  |
-|      0.0.27     |
 
 # Introdução
 

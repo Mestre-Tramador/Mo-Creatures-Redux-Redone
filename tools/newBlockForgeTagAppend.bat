@@ -7,7 +7,7 @@
 @REM ########################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -48,27 +48,27 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the Block Append Forge Tag.
-ECHO package mestretramador.rrmocreatures.data.common.tags.block;                                >> RRMoCBlockForgeTagAppend%class%.java
-ECHO.                                                                                            >> RRMoCBlockForgeTagAppend%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.block.RRMoCBlockTagAppendProvider; >> RRMoCBlockForgeTagAppend%class%.java
-ECHO import mestretramador.rrmocreatures.util.Tags;                                              >> RRMoCBlockForgeTagAppend%class%.java
-ECHO.                                                                                            >> RRMoCBlockForgeTagAppend%class%.java
-ECHO /**                                                                                         >> RRMoCBlockForgeTagAppend%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag Append's.                                   >> RRMoCBlockForgeTagAppend%class%.java
-ECHO  *                                                                                          >> RRMoCBlockForgeTagAppend%class%.java
-ECHO  * @version %version%                                                                       >> RRMoCBlockForgeTagAppend%class%.java
-ECHO  * @author %author%                                                                         >> RRMoCBlockForgeTagAppend%class%.java
-ECHO  */                                                                                         >> RRMoCBlockForgeTagAppend%class%.java
-ECHO public class RRMoCBlockForgeTagAppend%class% extends RRMoCBlockTagAppendProvider            >> RRMoCBlockForgeTagAppend%class%.java
-ECHO {                                                                                           >> RRMoCBlockForgeTagAppend%class%.java
-ECHO     /**                                                                                     >> RRMoCBlockForgeTagAppend%class%.java
-ECHO      * Using the parent constructor, appends the %name% tag.                                >> RRMoCBlockForgeTagAppend%class%.java
-ECHO      */                                                                                     >> RRMoCBlockForgeTagAppend%class%.java
-ECHO     public RRMoCBlockForgeTagAppend%class%()                                                >> RRMoCBlockForgeTagAppend%class%.java
-ECHO     {                                                                                       >> RRMoCBlockForgeTagAppend%class%.java
-ECHO         super(net.minecraftforge.common.Tags.Blocks.%fid%, Tags.Blocks.%id%);               >> RRMoCBlockForgeTagAppend%class%.java
-ECHO     }                                                                                       >> RRMoCBlockForgeTagAppend%class%.java
-ECHO }                                                                                           >> RRMoCBlockForgeTagAppend%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.block;                                     >> RRMoCBlockForgeTagAppend%class%.java
+ECHO.                                                                                                 >> RRMoCBlockForgeTagAppend%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.block.RRMoCBlockTagAppendProvider; >> RRMoCBlockForgeTagAppend%class%.java
+ECHO import mestretramador.rrmocreatures.util.Tags;                                                   >> RRMoCBlockForgeTagAppend%class%.java
+ECHO.                                                                                                 >> RRMoCBlockForgeTagAppend%class%.java
+ECHO /**                                                                                              >> RRMoCBlockForgeTagAppend%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Forge Tag Append's.                                        >> RRMoCBlockForgeTagAppend%class%.java
+ECHO  *                                                                                               >> RRMoCBlockForgeTagAppend%class%.java
+ECHO  * @version %version%                                                                            >> RRMoCBlockForgeTagAppend%class%.java
+ECHO  * @author %author%                                                                              >> RRMoCBlockForgeTagAppend%class%.java
+ECHO  */                                                                                              >> RRMoCBlockForgeTagAppend%class%.java
+ECHO public class RRMoCBlockForgeTagAppend%class% extends RRMoCBlockTagAppendProvider                 >> RRMoCBlockForgeTagAppend%class%.java
+ECHO {                                                                                                >> RRMoCBlockForgeTagAppend%class%.java
+ECHO     /**                                                                                          >> RRMoCBlockForgeTagAppend%class%.java
+ECHO      * Using the parent constructor, appends the %name% tag.                                     >> RRMoCBlockForgeTagAppend%class%.java
+ECHO      */                                                                                          >> RRMoCBlockForgeTagAppend%class%.java
+ECHO     public RRMoCBlockForgeTagAppend%class%()                                                     >> RRMoCBlockForgeTagAppend%class%.java
+ECHO     {                                                                                            >> RRMoCBlockForgeTagAppend%class%.java
+ECHO         super(net.minecraftforge.common.Tags.Blocks.%fid%, Tags.Blocks.%id%);                    >> RRMoCBlockForgeTagAppend%class%.java
+ECHO     }                                                                                            >> RRMoCBlockForgeTagAppend%class%.java
+ECHO }                                                                                                >> RRMoCBlockForgeTagAppend%class%.java
 
 @REM Add the Block Forge Tag Append in Git.
 git add RRMoCBlockForgeTagAppend%class%.java

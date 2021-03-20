@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Sugar Lumps item.                                          
  *                                                                                   
- * @version 0.0.27                                                                
+ * @version 0.028                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCItemSugarLump extends RRMoCItem                                      

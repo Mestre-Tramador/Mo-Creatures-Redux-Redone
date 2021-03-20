@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "rrmocreatures:scroll_owner"
+    ]
+  },
+  "criteria": {
+    "has_scroll_paper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "rrmocreatures:scroll_blank"
+          }
+        ]
+      }
+    },
+    "has_quill": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:feather"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "rrmocreatures:scroll_owner"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_scroll_paper",
+      "has_quill",
+      "has_the_recipe"
+    ]
+  ]
+}

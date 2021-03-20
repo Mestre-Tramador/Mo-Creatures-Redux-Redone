@@ -4,14 +4,13 @@ import mestretramador.rrmocreatures.util.Constants;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.world.World;
 
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} with
  * {@link net.minecraft.item.Food Food} properties or uses.
  * 
- * @version 0.0.27
+ * @version 0.028
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemFoodModel extends RRMoCItemModel
@@ -51,11 +50,6 @@ public class RRMoCItemFoodModel extends RRMoCItemModel
 
         switch(stack.getItem().getRegistryName().toString())
         {
-            // ? When eating a Turtle Soup, the bowl is returned.
-            case (PREFIX + Constants.Items.TURTLE_COOKED_SOUP):
-                super.onItemUseFinish(stack, worldIn, entityLiving);
-            return new ItemStack(Items.BOWL);
-
             // ? When eating a Heart of Fire, set the player on fire.
             case (PREFIX + Constants.Items.HEART_FIRE):
                 entityLiving.setFire(400);

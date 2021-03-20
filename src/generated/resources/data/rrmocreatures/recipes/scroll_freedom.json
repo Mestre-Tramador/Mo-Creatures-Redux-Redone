@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "scrolls",
+  "ingredients": [
+    {
+      "item": "rrmocreatures:scroll_owner"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "minecraft:feather"
+    }
+  ],
+  "result": {
+    "item": "rrmocreatures:scroll_freedom"
+  }
+}

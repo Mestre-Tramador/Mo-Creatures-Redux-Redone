@@ -5,15 +5,15 @@ import mestretramador.rrmocreatures.init.RegisterBlock;
 import mestretramador.rrmocreatures.util.Tags;                                        
                                                                                       
 /**                                                                                   
- * Mo'Creatures Redux&Redone Ogre Lair's Stone Tag's Blocks.                                   
+ * Mo'Creatures Redux&Redone Ogre Lair Stone Tag's Blocks.                                   
  *                                                                                    
- * @version 0.0.27                                                                 
+ * @version 0.028                                                                 
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                   
  */                                                                                   
 public class RRMoCBlockTagOgreLairStone extends RRMoCBlockTagProvider                       
 {                                                                                     
     /**                                                                               
-     * Using the parent constructor, creates the Ogre Lair's Stone tag.                          
+     * Using the parent constructor, creates the Ogre Lair Stone tag.                          
      */                                                                               
     public RRMoCBlockTagOgreLairStone()                                                     
     {                                                                                 
@@ -22,7 +22,7 @@ public class RRMoCBlockTagOgreLairStone extends RRMoCBlockTagProvider
                                                                                       
     /**                                                                               
      * <p>                                                                          
-     * The setter sets the {@link Tags.Blocks#OGRE_LAIR_STONE Ogre Lair's Stone block                       
+     * The setter sets the {@link Tags.Blocks#OGRE_LAIR_STONE Ogre Lair Stone block                       
      * tag} to the below blocks:                                                      
      * </p>                                                                         
      * <ul>                                                                         

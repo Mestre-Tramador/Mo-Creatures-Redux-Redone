@@ -7,7 +7,7 @@
 @REM ##########################################################################
 
 @REM Gloval variables.
-@SET version=0.0.27
+@SET version=0.028
 @SET author=Eduardo de Oliveira Rosa, Mestre Tramador.
 
 
@@ -48,29 +48,29 @@ IF ["%name%"] == [] EXIT 1
 CD %tagdir%
 
 @REM Create the Item Vanilla Tag Append.
-ECHO package mestretramador.rrmocreatures.data.common.tags.item;                               >> RRMoCItemVanillaTagAppend%class%.java
-ECHO.                                                                                          >> RRMoCItemVanillaTagAppend%class%.java
-ECHO import mestretramador.rrmocreatures.data.common.provider.item.RRMoCItemTagAppendProvider; >> RRMoCItemVanillaTagAppend%class%.java
-ECHO import mestretramador.rrmocreatures.util.Tags;                                            >> RRMoCItemVanillaTagAppend%class%.java
-ECHO.                                                                                          >> RRMoCItemVanillaTagAppend%class%.java
-ECHO import net.minecraft.tags.ItemTags;                                                       >> RRMoCItemVanillaTagAppend%class%.java
-ECHO.                                                                                          >> RRMoCItemVanillaTagAppend%class%.java
-ECHO /**                                                                                       >> RRMoCItemVanillaTagAppend%class%.java
-ECHO  * Mo^'Creatures Redux^&Redone %name% Minecraft Tag Append's.                             >> RRMoCItemVanillaTagAppend%class%.java
-ECHO  *                                                                                        >> RRMoCItemVanillaTagAppend%class%.java
-ECHO  * @version %version%                                                                     >> RRMoCItemVanillaTagAppend%class%.java
-ECHO  * @author %author%                                                                       >> RRMoCItemVanillaTagAppend%class%.java
-ECHO  */                                                                                       >> RRMoCItemVanillaTagAppend%class%.java
-ECHO public class RRMoCItemVanillaTagAppend%class% extends RRMoCItemTagAppendProvider          >> RRMoCItemVanillaTagAppend%class%.java
-ECHO {                                                                                         >> RRMoCItemVanillaTagAppend%class%.java
-ECHO     /**                                                                                   >> RRMoCItemVanillaTagAppend%class%.java
-ECHO      * Using the parent constructor, appends the %name% tag.                              >> RRMoCItemVanillaTagAppend%class%.java
-ECHO      */                                                                                   >> RRMoCItemVanillaTagAppend%class%.java
-ECHO     public RRMoCItemVanillaTagAppend%class%()                                             >> RRMoCItemVanillaTagAppend%class%.java
-ECHO     {                                                                                     >> RRMoCItemVanillaTagAppend%class%.java
-ECHO         super(ItemTags.%fid%, Tags.Items.%id%);                                           >> RRMoCItemVanillaTagAppend%class%.java
-ECHO     }                                                                                     >> RRMoCItemVanillaTagAppend%class%.java
-ECHO }                                                                                         >> RRMoCItemVanillaTagAppend%class%.java
+ECHO package mestretramador.rrmocreatures.data.common.tags.item;                                    >> RRMoCItemVanillaTagAppend%class%.java
+ECHO.                                                                                               >> RRMoCItemVanillaTagAppend%class%.java
+ECHO import mestretramador.rrmocreatures.data.common.provider.tags.item.RRMoCItemTagAppendProvider; >> RRMoCItemVanillaTagAppend%class%.java
+ECHO import mestretramador.rrmocreatures.util.Tags;                                                 >> RRMoCItemVanillaTagAppend%class%.java
+ECHO.                                                                                               >> RRMoCItemVanillaTagAppend%class%.java
+ECHO import net.minecraft.tags.ItemTags;                                                            >> RRMoCItemVanillaTagAppend%class%.java
+ECHO.                                                                                               >> RRMoCItemVanillaTagAppend%class%.java
+ECHO /**                                                                                            >> RRMoCItemVanillaTagAppend%class%.java
+ECHO  * Mo^'Creatures Redux^&Redone %name% Minecraft Tag Append's.                                  >> RRMoCItemVanillaTagAppend%class%.java
+ECHO  *                                                                                             >> RRMoCItemVanillaTagAppend%class%.java
+ECHO  * @version %version%                                                                          >> RRMoCItemVanillaTagAppend%class%.java
+ECHO  * @author %author%                                                                            >> RRMoCItemVanillaTagAppend%class%.java
+ECHO  */                                                                                            >> RRMoCItemVanillaTagAppend%class%.java
+ECHO public class RRMoCItemVanillaTagAppend%class% extends RRMoCItemTagAppendProvider               >> RRMoCItemVanillaTagAppend%class%.java
+ECHO {                                                                                              >> RRMoCItemVanillaTagAppend%class%.java
+ECHO     /**                                                                                        >> RRMoCItemVanillaTagAppend%class%.java
+ECHO      * Using the parent constructor, appends the %name% tag.                                   >> RRMoCItemVanillaTagAppend%class%.java
+ECHO      */                                                                                        >> RRMoCItemVanillaTagAppend%class%.java
+ECHO     public RRMoCItemVanillaTagAppend%class%()                                                  >> RRMoCItemVanillaTagAppend%class%.java
+ECHO     {                                                                                          >> RRMoCItemVanillaTagAppend%class%.java
+ECHO         super(ItemTags.%fid%, Tags.Items.%id%);                                                >> RRMoCItemVanillaTagAppend%class%.java
+ECHO     }                                                                                          >> RRMoCItemVanillaTagAppend%class%.java
+ECHO }                                                                                              >> RRMoCItemVanillaTagAppend%class%.java
 
 @REM Add the Item Vanilla Tag Append in Git.
 git add RRMoCItemVanillaTagAppend%class%.java

@@ -6,15 +6,15 @@ import mestretramador.rrmocreatures.util.Tags;
 import net.minecraft.tags.ItemTags;                                                       
                                                                                           
 /**                                                                                       
- * Mo'Creatures Redux&Redone Wyvern Lair's Logs Minecraft Tag Append's.                             
+ * Mo'Creatures Redux&Redone Wyvern Lair Logs Minecraft Tag Append's.                             
  *                                                                                        
- * @version 0.0.27                                                                     
+ * @version 0.028                                                                     
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                       
  */                                                                                       
 public class RRMoCItemVanillaTagAppendWyvernLairLogsThatBurn extends RRMoCItemTagAppendProvider          
 {                                                                                         
     /**                                                                                   
-     * Using the parent constructor, appends the Wyvern Lair's Logs tag.                              
+     * Using the parent constructor, appends the Wyvern Lair Logs tag.                              
      */                                                                                   
     public RRMoCItemVanillaTagAppendWyvernLairLogsThatBurn()                                             
     {                                                                                     
