@@ -1,3 +1,15 @@
+[0.0.29]
+- Created Shaped Recipes for Amulets.
+- Created Shaped Recipes for Armors.
+- Created Shaped Recipes for Covered Items with Weights.
+- Created Shaped Recipes for Diagonal Items with Two Subitems.
+- Created Shaped Recipes for Elephant Tusks.
+- Created Shaped Recipes for Colored Kitty Beds.
+- Created Shaped Recipes for Handmade Mount Armors.
+- Created Tags for Leads and Chests.
+- Generated Data for all implemented recipes.
+- Issue #2 apparently fixed [https://github.com/Mestre-Tramador/Mo-Creatures-Redux-Redone/issues/2].
+
 [0.0.28]
 - Improved Gradle Properties usage.
 - Updated Forge to v36.1.0.

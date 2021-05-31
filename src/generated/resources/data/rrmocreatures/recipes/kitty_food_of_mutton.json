@@ -12,13 +12,13 @@
       "item": "minecraft:wheat"
     },
     {
+      "item": "minecraft:cooked_mutton"
+    },
+    {
+      "item": "minecraft:cooked_mutton"
+    },
+    {
       "item": "minecraft:carrot"
-    },
-    {
-      "item": "minecraft:cooked_mutton"
-    },
-    {
-      "item": "minecraft:cooked_mutton"
     }
   ],
   "result": {

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fur_chest",
+  "pattern": [
+    "C C",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "rrmocreatures:fur"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:fur_chest"
+  }
+}

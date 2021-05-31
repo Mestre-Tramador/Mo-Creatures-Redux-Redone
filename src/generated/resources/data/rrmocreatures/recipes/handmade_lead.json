@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "handmade_lead",
+  "pattern": [
+    "++ ",
+    "++ ",
+    "  +"
+  ],
+  "key": {
+    "+": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:handmade_lead"
+  }
+}

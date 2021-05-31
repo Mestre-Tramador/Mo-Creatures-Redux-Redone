@@ -12,7 +12,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**                                                                                                      
  * Mo'Creatures Redux&Redone Guardian Amulet item model.                                                        
  *                                                                                                       
- * @version 0.028                                                                                    
+ * @version 0.0.29                                                                                    
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                                      
  */                                                                                                      
 public class RRMoCItemModelAmuletGuardian extends RRMoCItemModelProvider                                        

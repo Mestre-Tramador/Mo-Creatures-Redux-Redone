@@ -8,7 +8,7 @@ import net.minecraft.tags.BlockTags;
 /**                                                                                         
  * Mo'Creatures Redux&Redone Wyvern Lair Logs Minecraft Tag Append's.                               
  *                                                                                          
- * @version 0.028                                                                       
+ * @version 0.0.29                                                                       
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                         
  */                                                                                         
 public class RRMoCBlockVanillaTagAppendWyvernLairLogsThatBurn extends RRMoCBlockTagAppendProvider          

@@ -13,7 +13,7 @@ import net.minecraftforge.common.ToolType;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Ogre Lair Dirt block item provider.                           
  *                                                                                   
- * @version 0.028                                                                
+ * @version 0.0.29                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderOgreLairDirt extends RRMoCBlockItemProvider            

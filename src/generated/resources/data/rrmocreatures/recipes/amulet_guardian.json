@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "amulets",
+  "pattern": [
+    ". .",
+    " O ",
+    " . "
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:diamond"
+    },
+    ".": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:amulet_guardian"
+  }
+}

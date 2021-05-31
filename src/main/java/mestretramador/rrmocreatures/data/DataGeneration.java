@@ -167,6 +167,7 @@ import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelUnicornHorn;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWhip;
 import mestretramador.rrmocreatures.data.client.item.RRMoCItemModelWyvernLairTallGrass;
 import mestretramador.rrmocreatures.data.common.loot.RRMoCLootTablesGeneration;
+import mestretramador.rrmocreatures.data.common.recipes.RRMoCShapedRecipeGeneration;
 import mestretramador.rrmocreatures.data.common.recipes.RRMoCShapelessRecipeGeneration;
 import mestretramador.rrmocreatures.data.common.tags.RRMoCBlockTagsGeneration;
 import mestretramador.rrmocreatures.data.common.tags.RRMoCItemTagsGeneration;
@@ -184,7 +185,7 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 /**
  * Mo'Creatures Redux&Redone Data Generators.
  * 
- * @version 0.028
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 @Mod.EventBusSubscriber(modid = Constants.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -452,6 +453,7 @@ public final class DataGeneration
     private static void gatherRecipesDataGeneration(DataGenerator generator)
     {
         generator.addProvider(new RRMoCShapelessRecipeGeneration(generator));
+        generator.addProvider(new RRMoCShapedRecipeGeneration(generator));
     }
 
     /**

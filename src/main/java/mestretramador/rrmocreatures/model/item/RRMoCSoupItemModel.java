@@ -5,7 +5,7 @@ import net.minecraft.item.SoupItem;
 /**
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.SoupItem Soup Item}.
  * 
- * @version 0.0.28
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCSoupItemModel extends SoupItem

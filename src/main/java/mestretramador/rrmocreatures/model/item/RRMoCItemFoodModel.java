@@ -10,7 +10,7 @@ import net.minecraft.world.World;
  * Mo'Creatures Redux&Redone custom {@link net.minecraft.item.Item Item} with
  * {@link net.minecraft.item.Food Food} properties or uses.
  * 
- * @version 0.028
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemFoodModel extends RRMoCItemModel

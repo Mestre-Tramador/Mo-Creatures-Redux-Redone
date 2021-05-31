@@ -10,7 +10,7 @@ import net.minecraft.item.Rarity;
 /**
  * Mo'Creatures Redux&Redone Reptile Hide Chest item provider.
  * 
- * @version 0.028
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderReptileHideChest extends RRMoCItemProvider implements RRMoCArmorItemProvider

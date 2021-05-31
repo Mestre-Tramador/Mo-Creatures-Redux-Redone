@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "elephant_tusks",
+  "pattern": [
+    "  /",
+    " /#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "/": {
+      "tag": "rrmocreatures:leads"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:elephant_tusks_iron"
+  }
+}

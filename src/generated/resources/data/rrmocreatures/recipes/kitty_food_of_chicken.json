@@ -12,13 +12,13 @@
       "item": "minecraft:wheat"
     },
     {
+      "item": "minecraft:cooked_chicken"
+    },
+    {
+      "item": "minecraft:cooked_chicken"
+    },
+    {
       "item": "minecraft:egg"
-    },
-    {
-      "item": "minecraft:cooked_chicken"
-    },
-    {
-      "item": "minecraft:cooked_chicken"
     }
   ],
   "result": {

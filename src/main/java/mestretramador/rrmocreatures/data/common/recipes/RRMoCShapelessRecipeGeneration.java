@@ -23,7 +23,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Mo'Creatures Redux&Redone Shapeless Recipes Generator.
  * 
- * @version 0.0.28
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCShapelessRecipeGeneration extends RecipeProvider

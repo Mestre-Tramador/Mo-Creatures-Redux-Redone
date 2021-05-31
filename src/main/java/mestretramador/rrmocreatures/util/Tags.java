@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Tags class to use generally and in the Data Generation.
  * 
- * @version 0.028
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public final class Tags
@@ -18,6 +18,20 @@ public final class Tags
     /** Item Tags. */
     public static final class Items
     {
+        /**
+         * <p> <b>Chests</b> Tag. </p>
+         * <p> This tag groups Chest Blocks and Handmade Saddlebags. </p>
+         * @see Group#CHESTS Chests Group
+         */
+        public static final ITag.INamedTag<Item> CHESTS = rrmocreatures(Group.CHESTS);
+
+        /**
+         * <p> <b>Leads</b> Tag. </p>
+         * <p> This tag groups Leads and Handmade Leads. </p>
+         * @see Group#LEADS Chests Group
+         */
+        public static final ITag.INamedTag<Item> LEADS = rrmocreatures(Group.LEADS);
+
         /**
          * <p> <b>Chitin Materials</b> Tag. </p>
          * <p> This tag groups Chitins as materials. </p>
@@ -273,10 +287,28 @@ public final class Tags
     private static final class Group
     {
         /**
+         * <p> <b>Chests</b> Group. </p>
+         * <p> This group defines MoCRR storage items. </p>
+         * <ul>
+         * <li> A chest serve as a container to be placed on the world or an entity. </li>
+         * </ul>
+         */
+        private static final String CHESTS = "chests";
+
+        /**
+         * <p> <b>Chests</b> Group. </p>
+         * <p> This group defines MoCRR storage items. </p>
+         * <ul>
+         * <li> A chest serve as a container to be placed on the world or an entity. </li>
+         * </ul>
+         */
+        private static final String LEADS = "leads";
+
+        /**
          * <p> <b>Materials</b> Group. </p>
          * <p> This group defines MoCRR material items. </p>
          * <ul>
-         * <li> A amterial item is an itme used majoritarily to craft others. </li>
+         * <li> A material item is an item used majoritarily to craft others. </li>
          * </ul>
          */
         private static final String MATERIALS = "materials";

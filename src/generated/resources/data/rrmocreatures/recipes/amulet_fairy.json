@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "amulets",
+  "pattern": [
+    ".|.",
+    "|O|",
+    ".|."
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:diamond"
+    },
+    ".": {
+      "item": "rrmocreatures:unicorn_horn"
+    },
+    "|": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:amulet_fairy"
+  }
+}

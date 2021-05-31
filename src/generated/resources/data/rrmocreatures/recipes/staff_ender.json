@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "staffs",
+  "pattern": [
+    "   ",
+    " S ",
+    "F  "
+  ],
+  "key": {
+    "F": {
+      "item": "rrmocreatures:staff_base"
+    },
+    "S": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:staff_ender"
+  }
+}

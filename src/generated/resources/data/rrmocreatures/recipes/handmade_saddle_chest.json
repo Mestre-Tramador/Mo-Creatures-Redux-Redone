@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "handmade_saddle_chest",
+  "pattern": [
+    "| |",
+    "#*#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "*": {
+      "item": "minecraft:iron_ingot"
+    },
+    "|": {
+      "tag": "rrmocreatures:leads"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:handmade_saddle_chest"
+  }
+}

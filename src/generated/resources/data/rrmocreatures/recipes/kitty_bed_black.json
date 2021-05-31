@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "colored_kitty_beds",
+  "pattern": [
+    "   ",
+    " _ ",
+    " u "
+  ],
+  "key": {
+    "u": {
+      "item": "rrmocreatures:kitty_bed"
+    },
+    "_": {
+      "item": "minecraft:black_carpet"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:kitty_bed_black"
+  }
+}

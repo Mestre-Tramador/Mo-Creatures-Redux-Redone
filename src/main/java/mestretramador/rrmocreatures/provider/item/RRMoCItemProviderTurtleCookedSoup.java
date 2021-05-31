@@ -9,7 +9,7 @@ import net.minecraft.item.Rarity;
 /**
  * Mo'Creatures Redux&Redone Turtle Soup item provider.
  * 
- * @version 0.028
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemProviderTurtleCookedSoup extends RRMoCItemProvider implements RRMoCItemFoodProvider

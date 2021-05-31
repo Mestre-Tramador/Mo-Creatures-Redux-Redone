@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "rrmocreatures:elephant_chest"
+    ]
+  },
+  "criteria": {
+    "has_storage": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "rrmocreatures:chests"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "rrmocreatures:elephant_chest"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_storage",
+      "has_the_recipe"
+    ]
+  ]
+}

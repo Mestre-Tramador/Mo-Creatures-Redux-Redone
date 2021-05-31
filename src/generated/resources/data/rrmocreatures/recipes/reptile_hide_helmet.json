@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "reptile_hide_helmet",
+  "pattern": [
+    "HHH",
+    "H H",
+    "   "
+  ],
+  "key": {
+    "H": {
+      "item": "rrmocreatures:reptile_hide"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:reptile_hide_helmet"
+  }
+}

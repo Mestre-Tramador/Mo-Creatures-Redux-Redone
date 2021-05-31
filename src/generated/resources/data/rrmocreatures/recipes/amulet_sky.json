@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "amulets",
+  "pattern": [
+    ".|.",
+    "|O|",
+    ".|."
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:diamond"
+    },
+    ".": {
+      "item": "minecraft:gold_ingot"
+    },
+    "|": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:amulet_sky"
+  }
+}

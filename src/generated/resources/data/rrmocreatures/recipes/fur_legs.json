@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fur_legs",
+  "pattern": [
+    "LLL",
+    "L L",
+    "L L"
+  ],
+  "key": {
+    "L": {
+      "item": "rrmocreatures:fur"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:fur_legs"
+  }
+}

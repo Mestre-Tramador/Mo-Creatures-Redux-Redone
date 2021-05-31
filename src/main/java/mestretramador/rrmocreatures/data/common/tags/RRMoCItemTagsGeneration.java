@@ -13,6 +13,8 @@ import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagWyve
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagWyvernLairLogs;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagWyvernLairPlanks;
 import mestretramador.rrmocreatures.data.common.tags.block.RRMoCBlockItemTagWyvernLairStone;
+import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagChests;
+import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagLeads;
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagMaterialsChitin;
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagMaterialsSting;
 import mestretramador.rrmocreatures.data.common.tags.item.RRMoCItemTagMaterialsTMNT;
@@ -40,7 +42,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 /**
  * Mo'Creatures Redux&Redone Item and BlockItem Tags Generator.
  * 
- * @version 0.028
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public class RRMoCItemTagsGeneration extends ItemTagsProvider
@@ -103,6 +105,8 @@ public class RRMoCItemTagsGeneration extends ItemTagsProvider
      */
     private static void setItems()
     {
+        final RRMoCItemTagChests chests = new RRMoCItemTagChests();
+        final RRMoCItemTagLeads leads = new RRMoCItemTagLeads();
         final RRMoCItemTagMaterialsChitin materialsChitin = new RRMoCItemTagMaterialsChitin();
         final RRMoCItemTagMaterialsSting materialsSting = new RRMoCItemTagMaterialsSting();
         final RRMoCItemTagMaterialsTusk materialsTusk = new RRMoCItemTagMaterialsTusk();
@@ -113,6 +117,8 @@ public class RRMoCItemTagsGeneration extends ItemTagsProvider
         final RRMoCItemTagWereablesRide wereablesRide = new RRMoCItemTagWereablesRide();
         final RRMoCItemTagWereablesStorage wereablesStorage = new RRMoCItemTagWereablesStorage();
 
+        TAGS_ITEMS.put(chests.provideTagKey(), chests.provideItemsToTag());
+        TAGS_ITEMS.put(leads.provideTagKey(), leads.provideItemsToTag());
         TAGS_ITEMS.put(materialsChitin.provideTagKey(), materialsChitin.provideItemsToTag());
         TAGS_ITEMS.put(materialsSting.provideTagKey(), materialsSting.provideItemsToTag());
         TAGS_ITEMS.put(materialsTusk.provideTagKey(), materialsTusk.provideItemsToTag());

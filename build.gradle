@@ -13,7 +13,7 @@ apply plugin: "net.minecraftforge.gradle"
 apply plugin: "eclipse"
 apply plugin: "maven-publish"
 
-version = "0.028"
+version = "0.0.29"
 group = "mestretramador.rrmocreatures"
 archivesBaseName = "rrmocreatures"
 

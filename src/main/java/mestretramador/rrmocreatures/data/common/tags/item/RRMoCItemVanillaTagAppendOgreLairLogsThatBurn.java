@@ -8,7 +8,7 @@ import net.minecraft.tags.ItemTags;
 /**                                                                                       
  * Mo'Creatures Redux&Redone Ogre Lair Logs Minecraft Tag Append's.                             
  *                                                                                        
- * @version 0.028                                                                     
+ * @version 0.0.29                                                                     
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                       
  */                                                                                       
 public class RRMoCItemVanillaTagAppendOgreLairLogsThatBurn extends RRMoCItemTagAppendProvider          

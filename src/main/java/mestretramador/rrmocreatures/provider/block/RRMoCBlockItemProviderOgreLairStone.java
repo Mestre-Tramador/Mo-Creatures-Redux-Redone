@@ -13,7 +13,7 @@ import net.minecraftforge.common.ToolType;
 /**                                                                                  
  * Mo'Creatures Redux&Redone Ogre Lair Stone block item provider.                           
  *                                                                                   
- * @version 0.028                                                                
+ * @version 0.0.29                                                                
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.                                                                  
  */                                                                                  
 public class RRMoCBlockItemProviderOgreLairStone extends RRMoCBlockItemProvider            

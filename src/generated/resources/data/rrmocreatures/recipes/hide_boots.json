@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hide_boots",
+  "pattern": [
+    "   ",
+    "B B",
+    "B B"
+  ],
+  "key": {
+    "B": {
+      "item": "rrmocreatures:hide"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:hide_boots"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wereables_storage",
+  "pattern": [
+    "| |",
+    "###",
+    "U|U"
+  ],
+  "key": {
+    "|": {
+      "tag": "rrmocreatures:leads"
+    },
+    "#": {
+      "item": "rrmocreatures:fur"
+    },
+    "U": {
+      "tag": "rrmocreatures:chests"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:elephant_chest"
+  }
+}

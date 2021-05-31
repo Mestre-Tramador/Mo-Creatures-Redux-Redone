@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hide_chest",
+  "pattern": [
+    "C C",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "rrmocreatures:hide"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:hide_chest"
+  }
+}

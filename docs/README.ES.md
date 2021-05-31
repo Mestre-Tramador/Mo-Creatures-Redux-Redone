@@ -3,7 +3,7 @@
 
 # Mo'Creatures Redux&Redone
 
-![Versión Actual 0.028](./assets/bdg_es_version.svg)
+![Versión Actual 0.0.29](./assets/bdg_es_version.svg)
 ![Minecraft 1.16.5](./assets/bdg_mc_version.svg)
 ![CurseForge 36.1.0](./assets/bdg_forge_version.svg)
 

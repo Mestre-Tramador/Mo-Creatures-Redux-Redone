@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hide_legs",
+  "pattern": [
+    "LLL",
+    "L L",
+    "L L"
+  ],
+  "key": {
+    "L": {
+      "item": "rrmocreatures:hide"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:hide_legs"
+  }
+}

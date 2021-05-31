@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fur_helmet",
+  "pattern": [
+    "HHH",
+    "H H",
+    "   "
+  ],
+  "key": {
+    "H": {
+      "item": "rrmocreatures:fur"
+    }
+  },
+  "result": {
+    "item": "rrmocreatures:fur_helmet"
+  }
+}

@@ -6,7 +6,7 @@ import net.minecraft.item.IArmorMaterial;
 /**
  * Mo'Creatures Redux&Redone Armor Item Provider base.
  * 
- * @version 0.028
+ * @version 0.0.29
  * @author Eduardo de Oliveira Rosa, Mestre Tramador.
  */
 public interface RRMoCArmorItemProvider
