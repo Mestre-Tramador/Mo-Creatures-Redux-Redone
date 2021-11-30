@@ -1,0 +1,12 @@
+[0.0.0.1]
+- Ported to Minecraft 1.17.1 with Forge 37.0.126
+- Created Main class
+- Created Deferred Registers
+- Implemented Item Deferred Register
+- Registered Creaturepedia
+- Created Data Generators
+- Implemented Item Models Data Generator
+- Implemented US-EN Lang Data Generator
+- Added .editorconfig
+- Added Readmes
+- Added Code of Conduct
