@@ -1,3 +1,12 @@
+[0.0.0.2]
+- Ported to Forge 37.1.0 (Minecraft 1.18 still unavailable)
+- Implemented Entity Deferred Register
+- Registered Horse
+- Implemented Events
+- Implemented Client Events
+- Improved JavaDoc and some modifiers misplacing
+- Updated .gitignore
+
 [0.0.0.1]
 - Ported to Minecraft 1.17.1 with Forge 37.0.126
 - Created Main class

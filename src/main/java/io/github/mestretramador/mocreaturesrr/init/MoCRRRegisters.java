@@ -3,6 +3,7 @@ package io.github.mestretramador.mocreaturesrr.init;
 import io.github.mestretramador.mocreaturesrr.MoCreaturesReduxRedone;
 
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
@@ -13,8 +14,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 /**
  * Creates and uses the Forge's
  * {@link DeferredRegister Deferred Registers} to
- * register {@link Item Items}, {@link Block Blocks} and
- * {@link SoundEvent Sound Events}.
+ * register {@link Block Blocks}, {@link Item Items},
+ * {@link EntityType Entities} and {@link SoundEvent Sound Events}.
  *
  * @since 0.0.0.1
  * @author Mestre Tramador
@@ -31,7 +32,7 @@ public final class MoCRRRegisters
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MoCreaturesReduxRedone.ID);
 
     /**
-     * The Items Deferred Registers, set to register the {@link MoCRRItems mod Items}.
+     * The Items Deferred Register, set to register the {@link MoCRRItems mod Items}.
      *
      * @since 0.0.0.1
      */
@@ -40,6 +41,15 @@ public final class MoCRRRegisters
     /** The Sound Events Deferred Register, <b>actually not in use</b>. */
     private static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(
         ForgeRegistries.SOUND_EVENTS, MoCreaturesReduxRedone.ID
+    );
+
+    /**
+     * The Entity Type Deferred Register, set to register the {@link MoCRREntities mod Entities}.
+     *
+     * @since 0.0.0.2
+     */
+    private static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(
+        ForgeRegistries.ENTITIES, MoCreaturesReduxRedone.ID
     );
     //#endregion
 
@@ -76,6 +86,17 @@ public final class MoCRRRegisters
     {
         return SOUND_EVENTS;
     }
+
+    /**
+     * The Entities Deferred Register access method
+     * for their respective registration.
+     *
+     * @return The Deferred Register already created.
+     */
+    public static DeferredRegister<EntityType<?>> getEntitiesRegister()
+    {
+        return ENTITIES;
+    }
     //#endregion
 
     //#region Registers
@@ -88,12 +109,14 @@ public final class MoCRRRegisters
      * @see MoCRRRegisters#registerItems(IEventBus) Items Register Caller
      * @see MoCRRRegisters#registerBlocks(IEventBus) Blocks Register Caller
      * @see MoCRRRegisters#registerSoundEvents(IEventBus) Sound Events Register Caller
+     * @see MoCRRRegisters#registerEntities(IEventBus) Entities Register Caller
      */
     public static void registerAll(IEventBus bus)
     {
         registerBlocks(bus);
         registerItems(bus);
         registerSoundEvents(bus);
+        registerEntities(bus);
     }
 
     /**
@@ -132,6 +155,24 @@ public final class MoCRRRegisters
     public static void registerSoundEvents(IEventBus bus)
     {
         SOUND_EVENTS.register(bus);
+    }
+
+    /**
+     * <p>
+     * Register solely the Mo'Creatures Redux&Redone Entities.
+     * <br />
+     * <br />
+     * It also load all mod Entities {@link MoCRREntities#all() instances}.
+     * </p>
+     *
+     * @param bus The Minecraft Forge's Event Bus.
+     * @since 0.0.0.2
+     */
+    public static void registerEntities(IEventBus bus)
+    {
+        ENTITIES.register(bus);
+
+        MoCRREntities.register();
     }
     //#endregion
 }

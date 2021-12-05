@@ -13,22 +13,25 @@ out/
 *.iml
 .idea
 
-# Gradle
-build/
-.gradle
-
-# Other
-eclipse/
-run/
-
-# Files from Forge MDK
-forge*changelog.txt
-
 # VSCode
 .vscode/
 .settings/
 .classpath
 .project
+
+# Gradle
+build/
+.gradle
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# Files from BlockBench
+*.bbmodel
+
+# Other
+eclipse/
+run/
 
 # Cache files
 src/generated/resources/.cache

@@ -32,7 +32,7 @@ public final class MoCRRItems
      *
      * @since 0.0.0.1
      */
-    public final static RegistryObject<Item> CREATUREPEDIA = MoCRRRegisters.getItemsRegister().register(
+    public static final RegistryObject<Item> CREATUREPEDIA = MoCRRRegisters.getItemsRegister().register(
         "creaturepedia", MoCRRCreaturepediaItem::new
     );
     //#endregion
@@ -44,7 +44,7 @@ public final class MoCRRItems
      *
      * @return The registered Items entries.
      */
-    public static Collection<RegistryObject<Item>> all()
+    public static final Collection<RegistryObject<Item>> all()
     {
         return MoCRRRegisters.getItemsRegister().getEntries();
     }
@@ -56,7 +56,7 @@ public final class MoCRRItems
      *
      * @return The registered Items.
      */
-    public static Stream<Item> allItems()
+    public static final Stream<Item> allItems()
     {
         return all().stream().map(RegistryObject::get);
     }
@@ -64,6 +64,6 @@ public final class MoCRRItems
     /**
      * Call this method to register, <b>load</b>, as a matter of speak, the Item entries.
      */
-    public static void register() { }
+    public static final void register() { }
     //#endregion
 }
