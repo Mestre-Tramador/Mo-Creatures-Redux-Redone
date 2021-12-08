@@ -1,6 +1,6 @@
 package io.github.mestretramador.mocreaturesrr.item;
 
-import net.minecraft.world.item.CreativeModeTab;
+import io.github.mestretramador.mocreaturesrr.init.MoCRRTabs;
 
 /**
  * The Creaturepedia is one of the core items of Mo'Creatures Redux&Redone,
@@ -18,6 +18,6 @@ public final class MoCRRCreaturepediaItem extends MoCRRItem
      */
     public MoCRRCreaturepediaItem()
     {
-        super(makeToolProperties().tab(CreativeModeTab.TAB_MISC));
+        super(makeToolProperties().tab(MoCRRTabs.MOCRR));
     }
 }

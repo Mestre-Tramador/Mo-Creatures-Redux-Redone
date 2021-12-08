@@ -67,7 +67,7 @@ public final class MoCRRDataGenerators
     /**
      * Gather solely the Mo'Creatures Redux&Redone Langs.
      *
-     * @param generator          The Data Generator, namely the JSON creator, for the Langs.
+     * @param generator The Data Generator, namely the JSON creator, for the Langs.
      */
     public static void gatherLangs(DataGenerator generator)
     {

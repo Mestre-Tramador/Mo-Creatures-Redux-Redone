@@ -15,7 +15,7 @@ import net.minecraft.world.level.Level;
 public abstract class MoCRRAnimal extends Animal
 {
     /** Every Animal has a Category. */
-    protected final MoCRRMobCategory category;
+    private MoCRRMobCategory category;
 
     /**
      * In order to create an Animal, as of any Entity,
@@ -45,5 +45,40 @@ public abstract class MoCRRAnimal extends Animal
     public MoCRRMobCategory getCategory()
     {
         return this.category;
+    }
+
+    /**
+     * If an Animal may become a {@link MoCRRMobCategory#NATURAL natural} one...
+     */
+    protected void becomeNatural()
+    {
+        this.setCategory(MoCRRMobCategory.NATURAL);
+    }
+
+    /**
+     * If an Animal may become a {@link MoCRRMobCategory#UNNATURAL unnatural} one...
+     */
+    protected void becomeUnnatural()
+    {
+        this.setCategory(MoCRRMobCategory.UNNATURAL);
+    }
+
+    /**
+     * If an Animal may become a {@link MoCRRMobCategory#MYTHICAL mythical} one...
+     */
+    protected void becomeMythical()
+    {
+        this.setCategory(MoCRRMobCategory.MYTHICAL);
+    }
+
+    /**
+     * The Category may be changed according to the procedures.
+     *
+     * @param category The new Category of the Animal.
+     * @since 0.0.0.3
+     */
+    private void setCategory(MoCRRMobCategory category)
+    {
+        this.category = category;
     }
 }

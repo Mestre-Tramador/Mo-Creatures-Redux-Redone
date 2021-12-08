@@ -4,4 +4,4 @@ Esse mod é uma tentativa de recriar o Mo'Creatures de DrZharks nas novas versõ
 
 **Mais detalhes em breve!**
 
-Read also in: [English](../README.md), [Português Brasileiro](./docs/README.PT-BR.md)
+Leia também em: [English](../README.md), [Español](./README.ES.md)

@@ -1,3 +1,5 @@
 {
-  "item.mocreaturesrr.creaturepedia": "Creaturepedia"
+  "entity.mocreaturesrr.horse": "Horse",
+  "item.mocreaturesrr.creaturepedia": "Creaturepedia",
+  "itemGroup.mocreaturesrr.mocrr": "Mo'Creatures Redux&Redone"
 }

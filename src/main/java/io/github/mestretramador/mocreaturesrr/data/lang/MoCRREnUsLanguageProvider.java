@@ -1,9 +1,10 @@
 package io.github.mestretramador.mocreaturesrr.data.lang;
 
+import io.github.mestretramador.mocreaturesrr.init.MoCRREntities;
 import io.github.mestretramador.mocreaturesrr.init.MoCRRItems;
+import io.github.mestretramador.mocreaturesrr.init.MoCRRTabs;
 
 import net.minecraft.data.DataGenerator;
-
 
 /**
  * The Provider to generate the data of the Mo'Creatures Redux&Redone
@@ -36,5 +37,19 @@ public class MoCRREnUsLanguageProvider extends MoCRRLanguageProvider
     protected void addItemTranslations()
     {
         ITEMS.put(MoCRRItems.CREATUREPEDIA.get(), "Creaturepedia");
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected void addEntityTranslations()
+    {
+        ENTITIES.put(MoCRREntities.HORSE.get(), "Horse");
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected void addTabsTranslations()
+    {
+        TABS.put(MoCRRTabs.MOCRR, "Mo'Creatures Redux&Redone");
     }
 }

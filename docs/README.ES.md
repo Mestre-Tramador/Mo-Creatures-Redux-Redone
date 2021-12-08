@@ -4,4 +4,4 @@ Esta modificación es un intento de recrear la Mo'Creatures de DrZharks en las n
 
 **¡Más detalles luego!**
 
-Lea también en: [English](../README.md), [Brazilian Portuguese](./docs/README.PT-BR.md)
+Lea también en: [English](../README.md), [Português Brasileiro](./README.PT-BR.md)
