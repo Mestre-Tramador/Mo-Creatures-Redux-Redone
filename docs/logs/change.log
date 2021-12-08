@@ -1,3 +1,9 @@
+[0.0.0.4]
+- Implemented Spawn Egg Items
+- Improved Item Properties making
+- Make some methods final to prevent compile errors
+- Generate Template (Model) files and Lang entries for the added items
+
 [0.0.0.3]
 - Implemented Creative Tabs
 - Registered provisory MoC R&R Tab

@@ -18,6 +18,6 @@ public final class MoCRRCreaturepediaItem extends MoCRRItem
      */
     public MoCRRCreaturepediaItem()
     {
-        super(makeToolProperties().tab(MoCRRTabs.MOCRR));
+        super(makeToolProperties(MoCRRTabs.MOCRR));
     }
 }

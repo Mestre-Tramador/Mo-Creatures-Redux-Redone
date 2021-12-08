@@ -26,7 +26,10 @@ public final class MoCRRItemModelProvider extends ItemModelProvider
     private final Path ITEM_PATH = Path.ITEM;
 
     /** The Existing Model File for Item Models. */
-    private final ExistingModelFile file = getExistingFile(mcLoc(ITEM_PATH.generated()));
+    private final ExistingModelFile generatedFile = getExistingFile(mcLoc(ITEM_PATH.generated()));
+
+    /** The Existing Template File for Spawn Egg Item Templates.  */
+    private final ExistingModelFile templateFile = getExistingFile(mcLoc(ITEM_PATH.spawnEgg()));
 
     /**
      * The instantiation follows of the {@link ItemModelProvider parent}
@@ -49,6 +52,7 @@ public final class MoCRRItemModelProvider extends ItemModelProvider
     protected void registerModels()
     {
         MoCRRItems.allItems().forEach(this::registerItemModel);
+        MoCRRItems.allSpawnEggsItems().forEach(this::registerSpawnEggTemplate);
     }
 
     /**
@@ -64,9 +68,22 @@ public final class MoCRRItemModelProvider extends ItemModelProvider
 
         ItemModelBuilder builder = getBuilder(itemName);
 
-        builder.parent(this.file).texture(
+        builder.parent(this.generatedFile).texture(
             Layer.ZERO.toString(),
             ITEM_PATH.toString().concat(itemName)
         );
+    }
+
+    /**
+     * All Spawn Egg Item Templates have a
+     * {@link MoCRRItemModelProvider#templateFile template}
+     * to follow.
+     *
+     * @param spawnEgg The Item which the Template is
+     *                 currently builded.
+     */
+    private void registerSpawnEggTemplate(Item spawnEgg)
+    {
+        getBuilder(spawnEgg.toString()).parent(this.templateFile);
     }
 }

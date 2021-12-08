@@ -22,7 +22,7 @@ public class MoCRREnUsLanguageProvider extends MoCRRLanguageProvider
      */
     public MoCRREnUsLanguageProvider(DataGenerator generator)
     {
-        super(generator, "en_us");
+        super(generator, "en_us", " Spawn Egg");
     }
 
     /** {@inheritDoc} */
@@ -37,6 +37,8 @@ public class MoCRREnUsLanguageProvider extends MoCRRLanguageProvider
     protected void addItemTranslations()
     {
         ITEMS.put(MoCRRItems.CREATUREPEDIA.get(), "Creaturepedia");
+
+        ITEMS.put(MoCRRItems.HORSE_SPAWN_EGG.get(), super.translateSpawnEgg("Horse"));
     }
 
     /** {@inheritDoc} */

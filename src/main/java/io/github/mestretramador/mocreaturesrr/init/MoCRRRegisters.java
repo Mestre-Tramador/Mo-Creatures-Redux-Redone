@@ -38,6 +38,14 @@ public final class MoCRRRegisters
      */
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoCreaturesReduxRedone.ID);
 
+    /**
+     * This is an Items Deferred Registers,
+     * but set only to {@link io.github.mestretramador.mocreaturesrr.entity.MoCRRSpawnableMob.MoCRRSpawnEggItem mod Spawn Egg Items}.
+     *
+     * @since 0.0.0.4
+     */
+    private static final DeferredRegister<Item> SPAWN_EGGS = DeferredRegister.create(ForgeRegistries.ITEMS,  MoCreaturesReduxRedone.ID);
+
     /** The Sound Events Deferred Register, <b>actually not in use</b>. */
     private static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(
         ForgeRegistries.SOUND_EVENTS, MoCreaturesReduxRedone.ID
@@ -60,7 +68,7 @@ public final class MoCRRRegisters
      *
      * @return The Deferred Register already created.
      */
-    public static DeferredRegister<Block> getBlocksRegister()
+    public static final DeferredRegister<Block> getBlocksRegister()
     {
         return BLOCKS;
     }
@@ -71,9 +79,20 @@ public final class MoCRRRegisters
      *
      * @return The Deferred Register already created.
      */
-    public static DeferredRegister<Item> getItemsRegister()
+    public static final DeferredRegister<Item> getItemsRegister()
     {
         return ITEMS;
+    }
+
+    /**
+     * The Spawn Egg Items Deferred Register access method
+     * for their respective registration.
+     *
+     * @return The Deferred Register already created.
+     */
+    public static final DeferredRegister<Item> getSpawnEggsRegister()
+    {
+        return SPAWN_EGGS;
     }
 
     /**
@@ -82,7 +101,7 @@ public final class MoCRRRegisters
      *
      * @return The Deferred Register already created.
      */
-    public static DeferredRegister<SoundEvent> getSoundEventsRegister()
+    public static final DeferredRegister<SoundEvent> getSoundEventsRegister()
     {
         return SOUND_EVENTS;
     }
@@ -93,7 +112,7 @@ public final class MoCRRRegisters
      *
      * @return The Deferred Register already created.
      */
-    public static DeferredRegister<EntityType<?>> getEntitiesRegister()
+    public static final DeferredRegister<EntityType<?>> getEntitiesRegister()
     {
         return ENTITIES;
     }
@@ -111,7 +130,7 @@ public final class MoCRRRegisters
      * @see MoCRRRegisters#registerSoundEvents(IEventBus) Sound Events Register Caller
      * @see MoCRRRegisters#registerEntities(IEventBus) Entities Register Caller
      */
-    public static void registerAll(IEventBus bus)
+    public static final void registerAll(IEventBus bus)
     {
         registerBlocks(bus);
         registerItems(bus);
@@ -124,25 +143,27 @@ public final class MoCRRRegisters
      *
      * @param bus The Minecraft Forge's Event Bus.
      */
-    public static void registerBlocks(IEventBus bus)
+    public static final void registerBlocks(IEventBus bus)
     {
         BLOCKS.register(bus);
     }
 
     /**
      * <p>
-     * Register solely the Mo'Creatures Redux&Redone Items.
+     * Register solely the Mo'Creatures Redux&Redone Items and Spawn Egg Items.
      * <br />
      * <br />
-     * It also load all mod Items {@link MoCRRItems#all() instances}.
+     * It also load all mod Items {@link MoCRRItems#allAndSpawnEggs() instances}.
      * </p>
      *
      * @param bus The Minecraft Forge's Event Bus.
      * @since 0.0.0.1
      */
-    public static void registerItems(IEventBus bus)
+    public static final void registerItems(IEventBus bus)
     {
         ITEMS.register(bus);
+
+        SPAWN_EGGS.register(bus);
 
         MoCRRItems.register();
     }
@@ -152,7 +173,7 @@ public final class MoCRRRegisters
      *
      * @param bus The Minecraft Forge's Event Bus.
      */
-    public static void registerSoundEvents(IEventBus bus)
+    public static final void registerSoundEvents(IEventBus bus)
     {
         SOUND_EVENTS.register(bus);
     }
@@ -168,7 +189,7 @@ public final class MoCRRRegisters
      * @param bus The Minecraft Forge's Event Bus.
      * @since 0.0.0.2
      */
-    public static void registerEntities(IEventBus bus)
+    public static final void registerEntities(IEventBus bus)
     {
         ENTITIES.register(bus);
 

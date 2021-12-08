@@ -41,20 +41,29 @@ public abstract class MoCRRLanguageProvider extends LanguageProvider
      * The instantiation follows of the {@link LanguageProvider parent}
      * class, but the ID is already passed.
      *
-     * @param generator The JSON creator for the Langs.
-     * @param locale    The Lang code. Currently supported
-     *                  ones can be seen above.
+     * @param generator      The JSON creator for the Langs.
+     * @param locale         The Lang code. Currently supported
+     *                       ones can be seen above.
+     * @param spawnEggSuffix The suffix to {@link MoCRRLanguageProvider#translateSpawnEgg(String) append}
+     *                       on Spawn Egg Items translations.
      * @see MoCRREnUsLanguageProvider Provider for US English (<i>en_us</i>)
     */
-    public MoCRRLanguageProvider(DataGenerator generator, String locale)
+    public MoCRRLanguageProvider(DataGenerator generator, String locale, String spawnEggSuffix)
     {
         super(generator, MoCreaturesReduxRedone.ID, locale);
+
+        this.spawnEggSuffix = spawnEggSuffix;
 
         addBlockTranslations();
         addItemTranslations();
         addEntityTranslations();
         addTabsTranslations();
     }
+    //#endregion
+
+    //#region Properties
+    /** This suffix is appended on all Spawn Eggs Items. */
+    private final String spawnEggSuffix;
     //#endregion
 
     //#region Translators
@@ -95,7 +104,7 @@ public abstract class MoCRRLanguageProvider extends LanguageProvider
     }
     //#endregion
 
-    //#region Private Auxiliar Methods
+    //#region Auxiliar Methods
     /**
      * Add a translation for a {@link CreativeModeTab Tab} using
      * its {@link CreativeModeTab#getDisplayName() Display Name}.
@@ -106,6 +115,17 @@ public abstract class MoCRRLanguageProvider extends LanguageProvider
     private final void add(CreativeModeTab tab, String translation)
     {
         add(tab.getDisplayName().getString(), translation);
+    }
+
+    /**
+     * Append the Spawn Egg suffix to the Item by the Entity name.
+     *
+     * @param entity The name of a Entity.
+     * @return A string following the Lang pattern.
+     */
+    protected final String translateSpawnEgg(String entity)
+    {
+        return entity.concat(spawnEggSuffix);
     }
     //#endregion
 }

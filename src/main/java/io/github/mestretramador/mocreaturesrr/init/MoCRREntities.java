@@ -27,7 +27,7 @@ public final class MoCRREntities
 
     //#region IDs
     /** The ID for the {@link MoCRREntities#HORSE Horse} */
-    private static final String HORSE_ID = "horse";
+    public static final String HORSE_ID = "horse";
     //#endregion
 
     //#region Entities (Properties)

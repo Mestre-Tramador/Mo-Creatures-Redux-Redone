@@ -53,4 +53,21 @@ public enum Path
     {
         return this.toString().concat("generated");
     }
+
+    /**
+     * Stringfy the path, and adds
+     * the {@code template_spawn_egg}
+     * subfolder.
+     *
+     * @return A String formed of the
+     *         folder or sequence of
+     *         with the final path
+     *         leading to the
+     *         {@code template_spawn_egg}
+     *         subfolder.
+     */
+    public String spawnEgg()
+    {
+        return this.toString().concat("template_spawn_egg");
+    }
 }

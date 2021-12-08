@@ -1,6 +1,7 @@
 package io.github.mestretramador.mocreaturesrr.entity.horse;
 
-import io.github.mestretramador.mocreaturesrr.entity.*;
+import io.github.mestretramador.mocreaturesrr.entity.MoCRRMobCategory;
+import io.github.mestretramador.mocreaturesrr.entity.MoCRRSpawnableMob;
 import io.github.mestretramador.mocreaturesrr.init.MoCRREntities;
 
 import net.minecraft.server.level.ServerLevel;
@@ -19,7 +20,7 @@ import net.minecraft.world.level.Level;
  * @since 0.0.0.2
  * @author Mestre Tramador
  */
-public final class MoCRRHorse extends MoCRRTamableHorse
+public final class MoCRRHorse extends MoCRRTamableHorse implements MoCRRSpawnableMob
 {
     /**
      * The <b>Horse</b> is a {@link MoCRRMobCategory#NATURAL natural}
@@ -34,13 +35,23 @@ public final class MoCRRHorse extends MoCRRTamableHorse
     }
 
     /**
+     * Make the Spawn Egg for the Horse.
+     *
+     * @return The Spawn Egg Item.
+     */
+    public static final MoCRRSpawnEggItem egg()
+    {
+        return new MoCRRSpawnEggItem(MoCRREntities.HORSE, 0xC09E7D, 0xEEE500);
+    }
+
+    /**
      * A Horse has attributes matching its characteristics.
      *
      * @return A set of attributes, including
      *         {@link Attributes#MAX_HEALTH Maximum Health} and
      *         {@link Attributes#MOVEMENT_SPEED Movement Speed}.
      */
-    public static AttributeSupplier.Builder createAttributes()
+    public static final AttributeSupplier.Builder createAttributes()
     {
         return Mob
         .createMobAttributes()
