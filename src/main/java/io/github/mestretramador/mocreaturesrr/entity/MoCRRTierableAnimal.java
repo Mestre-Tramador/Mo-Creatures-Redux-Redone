@@ -19,36 +19,35 @@
  */
 //#endregion
 
-package io.github.mestretramador.mocreaturesrr.item;
-
-import io.github.mestretramador.mocreaturesrr.MoCreaturesReduxRedone;
-
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
+package io.github.mestretramador.mocreaturesrr.entity;
 
 /**
- * All MoC R&R Creative Mode Tabs follows
- * the Minecraft {@link CreativeModeTab base} structure.
+ * Marks a Mob as Tierable, which implies in having a Tier and a Breed,
+ * that may infer on the Mob status, attributes and breeding.
  *
- * @since 0.0.0.3
+ * @since 0.0.0.5
  * @author Mestre Tramador
  */
-public abstract class MoCRRCreativeModeTab extends CreativeModeTab
+public interface MoCRRTierableAnimal
 {
     /**
-     * In order to create a Tab on MoC R&R, only
-     * the identifier label shall be passed.
+     * The Tier must at least be represented by a raw {@code int} value.
      *
-     * @param label The label to identify the tab.
+     * @return The index of the Tier.
      */
-    public MoCRRCreativeModeTab(String label)
-    {
-        super(MoCreaturesReduxRedone.ID.concat(".").concat(label));
-    }
+    public int getTier();
 
     /**
-     * Represents the icon of the Tab.
-     * The stack can hold an item itself or a block.
+     * The Tier's Breed must at least be represented by a raw {@code int} value.
+     *
+     * @return The index of the Tier's Breed.
      */
-    public abstract ItemStack makeIcon();
+    public int getBreed();
+
+    /**
+     * The Breeds of the Tier must at least be accessed by theirs raw {@code int} value.
+     *
+     * @return The index of each of the Breeds of the Tier.
+     */
+    public int[] getTierBreeds();
 }

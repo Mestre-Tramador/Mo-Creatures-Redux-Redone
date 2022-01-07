@@ -1,3 +1,14 @@
+[0.0.0.5]
+- Ported to Minecraft 1.18.1 with Forge 39.0.10
+- Implemented Tiers and Breeds of Animals
+- Implemented Tiers and Breeds for Horses
+- Improved Generic Types for Tamable Horses Models and Renderers
+- Fixed crash when Horses were spawned with no-matching Tier and Breed
+- Added Horses textures
+- Added License Headers on Java Files
+- Tracked BlockBench Models
+- Fixed License file
+
 [0.0.0.4]
 - Implemented Spawn Egg Items
 - Improved Item Properties making

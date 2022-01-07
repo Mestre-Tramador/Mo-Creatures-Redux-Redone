@@ -19,36 +19,22 @@
  */
 //#endregion
 
-package io.github.mestretramador.mocreaturesrr.item;
-
-import io.github.mestretramador.mocreaturesrr.MoCreaturesReduxRedone;
-
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
+package io.github.mestretramador.mocreaturesrr.entity;
 
 /**
- * All MoC R&R Creative Mode Tabs follows
- * the Minecraft {@link CreativeModeTab base} structure.
+ * Marks a Mob as Categorizable, namely, with a
+ * {@link io.github.mestretramador.mocreaturesrr.entity.MoCRRMobCategory Category}
+ * which determine its spawning and other metrics.
  *
- * @since 0.0.0.3
+ * @since 0.0.0.5
  * @author Mestre Tramador
  */
-public abstract class MoCRRCreativeModeTab extends CreativeModeTab
+public interface MoCRRCategorizableMob
 {
     /**
-     * In order to create a Tab on MoC R&R, only
-     * the identifier label shall be passed.
+     * The Category must at least be represented by a raw {@code int} value.
      *
-     * @param label The label to identify the tab.
+     * @return The index of the Category.
      */
-    public MoCRRCreativeModeTab(String label)
-    {
-        super(MoCreaturesReduxRedone.ID.concat(".").concat(label));
-    }
-
-    /**
-     * Represents the icon of the Tab.
-     * The stack can hold an item itself or a block.
-     */
-    public abstract ItemStack makeIcon();
+    public int getCategory();
 }
